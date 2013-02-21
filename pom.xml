@@ -260,6 +260,8 @@
                                     <!-- instead which has all jsr305 annotations and the additional findbugs   -->
                                     <!-- stuff. -->
                                     <exclude>com.google.code.findbugs:jsr305</exclude>
+                                    <!-- Use the official version at javax.servlet:javax.servlet-api -->
+                                    <exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
                                 </excludes>
                                 <includes>
                                     <!-- whitelist the well numbered guava releases -->
@@ -393,10 +395,12 @@
                 <plugin>
                     <groupId>com.github.koraktor</groupId>
                     <artifactId>mavanagaiata</artifactId>
-                    <version>0.4.1</version>
+                    <version>0.5.0</version>
                     <configuration>
                         <!-- use a grepable timestamp format -->
                         <dateFormat>yyyyMMddHHmmssZ</dateFormat>
+                        <!-- don't run the plugin if no git repo is present -->
+                        <skipNoGit>true</skipNoGit>
                     </configuration>
                     <executions>
                         <execution>
@@ -465,7 +469,7 @@
                 <plugin>
                     <groupId>com.ning.maven.plugins</groupId>
                     <artifactId>maven-duplicate-finder-plugin</artifactId>
-                    <version>1.0.3</version>
+                    <version>1.0.4</version>
                     <executions>
                         <execution>
                             <id>default</id>
@@ -578,7 +582,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>2.7.1</version>
+                    <version>3.0</version>
                     <configuration>
                         <skip>${air.check.skip-pmd}</skip>
                         <failOnViolation>${air.check.fail-pmd}</failOnViolation>

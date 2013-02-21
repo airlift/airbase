@@ -1,39 +1,5 @@
 # Airbase
 
-## Preliminaries
-
-By default, Airbase enforces JDK 1.7. To use another version, add
-
-```xml
-<properties>
-  <project.build.targetJdk>1.6</project.build.targetJdk>
-  ...
-</properties>
-```
-
-### Local setup required!
-
-To fully leverage the deployment options from Airbase, a number of servers need to be configured in the local `~/.m2/settings.xml` file. If these servers are missing, artifact deployment will fail.
-
-As described on https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide, the `sonatype-nexus-staging` and `sonatype-nexus-snapshots` repositories should be configured:
-
-```xml
-<servers>
-  ...
-  <server>
-    <id>sonatype-nexus-snapshots</id>
-    <username>user</username>
-    <password>password</password>
-  </server>
-  <server>
-    <id>sonatype-nexus-staging</id>
-    <username>user</username>
-    <password>password</password>
-  </server>
-  ...
-</servers>
-```
-
 ## Usage
 
 Add Airbase as the parent to a project:
@@ -126,11 +92,32 @@ Examples:
 <properties>
 ```
 
+
 ## Deploy to Maven Central (oss.sonatype.org)
 
 Airbase is intended for open source projects that should be deployed to Maven Central. 
 
 It inherits from the oss-parent POM and supports the OSS deployment process as outlined at https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide.
+
+As described on https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide, the `sonatype-nexus-staging` and `sonatype-nexus-snapshots` repositories must be configured:
+
+```xml
+<servers>
+  ...
+  <server>
+    <id>sonatype-nexus-snapshots</id>
+    <username>user</username>
+    <password>password</password>
+  </server>
+  <server>
+    <id>sonatype-nexus-staging</id>
+    <username>user</username>
+    <password>password</password>
+  </server>
+  ...
+</servers>
+```
+
 
 ## Project Build and Checkers
 
@@ -313,122 +300,120 @@ The Enforcer plugin outlaws a number of dependencies that project might use for 
   </tr>
   <tr>
     <td><tt>com.google.code.findbugs:jsr305</tt></td>
-    <td>Subset of the full findbugs annotations, contains only the JSR-305 annotations</td>
+    <td>Subset of the full findbugs annotations, contains only the JSR-305 annotations.</td>
     <td><tt>com.google.code.findbugs:annotations</tt></td>
+  </tr>
+  <tr>
+    <td><tt>org.eclipse.jetty.orbit:javax.servlet</tt></td>
+    <td>Jetty variant of the 3.x servlet API jar.</td>
+    <td><tt>javax.servlet:javax.servlet-api</tt></td>
   </tr>
 </table>
 
 
 ## Well known dependencies
 
-Airbase provides a number of dependencies to projects. These dependencies are considered "well known and stable". When a project wants to use any of these dependencies, it can declare them in the project `<dependencies>` section without a version and automatically pick up a version from Airbase.
+Airbase provides a number of dependencies to projects. These dependencies are considered "well known and stable". When a project wants to use any of these dependencies, it can declare them in the project `<dependencies>` section without a version and automatically pick it up from Airbase.
 
-The following dependencies are defined:
+Airbase provides versions for the following well-known dependencies:
 
 <table>
-  <tr><th>Dependency name</th><th>Group/Artifact Ids</th><th>property</th></tr>
+  <tr><th>Dependency name</th><th>Group/Artifact Ids</th></tr>
   <tr>
    <td>Google Guice</td>
    <td><tt>com.google.inject:guice</tt><p/><tt>com.google.inject.extensions:guice-servlet</tt><p/><tt>com.google.inject.extensions:guice-assistedinject</tt><p/><tt>com.google.inject.extensions:guice-multibindings</tt><p/><tt>com.google.inject.extensions:guice-throwingproviders</tt></td>
-   <td><tt>dep.guice.version</tt></td>
   </tr>
   <tr>
    <td>Google Guava</td>
    <td><tt>com.google.guava:guava</tt></td>
-   <td><tt>dep.guava.version</tt></td>
   </tr>
   <tr>
     <td>Joda Time</td>
     <td><tt>joda-time:joda-time</tt></td>
-   <td><tt>dep.joda.version</tt></td>
   </tr>
   <tr>
     <td>Java Inject API</td>
     <td><tt>javax.inject:javax.inject</tt></td>
-    <td><tt>dep.javax-inject.version</tt></td>
   </tr>
   <tr>
     <td>Java Servlet API</td>
     <td><tt>javax.servlet:javax.servlet-api</tt></td>
-    <td><tt>dep.javax-servlet.version</tt></td>
+  </tr>
+  <tr>
+    <td>Java Validation API</td>
+    <td><tt>javax.validation:validation-api</tt></td>
   </tr>
   <tr>
     <td>slf4j (Simple Logging Facade for Java)</td>
     <td><tt>org.slf4j:slf4j-api</tt><p/><tt>org.slf4j:slf4j-nop</tt><p/><tt>org.slf4j:slf4j-simple</tt><p/><tt>org.slf4j:slf4j-ext</tt><p/><tt>org.slf4j:jcl-over-slf4j</tt><p/><tt>org.slf4j:jul-to-slf4j</tt><p/><tt>org.slf4j:log4j-over-slf4j</tt></td>
-    <td><tt>dep.slf4j.version</tt></td>
   </tr>
   <tr>
     <td>Logback</td>
     <td><tt>ch.qos.logback:logback-core</tt><p/><tt>ch.qos.logback:logback-classic</tt></td>
-    <td><tt>dep.logback.version</tt></td>
+  </tr>
+  <tr>
+    <td>Jersey</td>
+    <td><tt>com.sun.jersey:jersey-core</tt><p/><tt>com.sun.jersey.contribs:jersey-guice</tt><p/><tt>com.sun.jersey.contribs:jersey-multipart</tt><p/><tt>com.sun.jersey:jersey-server</tt></td>
+  </tr>
+  <tr>
+    <td>Jackson</td>
+    <td><tt>com.fasterxml.jackson.core:jackson-annotations</tt><p/><tt>com.fasterxml.jackson.core:jackson-core</tt><p/><tt>com.fasterxml.jackson.core:jackson-databind</tt><p/><tt>com.fasterxml.jackson.datatype:jackson-datatype-guava</tt><p/><tt>com.fasterxml.jackson.datatype:jackson-datatype-joda</tt><p/><tt>com.fasterxml.jackson.dataformat:jackson-dataformat-smile</tt></td>
+  </tr>
+  <tr>
+    <td>Jetty</td>
+    <td><tt>org.eclipse.jetty:jetty-server</tt><p/><tt>org.eclipse.jetty:jetty-servlet</tt><p/><tt>org.eclipse.jetty:jetty-util</tt><p/><tt>org.eclipse.jetty:jetty-servlets</tt><p/><tt>org.eclipse.jetty:jetty-security</tt><p/><tt>org.eclipse.jetty:jetty-jmx</tt><p/><tt>org.eclipse.jetty:jetty-http</tt></td>
+  </tr>
+  <tr>
+    <td>Bean Validation Framework</td>
+    <td><tt>org.apache.bval:bval-jsr303</tt></td>
+  </tr>
+  <tr>
+    <td>JmxUtils</td>
+    <td><tt>org.weakref:jmxutils</tt></td>
+  </tr>
+  <tr>
+    <td>Joda Time</td>
+    <td><tt>joda-time:joda-time</tt></td>
+  </tr>
+  <tr>
+    <td>CGLib</td>
+    <td><tt>cglib:cglib-nodep</tt></td>
   </tr>
   <tr>
     <td>Findbugs Annotations</td>
     <td><tt>com.google.code.findbugs:annotations</tt></td>
-    <td><tt>dep.findbugs-annotations.version</tt></td>
   </tr>
   <tr>
     <td>TestNG testing</td>
     <td><tt>org.testng:testng</tt></td>
-    <td><tt>dep.testng.version</tt></td>
+  </tr>
+  <tr>
+    <td>Mockito</td>
+    <td><tt>org.mockito:mockito-core</tt></td>
   </tr>
   <tr>
     <td>Hamcrest matchers</td>
-    <td><tt>org.hamcrest:hamcrest-core</tt><p/><tt>org.hamcrest:hamcrest-library</tt></td>
-    <td><tt>dep.hamcrest.version</tt></td>
+    <td><tt>org.hamcrest:hamcrest-core</tt><p/><tt>org.hamcrest:hamcrest-library</tt><p/><tt>org.objenesis:objenesis</tt></td>
   </tr>
 </table>
 
-### Lock down a well known dependency
-
-It is possible to "lock down" the version of a dependency so that any Airbase updates will not affect the version used by the project. 
-Locking a version is done by adding a property to the `<properties>` section of the project POM:
-
-```xml
-  <properties>
-    <!-- change guice version in Airbase. -->
-    <dep.guice.version>2.0</dep.guice.version>
-    ...
-  </properties>
-  ...
-  <dependencies>
-    <dependency>
-      <!-- Use the version from Airbase -->
-      <groupId>com.google.inject</groupId>
-      <artifactId>guice</artifactId>
-    </dependency>
-    <dependency>
-      <!-- Use the version from Airbase -->
-      <groupId>com.google.inject.extensions</groupId>
-      <artifactId>guice-multibinder</artifactId>
-    </dependency>
-    ...
-  </dependency>
-```
-
-to the project POM. This will lock the version of a dependency to the version desired. This can also be used to force a version update to a dependency.
-
-```xml
-  <properties>
-    <!-- change slf4j version in Airbase. -->
-    <dep.slf4j.version>1.6.2</dep.slf4j.version>
-    ...
-  </properties>
-  ...
-  <dependencies>
-    <dependency>
-      <!-- Use the version from Airbase -->
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-    </dependency>
-    ...
-  </dependency>
-```
 
 
 ## Other properties
 
 These are default properties that affect some aspects of the build. All of them can be overriden in the `<properties>` section of the project pom.
+
+## project.build.targetJdk
+
+By default, Airbase enforces JDK 1.7. To use another version, add
+
+```xml
+<properties>
+  <project.build.targetJdk>1.6</project.build.targetJdk>
+  ...
+</properties>
+```
+
 
 ### air.build.jvmsize
 
