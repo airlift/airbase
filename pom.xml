@@ -690,6 +690,9 @@
                             </goals>
                         </execution>
                     </executions>
+                    <configuration>
+                        <skip>${air.check.skip-jacoco}</skip>
+                    </configuration>
                 </plugin>
 
                 <plugin>
