@@ -1,8 +1,8 @@
-# Changes
+Airbase 2
 
-## Version 1 - not yet released
+* Bug fix: air.check.skip-jacoco did not work
 
-* initial version
+Airbase 1
 
-
+* Initial release
 
