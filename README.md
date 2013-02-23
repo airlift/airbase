@@ -28,7 +28,7 @@ the values from Airbase are picked up instead.
 
 * `organization`, `developers`, `distributionManagement`
 
-  Empty elements override the values inherited from Airbase. 
+  Empty elements override the values inherited from Airbase.
 
 This is a sample skeleton pom using Airbase:
 
@@ -53,7 +53,7 @@ This is a sample skeleton pom using Airbase:
   <description> ... description of the new project ...  </description>
   <name>${project.artifactId}</name>
   <inceptionYear>2013</inceptionYear>
-  
+
   <scm>
     <connection> ... scm read only connection ... </connection>
     <developerConnection>... scm read write connection ... </developerConnection>
@@ -69,7 +69,7 @@ This is a sample skeleton pom using Airbase:
 
 ## Project POM conventions
 
-In large maven projects, especially with multi-module builds, the pom files can become quite large. In many places, properties defined in the `<properties>` section of the pom are used. 
+In large maven projects, especially with multi-module builds, the pom files can become quite large. In many places, properties defined in the `<properties>` section of the pom are used.
 
 To avoid confusion with properties, the following conventions are used in Airbase:
 
@@ -95,7 +95,7 @@ Examples:
 
 ## Deploy to Maven Central (oss.sonatype.org)
 
-Airbase is intended for open source projects that should be deployed to Maven Central. 
+Airbase is intended for open source projects that should be deployed to Maven Central.
 
 It inherits from the oss-parent POM and supports the OSS deployment process as outlined at https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide.
 
@@ -121,7 +121,7 @@ As described on https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+
 
 ## Project Build and Checkers
 
-Airbase hooks various checkers into the build lifecycle and executes them on each build. 
+Airbase hooks various checkers into the build lifecycle and executes them on each build.
 
 Generally speaking, running a set of checks at each build is a good way to catch problems early and any problem reported by a checker should be treated as something that needs to be fixed before releasing.
 
@@ -140,7 +140,7 @@ Checkers are organized in two groups, basic and extended.
 * Code coverage                   (http://www.eclemma.org/jacoco/trunk/doc/maven.html)
 
 
-All checkers are enabled by default, but the checkers will *NOT* fail the build if a problem is encountered. 
+All checkers are enabled by default, but the checkers will *NOT* fail the build if a problem is encountered.
 
 Each checker has a switch to turn it on or off and also whether a problem will be a warning or fatal to the build.
 
@@ -256,7 +256,7 @@ will skip *all* checks except the duplicate finder.
 
 To ensure that a project has an uniform license header in all source files, the Maven license plugin can be used to check and format license headers.
 
-The plugin expects the license header file as `src/license/LICENSE-HEADER.txt` in the root folder of a project. 
+The plugin expects the license header file as `src/license/LICENSE-HEADER.txt` in the root folder of a project.
 
 For a multi-module project, this file should exist only once, in the root pom of the project. In all other sub-modules, add
 
@@ -444,4 +444,14 @@ must be added to each pom. This is a limitation of the Maven multi-module build 
 ### air.test.fork-mode
 
 Defines the fork mode for running tests. Default is 'once' which is forking one JVM for all tests. Valid values are the same as for the maven-surefire-plugin (once, always, never).
+
+
+## Deploy profiles
+
+### airship compatible tarball
+
+A module or sub-module can produce an airship compatible tarball that contains a launcher. This profile is activated by creating a file `.build-airship` in the root of the module or submodule. This file
+can be empty. The tarball is attached as an additional artifact.
+
+The necessary launchers from the airlift launcher package are included. The version of the launcher included is controlled by the `dep.packaging.version` property.
 
