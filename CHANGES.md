@@ -1,6 +1,7 @@
 Airbase 3
 
 * Fork mode can be configured with air.test.fork-mode.
+* Re-enable mavanagaiata plugin to add git information to built jars
 
 Airbase 2
 
