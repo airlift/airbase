@@ -743,16 +743,10 @@
                 <artifactId>maven-resources-plugin</artifactId>
             </plugin>
 
-            <!-- temporarily disable the mavanagaiata plugin as       -->
-            <!-- it fails the build if run on a non-git project       -->
-            <!-- See https://github.com/koraktor/mavanagaiata/pull/22 -->
-            <!-- for a proposed fix. Once 0.4.2 is out and the fix    -->
-            <!-- works, this will be re-enabled.                      -->
-
-            <!-- <plugin> -->
-            <!--   <groupId>com.github.koraktor</groupId> -->
-            <!--   <artifactId>mavanagaiata</artifactId> -->
-            <!-- </plugin> -->
+            <plugin>
+              <groupId>com.github.koraktor</groupId>
+              <artifactId>mavanagaiata</artifactId>
+            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
