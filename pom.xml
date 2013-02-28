@@ -52,6 +52,9 @@
         <!-- the upstream repository. Default is no. -->
         <air.release.push-changes>false</air.release.push-changes>
 
+        <!-- define the forkmode for tests. Default is 'once' -->
+        <air.test.fork-mode>once</air.test.fork-mode>
+
         <!-- Controls all the checkers run when building the project.            -->
         <!-- Can be activated with -Dair.check.skip-all=true on the command line. -->
         <air.check.skip-all>false</air.check.skip-all>
@@ -346,7 +349,7 @@
                             <user.timezone>UTC</user.timezone>
                             <java.awt.headless>true</java.awt.headless>
                         </systemPropertyVariables>
-                        <forkMode>always</forkMode>
+                        <forkMode>${air.test.fork-mode}</forkMode>
                         <runOrder>random</runOrder>
                     </configuration>
                 </plugin>
