@@ -1,3 +1,7 @@
+Airbase 3
+
+* Test fork mode is configurable
+
 Airbase 2
 
 * Bug fixes
