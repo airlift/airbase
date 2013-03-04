@@ -1122,16 +1122,16 @@
 
         <!-- ======================================================================== -->
         <!-- =                                                                      = -->
-        <!-- = Build a tarball with launcher from a module if .build-airship        = -->
+        <!-- = Build a tarball with launcher from a module if .build-airlift        = -->
         <!-- = is present                                                           = -->
         <!-- =                                                                      = -->
         <!-- ======================================================================== -->
 
         <profile>
-            <id>build-airship</id>
+            <id>build-airlift</id>
             <activation>
                 <file>
-                    <exists>.build-airship</exists>
+                    <exists>.build-airlift</exists>
                 </file>
             </activation>
 

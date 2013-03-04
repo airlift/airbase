@@ -2,9 +2,9 @@ Airbase 3
 
 * Test fork mode is configurable
 
-* Create airship compatible tarball with launcher from a module
+* Create a tarball using airlift packaging
 
-When a '.build-airship' file is present in a maven module (or
+When a '.build-airlift file is present in a maven module (or
 submodule), automatically create and attach a tarball from this module
 and all its dependencies.
 
