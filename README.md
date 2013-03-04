@@ -448,10 +448,11 @@ Defines the fork mode for running tests. Default is 'once' which is forking one 
 
 ## Deploy profiles
 
-### airship compatible tarball
+### airlift packaging build
 
-A module or sub-module can produce an airship compatible tarball that contains a launcher. This profile is activated by creating a file `.build-airship` in the root of the module or submodule. This file
+A module or sub-module can produce a tarball using the airlift packaging. This profile is activated by creating a file `.build-airlift` in the root of the module or submodule. This file
 can be empty. The tarball is attached as an additional artifact.
 
 The necessary launchers from the airlift launcher package are included. The version of the launcher included is controlled by the `dep.packaging.version` property.
+
 
