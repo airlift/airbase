@@ -105,14 +105,14 @@
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>3.0</dep.guice.version>
-        <dep.guava.version>13.0.1</dep.guava.version>
+        <dep.guava.version>14.0</dep.guava.version>
         <dep.slf4j.version>1.7.2</dep.slf4j.version>
         <dep.logback.version>1.0.9</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
         <dep.javax-validation.version>1.0.0.GA</dep.javax-validation.version>
         <dep.javax-servlet.version>3.0.1</dep.javax-servlet.version>
         <dep.apache-bval.version>0.5</dep.apache-bval.version>
-        <dep.jersey.version>1.17</dep.jersey.version>
+        <dep.jersey.version>1.17.1</dep.jersey.version>
         <dep.jetty.version>8.1.9.v20130131</dep.jetty.version>
         <dep.jmxutils.version>1.13</dep.jmxutils.version>
         <dep.cglib.version>2.2.2</dep.cglib.version>
@@ -292,7 +292,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.6</version>
+                    <version>2.7-SNAPSHOT</version>
                     <configuration>
                         <skip>${air.check.skip-dependency}</skip>
                         <failOnWarning>${air.check.fail-dependency}</failOnWarning>
@@ -949,19 +949,19 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>2.1.2</version>
+                <version>2.1.4</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
-                <version>2.1.3</version>
+                <version>2.1.4</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>2.1.3</version>
+                <version>2.1.4</version>
             </dependency>
 
             <dependency>
@@ -979,7 +979,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.dataformat</groupId>
                 <artifactId>jackson-dataformat-smile</artifactId>
-                <version>2.1.3</version>
+                <version>2.1.4</version>
             </dependency>
 
             <!-- jetty -->
