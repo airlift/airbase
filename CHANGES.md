@@ -1,3 +1,7 @@
+Airbase 4
+
+* [BUGFIX] build-airlift profile puts main class and classpath into the main jar.
+
 Airbase 3
 
 * Fork mode can be configured with air.test.fork-mode.
