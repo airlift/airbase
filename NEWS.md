@@ -1,3 +1,7 @@
+Airbase 4
+
+* Bug fix release (fixes a problem with the airlift packaging build)
+
 Airbase 3
 
 * Test fork mode is configurable
