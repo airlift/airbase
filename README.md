@@ -345,7 +345,7 @@ Airbase provides versions for the following well-known dependencies:
   </tr>
   <tr>
     <td>slf4j (Simple Logging Facade for Java)</td>
-    <td><tt>org.slf4j:slf4j-api</tt><p/><tt>org.slf4j:slf4j-nop</tt><p/><tt>org.slf4j:slf4j-simple</tt><p/><tt>org.slf4j:slf4j-ext</tt><p/><tt>org.slf4j:jcl-over-slf4j</tt><p/><tt>org.slf4j:jul-to-slf4j</tt><p/><tt>org.slf4j:log4j-over-slf4j</tt></td>
+    <td><tt>org.slf4j:slf4j-api</tt><p/><tt>org.slf4j:slf4j-nop</tt><p/><tt>org.slf4j:slf4j-simple</tt><p/><tt>org.slf4j:slf4j-ext</tt><p/><tt>org.slf4j:jcl-over-slf4j</tt><p/><tt>org.slf4j:jul-to-slf4j</tt><p/><tt>org.slf4j:log4j-over-slf4j</tt><p/><tt>org.slf4j:slf4j-jdk14</tt></td>
   </tr>
   <tr>
     <td>Logback</td>

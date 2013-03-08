@@ -1,3 +1,7 @@
+Airbase 5
+
+* Added slf4j-jdk14 to the list of managed dependencies.
+
 Airbase 4
 
 * [BUGFIX] build-airlift profile puts main class and classpath into the main jar.
