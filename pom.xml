@@ -1154,6 +1154,21 @@
             <build>
                 <plugins>
                     <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <configuration>
+                            <rules combine.children="append">
+                                <requireProperty>
+                                  <property>main-class</property>
+                                  <message>The main-class property must be specified when building an airlift tarball.</message>
+                                  <regex>.+</regex>
+                                  <regexMessage>The main-class property can not be empty.</regexMessage>
+                                </requireProperty>
+                            </rules>
+                        </configuration>
+                    </plugin>
+
+                    <plugin>
                         <artifactId>maven-assembly-plugin</artifactId>
                         <configuration>
                             <appendAssemblyId>false</appendAssemblyId>
