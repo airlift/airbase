@@ -1,5 +1,8 @@
 Airbase 5
 
+* Updated pmd plugin to 3.0.1 from 3.0
+* Updated dependency plugin to 2.7 from 2.6
+* Added rule to enforce main class property being present when building airlift package.
 * Added slf4j-jdk14 to the list of managed dependencies.
 
 Airbase 4

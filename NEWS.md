@@ -1,3 +1,7 @@
+Airbase 5
+
+* Maintenance release
+
 Airbase 4
 
 * Bug fix release (fixes a problem with the airlift packaging build)
