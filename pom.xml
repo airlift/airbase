@@ -11,7 +11,7 @@
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
     <packaging>pom</packaging>
-    <version>5-SNAPSHOT</version>
+    <version>5</version>
     <name>airbase</name>
     <description>airlift parent pom</description>
 
