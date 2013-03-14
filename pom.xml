@@ -273,6 +273,16 @@
                                     <exclude>com.google.code.findbugs:jsr305</exclude>
                                     <!-- Use the official version at javax.servlet:javax.servlet-api -->
                                     <exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
+                                    <!-- Renamed airlift modules -->
+                                    <exclude>io.airlift:discovery-experimental</exclude>
+                                    <exclude>io.airlift:event-experimental</exclude>
+                                    <exclude>io.airlift:http-client-experimental</exclude>
+                                    <exclude>io.airlift:jmx-http-experimental</exclude>
+                                    <exclude>io.airlift:jmx-http-rpc-experimental</exclude>
+                                    <exclude>io.airlift:rack-experimental</exclude>
+                                    <exclude>io.airlift:rack-launcher-experimental</exclude>
+                                    <exclude>io.airlift:rack-packaging-experimental</exclude>
+                                    <exclude>io.airlift:rack-server-base-experimental</exclude>
                                 </excludes>
                                 <includes>
                                     <!-- whitelist the well numbered guava releases -->

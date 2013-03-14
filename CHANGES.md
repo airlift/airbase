@@ -1,3 +1,7 @@
+Airbase 6
+
+* Ban former experimental airlift modules
+
 Airbase 5
 
 * Updated pmd plugin to 3.0.1 from 3.0
