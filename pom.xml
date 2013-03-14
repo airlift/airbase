@@ -101,7 +101,7 @@
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
 
         <!-- Packaging for the tarball deployment -->
-        <dep.packaging.version>0.70</dep.packaging.version>
+        <dep.packaging.version>0.71</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>3.0</dep.guice.version>
@@ -292,7 +292,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.7-SNAPSHOT</version>
+                    <version>2.7</version>
                     <configuration>
                         <skip>${air.check.skip-dependency}</skip>
                         <failOnWarning>${air.check.fail-dependency}</failOnWarning>
@@ -593,7 +593,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.0</version>
+                    <version>3.0.1</version>
                     <configuration>
                         <skip>${air.check.skip-pmd}</skip>
                         <failOnViolation>${air.check.fail-pmd}</failOnViolation>
