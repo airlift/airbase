@@ -252,8 +252,7 @@
                         <rules>
                             <!-- The following dependencies are hazardous for builds. -->
                             <bannedDependencies>
-                                <!-- See http://www.sonatype.com/people/2007/06/how-to-merge-sub-items-from-parent-pom-to-child-pom-in-a-maven-plugin-configuration-2/ for details... -->
-                                <excludes combine.children="append">
+                                <excludes>
                                     <!-- clashes with commons-logging:commons-logging -->
                                     <exclude>commons-logging:commons-logging-api</exclude>
                                     <!-- clashes with cglib:cglib-nodep -->
@@ -362,7 +361,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.14</version>
                     <configuration>
-                        <systemPropertyVariables combine.children="append">
+                        <systemPropertyVariables>
                             <file.encoding>${project.build.sourceEncoding}</file.encoding>
                             <sun.jnu.encoding>${project.build.sourceEncoding}</sun.jnu.encoding>
                             <user.timezone>UTC</user.timezone>
@@ -505,7 +504,7 @@
                     <configuration>
                         <skip>${air.check.skip-duplicate-finder}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-duplicate-finder}</failBuildInCaseOfConflict>
-                        <exceptions combine.children="append">
+                        <exceptions>
                             <!-- Well done, Apache... -->
                             <exception>
                                 <conflictingDependencies>
@@ -546,13 +545,13 @@
                             </exception>
                         </exceptions>
                         <!-- Ruby is hopeless -->
-                        <ignoredDependencies combine.children="append">
+                        <ignoredDependencies>
                             <dependency>
                                 <groupId>org.jruby</groupId>
                                 <artifactId>jruby-complete</artifactId>
                             </dependency>
                         </ignoredDependencies>
-                        <ignoredResources combine.children="append">
+                        <ignoredResources>
                             <ignoredResource>.*\.html</ignoredResource>
                             <ignoredResource>META-INF/.*</ignoredResource>
                             <ignoredResource>about_files/.*</ignoredResource>
