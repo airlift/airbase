@@ -30,8 +30,8 @@
         <connection>scm:git:git@github.com/airlift/${project.artifactId}.git</connection>
         <developerConnection>scm:git:git@github.com:airlift/${project.artifactId}.git</developerConnection>
         <url>https://github.com/airlift/${project.artifactId}</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <developers>
     </developers>
@@ -360,7 +360,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.13</version>
+                    <version>2.14</version>
                     <configuration>
                         <systemPropertyVariables combine.children="append">
                             <file.encoding>${project.build.sourceEncoding}</file.encoding>
@@ -376,7 +376,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.2.2</version>
+                    <version>2.3.2</version>
                     <configuration>
                         <releaseProfiles>oss-release</releaseProfiles>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
@@ -386,6 +386,8 @@
                         <preparationGoals>clean install</preparationGoals>
                         <tagNameFormat>@{project.version}</tagNameFormat>
                         <useReleaseProfile>false</useReleaseProfile>
+                        <goals>deploy</goals>
+                        <arguments combine.self="override" />
                     </configuration>
                 </plugin>
 
@@ -757,8 +759,8 @@
             </plugin>
 
             <plugin>
-              <groupId>com.github.koraktor</groupId>
-              <artifactId>mavanagaiata</artifactId>
+                <groupId>com.github.koraktor</groupId>
+                <artifactId>mavanagaiata</artifactId>
             </plugin>
 
             <plugin>
@@ -1127,6 +1129,7 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
                     </plugin>
+                    <!-- Sign artifacts using gpg for oss upload -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
@@ -1169,10 +1172,10 @@
                         <configuration>
                             <rules combine.children="append">
                                 <requireProperty>
-                                  <property>main-class</property>
-                                  <message>The main-class property must be specified when building an airlift tarball.</message>
-                                  <regex>.+</regex>
-                                  <regexMessage>The main-class property can not be empty.</regexMessage>
+                                    <property>main-class</property>
+                                    <message>The main-class property must be specified when building an airlift tarball.</message>
+                                    <regex>.+</regex>
+                                    <regexMessage>The main-class property can not be empty.</regexMessage>
                                 </requireProperty>
                             </rules>
                         </configuration>

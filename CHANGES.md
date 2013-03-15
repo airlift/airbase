@@ -1,6 +1,9 @@
 Airbase 6
 
 * Ban former experimental airlift modules
+* Updated release plugin from 2.2.2 to 2.3.2
+* Updated surefire plugin from 2.13 to 2.14
+* set goal and arguments for release plugin
 
 Airbase 5
 
