@@ -620,9 +620,9 @@
                             <excludeRoot>target/generated-sources/stubs</excludeRoot>
                         </excludeRoots>
                         <rulesets>
-                            <ruleset>/rulesets/basic.xml</ruleset>
-                            <ruleset>/rulesets/clone.xml</ruleset>
-                            <ruleset>/rulesets/finalizers.xml</ruleset>
+                            <ruleset>/rulesets/java/basic.xml</ruleset>
+                            <ruleset>/rulesets/java/clone.xml</ruleset>
+                            <ruleset>/rulesets/java/finalizers.xml</ruleset>
                         </rulesets>
                     </configuration>
                     <executions>
