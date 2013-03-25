@@ -1,5 +1,8 @@
 Airbase 6
 
+* Ban all old 'experimental' modules, so this release will no longer
+  work with any airlift versions before 0.74
+
 Airbase 5
 
 * Maintenance release
