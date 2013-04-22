@@ -1,3 +1,7 @@
+Airbase 7
+
+* Remove erroneous git commit info from jar versions
+
 Airbase 6
 
 * Dependency updates:
