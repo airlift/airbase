@@ -1,3 +1,7 @@
+Airbase 7
+
+* Disable mavanagaiata plugin
+
 Airbase 6
 
 * Ban all old 'experimental' modules, so this release will no longer

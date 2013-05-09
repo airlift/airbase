@@ -1,6 +1,7 @@
 Airbase 7
 
 * Remove erroneous git commit info from jar versions
+* Disable mavanagaiata plugin
 
 Airbase 6
 
