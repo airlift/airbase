@@ -181,20 +181,6 @@
                                         <ignore />
                                     </action>
                                 </pluginExecution>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>com.github.koraktor</groupId>
-                                        <artifactId>mavanagaiata</artifactId>
-                                        <versionRange>[0,)</versionRange>
-                                        <goals>
-                                            <goal>commit</goal>
-                                            <goal>branch</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore />
-                                    </action>
-                                </pluginExecution>
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
                     </configuration>
@@ -408,32 +394,6 @@
                             <phase>verify</phase>
                             <goals>
                                 <goal>jar</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-
-                <!-- the mavanagaiata plugin provides information from a git build -->
-                <!-- to the generated artifacts. -->
-                <plugin>
-                    <groupId>com.github.koraktor</groupId>
-                    <artifactId>mavanagaiata</artifactId>
-                    <version>0.5.0</version>
-                    <configuration>
-                        <!-- use a grepable timestamp format -->
-                        <dateFormat>yyyyMMddHHmmssZ</dateFormat>
-                        <!-- don't run the plugin if no git repo is present -->
-                        <skipNoGit>true</skipNoGit>
-                        <!-- disable the plugin by default -->
-                        <skip>true</skip>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>default</id>
-                            <phase>validate</phase>
-                            <goals>
-                                <goal>commit</goal>
-                                <goal>branch</goal>
                             </goals>
                         </execution>
                     </executions>
@@ -751,11 +711,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>com.github.koraktor</groupId>
-                <artifactId>mavanagaiata</artifactId>
             </plugin>
 
             <plugin>
