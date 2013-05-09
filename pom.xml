@@ -424,6 +424,8 @@
                         <dateFormat>yyyyMMddHHmmssZ</dateFormat>
                         <!-- don't run the plugin if no git repo is present -->
                         <skipNoGit>true</skipNoGit>
+                        <!-- disable the plugin by default -->
+                        <skip>true</skip>
                     </configuration>
                     <executions>
                         <execution>
