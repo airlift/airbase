@@ -461,13 +461,6 @@
                                 <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                                 <addClasspath>false</addClasspath>
                             </manifest>
-                            <manifestEntries>
-                                <!-- override Implementation-Version to include git commit info -->
-                                <!-- (requires mavanagaiata plugin) -->
-                                <Implementation-Version>
-                                    ${project.version}-${mvngit.commit.id}-${mvngit.branch}-${mvngit.commit.committer.date}
-                                </Implementation-Version>
-                            </manifestEntries>
                         </archive>
                     </configuration>
                 </plugin>
