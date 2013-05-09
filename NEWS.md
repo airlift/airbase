@@ -1,6 +1,6 @@
 Airbase 7
 
-* Disable mavanagaiata plugin
+* Remove mavanagaiata plugin
 
 Airbase 6
 
