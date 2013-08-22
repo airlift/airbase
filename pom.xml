@@ -102,7 +102,7 @@
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
 
         <!-- Packaging for the tarball deployment -->
-        <dep.packaging.version>0.71</dep.packaging.version>
+        <dep.packaging.version>0.79-SNAPSHOT</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>3.0</dep.guice.version>
@@ -1103,12 +1103,25 @@
                 </file>
             </activation>
 
+            <properties>
+                <process-name>${artifactId}</process-name>
+            </properties>
+
             <dependencies>
                 <dependency>
                     <groupId>io.airlift</groupId>
                     <artifactId>launcher</artifactId>
                     <version>${dep.packaging.version}</version>
                     <classifier>bin</classifier>
+                    <type>tar.gz</type>
+                    <scope>runtime</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>io.airlift</groupId>
+                    <artifactId>launcher</artifactId>
+                    <version>${dep.packaging.version}</version>
+                    <classifier>properties</classifier>
                     <type>tar.gz</type>
                     <scope>runtime</scope>
                 </dependency>
@@ -1147,7 +1160,6 @@
                                 <version>${dep.packaging.version}</version>
                             </dependency>
                         </dependencies>
-
                         <executions>
                             <execution>
                                 <id>package</id>
@@ -1159,19 +1171,6 @@
                         </executions>
                     </plugin>
 
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-jar-plugin</artifactId>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <mainClass>${main-class}</mainClass>
-                                    <addClasspath>true</addClasspath>
-                                    <useUniqueVersions>false</useUniqueVersions>
-                                </manifest>
-                            </archive>
-                        </configuration>
-                    </plugin>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>build-helper-maven-plugin</artifactId>
