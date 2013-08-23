@@ -1104,7 +1104,7 @@
             </activation>
 
             <properties>
-                <process-name>${artifactId}</process-name>
+                <process-name>${project.artifactId}</process-name>
             </properties>
 
             <dependencies>
