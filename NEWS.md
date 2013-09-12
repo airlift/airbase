@@ -1,3 +1,14 @@
+Airbase 9
+
+* Update airlift version to avoid launcher bug. If you are using
+  airbase 8 and the default version of airlift packaging, then you
+  should upgrade to this version.
+
+Airbase 8
+
+* Update build-airlift for launcher rewrite. This requires
+  dep.packaging.version to be at least 0.79.
+
 Airbase 7
 
 * Remove mavanagaiata plugin

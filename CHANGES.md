@@ -1,3 +1,11 @@
+Airbase 9
+
+* Update airlift version to 0.80 to avoid launcher bug
+
+Airbase 8
+
+* Update build-airlift for launcher rewrite
+
 Airbase 7
 
 * Remove erroneous git commit info from jar versions
