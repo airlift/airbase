@@ -12,6 +12,7 @@
     <artifactId>airbase</artifactId>
     <packaging>pom</packaging>
     <version>10-SNAPSHOT</version>
+
     <name>airbase</name>
     <description>airlift parent pom</description>
     <url>https://github.com/airlift/airbase/</url>
@@ -123,6 +124,11 @@
         <dep.hamcrest.version>1.3</dep.hamcrest.version>
         <dep.mockito.version>1.9.5</dep.mockito.version>
         <dep.objenesis.version>1.3</dep.objenesis.version>
+
+        <!-- license headers -->
+        <air.license.owner>${project.organization.name}</air.license.owner>
+        <air.license.default-value>Copyright (C) ${project.inceptionYear} ${air.license.owner}</air.license.default-value>
+        <air.license.ensure-match>Copyright \(C\) \d{4} .+</air.license.ensure-match>
     </properties>
 
     <prerequisites>
@@ -592,9 +598,9 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>com.mycila.maven-license-plugin</groupId>
-                    <artifactId>maven-license-plugin</artifactId>
-                    <version>1.10.b1</version>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>2.3</version>
                     <configuration>
                         <skip>${air.check.skip-license}</skip>
                         <skipExistingHeaders>true</skipExistingHeaders>
@@ -609,8 +615,8 @@
                         <headerSections>
                             <headerSection>
                                 <key>COPYRIGHT_SECTION</key>
-                                <defaultValue>Copyright (C) ${project.inceptionYear} Some Dude, Inc.</defaultValue>
-                                <ensureMatch>Copyright \(C\) \d{4} .+</ensureMatch>
+                                <defaultValue>${air.license.default-value}</defaultValue>
+                                <ensureMatch>${air.license.ensure-match}</ensureMatch>
                                 <multiLineMatch>false</multiLineMatch>
                             </headerSection>
                         </headerSections>
@@ -624,19 +630,21 @@
                             <exclude>**/*.sh</exclude>
                             <exclude>**/*.txt</exclude>
                             <exclude>**/*.thrift</exclude>
-                            <exclude>**/*.g</exclude>
                             <exclude>**/*.releaseBackup</exclude>
                             <exclude>**/*.st</exclude>
                             <exclude>**/*.raw</exclude>
                             <exclude>**/*.ser</exclude>
                             <exclude>**/*.html</exclude>
-                            <exclude>**/config.properties</exclude>
-                            <exclude>**/log.properties</exclude>
-                            <exclude>**/src/license/**.txt</exclude>
+                            <exclude>**/*.rst</exclude>
+                            <exclude>**/*.xml</exclude>
+                            <exclude>**/*.csv</exclude>
+                            <exclude>**/*.tsv</exclude>
+                            <exclude>**/*.properties</exclude>
+                            <exclude>**/src/license/**</exclude>
+                            <exclude>**/src/*/resources/**</exclude>
                         </excludes>
                         <includes>
                             <include>src/**</include>
-                            <include>**/pom.xml</include>
                         </includes>
                     </configuration>
                     <executions>
@@ -769,8 +777,8 @@
             </plugin>
 
             <plugin>
-                <groupId>com.mycila.maven-license-plugin</groupId>
-                <artifactId>maven-license-plugin</artifactId>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
             </plugin>
 
             <plugin>
