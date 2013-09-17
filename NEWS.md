@@ -1,3 +1,7 @@
+Airbase 10
+
+* The license header checker is now configurable via properties
+
 Airbase 9
 
 * Update airlift version to avoid launcher bug. If you are using
