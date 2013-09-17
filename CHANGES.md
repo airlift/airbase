@@ -1,3 +1,7 @@
+Airbase 10
+
+* Update license plugin to 2.3
+
 Airbase 9
 
 * Update airlift version to 0.80 to avoid launcher bug
