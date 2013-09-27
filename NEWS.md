@@ -1,3 +1,7 @@
+Airbase 11
+
+* Run checks in the earliest possible phase
+
 Airbase 10
 
 * The license header checker is now configurable via properties

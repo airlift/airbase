@@ -232,7 +232,7 @@
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>verify</phase>
+                            <phase>validate</phase>
                             <goals>
                                 <goal>enforce</goal>
                             </goals>
@@ -303,7 +303,7 @@
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>verify</phase>
+                            <phase>process-test-classes</phase>
                             <goals>
                                 <goal>analyze-only</goal>
                                 <goal>analyze-duplicate</goal>
@@ -389,7 +389,6 @@
                     <version>2.9</version>
                     <configuration>
                         <source>${project.build.targetJdk}</source>
-                        <target>${project.build.targetJdk}</target>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmemory>${air.build.jvmsize}</maxmemory>
                         <additionalparam>-quiet</additionalparam>
@@ -457,7 +456,7 @@
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>verify</phase>
+                            <phase>process-test-classes</phase>
                             <goals>
                                 <goal>check</goal>
                             </goals>
@@ -530,12 +529,11 @@
                     <configuration>
                         <skip>${air.check.skip-dependency-version-check}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-dependency-version-check}</failBuildInCaseOfConflict>
-                        <failOnWarning>${air.check.fail-dependency-version-check}</failOnWarning>
                     </configuration>
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>verify</phase>
+                            <phase>validate</phase>
                             <goals>
                                 <goal>check</goal>
                             </goals>
@@ -549,7 +547,7 @@
                     <version>2.5.2</version>
                     <configuration>
                         <skip>${air.check.skip-findbugs}</skip>
-                        <jvmargs>-Xmx${air.build.jvmsize}</jvmargs>
+                        <jvmArgs>-Xmx${air.build.jvmsize}</jvmArgs>
                         <failOnError>${air.check.fail-findbugs}</failOnError>
                     </configuration>
                     <executions>
@@ -651,7 +649,7 @@
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>verify</phase>
+                            <phase>validate</phase>
                             <goals>
                                 <goal>check</goal>
                             </goals>

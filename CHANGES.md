@@ -1,3 +1,7 @@
+Airlift 11
+
+* Run checks in the earliest possible phase
+
 Airbase 10
 
 * Update license plugin to 2.3
