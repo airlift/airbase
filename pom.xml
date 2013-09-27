@@ -389,7 +389,6 @@
                     <version>2.9</version>
                     <configuration>
                         <source>${project.build.targetJdk}</source>
-                        <target>${project.build.targetJdk}</target>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmemory>${air.build.jvmsize}</maxmemory>
                         <additionalparam>-quiet</additionalparam>
@@ -530,7 +529,6 @@
                     <configuration>
                         <skip>${air.check.skip-dependency-version-check}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-dependency-version-check}</failBuildInCaseOfConflict>
-                        <failOnWarning>${air.check.fail-dependency-version-check}</failOnWarning>
                     </configuration>
                     <executions>
                         <execution>
@@ -549,7 +547,7 @@
                     <version>2.5.2</version>
                     <configuration>
                         <skip>${air.check.skip-findbugs}</skip>
-                        <jvmargs>-Xmx${air.build.jvmsize}</jvmargs>
+                        <jvmArgs>-Xmx${air.build.jvmsize}</jvmArgs>
                         <failOnError>${air.check.fail-findbugs}</failOnError>
                     </configuration>
                     <executions>
