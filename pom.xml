@@ -187,6 +187,53 @@
                                         <ignore />
                                     </action>
                                 </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.mycila</groupId>
+                                        <artifactId>
+                                            license-maven-plugin
+                                        </artifactId>
+                                        <versionRange>[0,)</versionRange>
+                                        <goals>
+                                            <goal>check</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.ning.maven.plugins</groupId>
+                                        <artifactId>
+                                            maven-duplicate-finder-plugin
+                                        </artifactId>
+                                        <versionRange>[0,)</versionRange>
+                                        <goals>
+                                            <goal>check</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>
+                                            maven-dependency-plugin
+                                        </artifactId>
+                                        <versionRange>[0,)</versionRange>
+                                        <goals>
+                                            <goal>analyze-dep-mgt</goal>
+                                            <goal>analyze-duplicate</goal>
+                                            <goal>analyze-only</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
                     </configuration>
