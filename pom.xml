@@ -108,8 +108,8 @@
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>3.0</dep.guice.version>
         <dep.guava.version>15.0</dep.guava.version>
-        <dep.slf4j.version>1.7.2</dep.slf4j.version>
-        <dep.logback.version>1.0.9</dep.logback.version>
+        <dep.slf4j.version>1.7.5</dep.slf4j.version>
+        <dep.logback.version>1.0.13</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
         <dep.javax-validation.version>1.0.0.GA</dep.javax-validation.version>
         <dep.javax-servlet.version>3.0.1</dep.javax-servlet.version>
