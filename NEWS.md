@@ -1,3 +1,7 @@
+Airbase 13
+
+* Update airlift packaging version to avoid launcher bug
+
 Airbase 12
 
 * Fix building in Eclipse
