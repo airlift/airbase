@@ -1,3 +1,13 @@
+Airbase 13
+
+* Update airlift version to 0.82 to avoid launcher bug
+* Remove parameters from SCM configuration
+* Dependency updates:
+ - Guava 15.0 (from 14.0.1)
+ - slf4j 1.7.5 (from 1.7.2)
+ - logback 1.0.13 (from 1.0.8)
+ - validation-api 1.1.0.Final (from 1.0.0.GA)
+
 Airbase 12
 
 * Fix building in Eclipse

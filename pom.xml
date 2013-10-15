@@ -10,32 +10,32 @@
 
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <packaging>pom</packaging>
     <version>13-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <name>airbase</name>
-    <description>airlift parent pom</description>
+    <description>Base POM for Airlift</description>
     <url>https://github.com/airlift/airbase/</url>
 
     <inceptionYear>2013</inceptionYear>
 
     <licenses>
         <license>
-            <name>Apache 2</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
             <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com/airlift/${project.artifactId}.git</connection>
-        <developerConnection>scm:git:git@github.com:airlift/${project.artifactId}.git</developerConnection>
-        <url>https://github.com/airlift/${project.artifactId}</url>
+        <connection>scm:git:git@github.com/airlift/airbase.git</connection>
+        <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
+        <url>https://github.com/airlift/airbase</url>
         <tag>HEAD</tag>
     </scm>
 
     <developers>
+        <!-- see git log -->
     </developers>
 
     <properties>
@@ -103,15 +103,15 @@
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
 
         <!-- Packaging for the tarball deployment -->
-        <dep.packaging.version>0.80</dep.packaging.version>
+        <dep.packaging.version>0.82</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>3.0</dep.guice.version>
-        <dep.guava.version>14.0.1</dep.guava.version>
-        <dep.slf4j.version>1.7.2</dep.slf4j.version>
-        <dep.logback.version>1.0.9</dep.logback.version>
+        <dep.guava.version>15.0</dep.guava.version>
+        <dep.slf4j.version>1.7.5</dep.slf4j.version>
+        <dep.logback.version>1.0.13</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
-        <dep.javax-validation.version>1.0.0.GA</dep.javax-validation.version>
+        <dep.javax-validation.version>1.1.0.Final</dep.javax-validation.version>
         <dep.javax-servlet.version>3.0.1</dep.javax-servlet.version>
         <dep.apache-bval.version>0.5</dep.apache-bval.version>
         <dep.jersey.version>1.17.1</dep.jersey.version>
