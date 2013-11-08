@@ -1,3 +1,10 @@
+Airbase 14
+
+* Dependency updates:
+ - findbugs-annotations 2.0.2 (from 2.0.1)
+ - jmxutils 1.14 (from 1.13)
+
+
 Airbase 13
 
 * Update airlift version to 0.82 to avoid launcher bug
