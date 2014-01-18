@@ -1,9 +1,9 @@
 Airbase 14
 
+* Remove dependency ban for junit 4.11+
 * Dependency updates:
  - findbugs-annotations 2.0.2 (from 2.0.1)
  - jmxutils 1.14 (from 1.13)
-
 
 Airbase 13
 
