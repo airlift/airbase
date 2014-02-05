@@ -5,6 +5,7 @@ Airbase 14
  - findbugs-annotations 2.0.2 (from 2.0.1)
  - jmxutils 1.14 (from 1.13)
  - testng 6.8.7 (from 6.8)
+ - guava 16.0.1 (from 15.0)
 
 Airbase 13
 
