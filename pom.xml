@@ -107,7 +107,7 @@
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>3.0</dep.guice.version>
-        <dep.guava.version>15.0</dep.guava.version>
+        <dep.guava.version>16.0.1</dep.guava.version>
         <dep.slf4j.version>1.7.5</dep.slf4j.version>
         <dep.logback.version>1.0.13</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
@@ -120,7 +120,7 @@
         <dep.cglib.version>2.2.2</dep.cglib.version>
         <dep.joda.version>2.1</dep.joda.version>
         <dep.findbugs-annotations.version>2.0.2</dep.findbugs-annotations.version>
-        <dep.testng.version>6.8</dep.testng.version>
+        <dep.testng.version>6.8.7</dep.testng.version>
         <dep.hamcrest.version>1.3</dep.hamcrest.version>
         <dep.mockito.version>1.9.5</dep.mockito.version>
         <dep.objenesis.version>1.3</dep.objenesis.version>
