@@ -1,5 +1,6 @@
 Airbase 14
 
+* Set memory size for compiler by enabling fork mode
 * Remove dependency ban for junit 4.11+
 * Dependency updates:
  - findbugs-annotations 2.0.2 (from 2.0.1)
