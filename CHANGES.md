@@ -1,3 +1,7 @@
+Airbase 15
+
+* Set minimum Maven version to 3.1.1
+
 Airbase 14
 
 * Set memory size for compiler by enabling fork mode
