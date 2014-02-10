@@ -1,3 +1,7 @@
+Airbase 15
+
+* Maven version 3.1.1 is now required
+
 Airbase 14
 
 * Maintenance release
