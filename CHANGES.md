@@ -1,5 +1,6 @@
 Airbase 16
 
+* Fix dependency checker for Airlift HTTP libraries
 * Add OSS snapshots as a plugin repository
 * Update OSS base POM to 9
 * Update dependency plugin to 2.8 (from 2.7)
