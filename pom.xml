@@ -10,7 +10,7 @@
 
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <version>16-SNAPSHOT</version>
+    <version>16</version>
     <packaging>pom</packaging>
 
     <name>airbase</name>
@@ -31,7 +31,7 @@
         <connection>scm:git:git@github.com/airlift/airbase.git</connection>
         <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
         <url>https://github.com/airlift/airbase</url>
-        <tag>HEAD</tag>
+        <tag>16</tag>
     </scm>
 
     <developers>
