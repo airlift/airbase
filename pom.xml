@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>7</version>
+        <version>9</version>
     </parent>
 
     <groupId>io.airlift</groupId>
@@ -37,6 +37,20 @@
     <developers>
         <!-- see git log -->
     </developers>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <properties>
         <!-- see http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
@@ -112,10 +126,10 @@
         <dep.logback.version>1.0.13</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
         <dep.javax-validation.version>1.1.0.Final</dep.javax-validation.version>
-        <dep.javax-servlet.version>3.0.1</dep.javax-servlet.version>
+        <dep.javax-servlet.version>3.1.0</dep.javax-servlet.version>
         <dep.apache-bval.version>0.5</dep.apache-bval.version>
         <dep.jersey.version>1.17.1</dep.jersey.version>
-        <dep.jetty.version>8.1.9.v20130131</dep.jetty.version>
+        <dep.jetty.version>9.1.2.v20140210</dep.jetty.version>
         <dep.jmxutils.version>1.14</dep.jmxutils.version>
         <dep.cglib.version>2.2.2</dep.cglib.version>
         <dep.joda.version>2.1</dep.joda.version>
@@ -515,6 +529,21 @@
                         <skip>${air.check.skip-duplicate-finder}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-duplicate-finder}</failBuildInCaseOfConflict>
                         <exceptions>
+                            <exception>
+                                <conflictingDependencies>
+                                    <dependency>
+                                        <groupId>io.airlift</groupId>
+                                        <artifactId>http-server</artifactId>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>io.airlift</groupId>
+                                        <artifactId>http-client</artifactId>
+                                    </dependency>
+                                </conflictingDependencies>
+                                <resources>
+                                    <resource>jetty-logging.properties</resource>
+                                </resources>
+                            </exception>
                             <!-- Well done, Apache... -->
                             <exception>
                                 <conflictingDependencies>
