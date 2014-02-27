@@ -1,3 +1,10 @@
+Airbase 16
+
+* Update dependency plugin to 2.8 (from 2.7)
+* Dependency updates:
+ - javax.servlet 3.1.0 (from 3.0.1)
+ - Jetty 9.1.2.v20140210 (from 8.1.9.v20130131)
+
 Airbase 15
 
 * Set minimum Maven version to 3.1.1
