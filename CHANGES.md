@@ -1,5 +1,6 @@
 Airbase 16
 
+* Update OSS base POM to 9
 * Update dependency plugin to 2.8 (from 2.7)
 * Dependency updates:
  - javax.servlet 3.1.0 (from 3.0.1)
