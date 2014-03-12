@@ -1,3 +1,7 @@
+Airbase 17
+
+* Update release plugin to 2.5
+
 Airbase 16
 
 * Fix dependency checker for Airlift HTTP libraries
