@@ -1,3 +1,10 @@
+Airbase 18
+
+* Add dependency for io.airlift:slice:0.5
+* Dependency updates:
+  - jmxutils 1.16 (from 1.14)
+  - Jetty 9.1.3.v20140225 (from 9.1.2.v20140210)
+
 Airbase 17
 
 * Update release plugin to 2.5
