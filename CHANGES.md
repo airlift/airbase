@@ -1,3 +1,8 @@
+Airbase 19
+
+* Dependency updates:
+  - Jetty 9.1.4.v20140401 (from Jetty 9.1.3.v20140225)
+
 Airbase 18
 
 * Add dependency for io.airlift:slice:0.5
