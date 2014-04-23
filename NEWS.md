@@ -1,3 +1,23 @@
+Airbase 20
+
+* Maintenance release
+
+Airbase 19
+
+* Maintenance release
+
+Airbase 18
+
+* Maintenance release
+
+Airbase 17
+
+* Maintenance release
+
+Airbase 16
+
+* Maintenance release
+
 Airbase 15
 
 * Maven version 3.1.1 is now required

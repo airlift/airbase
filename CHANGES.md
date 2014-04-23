@@ -1,3 +1,7 @@
+Airbase 20
+
+* Add dependencies for jetty-client and jetty-io
+
 Airbase 19
 
 * Dependency updates:
