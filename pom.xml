@@ -597,6 +597,7 @@
                             <ignoredResource>about_files/.*</ignoredResource>
                             <ignoredResource>plugin\.properties</ignoredResource>
                             <ignoredResource>.*\.java</ignoredResource>
+                            <ignoredResource>THIRD-PARTY</ignoredResource>
                         </ignoredResources>
                     </configuration>
                 </plugin>
