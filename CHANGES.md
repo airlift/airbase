@@ -1,3 +1,7 @@
+Airbase 21
+
+* Ignore conflicting THIRD-PARTY in resources
+
 Airbase 20
 
 * Add dependencies for jetty-client and jetty-io
