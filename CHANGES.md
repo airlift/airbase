@@ -1,3 +1,10 @@
+Airbase 22
+
+* Dependency updates:
+  - jmxutils 1.18 (from 1.16)
+  - slice 0.6 (from 0.5)
+  - packaging 0.91 (from 0.82)
+
 Airbase 21
 
 * Ignore conflicting THIRD-PARTY in resources
