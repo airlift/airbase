@@ -1,3 +1,8 @@
+Airbase 23
+
+* Dependency updates:
+  - findbugs-annotations 2.0.3 (from 2.0.2)
+
 Airbase 22
 
 * Dependency updates:
