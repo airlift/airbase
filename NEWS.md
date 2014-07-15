@@ -1,3 +1,7 @@
+Airbase 24
+
+* Maintenance release
+
 Airbase 23
 
 * Maintenance release

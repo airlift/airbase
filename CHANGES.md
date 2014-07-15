@@ -1,3 +1,9 @@
+Airbase 24
+
+* Add dependencies for javax.annotation-api and javax.ws.rs-api
+* Dependency updates:
+  - Jersey 2.9.1 (from 1.17.1)
+
 Airbase 23
 
 * Dependency updates:
