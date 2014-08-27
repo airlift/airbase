@@ -1,3 +1,8 @@
+Airbase 25
+
+* Dependency updates:
+  - joda-time 2.4 (from 2.1)
+
 Airbase 24
 
 * Add dependencies for javax.annotation-api and javax.ws.rs-api
