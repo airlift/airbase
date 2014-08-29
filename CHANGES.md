@@ -1,3 +1,10 @@
+Airbase 26
+
+* Dependency updates:
+  - Jetty 9.2.2.v20140723 (from 9.1.4.v20140401)
+  - Jersey 2.12 (from 2.9.1)
+  - Jackson 2.4.2 (from 2.1.4 and 2.1.2)
+
 Airbase 25
 
 * Dependency updates:
