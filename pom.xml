@@ -128,6 +128,7 @@
         <dep.javax-validation.version>1.1.0.Final</dep.javax-validation.version>
         <dep.javax-servlet.version>3.1.0</dep.javax-servlet.version>
         <dep.apache-bval.version>0.5</dep.apache-bval.version>
+        <dep.jackson.version>2.4.2</dep.jackson.version>
         <dep.jersey.version>2.12</dep.jersey.version>
         <dep.jetty.version>9.2.2.v20140723</dep.jetty.version>
         <dep.jmxutils.version>1.18</dep.jmxutils.version>
@@ -1031,37 +1032,37 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>2.1.4</version>
+                <version>${dep.jackson.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
-                <version>2.1.4</version>
+                <version>${dep.jackson.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>2.1.4</version>
+                <version>${dep.jackson.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-guava</artifactId>
-                <version>2.1.2</version>
+                <version>${dep.jackson.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-joda</artifactId>
-                <version>2.1.2</version>
+                <version>${dep.jackson.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.dataformat</groupId>
                 <artifactId>jackson-dataformat-smile</artifactId>
-                <version>2.1.4</version>
+                <version>${dep.jackson.version}</version>
             </dependency>
 
             <!-- jetty -->
