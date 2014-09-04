@@ -710,6 +710,7 @@
                             <exclude>**/*.txt</exclude>
                             <exclude>**/*.thrift</exclude>
                             <exclude>**/*.g</exclude>
+                            <exclude>**/*.sql</exclude>
                             <exclude>**/*.releaseBackup</exclude>
                             <exclude>**/*.st</exclude>
                             <exclude>**/*.raw</exclude>

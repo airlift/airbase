@@ -1,6 +1,7 @@
 Airbase 27
 
 * Set minimum Maven version to 3.2.3
+* Exclude .sql files from license checker
 
 Airbase 26
 
