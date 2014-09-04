@@ -1,5 +1,7 @@
 Airbase 27
 
+* Set minimum Maven version to 3.2.3
+
 Airbase 26
 
 * Dependency updates:
