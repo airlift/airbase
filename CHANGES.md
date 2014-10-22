@@ -1,3 +1,8 @@
+Airbase 28
+
+* Dependency updates:
+  - Guava 18.0 (from 16.0.1)
+
 Airbase 27
 
 * Set minimum Maven version to 3.2.3
