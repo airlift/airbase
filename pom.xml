@@ -1251,15 +1251,6 @@
                     <type>tar.gz</type>
                     <scope>runtime</scope>
                 </dependency>
-
-                <dependency>
-                    <groupId>io.airlift</groupId>
-                    <artifactId>launcher</artifactId>
-                    <version>${dep.packaging.version}</version>
-                    <classifier>properties</classifier>
-                    <type>tar.gz</type>
-                    <scope>runtime</scope>
-                </dependency>
             </dependencies>
 
             <build>
