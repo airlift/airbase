@@ -1,3 +1,8 @@
+Airbase 29
+
+* Dependency updates:
+  - maven-dependency-plugin 2.9 (from 2.8). This version is compatible with Java 8
+
 Airbase 28
 
 * Dependency updates:
