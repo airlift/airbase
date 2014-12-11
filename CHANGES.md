@@ -1,3 +1,9 @@
+Airbase 30
+
+* Add dependency for jackson-datatype-jdk8
+* Dependency updates:
+  - Jackson 2.4.4 (from 2.4.2)
+
 Airbase 29
 
 * Dependency updates:

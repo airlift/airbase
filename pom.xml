@@ -128,7 +128,7 @@
         <dep.javax-validation.version>1.1.0.Final</dep.javax-validation.version>
         <dep.javax-servlet.version>3.1.0</dep.javax-servlet.version>
         <dep.apache-bval.version>0.5</dep.apache-bval.version>
-        <dep.jackson.version>2.4.2</dep.jackson.version>
+        <dep.jackson.version>2.4.4</dep.jackson.version>
         <dep.jersey.version>2.12</dep.jersey.version>
         <dep.jetty.version>9.2.2.v20140723</dep.jetty.version>
         <dep.jmxutils.version>1.18</dep.jmxutils.version>
@@ -1062,6 +1062,12 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
+                <version>${dep.jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jdk8</artifactId>
                 <version>${dep.jackson.version}</version>
             </dependency>
 
