@@ -409,7 +409,7 @@ These are default properties that affect some aspects of the build. All of them 
 
 ## project.build.targetJdk
 
-By default, Airbase enforces JDK 1.7. To use another version, add
+By default, Airbase enforces JDK 1.8. To use another version, add
 
 ```xml
 <properties>

@@ -1,5 +1,6 @@
 Airbase 30
 
+* Use Java 8 by default
 * Add dependencies:
   - jackson-datatype-jdk8
   - jackson-datatype-jsr310
