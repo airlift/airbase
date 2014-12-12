@@ -1,6 +1,9 @@
 Airbase 30
 
-* Add dependency for jackson-datatype-jdk8
+* Add dependencies:
+  - jackson-datatype-jdk8
+  - jackson-datatype-jsr310
+  - jackson-module-parameter-names
 * Dependency updates:
   - Jackson 2.4.4 (from 2.4.2)
 
