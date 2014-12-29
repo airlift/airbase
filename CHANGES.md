@@ -1,3 +1,7 @@
+Airbase 31
+
+* Fix dependency jackson-module-parameter-names
+
 Airbase 30
 
 * Use Java 8 by default

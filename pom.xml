@@ -1066,7 +1066,7 @@
             </dependency>
 
             <dependency>
-                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <groupId>com.fasterxml.jackson.module</groupId>
                 <artifactId>jackson-module-parameter-names</artifactId>
                 <version>${dep.jackson.version}</version>
             </dependency>
