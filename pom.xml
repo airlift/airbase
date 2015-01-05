@@ -704,6 +704,8 @@
                         <header>${air.main.basedir}/src/license/LICENSE-HEADER.txt</header>
                         <mapping>
                             <java>SLASHSTAR_STYLE</java>
+                            <g>SLASHSTAR_STYLE</g>
+                            <g4>SLASHSTAR_STYLE</g4>
                         </mapping>
                         <properties>
                             <inceptionYear>${project.inceptionYear}</inceptionYear>
@@ -726,7 +728,6 @@
                             <exclude>**/*.sh</exclude>
                             <exclude>**/*.txt</exclude>
                             <exclude>**/*.thrift</exclude>
-                            <exclude>**/*.g</exclude>
                             <exclude>**/*.sql</exclude>
                             <exclude>**/*.releaseBackup</exclude>
                             <exclude>**/*.st</exclude>

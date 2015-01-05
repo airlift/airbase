@@ -1,6 +1,7 @@
 Airbase 31
 
 * Fix dependency jackson-module-parameter-names
+* Add ANTLR files to license checker
 
 Airbase 30
 
