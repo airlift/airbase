@@ -2,6 +2,7 @@ Airbase 32
 
 * Dependency updates:
   - Slice 0.10 (from 0.6)
+  - maven-dependency-plugin 2.10 (from 2.9).
 
 Airbase 31
 
