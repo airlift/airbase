@@ -1,3 +1,8 @@
+Airbase 32
+
+* Dependency updates:
+  - Slice 0.10 (from 0.6)
+
 Airbase 31
 
 * Fix dependency jackson-module-parameter-names
