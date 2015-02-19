@@ -1,3 +1,8 @@
+Airbase 33
+
+* Dependency updates:
+  - Jetty 9.2.8.v20150217 (from 9.2.2.v20140723)
+
 Airbase 32
 
 * Dependency updates:
