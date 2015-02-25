@@ -1,3 +1,8 @@
+Airbase 34
+
+* Dependency updates:
+  - Guice 4.0-beta5 (from 3.0)
+
 Airbase 33
 
 * Dependency updates:

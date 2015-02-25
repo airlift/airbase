@@ -120,7 +120,7 @@
         <dep.packaging.version>0.91</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
-        <dep.guice.version>3.0</dep.guice.version>
+        <dep.guice.version>4.0-beta5</dep.guice.version>
         <dep.guava.version>18.0</dep.guava.version>
         <dep.slf4j.version>1.7.5</dep.slf4j.version>
         <dep.logback.version>1.0.13</dep.logback.version>
