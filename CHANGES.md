@@ -1,6 +1,11 @@
 Airbase 35
 
 * Dependency updates:
+  - Jetty 9.2.11.M0 (from 9.2.10.v20150310)
+
+Airbase 35
+
+* Dependency updates:
   - Jetty 9.2.10.v20150310 (from 9.2.8.v20150217)
 
 Airbase 34
