@@ -1,4 +1,8 @@
-Airbase 35
+Airbase 37
+
+* Capture Git versioning information in jar manifest.
+
+Airbase 36
 
 * Dependency updates:
   - Jetty 9.2.11.M0 (from 9.2.10.v20150310)
