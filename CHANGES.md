@@ -1,6 +1,8 @@
 Airbase 37
 
 * Capture Git versioning information in jar manifest.
+* Time zone, parallel and thread count can be configured for Surefire.
+* Improve JDK logging format used when running tests.
 
 Airbase 36
 
