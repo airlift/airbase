@@ -10,7 +10,7 @@
 
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <version>37-SNAPSHOT</version>
+    <version>37</version>
     <packaging>pom</packaging>
 
     <name>airbase</name>
@@ -31,7 +31,7 @@
         <connection>scm:git:git@github.com/airlift/airbase.git</connection>
         <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
         <url>https://github.com/airlift/airbase</url>
-        <tag>HEAD</tag>
+        <tag>37</tag>
     </scm>
 
     <developers>
@@ -75,7 +75,7 @@
         <air.test.thread-count>1</air.test.thread-count>
 
         <!-- define the parallel mode for tests. Must be 'methods' for TestNG. -->
-        <air.test.parallel/>
+        <air.test.parallel />
 
         <!-- define the JVM timezone to use when running tests. Default is 'UTC. -->
         <air.test.timezone>UTC</air.test.timezone>
