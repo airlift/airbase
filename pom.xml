@@ -83,6 +83,9 @@
         <!-- define the JVM size for forked tests. Defaults to build JVM size. -->
         <air.test.jvmsize>${air.build.jvmsize}</air.test.jvmsize>
 
+        <!-- Lint mode for Javadoc. Defaults to 'all'. -->
+        <air.javadoc.lint>all</air.javadoc.lint>
+
         <!-- Controls all the checkers run when building the project.            -->
         <!-- Can be activated with -Dair.check.skip-all=true on the command line. -->
         <air.check.skip-all>false</air.check.skip-all>
@@ -493,10 +496,11 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.9</version>
                     <configuration>
+                        <quiet>true</quiet>
                         <source>${project.build.targetJdk}</source>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmemory>${air.build.jvmsize}</maxmemory>
-                        <additionalparam>-quiet</additionalparam>
+                        <additionalparam>-Xdoclint:${air.javadoc.lint}</additionalparam>
                     </configuration>
                     <executions>
                         <execution>
