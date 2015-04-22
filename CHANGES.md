@@ -2,6 +2,7 @@ Airbase 38
 
 * JVM size can be configured running tests.
 * Configure lint mode for Javadoc.
+* Add CI profile that builds Javadoc.
 
 Airbase 37
 

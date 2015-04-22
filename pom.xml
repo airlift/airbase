@@ -1318,6 +1318,18 @@
             </build>
         </profile>
 
+        <profile>
+            <id>ci</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
         <!-- ======================================================================== -->
         <!-- =                                                                      = -->
         <!-- = Build a tarball with launcher from a module if .build-airlift        = -->
