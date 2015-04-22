@@ -1,3 +1,7 @@
+Airbase 38
+
+* JVM size can be configured running tests.
+
 Airbase 37
 
 * Capture Git versioning information in jar manifest.

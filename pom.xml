@@ -80,6 +80,9 @@
         <!-- define the JVM timezone to use when running tests. Default is 'UTC. -->
         <air.test.timezone>UTC</air.test.timezone>
 
+        <!-- define the JVM size for forked tests. Defaults to build JVM size. -->
+        <air.test.jvmsize>${air.build.jvmsize}</air.test.jvmsize>
+
         <!-- Controls all the checkers run when building the project.            -->
         <!-- Can be activated with -Dair.check.skip-all=true on the command line. -->
         <air.check.skip-all>false</air.check.skip-all>
@@ -456,6 +459,14 @@
                         <runOrder>random</runOrder>
                         <parallel>${air.test.parallel}</parallel>
                         <threadCount>${air.test.thread-count}</threadCount>
+                        <argLine>
+                            ${argLine}
+                            -Duser.timezone=${air.test.timezone}
+                            -Xmx${air.test.jvmsize}
+                            -Xms${air.test.jvmsize}
+                            -XX:OnOutOfMemoryError="kill -9 %p"
+                            -XX:+HeapDumpOnOutOfMemoryError
+                        </argLine>
                     </configuration>
                 </plugin>
 
