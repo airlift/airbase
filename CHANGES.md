@@ -1,3 +1,8 @@
+Airbase 39
+
+* Dependency updates:
+  - Joda 2.8 (from 2.4)
+
 Airbase 38
 
 * JVM size can be configured running tests.
