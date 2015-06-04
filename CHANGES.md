@@ -1,3 +1,8 @@
+Airbase 40
+
+* Dependency updates:
+  - Jetty 9.2.11.v20150529 (from Jetty 9.2.11.M0)
+
 Airbase 39
 
 * Dependency updates:
