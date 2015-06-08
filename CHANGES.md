@@ -2,6 +2,7 @@ Airbase 40
 
 * Dependency updates:
   - Jetty 9.2.11.v20150529 (from Jetty 9.2.11.M0)
+* Add jmh 1.9.3 dependency
 
 Airbase 39
 
