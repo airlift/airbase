@@ -1,3 +1,7 @@
+Airbase 41
+
+* Add dependency for jackson-datatype-jdk7
+
 Airbase 40
 
 * Dependency updates:
