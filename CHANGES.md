@@ -1,6 +1,8 @@
 Airbase 41
 
 * Add dependency for jackson-datatype-jdk7
+* Dependency updates:
+ - slf4j 1.7.12 (from 1.7.5)
 
 Airbase 40
 
