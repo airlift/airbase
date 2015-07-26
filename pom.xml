@@ -124,6 +124,9 @@
         <!-- minimum maven version to build -->
         <air.maven.version>3.2.3</air.maven.version>
 
+        <!-- minimum Java version to build -->
+        <air.java.version>${project.build.targetJdk}</air.java.version>
+
         <!-- In Multimodule builds, override this to point at the parent directory for e.g. the license resources. -->
         <!-- See http://stackoverflow.com/questions/1012402/maven2-property-that-indicates-the-parent-directory    -->
         <air.main.basedir>${project.basedir}</air.main.basedir>
@@ -382,7 +385,7 @@
                                 <version>${air.maven.version}</version>
                             </requireMavenVersion>
                             <requireJavaVersion>
-                                <version>${project.build.targetJdk}</version>
+                                <version>${air.java.version}</version>
                             </requireJavaVersion>
                         </rules>
                     </configuration>

@@ -1,3 +1,7 @@
+Airbase 42
+
+* Allow configuring minimum Java version with air.java.version
+
 Airbase 41
 
 * Add dependency for jackson-datatype-jdk7
