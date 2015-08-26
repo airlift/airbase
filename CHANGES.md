@@ -1,3 +1,8 @@
+Airbase 43
+
+* Dependency updates:
+    - Joda 2.8.2 (from 2.8). Fixes a compatibility issue with Java 8u60
+
 Airbase 42
 
 * Allow configuring minimum Java version with air.java.version
