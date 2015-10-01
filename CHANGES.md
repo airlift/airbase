@@ -1,3 +1,8 @@
+Airbase 44
+
+* Dependency updates:
+    - TestNG 6.9.6 (from 6.8.7)
+
 Airbase 43
 
 * Dependency updates:
