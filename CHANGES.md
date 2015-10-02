@@ -2,6 +2,7 @@ Airbase 44
 
 * Dependency updates:
     - TestNG 6.9.6 (from 6.8.7)
+    - Guice 4.0 (from 4.0-beta5)
 
 Airbase 43
 
