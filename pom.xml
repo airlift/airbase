@@ -276,7 +276,7 @@
                                       jacoco-maven-plugin
                                     </artifactId>
                                     <versionRange>
-                                      [0.6.2.201302030002,)
+                                      [0.7.5.201505241946,)
                                     </versionRange>
                                     <goals>
                                       <goal>prepare-agent</goal>
@@ -809,7 +809,7 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.6.2.201302030002</version>
+                    <version>0.7.5.201505241946</version>
                     <executions>
                         <execution>
                             <id>default</id>

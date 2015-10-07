@@ -1,3 +1,8 @@
+Airbase 45
+
+* Dependency updates:
+    - Jacoco 0.7.5.201505241946 (from 0.6.2.201302030002). Fixes a compatibility issue with Java 8
+
 Airbase 44
 
 * Dependency updates:
