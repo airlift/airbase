@@ -1,3 +1,8 @@
+Airbase 46
+
+* Dependency updates:
+    - TestNG, exclude transitive guice dependency
+
 Airbase 45
 
 * Dependency updates:
