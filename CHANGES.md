@@ -1,3 +1,8 @@
+Airbase 47
+
+* Dependency updates:
+  - Jetty 9.3.7.RC0 (from Jetty 9.2.11.v20150529)
+
 Airbase 46
 
 * Dependency updates:
