@@ -1,3 +1,8 @@
+Airbase 48
+
+* Dependency updates:
+  - jmxutils 1.19 (from 1.18)
+
 Airbase 47
 
 * Dependency updates:
