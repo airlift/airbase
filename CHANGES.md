@@ -1,3 +1,11 @@
+Airbase 60
+
+* Add dependencies:
+  - AssertJ Core 3.5.2
+  - AssertJ Guava 3.1.0
+  - AssertJ Joda-Time 2.0.0
+  - AssertJ DB 1.1.1
+
 Airbase 59
 
 * Remove air.test.fork-mode property
