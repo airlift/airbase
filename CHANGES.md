@@ -1,3 +1,12 @@
+Airbase 49
+
+* Add dependencies:
+  - AssertJ Corea 3.3.0
+  - AssertJ Guava 3.0.0
+  - AssertJ Joda-Time 1.1.0
+  - AssertJ DB 1.0.1
+  - Truth 0.28
+
 Airbase 48
 
 * Dependency updates:
