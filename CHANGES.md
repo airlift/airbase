@@ -1,3 +1,11 @@
+Airbase 52
+
+* Add dependencies:
+  - Jetty http2-client
+  - Jetty http2-http-client-transport
+* Dependency updates:
+  - Jetty 9.3.9.M0 (from 9.3.8.v20160314)
+
 Airbase 51
 
 * Add jersey-container-servlet dependency
