@@ -1,3 +1,19 @@
+Airbase 51
+
+* Add jersey-container-servlet dependency
+* Dependency updates:
+  - Jersey 2.22.2 (from 2.12)
+
+Airbase 50
+
+* Dependency updates:
+  - Jetty 9.3.8.v20160314 (from 9.3.8.RC0)
+
+Airbase 49
+
+* Dependency updates:
+  - Jetty 9.3.8.RC0 (from 9.3.7.RC0)
+
 Airbase 48
 
 * Dependency updates:
