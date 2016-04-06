@@ -1,3 +1,7 @@
+Airbase 53
+
+* Add Jetty http2-server dependency
+
 Airbase 52
 
 * Add dependencies:
