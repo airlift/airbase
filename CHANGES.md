@@ -1,3 +1,8 @@
+Airbase 54
+
+* Dependency updates:
+  - Jetty 9.3.9.M1 (from 9.3.9.M0)
+
 Airbase 53
 
 * Add Jetty http2-server dependency
