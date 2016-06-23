@@ -354,10 +354,6 @@ Airbase provides versions for the following well-known dependencies:
     <td><tt>ch.qos.logback:logback-core</tt><p/><tt>ch.qos.logback:logback-classic</tt></td>
   </tr>
   <tr>
-    <td>Jersey</td>
-    <td><tt>com.sun.jersey:jersey-core</tt><p/><tt>com.sun.jersey.contribs:jersey-guice</tt><p/><tt>com.sun.jersey.contribs:jersey-multipart</tt><p/><tt>com.sun.jersey:jersey-server</tt></td>
-  </tr>
-  <tr>
     <td>Jackson</td>
     <td><tt>com.fasterxml.jackson.core:jackson-annotations</tt><p/><tt>com.fasterxml.jackson.core:jackson-core</tt><p/><tt>com.fasterxml.jackson.core:jackson-databind</tt><p/><tt>com.fasterxml.jackson.datatype:jackson-datatype-guava</tt><p/><tt>com.fasterxml.jackson.datatype:jackson-datatype-joda</tt><p/><tt>com.fasterxml.jackson.dataformat:jackson-dataformat-smile</tt></td>
   </tr>

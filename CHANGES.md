@@ -1,6 +1,7 @@
 Airbase 55
 
 * Remove Jetty dependencies
+* Remove Jersey dependencies
 
 Airbase 54
 
