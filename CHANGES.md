@@ -1,3 +1,7 @@
+Airbase 55
+
+* Remove Jetty dependencies
+
 Airbase 54
 
 * Dependency updates:
