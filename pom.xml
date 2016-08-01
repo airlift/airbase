@@ -156,7 +156,7 @@
         <dep.mockito.version>1.9.5</dep.mockito.version>
         <dep.objenesis.version>1.3</dep.objenesis.version>
         <dep.slice.version>0.10</dep.slice.version>
-        <dep.jmh.version>1.9.3</dep.jmh.version>
+        <dep.jmh.version>1.13</dep.jmh.version>
 
         <!-- license headers -->
         <air.license.owner>${project.organization.name}</air.license.owner>

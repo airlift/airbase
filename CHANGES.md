@@ -1,3 +1,8 @@
+Airbase 56
+
+* Dependency updates:
+  - JMH 1.13 (from 1.9.3)
+
 Airbase 55
 
 * Remove Jetty dependencies
