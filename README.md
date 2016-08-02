@@ -359,7 +359,7 @@ Airbase provides versions for the following well-known dependencies:
   </tr>
   <tr>
     <td>Bean Validation Framework</td>
-    <td><tt>org.apache.bval:bval-jsr303</tt></td>
+    <td><tt>org.apache.bval:bval-jsr</tt></td>
   </tr>
   <tr>
     <td>JmxUtils</td>

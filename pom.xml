@@ -145,7 +145,6 @@
         <dep.javax-inject.version>1</dep.javax-inject.version>
         <dep.javax-validation.version>1.1.0.Final</dep.javax-validation.version>
         <dep.javax-servlet.version>3.1.0</dep.javax-servlet.version>
-        <dep.apache-bval.version>0.5</dep.apache-bval.version>
         <dep.jackson.version>2.4.4</dep.jackson.version>
         <dep.jmxutils.version>1.19</dep.jmxutils.version>
         <dep.cglib.version>2.2.2</dep.cglib.version>
@@ -1131,11 +1130,30 @@
             </dependency>
 
             <!-- misc stuff -->
+
+            <!-- bval 1.1.1 depends on commons-lang3 3.3.2, which is incompatible with Java 9 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.4</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.apache.bval</groupId>
-                <artifactId>bval-jsr303</artifactId>
-                <version>${dep.apache-bval.version}</version>
+                <artifactId>bval-jsr</artifactId>
+                <version>1.1.1</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
+
             <dependency>
                 <groupId>org.weakref</groupId>
                 <artifactId>jmxutils</artifactId>

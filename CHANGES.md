@@ -2,6 +2,7 @@ Airbase 56
 
 * Dependency updates:
   - JMH 1.13 (from 1.9.3)
+  - BVal 1.1.1 (from 0.5)
 
 Airbase 55
 
