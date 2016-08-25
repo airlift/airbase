@@ -1,3 +1,9 @@
+Airbase 57
+
+* Remove dependency for jackson-datatype-jdk7
+* Dependency updates:
+  - Jackson 2.8.1 (from 2.4.4)
+
 Airbase 56
 
 * Dependency updates:
