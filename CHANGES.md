@@ -1,3 +1,8 @@
+Airbase 58
+
+* Plugin updates:
+  - dependency-versions-check 2.0.4 (from 2.0.2)
+
 Airbase 57
 
 * Remove dependency for jackson-datatype-jdk7

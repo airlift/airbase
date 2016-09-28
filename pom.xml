@@ -669,7 +669,7 @@
                 <plugin>
                     <groupId>com.ning.maven.plugins</groupId>
                     <artifactId>maven-dependency-versions-check-plugin</artifactId>
-                    <version>2.0.2</version>
+                    <version>2.0.4</version>
                     <configuration>
                         <skip>${air.check.skip-dependency-version-check}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-dependency-version-check}</failBuildInCaseOfConflict>
