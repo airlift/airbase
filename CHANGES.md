@@ -1,3 +1,8 @@
+Airbase 59
+
+* Plugin updates:
+  - Surefire 2.19.1 (from 2.14)
+
 Airbase 58
 
 * Plugin updates:
