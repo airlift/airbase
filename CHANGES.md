@@ -1,5 +1,6 @@
 Airbase 59
 
+* Remove air.test.fork-mode property
 * Dependency updates:
   - JMH 1.15 (from 1.13)
 * Plugin updates:

@@ -68,9 +68,6 @@
         <!-- the upstream repository. Default is no. -->
         <air.release.push-changes>false</air.release.push-changes>
 
-        <!-- define the forkmode for tests. Default is 'once' -->
-        <air.test.fork-mode>once</air.test.fork-mode>
-
         <!-- define the thread count for parallel tests. -->
         <air.test.thread-count>1</air.test.thread-count>
 
@@ -458,7 +455,6 @@
                             <java.awt.headless>true</java.awt.headless>
                             <java.util.logging.SimpleFormatter.format>%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s %5$s%6$s%n</java.util.logging.SimpleFormatter.format>
                         </systemPropertyVariables>
-                        <forkMode>${air.test.fork-mode}</forkMode>
                         <runOrder>random</runOrder>
                         <parallel>${air.test.parallel}</parallel>
                         <threadCount>${air.test.thread-count}</threadCount>
