@@ -1,5 +1,7 @@
 Airbase 59
 
+* Dependency updates:
+  - JMH 1.15 (from 1.13)
 * Plugin updates:
   - Surefire 2.19.1 (from 2.14)
 
