@@ -5,6 +5,8 @@ Airbase 60
   - AssertJ Guava 3.1.0
   - AssertJ Joda-Time 2.0.0
   - AssertJ DB 1.1.1
+* Dependency updates:
+  - Guava 20.0 (from 18.0)
 
 Airbase 59
 
