@@ -102,6 +102,7 @@
         <air.check.skip-pmd>${air.check.skip-extended}</air.check.skip-pmd>
         <air.check.skip-license>${air.check.skip-extended}</air.check.skip-license>
         <air.check.skip-jacoco>${air.check.skip-extended}</air.check.skip-jacoco>
+        <air.check.skip-modernizer>${air.check.skip-extended}</air.check.skip-modernizer>
 
         <air.check.fail-all>true</air.check.fail-all>
         <air.check.fail-basic>${air.check.fail-all}</air.check.fail-basic>
@@ -117,6 +118,7 @@
         <air.check.fail-findbugs>${air.check.fail-extended}</air.check.fail-findbugs>
         <air.check.fail-pmd>${air.check.fail-extended}</air.check.fail-pmd>
         <air.check.fail-license>${air.check.fail-extended}</air.check.fail-license>
+        <air.check.fail-modernizer>${air.check.fail-extended}</air.check.fail-modernizer>
 
         <!-- minimum maven version to build -->
         <air.maven.version>3.2.3</air.maven.version>
@@ -283,6 +285,19 @@
                                   <action>
                                     <ignore />
                                   </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.gaul</groupId>
+                                        <artifactId>modernizer-maven-plugin</artifactId>
+                                        <versionRange>[0,)</versionRange>
+                                        <goals>
+                                            <goal>modernizer</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
                                 </pluginExecution>
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
@@ -827,6 +842,25 @@
                 </plugin>
 
                 <plugin>
+                    <groupId>org.gaul</groupId>
+                    <artifactId>modernizer-maven-plugin</artifactId>
+                    <version>1.5.0</version>
+                    <configuration>
+                        <skip>${air.check.skip-modernizer}</skip>
+                        <failOnViolations>${air.check.fail-modernizer}</failOnViolations>
+                        <javaVersion>${project.build.targetJdk}</javaVersion>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>modernizer</id>
+                            <goals>
+                                <goal>modernizer</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>1.4</version>
@@ -928,6 +962,11 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.gaul</groupId>
+                <artifactId>modernizer-maven-plugin</artifactId>
             </plugin>
 
             <plugin>

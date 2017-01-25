@@ -140,6 +140,7 @@ Checkers are organized in two groups, basic and extended.
 * PMD                             (http://maven.apache.org/plugins/maven-pmd-plugin/)
 * License check                   (http://code.google.com/p/maven-license-plugin/)
 * Code coverage                   (http://www.eclemma.org/jacoco/trunk/doc/maven.html)
+* Modernizer                      (https://github.com/andrewgaul/modernizer-maven-plugin)
 
 
 All checkers are enabled by default, but the checkers will *NOT* fail the build if a problem is encountered.
@@ -211,6 +212,12 @@ The following switches exist:
     <td>Code coverage</td>
     <td><tt>air.check.skip-jacoco</tt></td>
     <td><tt>air.check.fail-jacoco</tt></td>
+  </tr>
+  <tr>
+    <td>Extended</td>
+    <td>Modernizer</td>
+    <td><tt>air.check.skip-modernizer</tt></td>
+    <td><tt>air.check.fail-modernizer</tt></td>
   </tr>
 </table>
 

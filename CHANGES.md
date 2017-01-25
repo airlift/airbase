@@ -1,3 +1,7 @@
+Airbase 61
+
+* Add Modernizer as an extended checker
+
 Airbase 60
 
 * Add dependencies:
