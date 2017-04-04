@@ -1,3 +1,8 @@
+Airbase 62
+
+* Dependency updates:
+  - Guava 21.0 (from 20.0)
+
 Airbase 61
 
 * Add Modernizer as an extended checker
