@@ -121,10 +121,10 @@
         <air.check.fail-modernizer>${air.check.fail-extended}</air.check.fail-modernizer>
 
         <!-- minimum maven version to build -->
-        <air.maven.version>3.2.3</air.maven.version>
+        <air.maven.version>3.0.0</air.maven.version>
 
         <!-- minimum Java version to build -->
-        <air.java.version>${project.build.targetJdk}</air.java.version>
+        <air.java.version>1.8.0-60</air.java.version>
 
         <!-- In Multimodule builds, override this to point at the parent directory for e.g. the license resources. -->
         <!-- See http://stackoverflow.com/questions/1012402/maven2-property-that-indicates-the-parent-directory    -->
