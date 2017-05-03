@@ -1,3 +1,10 @@
+Airbase 63
+
+* Plugin updates:
+  - FindBugs 3.0.4 (from 2.5.2)
+  - PMD 3.7 (from 3.0.1)
+  - JaCoCo 0.7.9 (from 0.7.5.201505241946)
+
 Airbase 62
 
 * Dependency updates:
