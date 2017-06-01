@@ -147,7 +147,7 @@
         <dep.jackson.version>2.8.1</dep.jackson.version>
         <dep.jmxutils.version>1.19</dep.jmxutils.version>
         <dep.cglib.version>2.2.2</dep.cglib.version>
-        <dep.joda.version>2.8.2</dep.joda.version>
+        <dep.joda.version>2.9.9</dep.joda.version>
         <dep.findbugs-annotations.version>2.0.3</dep.findbugs-annotations.version>
         <dep.testng.version>6.9.6</dep.testng.version>
         <dep.assertj-core.version>3.5.2</dep.assertj-core.version>
