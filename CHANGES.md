@@ -1,3 +1,8 @@
+Airbase 64
+
+* Dependency updates:
+  - Joda-Time 2.9.9 (from 2.8.2)
+
 Airbase 63
 
 * Plugin updates:
