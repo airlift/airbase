@@ -1022,9 +1022,24 @@
                 <version>${dep.guava.version}</version>
                 <exclusions>
                     <exclusion>
-                        <!-- Guava depends on jsr305 since https://github.com/google/guava/issues/2721 -->
+                        <!-- Guava pulls more dependencies since https://github.com/google/guava/issues/2721 -->
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <!-- Guava pulls more dependencies since https://github.com/google/guava/issues/2721 -->
+                        <groupId>com.google.errorprone</groupId>
+                        <artifactId>error_prone_annotations</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <!-- Guava pulls more dependencies since https://github.com/google/guava/issues/2721 -->
+                        <groupId>com.google.j2objc</groupId>
+                        <artifactId>j2objc-annotations</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <!-- Guava pulls more dependencies since https://github.com/google/guava/issues/2721 -->
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>animal-sniffer-annotations</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
