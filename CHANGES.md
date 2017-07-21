@@ -1,3 +1,8 @@
+Airbase 65
+
+* Plugin updates:
+  - compiler 3.6.2 (from 3.0)
+
 Airbase 64
 
 * Dependency updates:
