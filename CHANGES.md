@@ -1,5 +1,6 @@
 Airbase 65
 
+* Add `eclipse-compiler` profile for building with Eclipse compiler
 * Plugin updates:
   - compiler 3.6.2 (from 3.0)
 
