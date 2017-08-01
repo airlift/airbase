@@ -1,6 +1,7 @@
 Airbase 65
 
 * Add `eclipse-compiler` profile for building with Eclipse compiler
+* Add `errorprone-compiler` profile for building with Error Prone compiler
 * Plugin updates:
   - compiler 3.6.2 (from 3.0)
 
