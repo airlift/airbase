@@ -1,6 +1,8 @@
 Airbase 65
 
 * Add `eclipse-compiler` profile for building with Eclipse compiler
+* Add dependencies:
+  - Truth 0.34
 * Plugin updates:
   - compiler 3.6.2 (from 3.0)
 
