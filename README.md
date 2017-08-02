@@ -389,6 +389,10 @@ Airbase provides versions for the following well-known dependencies:
     <td><tt>org.testng:testng</tt></td>
   </tr>
   <tr>
+    <td>Truth</td>
+    <td><tt>com.google.truth:truth</tt></td>
+  </tr>
+  <tr>
     <td>AssertJ</td>
     <td><tt>org.assertj:assertj-core</tt><p/><tt>org.assertj:assertj-guava</tt><p/><tt>org.assertj:assertj-joda-time</tt><p/><tt>org.assertj:assertj-db</tt></td>
   </tr>
