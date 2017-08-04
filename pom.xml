@@ -30,6 +30,9 @@
 
     <developers>
         <!-- see git log -->
+        <developer>
+            <name>Airlift</name>
+        </developer>
     </developers>
 
     <repositories>
