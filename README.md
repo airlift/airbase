@@ -99,18 +99,13 @@ Examples:
 
 Airbase is intended for open source projects that should be deployed to Maven Central.
 
-As described in the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html), the `sonatype-nexus-staging` and `sonatype-nexus-snapshots` repositories must be configured:
+As described in the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html), the `ossrh` repository must be configured:
 
 ```xml
 <servers>
   ...
   <server>
-    <id>sonatype-nexus-snapshots</id>
-    <username>user</username>
-    <password>password</password>
-  </server>
-  <server>
-    <id>sonatype-nexus-staging</id>
+    <id>ossrh</id>
     <username>user</username>
     <password>password</password>
   </server>

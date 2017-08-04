@@ -1,6 +1,7 @@
 Airbase 66
 
 * Remove deprecated oss-parent POM
+* Use `ossrh` as the ID for both deployment repositories
 
 Airbase 65
 
