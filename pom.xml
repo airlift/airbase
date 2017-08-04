@@ -166,10 +166,6 @@
         <air.license.ensure-match>Copyright \(C\) \d{4} .+</air.license.ensure-match>
     </properties>
 
-    <prerequisites>
-        <maven>${air.maven.version}</maven>
-    </prerequisites>
-
     <build>
         <extensions>
             <extension>
