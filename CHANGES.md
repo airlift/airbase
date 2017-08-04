@@ -2,6 +2,7 @@ Airbase 66
 
 * Remove deprecated oss-parent POM
 * Use `ossrh` as the ID for both deployment repositories
+* Migrate from FindBugs to SpotBugs
 * Plugin updates:
   - Enforcer 3.0.0-M1 (from 1.2)
 

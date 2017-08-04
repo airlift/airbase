@@ -119,7 +119,7 @@
         <air.check.skip-dependency-version-check>${air.check.skip-basic}</air.check.skip-dependency-version-check>
 
         <!-- extended checks -->
-        <air.check.skip-findbugs>${air.check.skip-extended}</air.check.skip-findbugs>
+        <air.check.skip-spotbugs>${air.check.skip-extended}</air.check.skip-spotbugs>
         <air.check.skip-pmd>${air.check.skip-extended}</air.check.skip-pmd>
         <air.check.skip-license>${air.check.skip-extended}</air.check.skip-license>
         <air.check.skip-jacoco>${air.check.skip-extended}</air.check.skip-jacoco>
@@ -136,7 +136,7 @@
         <air.check.fail-dependency-version-check>${air.check.fail-basic}</air.check.fail-dependency-version-check>
 
         <!-- extended checks -->
-        <air.check.fail-findbugs>${air.check.fail-extended}</air.check.fail-findbugs>
+        <air.check.fail-spotbugs>${air.check.fail-extended}</air.check.fail-spotbugs>
         <air.check.fail-pmd>${air.check.fail-extended}</air.check.fail-pmd>
         <air.check.fail-license>${air.check.fail-extended}</air.check.fail-license>
         <air.check.fail-modernizer>${air.check.fail-extended}</air.check.fail-modernizer>
@@ -716,13 +716,13 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>findbugs-maven-plugin</artifactId>
-                    <version>3.0.4</version>
+                    <groupId>com.github.hazendaz.spotbugs</groupId>
+                    <artifactId>spotbugs-maven-plugin</artifactId>
+                    <version>3.1.0-RC4</version>
                     <configuration>
-                        <skip>${air.check.skip-findbugs}</skip>
+                        <skip>${air.check.skip-spotbugs}</skip>
                         <jvmArgs>-Xmx${air.build.jvmsize}</jvmArgs>
-                        <failOnError>${air.check.fail-findbugs}</failOnError>
+                        <failOnError>${air.check.fail-spotbugs}</failOnError>
                     </configuration>
                     <executions>
                         <execution>
@@ -961,8 +961,8 @@
             </plugin>
 
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
+                <groupId>com.github.hazendaz.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
             </plugin>
 
             <plugin>

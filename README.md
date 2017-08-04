@@ -129,7 +129,7 @@ Checkers are organized in two groups, basic and extended.
 * Maven Duplicate finder          (https://github.com/ning/maven-duplicate-finder-plugin)
 
 ### Extended checkers
-* Findbugs                        (http://mojo.codehaus.org/findbugs-maven-plugin/)
+* SpotBugs                        (https://spotbugs.github.io/)
 * PMD                             (http://maven.apache.org/plugins/maven-pmd-plugin/)
 * License check                   (http://code.google.com/p/maven-license-plugin/)
 * Code coverage                   (http://www.eclemma.org/jacoco/trunk/doc/maven.html)
@@ -184,9 +184,9 @@ The following switches exist:
   </tr>
   <tr>
     <td>Extended</td>
-    <td>Findbugs</td>
-    <td><tt>air.check.skip-findbugs</tt></td>
-    <td><tt>air.check.fail-findbugs</tt></td>
+    <td>SpotBugs</td>
+    <td><tt>air.check.skip-spotbugs</tt></td>
+    <td><tt>air.check.fail-spotbugs</tt></td>
   </tr>
   <tr>
     <td>Extended</td>
