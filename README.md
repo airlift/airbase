@@ -99,9 +99,7 @@ Examples:
 
 Airbase is intended for open source projects that should be deployed to Maven Central.
 
-It inherits from the oss-parent POM and supports the OSS deployment process as outlined at https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide.
-
-As described on https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide, the `sonatype-nexus-staging` and `sonatype-nexus-snapshots` repositories must be configured:
+As described in the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html), the `sonatype-nexus-staging` and `sonatype-nexus-snapshots` repositories must be configured:
 
 ```xml
 <servers>

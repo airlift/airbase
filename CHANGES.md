@@ -1,3 +1,7 @@
+Airbase 66
+
+* Remove deprecated oss-parent POM
+
 Airbase 65
 
 * Add `eclipse-compiler` profile for building with Eclipse compiler

@@ -2,12 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
-    </parent>
-
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
     <version>66-SNAPSHOT</version>
@@ -38,6 +32,20 @@
         <!-- see git log -->
     </developers>
 
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <pluginRepositories>
         <pluginRepository>
             <id>sonatype-nexus-snapshots</id>
@@ -51,6 +59,19 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>Nexus Release Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <!-- see http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
@@ -498,7 +519,6 @@
                         <tagNameFormat>@{project.version}</tagNameFormat>
                         <useReleaseProfile>false</useReleaseProfile>
                         <goals>deploy</goals>
-                        <arguments combine.self="override" />
                     </configuration>
                 </plugin>
 
