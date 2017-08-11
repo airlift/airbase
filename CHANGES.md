@@ -1,5 +1,6 @@
 Airbase 68
 
+* Add support for JUnit 5
 * Dependency updates:
   - SLF4J 1.7.25 (from 1.7.12)
 
