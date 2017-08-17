@@ -1,3 +1,8 @@
+Airbase 68
+
+* Dependency updates:
+  - SLF4J 1.7.25 (from 1.7.12)
+
 Airbase 67
 
 * Ban `com.google.code.findbugs:annotations` dependency
