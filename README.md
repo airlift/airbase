@@ -301,9 +301,9 @@ The Enforcer plugin outlaws a number of dependencies that project might use for 
     <td><tt>com.google.guava:guava</tt></td>
   </tr>
   <tr>
-    <td><tt>com.google.code.findbugs:jsr305</tt></td>
-    <td>Subset of the full findbugs annotations, contains only the JSR-305 annotations.</td>
     <td><tt>com.google.code.findbugs:annotations</tt></td>
+    <td>Contains FindBugs annotations, JSR-305 and JCIP annotations.</td>
+    <td><tt>com.github.spotbugs:spotbugs-annotations</tt><p/><tt>com.google.code.findbugs:jsr305</tt></td>
   </tr>
   <tr>
     <td><tt>org.eclipse.jetty.orbit:javax.servlet</tt></td>
@@ -374,8 +374,12 @@ Airbase provides versions for the following well-known dependencies:
     <td><tt>cglib:cglib-nodep</tt></td>
   </tr>
   <tr>
-    <td>Findbugs Annotations</td>
-    <td><tt>com.google.code.findbugs:annotations</tt></td>
+    <td>FindBugs / SpotBugs Annotations</td>
+    <td><tt>com.github.spotbugs:spotbugs-annotations</tt></td>
+  </tr>
+  <tr>
+    <td>JSR-305 Annotations</td>
+    <td><tt>com.google.code.findbugs:jsr305</tt></td>
   </tr>
   <tr>
     <td>TestNG testing</td>

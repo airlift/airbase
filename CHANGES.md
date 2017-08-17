@@ -1,3 +1,10 @@
+Airbase 67
+
+* Ban `com.google.code.findbugs:annotations` dependency
+* Add dependencies:
+  - FindBugs / SpotBugs annotations 3.1.0-RC5
+  - JSR-305 annotations 3.0.2
+
 Airbase 66
 
 * Remove deprecated oss-parent POM

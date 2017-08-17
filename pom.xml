@@ -172,7 +172,7 @@
         <dep.jmxutils.version>1.19</dep.jmxutils.version>
         <dep.cglib.version>2.2.2</dep.cglib.version>
         <dep.joda.version>2.9.9</dep.joda.version>
-        <dep.findbugs-annotations.version>2.0.3</dep.findbugs-annotations.version>
+        <dep.spotbugs-annotations.version>3.1.0-RC5</dep.spotbugs-annotations.version>
         <dep.testng.version>6.9.6</dep.testng.version>
         <dep.assertj-core.version>3.5.2</dep.assertj-core.version>
         <dep.assertj-guava.version>3.1.0</dep.assertj-guava.version>
@@ -388,12 +388,8 @@
                                     <exclude>com.google.collections:google-collections</exclude>
                                     <!-- but not the badly numbered ones... -->
                                     <exclude>com.google.guava:guava</exclude>
-                                    <!-- Clashes with com.google.code.findbugs:annotations and having both jars -->
-                                    <!-- as a dependency then clashes with the dependency checker (because it   -->
-                                    <!-- is not very good at handling annotations). Use the annotations jar     -->
-                                    <!-- instead which has all jsr305 annotations and the additional findbugs   -->
-                                    <!-- stuff. -->
-                                    <exclude>com.google.code.findbugs:jsr305</exclude>
+                                    <!-- Contains FindBugs annotations, JSR-305 and JCIP annotations -->
+                                    <exclude>com.google.code.findbugs:annotations</exclude>
                                     <!-- Use the official version at javax.servlet:javax.servlet-api -->
                                     <exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
                                     <!-- Renamed airlift modules -->
@@ -1221,11 +1217,18 @@
                 <version>${dep.cglib.version}</version>
             </dependency>
 
-            <!-- findbugs -->
+            <!-- FindBugs / SpotBugs -->
+            <dependency>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-annotations</artifactId>
+                <version>${dep.spotbugs-annotations.version}</version>
+            </dependency>
+
+            <!-- JSR-305 -->
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
-                <artifactId>annotations</artifactId>
-                <version>${dep.findbugs-annotations.version}</version>
+                <artifactId>jsr305</artifactId>
+                <version>3.0.2</version>
             </dependency>
 
             <!-- jmh -->
