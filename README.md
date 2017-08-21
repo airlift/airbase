@@ -127,6 +127,7 @@ Checkers are organized in two groups, basic and extended.
 * Maven Dependencies              (http://maven.apache.org/plugins/maven-dependency-plugin/)
 * Maven Dependency version check  (https://github.com/ning/maven-dependency-versions-check-plugin)
 * Maven Duplicate finder          (https://github.com/ning/maven-duplicate-finder-plugin)
+* Maven Dependency scope          (https://github.com/hubspot/dependency-scope-maven-plugin)
 
 ### Extended checkers
 * SpotBugs                        (https://spotbugs.github.io/)
@@ -181,6 +182,12 @@ The following switches exist:
     <td>Maven Duplicate finder</td>
     <td><tt>air.check.skip-duplicate-finder</tt></td>
     <td><tt>air.check.fail-duplicate-finder</tt></td>
+  </tr>
+  <tr>
+    <td>Basic</td>
+    <td>Maven Dependency scope</td>
+    <td><tt>air.check.skip-dependency-scope</tt></td>
+    <td><tt>air.check.fail-dependency-scope</tt></td>
   </tr>
   <tr>
     <td>Extended</td>

@@ -1,6 +1,7 @@
 Airbase 68
 
 * Add support for JUnit 5
+* Add dependency-scope as a basic checker
 * Dependency updates:
   - SLF4J 1.7.25 (from 1.7.12)
 * Plugin updates:

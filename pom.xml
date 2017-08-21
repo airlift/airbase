@@ -120,6 +120,7 @@
         <air.check.skip-dependency>${air.check.skip-basic}</air.check.skip-dependency>
         <air.check.skip-duplicate-finder>${air.check.skip-basic}</air.check.skip-duplicate-finder>
         <air.check.skip-dependency-version-check>${air.check.skip-basic}</air.check.skip-dependency-version-check>
+        <air.check.skip-dependency-scope>${air.check.skip-basic}</air.check.skip-dependency-scope>
 
         <!-- extended checks -->
         <air.check.skip-spotbugs>${air.check.skip-extended}</air.check.skip-spotbugs>
@@ -128,6 +129,7 @@
         <air.check.skip-jacoco>${air.check.skip-extended}</air.check.skip-jacoco>
         <air.check.skip-modernizer>${air.check.skip-extended}</air.check.skip-modernizer>
 
+        <!-- all checks -->
         <air.check.fail-all>true</air.check.fail-all>
         <air.check.fail-basic>${air.check.fail-all}</air.check.fail-basic>
         <air.check.fail-extended>${air.check.fail-all}</air.check.fail-extended>
@@ -137,6 +139,7 @@
         <air.check.fail-dependency>${air.check.fail-basic}</air.check.fail-dependency>
         <air.check.fail-duplicate-finder>${air.check.fail-basic}</air.check.fail-duplicate-finder>
         <air.check.fail-dependency-version-check>${air.check.fail-basic}</air.check.fail-dependency-version-check>
+        <air.check.fail-dependency-scope>${air.check.fail-basic}</air.check.fail-dependency-scope>
 
         <!-- extended checks -->
         <air.check.fail-spotbugs>${air.check.fail-extended}</air.check.fail-spotbugs>
@@ -734,6 +737,23 @@
                 </plugin>
 
                 <plugin>
+                    <groupId>com.hubspot.maven.plugins</groupId>
+                    <artifactId>dependency-scope-maven-plugin</artifactId>
+                    <version>0.8</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <configuration>
+                                <skip>${air.check.skip-dependency-scope}</skip>
+                                <fail>${air.check.fail-dependency-scope}</fail>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
                     <groupId>com.github.hazendaz.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>3.1.0-RC4</version>
@@ -981,6 +1001,11 @@
             <plugin>
                 <groupId>com.github.hazendaz.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>com.hubspot.maven.plugins</groupId>
+                <artifactId>dependency-scope-maven-plugin</artifactId>
             </plugin>
 
             <plugin>
