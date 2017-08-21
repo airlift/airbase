@@ -3,6 +3,8 @@ Airbase 68
 * Add support for JUnit 5
 * Dependency updates:
   - SLF4J 1.7.25 (from 1.7.12)
+* Plugin updates:
+  - Surefire 2.20 (from 2.19.1)
 
 Airbase 67
 
