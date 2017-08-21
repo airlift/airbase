@@ -1,5 +1,8 @@
-Airbase 67
+Airbase 68
 
+* Add support for JUnit-5
+
+Airbase 67
 * Ban `com.google.code.findbugs:annotations` dependency
 * Add dependencies:
   - FindBugs / SpotBugs annotations 3.1.0-RC5
