@@ -1,3 +1,10 @@
+Airbase 69
+
+* Plugin updates:
+  - Surefire 2.20.1 (from 2.20)
+  - JUnit Jupiter Engine 5.0.0 (from 5.0.0-RC2)
+  - JUnit Platform Surefire Provider (from 1.0.0-RC2)
+
 Airbase 68
 
 * Add support for JUnit 5
