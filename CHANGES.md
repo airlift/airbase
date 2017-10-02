@@ -1,3 +1,10 @@
+Airbase 70
+
+* Plugin updates:
+  - maven-deploy-plugin 2.8.2 (from 2.7)
+  - maven-clean-plugin 3.0.0 (from 2.5)
+  - maven-install-plugin 2.5.2 (from 2.4)
+
 Airbase 69
 
 * Plugin updates:
