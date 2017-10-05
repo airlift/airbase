@@ -1,5 +1,6 @@
 Airbase 71
 
+* Use Nexus Staging plugin instead maven-deploy-plugin
 * Dependency updates:
   - javax.ws.rs-api 2.1 (from 2.0.1)
 
