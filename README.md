@@ -113,32 +113,6 @@ As described in the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.
 </servers>
 ```
 
-Deployment is handled by the Nexus Staging plugin. For releases, the staging repository will be
-automatically closed but not released, allowing you to verify the contents before releasing it.
-The repository can be released automatically by setting `air.release.auto-release` to `true`.
-If any of the close rules fail, the repository will not be deleted, allowing you to determine why.
-
-If you need to deploy to different repository, such as for a project that is not open source, it can be configured as follows:
-
-```xml
-<properties>
-  <air.release.server-id>example</air.release.server-id>
-  <air.release.nexus-url>http://maven.example.com/nexus/</air.release.nexus-url>
-</properties>
-
-<distributionManagement>
-  <snapshotRepository>
-    <id>example</id>
-    <url>http://maven.example.com/nexus/content/repositories/snapshots/</url>
-  </snapshotRepository>
-  <repository>
-    <id>localtest</id>
-    <url>http://maven.example.com/nexus/content/repositories/releases/</url>
-  </repository>
-</distributionManagement>
-```
-
-If you using Nexus OSS rather than Nexus Pro, you will also need to set `air.release.skip-staging` to `true`.
 
 ## Project Build and Checkers
 

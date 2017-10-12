@@ -88,12 +88,6 @@
         <!-- Default jvm size for compiler, tests etc. -->
         <air.build.jvmsize>1024m</air.build.jvmsize>
 
-        <!-- release configuration for Nexus Staging plugin -->
-        <air.release.server-id>ossrh</air.release.server-id>
-        <air.release.nexus-url>https://oss.sonatype.org/</air.release.nexus-url>
-        <air.release.auto-release>false</air.release.auto-release>
-        <air.release.skip-staging>false</air.release.skip-staging>
-
         <!-- whether a release:perform automatically pushes the created files and tags to -->
         <!-- the upstream repository. Default is no. -->
         <air.release.push-changes>false</air.release.push-changes>
@@ -944,18 +938,6 @@
                     <version>3.2</version>
                 </plugin>
 
-                <plugin>
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>1.6.8</version>
-                    <configuration>
-                        <serverId>${air.release.server-id}</serverId>
-                        <nexusUrl>${air.release.nexus-url}</nexusUrl>
-                        <autoReleaseAfterClose>${air.release.auto-release}</autoReleaseAfterClose>
-                        <skipLocalStaging>${air.release.skip-staging}</skipLocalStaging>
-                        <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
-                    </configuration>
-                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -1058,12 +1040,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <extensions>true</extensions>
             </plugin>
         </plugins>
     </build>

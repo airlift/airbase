@@ -1,3 +1,7 @@
+Airbase 72
+
+* Revert using Nexus Staging plugin
+
 Airbase 71
 
 * Use Nexus Staging plugin instead maven-deploy-plugin
