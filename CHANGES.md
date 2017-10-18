@@ -1,3 +1,7 @@
+Airbase 73
+
+* Remove support for JUnit 5
+
 Airbase 72
 
 * Revert using Nexus Staging plugin
