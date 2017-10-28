@@ -1,3 +1,8 @@
+Airbase 74
+
+* Dependency updates:
+  - Logback 1.2.3 (from 1.0.13)
+
 Airbase 73
 
 * Remove support for JUnit 5
