@@ -457,6 +457,7 @@
                         <maxmem>${air.build.jvmsize}</maxmem>
                         <showWarnings>true</showWarnings>
                         <fork>true</fork>
+                        <parameters>true</parameters>
                     </configuration>
                 </plugin>
 

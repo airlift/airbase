@@ -1,3 +1,7 @@
+Airbase 75
+
+* Enable compiled metadata for reflection on method parameters
+
 Airbase 74
 
 * Dependency updates:
