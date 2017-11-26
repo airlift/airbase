@@ -1,3 +1,8 @@
+Airbase 76
+
+* Dependency updates:
+  - SpotBugs annotations 3.1.0 (from 3.1.0-RC5)
+
 Airbase 75
 
 * Enable compiled metadata for reflection on method parameters

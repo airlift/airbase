@@ -175,7 +175,7 @@
         <dep.jmxutils.version>1.19</dep.jmxutils.version>
         <dep.cglib.version>2.2.2</dep.cglib.version>
         <dep.joda.version>2.9.9</dep.joda.version>
-        <dep.spotbugs-annotations.version>3.1.0-RC5</dep.spotbugs-annotations.version>
+        <dep.spotbugs-annotations.version>3.1.0</dep.spotbugs-annotations.version>
         <dep.testng.version>6.9.6</dep.testng.version>
         <dep.assertj-core.version>3.5.2</dep.assertj-core.version>
         <dep.assertj-guava.version>3.1.0</dep.assertj-guava.version>
