@@ -736,9 +736,9 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>com.github.hazendaz.spotbugs</groupId>
+                    <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>3.1.0-RC4</version>
+                    <version>3.1.0-RC8</version>
                     <configuration>
                         <skip>${air.check.skip-spotbugs}</skip>
                         <jvmArgs>-Xmx${air.build.jvmsize}</jvmArgs>
@@ -981,7 +981,7 @@
             </plugin>
 
             <plugin>
-                <groupId>com.github.hazendaz.spotbugs</groupId>
+                <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
             </plugin>
 
