@@ -4,6 +4,7 @@ Airbase 76
   - SpotBugs annotations 3.1.0 (from 3.1.0-RC5)
 * Plugin updates:
   - SpotBugs 3.1.0-RC8 (from 3.1.0-RC4)
+  - Javadoc 3.0.0 (from 2.9)
 
 Airbase 75
 
