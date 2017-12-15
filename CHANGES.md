@@ -1,5 +1,6 @@
 Airbase 76
 
+* Exclude Java 9 module-info.class from duplicate finder
 * Dependency updates:
   - SpotBugs annotations 3.1.0 (from 3.1.0-RC5)
 * Plugin updates:
