@@ -126,7 +126,7 @@ Checkers are organized in two groups, basic and extended.
 * Maven Enforcer                  (http://maven.apache.org/enforcer/maven-enforcer-plugin/)
 * Maven Dependencies              (http://maven.apache.org/plugins/maven-dependency-plugin/)
 * Maven Dependency version check  (https://github.com/ning/maven-dependency-versions-check-plugin)
-* Maven Duplicate finder          (https://github.com/ning/maven-duplicate-finder-plugin)
+* Maven Duplicate finder          (https://github.com/basepom/duplicate-finder-maven-plugin)
 * Maven Dependency scope          (https://github.com/hubspot/dependency-scope-maven-plugin)
 
 ### Extended checkers

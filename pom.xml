@@ -262,10 +262,8 @@
                                 </pluginExecution>
                                 <pluginExecution>
                                     <pluginExecutionFilter>
-                                        <groupId>com.ning.maven.plugins</groupId>
-                                        <artifactId>
-                                            maven-duplicate-finder-plugin
-                                        </artifactId>
+                                        <groupId>org.basepom.maven</groupId>
+                                        <artifactId>duplicate-finder-maven-plugin</artifactId>
                                         <versionRange>[0,)</versionRange>
                                         <goals>
                                             <goal>check</goal>
@@ -611,9 +609,9 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>com.ning.maven.plugins</groupId>
-                    <artifactId>maven-duplicate-finder-plugin</artifactId>
-                    <version>1.0.6</version>
+                    <groupId>org.basepom.maven</groupId>
+                    <artifactId>duplicate-finder-maven-plugin</artifactId>
+                    <version>1.2.1</version>
                     <executions>
                         <execution>
                             <id>default</id>
@@ -688,14 +686,14 @@
                                 <artifactId>jruby-complete</artifactId>
                             </dependency>
                         </ignoredDependencies>
-                        <ignoredResources>
-                            <ignoredResource>.*\.html</ignoredResource>
-                            <ignoredResource>META-INF/.*</ignoredResource>
-                            <ignoredResource>about_files/.*</ignoredResource>
-                            <ignoredResource>plugin\.properties</ignoredResource>
-                            <ignoredResource>.*\.java</ignoredResource>
-                            <ignoredResource>THIRD-PARTY</ignoredResource>
-                        </ignoredResources>
+                        <ignoredResourcePatterns>
+                            <ignoredResourcePattern>.*\.html</ignoredResourcePattern>
+                            <ignoredResourcePattern>META-INF/.*</ignoredResourcePattern>
+                            <ignoredResourcePattern>about_files/.*</ignoredResourcePattern>
+                            <ignoredResourcePattern>plugin\.properties</ignoredResourcePattern>
+                            <ignoredResourcePattern>.*\.java</ignoredResourcePattern>
+                            <ignoredResourcePattern>THIRD-PARTY</ignoredResourcePattern>
+                        </ignoredResourcePatterns>
                     </configuration>
                 </plugin>
 
@@ -976,8 +974,8 @@
             </plugin>
 
             <plugin>
-                <groupId>com.ning.maven.plugins</groupId>
-                <artifactId>maven-duplicate-finder-plugin</artifactId>
+                <groupId>org.basepom.maven</groupId>
+                <artifactId>duplicate-finder-maven-plugin</artifactId>
             </plugin>
 
             <plugin>

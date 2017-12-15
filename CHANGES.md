@@ -5,6 +5,7 @@ Airbase 76
 * Plugin updates:
   - SpotBugs 3.1.0-RC8 (from 3.1.0-RC4)
   - Javadoc 3.0.0 (from 2.9)
+  - duplicate-finder 1.2.1 (from 1.0.6)
 
 Airbase 75
 
