@@ -1,3 +1,7 @@
+Airbase 77
+
+* Fix air.javadoc.lint property for Javadoc 3.0.0 plugin
+
 Airbase 76
 
 * Exclude Java 9 module-info.class from duplicate finder
