@@ -1,5 +1,6 @@
 Airbase 78
 
+* Prevent Surefire from adding java.se.ee module on Java 9
 * Remove Eclipse m2e settings
 * Dependency updates:
   - javax.annotation-api 1.3.1 (from 1.2)
