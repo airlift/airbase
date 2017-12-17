@@ -1,6 +1,8 @@
 Airbase 78
 
 * Remove Eclipse m2e settings
+* Dependency updates:
+  - javax.annotation-api 1.3.1 (from 1.2)
 
 Airbase 77
 
