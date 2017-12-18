@@ -1,3 +1,7 @@
+Airbase 78
+
+* Remove Eclipse m2e settings
+
 Airbase 77
 
 * Fix air.javadoc.lint property for Javadoc 3.0.0 plugin
