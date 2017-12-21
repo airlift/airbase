@@ -1,3 +1,8 @@
+Airbase 79
+
+* Dependency updates:
+  - jmh 1.19 (from 1.15)
+
 Airbase 78
 
 * Prevent Surefire from adding java.se.ee module on Java 9
