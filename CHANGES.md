@@ -1,6 +1,7 @@
 Airbase 79
 
 * Use Apache license header from policy JAR
+* Add Checkstyle as an extended checker
 
 Airbase 78
 

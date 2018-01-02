@@ -121,6 +121,7 @@
         <air.check.skip-license>${air.check.skip-extended}</air.check.skip-license>
         <air.check.skip-jacoco>${air.check.skip-extended}</air.check.skip-jacoco>
         <air.check.skip-modernizer>${air.check.skip-extended}</air.check.skip-modernizer>
+        <air.check.skip-checkstyle>${air.check.skip-extended}</air.check.skip-checkstyle>
 
         <!-- all checks -->
         <air.check.fail-all>true</air.check.fail-all>
@@ -139,6 +140,7 @@
         <air.check.fail-pmd>${air.check.fail-extended}</air.check.fail-pmd>
         <air.check.fail-license>${air.check.fail-extended}</air.check.fail-license>
         <air.check.fail-modernizer>${air.check.fail-extended}</air.check.fail-modernizer>
+        <air.check.fail-checkstyle>${air.check.fail-basic}</air.check.fail-checkstyle>
 
         <!-- minimum maven version to build -->
         <air.maven.version>3.2.3</air.maven.version>
@@ -185,6 +187,9 @@
         <air.license.default-value>Copyright (C) ${project.inceptionYear} ${air.license.owner}</air.license.default-value>
         <air.license.ensure-match>Copyright \(C\) \d{4} .+</air.license.ensure-match>
         <air.license.header-file>license/apache-header.txt</air.license.header-file>
+
+        <!-- Checkstyle -->
+        <air.checkstyle.config-file>checkstyle/airbase-checks.xml</air.checkstyle.config-file>
 
         <!-- default property to empty -->
         <java9-surefire-argline />
@@ -791,6 +796,42 @@
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>2.17</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>8.7</version>
+                        </dependency>
+                        <!-- This version must match the Airbase version. It will be updated by -->
+                        <!-- the Maven Release plugin. The "project.version" property cannot be -->
+                        <!-- used here as it will resolve to the version of the child project.  -->
+                        <dependency>
+                            <groupId>io.airlift</groupId>
+                            <artifactId>airbase-policy</artifactId>
+                            <version>79-SNAPSHOT</version>
+                        </dependency>
+                    </dependencies>
+                    <executions>
+                        <execution>
+                            <id>checkstyle</id>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <configuration>
+                                <skip>${air.check.skip-checkstyle}</skip>
+                                <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
+                                <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                <configLocation>${air.checkstyle.config-file}</configLocation>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>1.4</version>
                     <configuration>
@@ -901,6 +942,11 @@
             <plugin>
                 <groupId>org.gaul</groupId>
                 <artifactId>modernizer-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
 
             <plugin>
