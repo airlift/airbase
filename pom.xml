@@ -163,6 +163,9 @@
         <!-- Packaging for the tarball deployment -->
         <dep.packaging.version>0.91</dep.packaging.version>
 
+        <!-- Policy files for checkers -->
+        <dep.airbase-policy.version>1-SNAPSHOT</dep.airbase-policy.version>
+
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>4.0</dep.guice.version>
         <dep.guava.version>21.0</dep.guava.version>
@@ -191,6 +194,7 @@
         <air.license.owner>${project.organization.name}</air.license.owner>
         <air.license.default-value>Copyright (C) ${project.inceptionYear} ${air.license.owner}</air.license.default-value>
         <air.license.ensure-match>Copyright \(C\) \d{4} .+</air.license.ensure-match>
+        <air.license.header-file>license/apache-header.txt</air.license.header-file>
 
         <!-- default property to empty -->
         <java9-surefire-argline />
@@ -682,11 +686,18 @@
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
                     <version>2.3</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>io.airlift</groupId>
+                            <artifactId>airbase-policy</artifactId>
+                            <version>${dep.airbase-policy.version}</version>
+                        </dependency>
+                    </dependencies>
                     <configuration>
                         <skip>${air.check.skip-license}</skip>
                         <skipExistingHeaders>true</skipExistingHeaders>
                         <failIfMissing>${air.check.fail-license}</failIfMissing>
-                        <header>${air.main.basedir}/src/license/LICENSE-HEADER.txt</header>
+                        <header>${air.license.header-file}</header>
                         <mapping>
                             <java>SLASHSTAR_STYLE</java>
                             <g>SLASHSTAR_STYLE</g>
