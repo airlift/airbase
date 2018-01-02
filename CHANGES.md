@@ -1,3 +1,8 @@
+Airbase 79
+
+* Use Apache license header from policy JAR
+* Add Checkstyle as an extended checker
+
 Airbase 78
 
 * Prevent Surefire from adding java.se.ee module on Java 9

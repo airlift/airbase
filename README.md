@@ -132,12 +132,12 @@ Checkers are organized in two groups, basic and extended.
 ### Extended checkers
 * SpotBugs                        (https://spotbugs.github.io/)
 * PMD                             (http://maven.apache.org/plugins/maven-pmd-plugin/)
-* License check                   (http://code.google.com/p/maven-license-plugin/)
+* License check                   (http://code.mycila.com/license-maven-plugin/)
 * Code coverage                   (http://www.eclemma.org/jacoco/trunk/doc/maven.html)
 * Modernizer                      (https://github.com/andrewgaul/modernizer-maven-plugin)
+* Checkstyle                      (https://maven.apache.org/plugins/maven-checkstyle-plugin/)
 
-
-All checkers are enabled by default, but the checkers will *NOT* fail the build if a problem is encountered.
+All checkers are enabled by default and will fail the build if a problem is encountered.
 
 Each checker has a switch to turn it on or off and also whether a problem will be a warning or fatal to the build.
 
@@ -218,6 +218,12 @@ The following switches exist:
     <td>Modernizer</td>
     <td><tt>air.check.skip-modernizer</tt></td>
     <td><tt>air.check.fail-modernizer</tt></td>
+  </tr>
+  <tr>
+    <td>Extended</td>
+    <td>Checkstyle</td>
+    <td><tt>air.check.skip-checkstyle</tt></td>
+    <td><tt>air.check.fail-checkstyle</tt></td>
   </tr>
 </table>
 

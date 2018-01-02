@@ -128,6 +128,7 @@
         <air.check.skip-license>${air.check.skip-extended}</air.check.skip-license>
         <air.check.skip-jacoco>${air.check.skip-extended}</air.check.skip-jacoco>
         <air.check.skip-modernizer>${air.check.skip-extended}</air.check.skip-modernizer>
+        <air.check.skip-checkstyle>${air.check.skip-extended}</air.check.skip-checkstyle>
 
         <!-- all checks -->
         <air.check.fail-all>true</air.check.fail-all>
@@ -146,6 +147,7 @@
         <air.check.fail-pmd>${air.check.fail-extended}</air.check.fail-pmd>
         <air.check.fail-license>${air.check.fail-extended}</air.check.fail-license>
         <air.check.fail-modernizer>${air.check.fail-extended}</air.check.fail-modernizer>
+        <air.check.fail-checkstyle>${air.check.fail-basic}</air.check.fail-checkstyle>
 
         <!-- minimum maven version to build -->
         <air.maven.version>3.2.3</air.maven.version>
@@ -162,6 +164,9 @@
 
         <!-- Packaging for the tarball deployment -->
         <dep.packaging.version>0.91</dep.packaging.version>
+
+        <!-- Policy files for checkers -->
+        <dep.airbase-policy.version>1-SNAPSHOT</dep.airbase-policy.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>4.0</dep.guice.version>
@@ -191,6 +196,10 @@
         <air.license.owner>${project.organization.name}</air.license.owner>
         <air.license.default-value>Copyright (C) ${project.inceptionYear} ${air.license.owner}</air.license.default-value>
         <air.license.ensure-match>Copyright \(C\) \d{4} .+</air.license.ensure-match>
+        <air.license.header-file>license/apache-header.txt</air.license.header-file>
+
+        <!-- Checkstyle -->
+        <air.checkstyle.config-file>checkstyle/airbase-checks.xml</air.checkstyle.config-file>
 
         <!-- default property to empty -->
         <java9-surefire-argline />
@@ -682,11 +691,18 @@
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
                     <version>2.3</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>io.airlift</groupId>
+                            <artifactId>airbase-policy</artifactId>
+                            <version>${dep.airbase-policy.version}</version>
+                        </dependency>
+                    </dependencies>
                     <configuration>
                         <skip>${air.check.skip-license}</skip>
                         <skipExistingHeaders>true</skipExistingHeaders>
                         <failIfMissing>${air.check.fail-license}</failIfMissing>
-                        <header>${air.main.basedir}/src/license/LICENSE-HEADER.txt</header>
+                        <header>${air.license.header-file}</header>
                         <mapping>
                             <java>SLASHSTAR_STYLE</java>
                             <g>SLASHSTAR_STYLE</g>
@@ -781,6 +797,38 @@
                             <goals>
                                 <goal>modernizer</goal>
                             </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>2.17</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>8.7</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>io.airlift</groupId>
+                            <artifactId>airbase-policy</artifactId>
+                            <version>${dep.airbase-policy.version}</version>
+                        </dependency>
+                    </dependencies>
+                    <executions>
+                        <execution>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <configuration>
+                                <skip>${air.check.skip-checkstyle}</skip>
+                                <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
+                                <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                <configLocation>${air.checkstyle.config-file}</configLocation>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
@@ -897,6 +945,11 @@
             <plugin>
                 <groupId>org.gaul</groupId>
                 <artifactId>modernizer-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
 
             <plugin>
