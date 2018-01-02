@@ -136,8 +136,7 @@ Checkers are organized in two groups, basic and extended.
 * Code coverage                   (http://www.eclemma.org/jacoco/trunk/doc/maven.html)
 * Modernizer                      (https://github.com/andrewgaul/modernizer-maven-plugin)
 
-
-All checkers are enabled by default, but the checkers will *NOT* fail the build if a problem is encountered.
+All checkers are enabled by default and will fail the build if a problem is encountered.
 
 Each checker has a switch to turn it on or off and also whether a problem will be a warning or fatal to the build.
 
