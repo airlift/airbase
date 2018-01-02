@@ -132,7 +132,7 @@ Checkers are organized in two groups, basic and extended.
 ### Extended checkers
 * SpotBugs                        (https://spotbugs.github.io/)
 * PMD                             (http://maven.apache.org/plugins/maven-pmd-plugin/)
-* License check                   (http://code.google.com/p/maven-license-plugin/)
+* License check                   (http://code.mycila.com/license-maven-plugin/)
 * Code coverage                   (http://www.eclemma.org/jacoco/trunk/doc/maven.html)
 * Modernizer                      (https://github.com/andrewgaul/modernizer-maven-plugin)
 
