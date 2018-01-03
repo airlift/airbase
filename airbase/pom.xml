@@ -21,6 +21,13 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git@github.com/airlift/airbase.git</connection>
+        <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
+        <url>https://github.com/airlift/airbase</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <developers>
         <!-- see git log -->
         <developer>
