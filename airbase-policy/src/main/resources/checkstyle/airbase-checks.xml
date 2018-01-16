@@ -25,6 +25,10 @@
     </module>
 
     <module name="RegexpMultiline">
+        <property name="format" value="\n\s*\n\s*\{" />
+        <property name="message" value="Blank line before opening brace" />
+    </module>
+    <module name="RegexpMultiline">
         <property name="format" value="\{\n\n" />
         <property name="message" value="Blank line after opening brace" />
     </module>
