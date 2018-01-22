@@ -163,7 +163,7 @@
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
 
         <!-- Packaging for the tarball deployment -->
-        <dep.packaging.version>0.91</dep.packaging.version>
+        <dep.packaging.version>0.163</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>4.0</dep.guice.version>
