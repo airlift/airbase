@@ -1,3 +1,8 @@
+Airbase 80
+
+* Dependency updates:
+  - JMH 1.20 (from 1.15)
+
 Airbase 79
 
 * Use Apache license header from policy JAR
