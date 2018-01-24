@@ -1,3 +1,8 @@
+Airbase 80
+
+* Checkstyle updates:
+  - Forbid import of format methods other than String.format
+
 Airbase 79
 
 * Use Apache license header from policy JAR
