@@ -3,6 +3,8 @@ Airbase 80
 * Dependency updates:
   - JMH 1.20 (from 1.15)
   - packaging 0.163 (from 0.91)
+* Checkstyle updates:
+  - Forbid import of format methods other than String.format
 
 Airbase 79
 
