@@ -1,6 +1,7 @@
 Airbase 80
 
 * Dependency updates:
+  - Guice 4.1 (from 4.0)
   - JMH 1.20 (from 1.15)
   - packaging 0.163 (from 0.91)
 * Checkstyle updates:
