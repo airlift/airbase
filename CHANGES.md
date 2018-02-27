@@ -1,6 +1,7 @@
 Airbase 80
 
 * Dependency updates:
+  - Guava 24.0 (from 21.0)
   - Guice 4.1 (from 4.0)
   - JMH 1.20 (from 1.15)
   - packaging 0.163 (from 0.91)
