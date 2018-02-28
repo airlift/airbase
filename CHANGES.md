@@ -1,5 +1,6 @@
 Airbase 80
 
+* Add milliseconds and time zone to log format for tests
 * Dependency updates:
   - JMH 1.20 (from 1.15)
   - packaging 0.163 (from 0.91)
