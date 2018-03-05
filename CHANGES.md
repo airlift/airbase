@@ -2,6 +2,8 @@ Airbase 80
 
 * Add milliseconds and time zone to log format for tests
 * Dependency updates:
+  - Guava 24.1 (from 21.0)
+  - Guice 4.2 (from 4.0)
   - JMH 1.20 (from 1.15)
   - packaging 0.163 (from 0.91)
 * Plugin updates:
