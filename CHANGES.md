@@ -4,6 +4,10 @@ Airbase 80
 * Dependency updates:
   - JMH 1.20 (from 1.15)
   - packaging 0.163 (from 0.91)
+* Plugin updates:
+  - compiler 3.7.0 (from 3.6.2)
+  - Eclipse compiler 2.8.3 (from 2.8.2)
+  - Error Prone compiler 2.8.3 (from 2.8.2)
 * Checkstyle updates:
   - Forbid import of format methods other than String.format
 
