@@ -11,6 +11,7 @@ Airbase 80
   - compiler 3.7.0 (from 3.6.2)
   - Eclipse compiler 2.8.3 (from 2.8.2)
   - Error Prone compiler 2.8.3 (from 2.8.2)
+  - SpotBugs 3.1.3 (from 3.1.0-RC8)
 * Checkstyle updates:
   - Forbid import of format methods other than String.format
 
