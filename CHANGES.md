@@ -6,6 +6,7 @@ Airbase 80
   - Guice 4.2 (from 4.0)
   - JMH 1.20 (from 1.15)
   - packaging 0.163 (from 0.91)
+  - SpotBugs annotations 3.1.2 (from 3.1.0)
 * Plugin updates:
   - compiler 3.7.0 (from 3.6.2)
   - Eclipse compiler 2.8.3 (from 2.8.2)
