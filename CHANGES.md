@@ -1,3 +1,8 @@
+Airbase 81
+
+* Dependency updates:
+  - Slice 0.34 (from 0.10)
+
 Airbase 80
 
 * Add milliseconds and time zone to log format for tests
