@@ -394,7 +394,7 @@
                             -Dfile.encoding=${project.build.sourceEncoding}
                             -Xmx${air.test.jvmsize}
                             -Xms${air.test.jvmsize}
-                            -XX:OnOutOfMemoryError="kill -9 %p"
+                            -XX:+ExitOnOutOfMemoryError
                             -XX:+HeapDumpOnOutOfMemoryError
                         </argLine>
                     </configuration>
