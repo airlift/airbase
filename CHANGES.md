@@ -1,5 +1,6 @@
 Airbase 81
 
+* Guarantee termination of JVM on OOM when running Surefire
 * Dependency updates:
   - Slice 0.34 (from 0.10)
 
