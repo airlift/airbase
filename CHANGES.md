@@ -1,5 +1,7 @@
 Airbase 81
 
+* Use `-XX:+ExitOnOutOfMemoryError` when running Surefire instead
+  of old-style `-XX:OnOutOfMemoryError="kill ..."`
 * Dependency updates:
   - Slice 0.34 (from 0.10)
 
