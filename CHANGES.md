@@ -1,3 +1,8 @@
+Airbase 82
+
+* Plugin updates:
+  - Surefire 2.22.0 (from 2.20.1)
+
 Airbase 81
 
 * Guarantee termination of JVM on OOM when running Surefire
