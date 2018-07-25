@@ -2,6 +2,7 @@ Airbase 82
 
 * Plugin updates:
   - Surefire 2.22.0 (from 2.20.1)
+  - Enforcer 3.0.0-M2 (from 3.0.0-M1)
 
 Airbase 81
 
