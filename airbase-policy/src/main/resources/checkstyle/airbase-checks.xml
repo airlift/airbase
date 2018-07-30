@@ -33,6 +33,10 @@
         <property name="message" value="Blank line before closing brace" />
     </module>
     <module name="RegexpMultiline">
+      <property name="format" value="\w\([^)\n{(=\&quot;&amp;|&lt;&gt;-]+\n" />
+        <property name="message" value="All parameters should be in the same line or each should be in separate line" />
+    </module>
+    <module name="RegexpMultiline">
         <property name="format" value="[^;]\s\)+\s*[\{;,]?\s*\n" />
         <property name="message" value="Whitespace character before closing parenthesis" />
     </module>
