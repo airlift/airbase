@@ -1,6 +1,9 @@
 Airbase 83
 
+* Dependency updates:
+  - SpotBugs annotations 3.1.6 (from 3.1.2)
 * Plugin updates:
+  - SpotBugs 3.1.6 (from 3.1.3)
   - JaCoCo 0.8.1 (from 0.7.9)
 
 Airbase 82
