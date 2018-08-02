@@ -1,3 +1,8 @@
+Airbase 83
+
+* Plugin updates:
+  - JaCoCo 0.8.1 (from 0.7.9)
+
 Airbase 82
 
 * Plugin updates:
