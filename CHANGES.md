@@ -1,3 +1,8 @@
+Airbase 84
+
+* Dependency updates:
+  - Jackson 2.8.10 (from 2.8.1)
+
 Airbase 83
 
 * Dependency updates:
