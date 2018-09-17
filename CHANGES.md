@@ -1,3 +1,7 @@
+Airbase 84
+
+* Forbid snapshot versions for dependencies
+
 Airbase 83
 
 * Dependency updates:

@@ -307,6 +307,13 @@
                             <requireJavaVersion>
                                 <version>${air.java.version}</version>
                             </requireJavaVersion>
+                            <requireReleaseDeps>
+                                <message>Snapshot dependencies are not allowed</message>
+                                <failWhenParentIsSnapshot>false</failWhenParentIsSnapshot>
+                                <excludes>
+                                    <exclude>${project.groupId}:*</exclude>
+                                </excludes>
+                            </requireReleaseDeps>
                         </rules>
                     </configuration>
                 </plugin>
