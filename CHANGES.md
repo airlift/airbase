@@ -1,3 +1,8 @@
+Airbase 84
+
+* Checkstyle updates:
+  - Forbid static import of Optional's members
+
 Airbase 83
 
 * Dependency updates:

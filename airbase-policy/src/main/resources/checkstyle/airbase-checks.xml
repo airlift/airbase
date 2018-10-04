@@ -53,6 +53,10 @@
         <property name="format" value="^import static (?!java\.lang\.String\.format;).*\.format;" />
         <property name="message" value="Only 'format' from java.lang.String may be statically imported" />
     </module>
+    <module name="RegexpSingleline">
+        <property name="format" value="^import static java\.util\.Optional\." />
+        <property name="message" value="Members of Optional may not be statically imported" />
+    </module>
 
     <module name="RegexpSingleline">
         <property name="format" value="^([^i]|i[^m]|im[^p]|imp[^o]|impo[^r]|impor[^t]|import[^ ]).*Objects\.requireNonNull" />
