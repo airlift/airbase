@@ -2,7 +2,7 @@ Airbase 84
 
 * Checkstyle updates:
   - Forbid static import of Optional's members
-  - Enforce whitespace before array initializer
+  - Enforce whitespace around additional tokens
 
 Airbase 83
 
