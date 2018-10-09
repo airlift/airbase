@@ -393,6 +393,7 @@
                             -Xms${air.test.jvmsize}
                             -XX:+ExitOnOutOfMemoryError
                             -XX:+HeapDumpOnOutOfMemoryError
+                            -XX:-OmitStackTraceInFastThrow
                         </argLine>
                     </configuration>
                 </plugin>

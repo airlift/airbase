@@ -1,6 +1,7 @@
 Airbase 84
 
 * Do not trim stack traces for Surefire test failures
+* Prevent JVM from omitting stack traces for Surefire
 * Checkstyle updates:
   - Forbid static import of Optional's members
   - Enforce whitespace around additional tokens
