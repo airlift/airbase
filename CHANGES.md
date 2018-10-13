@@ -3,6 +3,7 @@ Airbase 89
 * Dependency updates:
   - validation-api 2.0.1 (from 1.1.0)
   - BVal 2.0.0 (from 1.1.1)
+* Set the default JVM local for Surefire tests to en-US. It can be customized via the air.test.language and air.test.region properties.
 
 Airbase 88
 
