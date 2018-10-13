@@ -101,6 +101,12 @@
         <!-- define the JVM timezone to use when running tests. Default is 'UTC. -->
         <air.test.timezone>UTC</air.test.timezone>
 
+        <!-- define the JVM language to use when running tests. Default is 'en'. -->
+        <air.test.language>en</air.test.language>
+
+         <!-- define the JVM region to use when running tests. Default is 'US'. -->
+        <air.test.region>US</air.test.region>
+
         <!-- define the JVM size for forked tests. Defaults to build JVM size. -->
         <air.test.jvmsize>${air.build.jvmsize}</air.test.jvmsize>
 
@@ -383,6 +389,8 @@
                         <systemPropertyVariables>
                             <sun.jnu.encoding>${project.build.sourceEncoding}</sun.jnu.encoding>
                             <user.timezone>${air.test.timezone}</user.timezone>
+                            <user.language>${air.test.language}</user.language>
+                            <user.region>${air.test.region}</user.region>
                             <java.awt.headless>true</java.awt.headless>
                             <java.util.logging.SimpleFormatter.format>%1$tY-%1$tm-%1$tdT%1$tH:%1$tM:%1$tS.%1$tL%1$tz %4$s %5$s%6$s%n</java.util.logging.SimpleFormatter.format>
                         </systemPropertyVariables>
