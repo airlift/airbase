@@ -301,6 +301,7 @@
                                     <include>junit:junit:[4.11,)</include>
                                 </includes>
                             </bannedDependencies>
+                            <banDuplicatePomDependencyVersions />
                             <requireMavenVersion>
                                 <version>${air.maven.version}</version>
                             </requireMavenVersion>

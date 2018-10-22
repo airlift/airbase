@@ -1,3 +1,7 @@
+Airbase 85
+
+* Do not allow duplicate dependencies in POMs
+
 Airbase 84
 
 * Do not trim stack traces for Surefire test failures
