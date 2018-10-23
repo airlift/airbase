@@ -1,3 +1,8 @@
+Airbase 86
+
+* Checkstyle updates:
+  - Do not enforce whitespace before array initializers
+
 Airbase 85
 
 * Do not allow duplicate dependencies in POMs
