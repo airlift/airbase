@@ -1,5 +1,6 @@
 Airbase 86
 
+* Add airlift to dependency management
 * Checkstyle updates:
   - Do not enforce whitespace before array initializers
 

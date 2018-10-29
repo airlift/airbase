@@ -974,6 +974,91 @@
     <!-- The following dependency should be the same everywhere. -->
     <dependencyManagement>
         <dependencies>
+            <!-- Airlift -->
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>concurrent</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>node</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>jmx</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>json</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>bootstrap</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>configuration</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>http-client</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>http-server</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>jaxrs</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>log</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>log-manager</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>event</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>security</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>trace-token</artifactId>
+                <version>${dep.airlift.version}</version>
+            </dependency>
+
             <!-- Google Guice -->
             <dependency>
                 <groupId>com.google.inject</groupId>
