@@ -1,3 +1,7 @@
+Airbase 87
+
+* Generate parameters names also when compiling in IntelliJ
+
 Airbase 86
 
 * Checkstyle updates:
