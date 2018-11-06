@@ -6,6 +6,7 @@ Airbase 94
 * Plugin updates:
   - Enforcer 3.0.0-M3 (from 3.0.0-M2)
   - Extra Enforcer Rules 1.2 (from 1.1)
+* Allow specifying README location and type for launcher
 
 Airbase 93
 
