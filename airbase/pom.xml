@@ -199,6 +199,10 @@
 
         <!-- Checkstyle -->
         <air.checkstyle.config-file>checkstyle/airbase-checks.xml</air.checkstyle.config-file>
+
+        <!-- Readme for launcher -->
+        <air.readme.file>README.txt</air.readme.file>
+        <air.readme.type>txt</air.readme.type>
     </properties>
 
     <build>
@@ -1425,8 +1429,8 @@
                                 <configuration>
                                     <artifacts>
                                         <artifact>
-                                            <file>README.txt</file>
-                                            <type>txt</type>
+                                            <file>${air.readme.file}</file>
+                                            <type>${air.readme.type}</type>
                                             <classifier>readme</classifier>
                                         </artifact>
                                     </artifacts>
