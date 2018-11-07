@@ -1,3 +1,7 @@
+Airbase 88
+
+* Replace dependency-versions-check with Enforcer requireUpperBoundDeps
+
 Airbase 87
 
 * Generate parameters names also when compiling in IntelliJ
