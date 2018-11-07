@@ -119,7 +119,6 @@
         <air.check.skip-enforcer>${air.check.skip-basic}</air.check.skip-enforcer>
         <air.check.skip-dependency>${air.check.skip-basic}</air.check.skip-dependency>
         <air.check.skip-duplicate-finder>${air.check.skip-basic}</air.check.skip-duplicate-finder>
-        <air.check.skip-dependency-version-check>${air.check.skip-basic}</air.check.skip-dependency-version-check>
         <air.check.skip-dependency-scope>${air.check.skip-basic}</air.check.skip-dependency-scope>
 
         <!-- extended checks -->
@@ -139,7 +138,6 @@
         <air.check.fail-enforcer>${air.check.fail-basic}</air.check.fail-enforcer>
         <air.check.fail-dependency>${air.check.fail-basic}</air.check.fail-dependency>
         <air.check.fail-duplicate-finder>${air.check.fail-basic}</air.check.fail-duplicate-finder>
-        <air.check.fail-dependency-version-check>${air.check.fail-basic}</air.check.fail-dependency-version-check>
         <air.check.fail-dependency-scope>${air.check.fail-basic}</air.check.fail-dependency-scope>
 
         <!-- extended checks -->
@@ -302,6 +300,7 @@
                                 </includes>
                             </bannedDependencies>
                             <banDuplicatePomDependencyVersions />
+                            <requireUpperBoundDeps />
                             <requireMavenVersion>
                                 <version>${air.maven.version}</version>
                             </requireMavenVersion>
@@ -594,25 +593,6 @@
                             <ignoredClassPattern>module-info</ignoredClassPattern>
                         </ignoredClassPatterns>
                     </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>com.ning.maven.plugins</groupId>
-                    <artifactId>maven-dependency-versions-check-plugin</artifactId>
-                    <version>2.0.4</version>
-                    <configuration>
-                        <skip>${air.check.skip-dependency-version-check}</skip>
-                        <failBuildInCaseOfConflict>${air.check.fail-dependency-version-check}</failBuildInCaseOfConflict>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>default</id>
-                            <phase>validate</phase>
-                            <goals>
-                                <goal>check</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                 </plugin>
 
                 <plugin>
@@ -911,11 +891,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>com.ning.maven.plugins</groupId>
-                <artifactId>maven-dependency-versions-check-plugin</artifactId>
             </plugin>
 
             <plugin>
