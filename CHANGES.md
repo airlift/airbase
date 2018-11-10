@@ -1,6 +1,8 @@
 Airbase 88
 
 * Replace dependency-versions-check with Enforcer requireUpperBoundDeps
+* Dependency updates:
+  - Jackson 2.9.7 (from 2.8.1)
 
 Airbase 87
 
