@@ -1,3 +1,8 @@
+Airbase 88
+
+* Dependency updates:
+  - Jackson 2.9.7 (from 2.8.1)
+
 Airbase 87
 
 * Generate parameters names also when compiling in IntelliJ
