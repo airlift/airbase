@@ -173,12 +173,6 @@ The following switches exist:
   </tr>
   <tr>
     <td>Basic</td>
-    <td>Maven Dependency version check</td>
-    <td><tt>air.check.skip-dependency-version-check</tt></td>
-    <td><tt>air.check.fail-dependency-version-check</tt></td>
-  </tr>
-  <tr>
-    <td>Basic</td>
     <td>Maven Duplicate finder</td>
     <td><tt>air.check.skip-duplicate-finder</tt></td>
     <td><tt>air.check.fail-duplicate-finder</tt></td>
