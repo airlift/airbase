@@ -800,7 +800,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>8.7</version>
+                            <version>8.16</version>
                         </dependency>
                         <!-- This version must match the Airbase version. It will be updated by -->
                         <!-- the Maven Release plugin. The "project.version" property cannot be -->
