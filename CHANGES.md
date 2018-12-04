@@ -9,6 +9,7 @@ Airbase 89
   - dependency 3.1.1 (from 2.10)
 * Checkstyle updates:
   - Version 8.16 (from 8.7)
+  - Enforce empty lines around program elements
 
 Airbase 88
 
