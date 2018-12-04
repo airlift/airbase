@@ -7,6 +7,8 @@ Airbase 89
 * Plugin updates:
   - Checkstyle 3.0.0 (from 2.17)
   - dependency 3.1.1 (from 2.10)
+* Checkstyle updates:
+  - Version 8.16 (from 8.7)
 
 Airbase 88
 
