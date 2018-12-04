@@ -5,6 +5,7 @@ Airbase 89
   - validation-api 2.0.1 (from 1.1.0)
   - BVal 2.0.0 (from 1.1.1)
 * Plugin updates:
+  - Checkstyle 3.0.0 (from 2.17)
   - dependency 3.1.1 (from 2.10)
 
 Airbase 88
