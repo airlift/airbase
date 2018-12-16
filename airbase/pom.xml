@@ -104,7 +104,7 @@
         <!-- define the JVM language to use when running tests. Default is 'en'. -->
         <air.test.language>en</air.test.language>
 
-         <!-- define the JVM region to use when running tests. Default is 'US'. -->
+        <!-- define the JVM region to use when running tests. Default is 'US'. -->
         <air.test.region>US</air.test.region>
 
         <!-- define the JVM size for forked tests. Defaults to build JVM size. -->
