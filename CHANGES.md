@@ -4,6 +4,8 @@ Airbase 89
 * Dependency updates:
   - validation-api 2.0.1 (from 1.1.0)
   - BVal 2.0.0 (from 1.1.1)
+* Plugin updates:
+  - dependency 3.1.1 (from 2.10)
 
 Airbase 88
 
