@@ -6,6 +6,7 @@ Airbase 89
   - BVal 2.0.0 (from 1.1.1)
 * Plugin updates:
   - Checkstyle 3.0.0 (from 2.17)
+  - compiler 3.8.0 (from 3.7.0)
   - dependency 3.1.1 (from 2.10)
 * Checkstyle updates:
   - Version 8.16 (from 8.7)
