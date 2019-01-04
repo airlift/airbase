@@ -1,5 +1,6 @@
 Airbase 90
 
+* Enforce maximum bytecode version for dependencies
 * Dependency updates:
   - SpotBugs annotations 3.1.10 (from 3.1.6)
 * Plugin updates:
