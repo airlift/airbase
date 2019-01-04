@@ -1,5 +1,6 @@
 Airbase 90
 
+* Add property to configure Modernizer Java version
 * Enforce maximum bytecode version for dependencies
 * Allow dependency plugin to work with Java 11 bytecode
 * Dependency updates:
