@@ -1,6 +1,7 @@
 Airbase 90
 
 * Enforce maximum bytecode version for dependencies
+* Allow dependency plugin to work with Java 11 bytecode
 * Dependency updates:
   - SpotBugs annotations 3.1.10 (from 3.1.6)
 * Plugin updates:
