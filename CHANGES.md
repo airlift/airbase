@@ -1,3 +1,8 @@
+Airbase 90
+
+* Plugin updates:
+  - JaCoCo 0.8.2 (from 0.8.1)
+
 Airbase 89
 
 * Set the default JVM local for Surefire tests to `en-US`
