@@ -1,8 +1,11 @@
 Airbase 90
 
+* Dependency updates:
+  - SpotBugs annotations 3.1.10 (from 3.1.6)
 * Plugin updates:
   - JaCoCo 0.8.2 (from 0.8.1)
   - PMD 3.11.0 (from 3.10.0)
+  - SpotBugs 3.1.10 (from 3.1.6)
 
 Airbase 89
 
