@@ -2,6 +2,7 @@ Airbase 90
 
 * Plugin updates:
   - JaCoCo 0.8.2 (from 0.8.1)
+  - PMD 3.11.0 (from 3.10.0)
 
 Airbase 89
 
