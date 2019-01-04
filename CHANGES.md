@@ -4,6 +4,8 @@ Airbase 90
 * Enforce maximum bytecode version for dependencies
 * Allow dependency plugin to work with Java 11 bytecode
 * Dependency updates:
+  - Guava 26.0 (from 24.1)
+  - Guice 4.2.2 (from 4.2.0)
   - SpotBugs annotations 3.1.10 (from 3.1.6)
 * Plugin updates:
   - JaCoCo 0.8.2 (from 0.8.1)
