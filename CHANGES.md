@@ -8,6 +8,7 @@ Airbase 89
   - Checkstyle 3.0.0 (from 2.17)
   - compiler 3.8.0 (from 3.7.0)
   - dependency 3.1.1 (from 2.10)
+  - JaCoCo 0.8.2 (from 0.8.1)
 * Checkstyle updates:
   - Version 8.16 (from 8.7)
   - Enforce empty lines around program elements
