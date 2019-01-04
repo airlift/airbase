@@ -1,6 +1,7 @@
 Airbase 89
 
 * Set the default JVM local for Surefire tests to `en-US`
+* Add property to configure Modernizer Java version
 * Enforce maximum bytecode version for dependencies
 * Allow dependency plugin to work with Java 11 bytecode
 * Dependency updates:

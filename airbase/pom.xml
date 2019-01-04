@@ -113,6 +113,9 @@
         <!-- Lint mode for Javadoc. Defaults to 'all'. -->
         <air.javadoc.lint>all</air.javadoc.lint>
 
+        <!-- Target Java version for Modernizer -->
+        <air.modernizer.java-version>${project.build.targetJdk}</air.modernizer.java-version>
+
         <!-- Controls all the checkers run when building the project.            -->
         <!-- Can be activated with -Dair.check.skip-all=true on the command line. -->
         <air.check.skip-all>false</air.check.skip-all>
@@ -804,7 +807,7 @@
                     <configuration>
                         <skip>${air.check.skip-modernizer}</skip>
                         <failOnViolations>${air.check.fail-modernizer}</failOnViolations>
-                        <javaVersion>${project.build.targetJdk}</javaVersion>
+                        <javaVersion>${air.modernizer.java-version}</javaVersion>
                     </configuration>
                     <executions>
                         <execution>
