@@ -2,6 +2,7 @@ Airbase 89
 
 * Set the default JVM local for Surefire tests to `en-US`
 * Enforce maximum bytecode version for dependencies
+* Allow dependency plugin to work with Java 11 bytecode
 * Dependency updates:
   - validation-api 2.0.1 (from 1.1.0)
   - BVal 2.0.0 (from 1.1.1)
