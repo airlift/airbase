@@ -4,6 +4,7 @@ Airbase 90
   - SpotBugs annotations 3.1.10 (from 3.1.6)
 * Plugin updates:
   - JaCoCo 0.8.2 (from 0.8.1)
+  - Javadoc 3.0.1 (from 3.0.0)
   - Modernizer 1.7.1 (from 1.5.0)
   - PMD 3.11.0 (from 3.10.0)
   - SpotBugs 3.1.10 (from 3.1.6)
