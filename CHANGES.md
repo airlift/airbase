@@ -1,3 +1,8 @@
+Airbase 91
+
+* Dependency updates:
+  - Jackson 2.9.8 (from 2.9.7)
+
 Airbase 90
 
 * Add property to configure Modernizer Java version
