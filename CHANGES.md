@@ -2,6 +2,8 @@ Airbase 91
 
 * Dependency updates:
   - Jackson 2.9.8 (from 2.9.7)
+* Plugin updates:
+  - Sources 3.0.1 (from 2.2.1)
 
 Airbase 90
 
