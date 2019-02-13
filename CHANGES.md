@@ -3,6 +3,7 @@ Airbase 91
 * Require package names not to contain uppercase letters nor underscores.
 * Dependency updates:
   - Jackson 2.9.8 (from 2.9.7)
+  - Add jackson-dataformat-yaml 2.9.8
 * Plugin updates:
   - Sources 3.0.1 (from 2.2.1)
 
