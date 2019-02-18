@@ -415,9 +415,6 @@
                     <configuration>
                         <systemPropertyVariables>
                             <sun.jnu.encoding>${project.build.sourceEncoding}</sun.jnu.encoding>
-                            <user.timezone>${air.test.timezone}</user.timezone>
-                            <user.language>${air.test.language}</user.language>
-                            <user.region>${air.test.region}</user.region>
                             <java.awt.headless>true</java.awt.headless>
                             <java.util.logging.SimpleFormatter.format>%1$tY-%1$tm-%1$tdT%1$tH:%1$tM:%1$tS.%1$tL%1$tz %4$s %5$s%6$s%n</java.util.logging.SimpleFormatter.format>
                         </systemPropertyVariables>
@@ -433,6 +430,9 @@
                             -XX:+ExitOnOutOfMemoryError
                             -XX:+HeapDumpOnOutOfMemoryError
                             -XX:-OmitStackTraceInFastThrow
+                            -Duser.timezone=${air.test.timezone}
+                            -Duser.language=${air.test.language}
+                            -Duser.region=${air.test.region}
                         </argLine>
                     </configuration>
                 </plugin>
