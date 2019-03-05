@@ -1,5 +1,6 @@
 Airbase 91
 
+* Require package names not to contain uppercase letters nor underscores.
 * Dependency updates:
   - Jackson 2.9.8 (from 2.9.7)
 * Plugin updates:
