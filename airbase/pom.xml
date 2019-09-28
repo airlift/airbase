@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.airlift</groupId>
+    <groupId>com.facebook.airlift</groupId>
     <artifactId>airbase</artifactId>
     <version>92-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -22,9 +22,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com/airlift/airbase.git</connection>
-        <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
-        <url>https://github.com/airlift/airbase</url>
+        <connection>scm:git:git@github.com/prestodb/airbase.git</connection>
+        <developerConnection>scm:git:git@github.com:prestodb/airbase.git</developerConnection>
+        <url>https://github.com/prestodb/airbase</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -299,15 +299,15 @@
                                     <!-- Use the official version at javax.servlet:javax.servlet-api -->
                                     <exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
                                     <!-- Renamed airlift modules -->
-                                    <exclude>io.airlift:discovery-experimental</exclude>
-                                    <exclude>io.airlift:event-experimental</exclude>
-                                    <exclude>io.airlift:http-client-experimental</exclude>
-                                    <exclude>io.airlift:jmx-http-experimental</exclude>
-                                    <exclude>io.airlift:jmx-http-rpc-experimental</exclude>
-                                    <exclude>io.airlift:rack-experimental</exclude>
-                                    <exclude>io.airlift:rack-launcher-experimental</exclude>
-                                    <exclude>io.airlift:rack-packaging-experimental</exclude>
-                                    <exclude>io.airlift:rack-server-base-experimental</exclude>
+                                    <exclude>com.facebook.airlift:discovery-experimental</exclude>
+                                    <exclude>com.facebook.airlift:event-experimental</exclude>
+                                    <exclude>com.facebook.airlift:http-client-experimental</exclude>
+                                    <exclude>com.facebook.airlift:jmx-http-experimental</exclude>
+                                    <exclude>com.facebook.airlift:jmx-http-rpc-experimental</exclude>
+                                    <exclude>com.facebook.airlift:rack-experimental</exclude>
+                                    <exclude>com.facebook.airlift:rack-launcher-experimental</exclude>
+                                    <exclude>com.facebook.airlift:rack-packaging-experimental</exclude>
+                                    <exclude>com.facebook.airlift:rack-server-base-experimental</exclude>
                                 </excludes>
                                 <includes>
                                     <!-- whitelist the well numbered guava releases -->
@@ -559,11 +559,11 @@
                             <exception>
                                 <conflictingDependencies>
                                     <dependency>
-                                        <groupId>io.airlift</groupId>
+                                        <groupId>com.facebook.airlift</groupId>
                                         <artifactId>http-server</artifactId>
                                     </dependency>
                                     <dependency>
-                                        <groupId>io.airlift</groupId>
+                                        <groupId>com.facebook.airlift</groupId>
                                         <artifactId>http-client</artifactId>
                                     </dependency>
                                 </conflictingDependencies>
@@ -711,7 +711,7 @@
                         <!-- the Maven Release plugin. The "project.version" property cannot be -->
                         <!-- used here as it will resolve to the version of the child project.  -->
                         <dependency>
-                            <groupId>io.airlift</groupId>
+                            <groupId>com.facebook.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
                             <version>92-SNAPSHOT</version>
                         </dependency>
@@ -833,7 +833,7 @@
                         <!-- the Maven Release plugin. The "project.version" property cannot be -->
                         <!-- used here as it will resolve to the version of the child project.  -->
                         <dependency>
-                            <groupId>io.airlift</groupId>
+                            <groupId>com.facebook.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
                             <version>92-SNAPSHOT</version>
                         </dependency>
@@ -1392,7 +1392,7 @@
 
             <dependencies>
                 <dependency>
-                    <groupId>io.airlift</groupId>
+                    <groupId>com.facebook.airlift</groupId>
                     <artifactId>launcher</artifactId>
                     <version>${dep.packaging.version}</version>
                     <classifier>bin</classifier>
@@ -1401,7 +1401,7 @@
                 </dependency>
 
                 <dependency>
-                    <groupId>io.airlift</groupId>
+                    <groupId>com.facebook.airlift</groupId>
                     <artifactId>launcher</artifactId>
                     <version>${dep.packaging.version}</version>
                     <classifier>properties</classifier>
@@ -1438,7 +1438,7 @@
                         </configuration>
                         <dependencies>
                             <dependency>
-                                <groupId>io.airlift</groupId>
+                                <groupId>com.facebook.airlift</groupId>
                                 <artifactId>packaging</artifactId>
                                 <version>${dep.packaging.version}</version>
                             </dependency>

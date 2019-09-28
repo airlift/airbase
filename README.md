@@ -1,6 +1,6 @@
 # Airbase
-[![Maven Central](https://img.shields.io/maven-central/v/io.airlift/airbase.svg?label=Maven%20Central)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.airlift%22%20AND%20a%3A%22airbase%22)
-[![Build Status](https://travis-ci.org/airlift/airbase.svg?branch=master)](https://travis-ci.org/airlift/airbase)
+[![Maven Central](https://img.shields.io/maven-central/v/com.facebook.airlift/airbase.svg?label=Maven%20Central)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.airlift%22%20AND%20a%3A%22airbase%22)
+[![Build Status](https://travis-ci.org/prestodb/airbase.svg?branch=master)](https://travis-ci.org/prestodb/airbase)
 
 ## Usage
 
@@ -8,7 +8,7 @@ Add Airbase as the parent to a project:
 
 ```xml
 <parent>
-  <groupId>io.airlift</groupId>
+  <groupId>com.facebook.airlift</groupId>
   <artifactId>airbase</artifactId>
   <version> ... current pom release version ...</version>
 </parent>
@@ -43,7 +43,7 @@ This is a sample skeleton pom using Airbase:
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.airlift</groupId>
+    <groupId>com.facebook.airlift</groupId>
     <artifactId>airbase</artifactId>
     <version> ... current version ...</version>
   </parent>

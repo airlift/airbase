@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.airlift</groupId>
+    <groupId>com.facebook.airlift</groupId>
     <artifactId>airbase-root</artifactId>
     <version>92-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>airbase-root</name>
     <description>Aggregator POM for Airbase</description>
-    <url>https://github.com/airlift/airbase</url>
+    <url>https://github.com/prestodb/airbase</url>
 
     <inceptionYear>2013</inceptionYear>
 
@@ -21,9 +21,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com/airlift/airbase.git</connection>
-        <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
-        <url>https://github.com/airlift/airbase</url>
+        <connection>scm:git:git@github.com/prestodb/airbase.git</connection>
+        <developerConnection>scm:git:git@github.com:prestodb/airbase.git</developerConnection>
+        <url>https://github.com/prestodb/airbase</url>
         <tag>HEAD</tag>
     </scm>
 
