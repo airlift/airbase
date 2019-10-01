@@ -3,7 +3,7 @@
 
     <groupId>com.facebook.airlift</groupId>
     <artifactId>airbase-root</artifactId>
-    <version>92</version>
+    <version>93-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>airbase-root</name>
@@ -28,7 +28,7 @@
         <connection>scm:git:git@github.com/prestodb/airbase.git</connection>
         <developerConnection>scm:git:git@github.com:prestodb/airbase.git</developerConnection>
         <url>https://github.com/prestodb/airbase</url>
-        <tag>92</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
