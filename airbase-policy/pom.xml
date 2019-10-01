@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.facebook.airlift</groupId>
         <artifactId>airbase-root</artifactId>
-        <version>92-SNAPSHOT</version>
+        <version>92</version>
     </parent>
 
     <artifactId>airbase-policy</artifactId>
