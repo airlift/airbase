@@ -205,6 +205,9 @@
 
         <!-- Checkstyle -->
         <air.checkstyle.config-file>checkstyle/airbase-checks.xml</air.checkstyle.config-file>
+
+        <!-- nexus-staging-maven-plugin version -->
+        <dep.nexus-staging-plugin.version>1.6.8</dep.nexus-staging-plugin.version>
     </properties>
 
     <build>
@@ -917,6 +920,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <preparationGoals>clean verify -DskipTests</preparationGoals>
+                </configuration>
             </plugin>
 
             <plugin>
@@ -981,6 +987,17 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>${dep.nexus-staging-plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                </configuration>
             </plugin>
         </plugins>
     </build>
