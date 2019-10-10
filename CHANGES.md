@@ -2,6 +2,8 @@ Airbase 92
 
 * Dependency updates:
   - Jackson 2.10.0 (from 2.9.8)
+* Plugin updates:
+  - Checkstyle 3.1.0 (from 3.0.0)
 
 Airbase 91
 
