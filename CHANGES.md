@@ -1,7 +1,7 @@
 Airbase 92
 
 * Dependency updates:
-  - Jackson 2.9.10 (from 2.9.8)
+  - Jackson 2.10.0 (from 2.9.8)
 
 Airbase 91
 
