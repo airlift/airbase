@@ -6,6 +6,7 @@ Airbase 92
   - Checkstyle 3.1.0 (from 3.0.0)
 * Checkstyle updates:
   - Version 8.25 (from 8.16)
+  - Allow multi character type variable names
 
 Airbase 91
 
