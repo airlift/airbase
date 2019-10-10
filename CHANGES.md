@@ -4,6 +4,8 @@ Airbase 92
   - Jackson 2.10.0 (from 2.9.8)
 * Plugin updates:
   - Checkstyle 3.1.0 (from 3.0.0)
+* Checkstyle updates:
+  - Version 8.25 (from 8.16)
 
 Airbase 91
 
