@@ -450,7 +450,7 @@
                         <mavenExecutorId>forked-path</mavenExecutorId>
                         <pushChanges>${air.release.push-changes}</pushChanges>
                         <localCheckout>true</localCheckout>
-                        <preparationGoals>clean install</preparationGoals>
+                        <preparationGoals>clean verify -DskipTests</preparationGoals>
                         <tagNameFormat>@{project.version}</tagNameFormat>
                         <useReleaseProfile>false</useReleaseProfile>
                         <goals>deploy</goals>
@@ -920,9 +920,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <preparationGoals>clean verify -DskipTests</preparationGoals>
-                </configuration>
             </plugin>
 
             <plugin>
