@@ -1,3 +1,8 @@
+Airbase 93
+
+* Checkstyle updates:
+  - Enforce placement of lambda's opening brace
+
 Airbase 92
 
 * Dependency updates:
