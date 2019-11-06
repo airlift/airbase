@@ -40,6 +40,10 @@
         <property name="format" value="->\s*\{\s+\}" />
         <property name="message" value="Whitespace inside empty lambda body" />
     </module>
+    <module name="RegexpMultiline">
+        <property name="format" value="->(\s*+(//.*+)?\n)++\s*+\{" />
+        <property name="message" value="Lambda opening brace should be on the same line as ->" />
+    </module>
     <module name="RegexpSingleline">
         <property name="format" value="(class|interface) ([a-zA-Z0-9_])+(&lt;.*&gt;)? (extends|implements)" />
         <property name="message" value="No new line before extends/implements" />
@@ -118,7 +122,7 @@
         <module name="LeftCurly">
             <property name="option" value="eol" />
             <property name="tokens" value="
-                 LAMBDA, LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_FOR,
+                 LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_FOR,
                  LITERAL_IF, LITERAL_SWITCH, LITERAL_SYNCHRONIZED, LITERAL_TRY, LITERAL_WHILE" />
         </module>
         <module name="RightCurly">
