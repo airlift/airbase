@@ -5,6 +5,7 @@ Airbase 93
 * Plugin updates:
   - JaCoCo 0.8.5 (from 0.8.2)
   - SpotBugs 3.1.12.2 (from 3.1.10)
+  - PMD 3.12.0 (from 3.11.0)
 * Checkstyle updates:
   - Enforce placement of lambda's opening brace
 
