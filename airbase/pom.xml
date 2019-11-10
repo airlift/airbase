@@ -157,7 +157,7 @@
         <air.check.fail-checkstyle>${air.check.fail-basic}</air.check.fail-checkstyle>
 
         <!-- minimum maven version to build -->
-        <air.maven.version>3.2.3</air.maven.version>
+        <air.maven.version>3.3.9</air.maven.version>
 
         <!-- minimum Java version to build -->
         <air.java.version>${project.build.targetJdk}</air.java.version>
