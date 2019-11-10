@@ -1,5 +1,6 @@
 Airbase 93
 
+* Require Maven version 3.3.9
 * Dependency updates:
   - SpotBugs annotations 3.1.12 (from 3.1.10)
 * Plugin updates:
