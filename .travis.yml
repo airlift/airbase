@@ -1,12 +1,18 @@
-language: java
+language: bash
 
-jdk:
-  - openjdk8
-  - openjdk9
-  - openjdk10
-  - openjdk11
-  - openjdk-ea
+env:
+  - MAVEN=3.3.9 JDK=8
+  - MAVEN=3.5.4 JDK=8
+  - MAVEN=3.5.4 JDK=11
+  - MAVEN=3.6.2 JDK=8
+  - MAVEN=3.6.2 JDK=11
+  - MAVEN=3.6.2 JDK=13
 
-matrix:
-  allow_failures:
-    - jdk: openjdk-ea
+install:
+  - IMAGE=maven:$MAVEN-jdk-$JDK
+  - RUN="run -v $PWD:/build -w /build $IMAGE"
+  - docker pull $IMAGE
+  - docker $RUN mvn -V -B -q dependency:go-offline
+
+script:
+  - docker $RUN mvn -V -B clean install
