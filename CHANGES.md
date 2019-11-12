@@ -6,6 +6,7 @@ Airbase 93
   - JaCoCo 0.8.5 (from 0.8.2)
   - SpotBugs 3.1.12.2 (from 3.1.10)
   - PMD 3.12.0 (from 3.11.0)
+  - git commit id 3.0.1 (from 2.1.13)
 * Checkstyle updates:
   - Enforce placement of lambda's opening brace
 
