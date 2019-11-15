@@ -9,7 +9,7 @@
 
     <name>airbase</name>
     <description>Base POM for Airlift</description>
-    <url>https://github.com/airlift/airbase</url>
+    <url>https://github.com/prestodb/airbase</url>
 
     <inceptionYear>2013</inceptionYear>
 
