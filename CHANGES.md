@@ -1,3 +1,8 @@
+Airbase 94
+
+* Dependency updates:
+  - javax.annotation-api 1.3.2 (from 1.3.1)
+
 Airbase 93
 
 * Require Maven version 3.3.9
