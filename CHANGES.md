@@ -3,6 +3,8 @@ Airbase 94
 * Dependency updates:
   - javax.annotation-api 1.3.2 (from 1.3.1)
   - SLF4J 1.7.28 (from 1.7.25)
+* Plugin updates:
+  - Extra Enforcer Rules 1.2 (from 1.1)
 
 Airbase 93
 
