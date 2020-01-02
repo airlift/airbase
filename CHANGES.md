@@ -4,6 +4,7 @@ Airbase 94
 * Remove Hamcrest
 * Remove Mockito
 * Remove Objenesis
+* Add shade plugin
 * Dependency updates:
   - Slice 0.37 (from 0.34)
   - jmxutils 1.21 (from 1.19)
