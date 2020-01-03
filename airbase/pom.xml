@@ -110,6 +110,9 @@
         <!-- define the JVM size for forked tests. Defaults to build JVM size. -->
         <air.test.jvmsize>${air.build.jvmsize}</air.test.jvmsize>
 
+        <!-- define the heap dump path for forked tests. -->
+        <air.test.heap-dump-path>/tmp/test-heapdump.hprof</air.test.heap-dump-path>
+
         <!-- Lint mode for Javadoc. Defaults to 'all'. -->
         <air.javadoc.lint>all</air.javadoc.lint>
 
@@ -432,6 +435,7 @@
                             -Xms${air.test.jvmsize}
                             -XX:+ExitOnOutOfMemoryError
                             -XX:+HeapDumpOnOutOfMemoryError
+                            -XX:HeapDumpPath=${air.test.heap-dump-path}
                             -XX:-OmitStackTraceInFastThrow
                         </argLine>
                     </configuration>
