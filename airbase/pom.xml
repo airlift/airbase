@@ -433,6 +433,7 @@
                             -XX:+ExitOnOutOfMemoryError
                             -XX:+HeapDumpOnOutOfMemoryError
                             -XX:-OmitStackTraceInFastThrow
+                            -XX:MaxPermSize=256m
                         </argLine>
                     </configuration>
                 </plugin>
