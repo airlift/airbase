@@ -187,7 +187,7 @@
         <dep.joda.version>2.9.9</dep.joda.version>
         <dep.spotbugs-annotations.version>3.1.12</dep.spotbugs-annotations.version>
         <dep.testng.version>6.9.6</dep.testng.version>
-        <dep.assertj-core.version>3.5.2</dep.assertj-core.version>
+        <dep.assertj-core.version>3.14.0</dep.assertj-core.version>
         <dep.assertj-guava.version>3.1.0</dep.assertj-guava.version>
         <dep.assertj-joda-time.version>2.0.0</dep.assertj-joda-time.version>
         <dep.assertj-db.version>1.1.1</dep.assertj-db.version>
