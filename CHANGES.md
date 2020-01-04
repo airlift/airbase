@@ -1,6 +1,7 @@
 Airbase 94
 
 * Dependency updates:
+  - jmxutils 1.21 (from 1.19)
   - javax.annotation-api 1.3.2 (from 1.3.1)
   - javax.servlet-api 4.0.1 (from 3.1.0)
   - SLF4J 1.7.29 (from 1.7.28)
