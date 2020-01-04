@@ -400,10 +400,6 @@ Airbase provides versions for the following well-known dependencies:
     <td><tt>org.mockito:mockito-core</tt></td>
   </tr>
   <tr>
-    <td>Hamcrest matchers</td>
-    <td><tt>org.hamcrest:hamcrest-core</tt><p/><tt>org.hamcrest:hamcrest-library</tt><p/><tt>org.objenesis:objenesis</tt></td>
-  </tr>
-  <tr>
     <td>Airlift Slice</td>
     <td><tt>io.airlift:slice</tt></td>
   </tr>

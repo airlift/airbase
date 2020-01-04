@@ -1,6 +1,7 @@
 Airbase 94
 
 * Remove all AssertJ dependencies except Core
+* Remove Hamcrest
 * Dependency updates:
   - jmxutils 1.21 (from 1.19)
   - javax.annotation-api 1.3.2 (from 1.3.1)
