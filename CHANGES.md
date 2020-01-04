@@ -5,6 +5,7 @@ Airbase 94
 * Remove Mockito
 * Remove Objenesis
 * Dependency updates:
+  - Slice 0.37 (from 0.34)
   - jmxutils 1.21 (from 1.19)
   - javax.annotation-api 1.3.2 (from 1.3.1)
   - javax.servlet-api 4.0.1 (from 3.1.0)
