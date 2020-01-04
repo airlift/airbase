@@ -393,7 +393,7 @@ Airbase provides versions for the following well-known dependencies:
   </tr>
   <tr>
     <td>AssertJ</td>
-    <td><tt>org.assertj:assertj-core</tt><p/><tt>org.assertj:assertj-guava</tt><p/><tt>org.assertj:assertj-joda-time</tt><p/><tt>org.assertj:assertj-db</tt></td>
+    <td><tt>org.assertj:assertj-core</tt></td>
   </tr>
   <tr>
     <td>Mockito</td>
