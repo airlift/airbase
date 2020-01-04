@@ -182,7 +182,7 @@
         <dep.javax-servlet.version>3.1.0</dep.javax-servlet.version>
         <dep.bval.version>2.0.0</dep.bval.version>
         <dep.jackson.version>2.10.0</dep.jackson.version>
-        <dep.jmxutils.version>1.19</dep.jmxutils.version>
+        <dep.jmxutils.version>1.21</dep.jmxutils.version>
         <dep.cglib.version>3.2.5</dep.cglib.version>
         <dep.joda.version>2.9.9</dep.joda.version>
         <dep.spotbugs-annotations.version>3.1.12</dep.spotbugs-annotations.version>
