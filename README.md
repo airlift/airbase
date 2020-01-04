@@ -396,10 +396,6 @@ Airbase provides versions for the following well-known dependencies:
     <td><tt>org.assertj:assertj-core</tt></td>
   </tr>
   <tr>
-    <td>Mockito</td>
-    <td><tt>org.mockito:mockito-core</tt></td>
-  </tr>
-  <tr>
     <td>Airlift Slice</td>
     <td><tt>io.airlift:slice</tt></td>
   </tr>

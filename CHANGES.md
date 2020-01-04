@@ -2,6 +2,7 @@ Airbase 94
 
 * Remove all AssertJ dependencies except Core
 * Remove Hamcrest
+* Remove Mockito
 * Remove Objenesis
 * Dependency updates:
   - jmxutils 1.21 (from 1.19)
