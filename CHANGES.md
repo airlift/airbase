@@ -2,6 +2,7 @@ Airbase 95
 
 * Dependency updates:
   - Joda-Time 2.10.5 (from 2.9.9)
+  - Slice 0.38 (from 0.37)
 
 Airbase 94
 
