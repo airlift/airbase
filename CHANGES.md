@@ -1,3 +1,8 @@
+Airbase 95
+
+* Dependency updates:
+  - Joda-Time 2.10.5 (from 2.9.9)
+
 Airbase 94
 
 * Remove all AssertJ dependencies except Core
