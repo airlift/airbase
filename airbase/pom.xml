@@ -1170,6 +1170,12 @@
                 <version>${dep.jackson.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-xml</artifactId>
+                <version>${dep.jackson.version}</version>
+            </dependency>
+
             <!-- misc stuff -->
             <dependency>
                 <groupId>org.apache.bval</groupId>
