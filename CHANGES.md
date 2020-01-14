@@ -1,3 +1,7 @@
+Airbase 96
+
+* Remove dependency:analyze-dep-mgt check
+
 Airbase 95
 
 * Dependency updates:
