@@ -359,7 +359,6 @@
                             <goals>
                                 <goal>analyze-only</goal>
                                 <goal>analyze-duplicate</goal>
-                                <goal>analyze-dep-mgt</goal>
                             </goals>
                         </execution>
                     </executions>
