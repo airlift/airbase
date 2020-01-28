@@ -539,7 +539,7 @@
                 <plugin>
                     <groupId>org.basepom.maven</groupId>
                     <artifactId>duplicate-finder-maven-plugin</artifactId>
-                    <version>1.2.1</version>
+                    <version>1.4.0</version>
                     <executions>
                         <execution>
                             <id>default</id>
@@ -622,9 +622,6 @@
                             <ignoredResourcePattern>.*\.java</ignoredResourcePattern>
                             <ignoredResourcePattern>THIRD-PARTY</ignoredResourcePattern>
                         </ignoredResourcePatterns>
-                        <ignoredClassPatterns>
-                            <ignoredClassPattern>module-info</ignoredClassPattern>
-                        </ignoredClassPatterns>
                     </configuration>
                 </plugin>
 
