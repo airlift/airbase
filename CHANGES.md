@@ -1,6 +1,8 @@
 Airbase 96
 
 * Remove dependency:analyze-dep-mgt check
+* Plugin updates:
+  - Duplicate Finder 1.4.0 (from 1.2.1)
 
 Airbase 95
 
