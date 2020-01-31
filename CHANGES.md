@@ -1,3 +1,8 @@
+Airbase 97
+
+* Plugin updates:
+  - Dependency Scope 0.10 (from 0.8)
+
 Airbase 96
 
 * Remove dependency:analyze-dep-mgt check
