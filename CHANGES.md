@@ -1,3 +1,9 @@
+Airbase 98
+
+* Parameterize distributionManagement
+* Plugin updates:
+  - git commit id 4.0.0 (from 3.0.1)
+
 Airbase 97
 
 * Plugin updates:
