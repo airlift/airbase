@@ -65,14 +65,14 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>${air.snapshot.repository.id}</id>
+            <name>${air.snapshot.repository.name}</name>
+            <url>${air.snapshot.repository.url}</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>${air.release.repository.id}</id>
+            <name>${air.release.repository.name}</name>
+            <url>${air.release.repository.url}</url>
         </repository>
     </distributionManagement>
 
@@ -203,6 +203,14 @@
         <!-- Readme for launcher -->
         <air.readme.file>README.txt</air.readme.file>
         <air.readme.type>txt</air.readme.type>
+
+        <!-- Properties for controlling distributionManagement -->
+        <air.snapshot.repository.id>ossrh</air.snapshot.repository.id>
+        <air.snapshot.repository.name>Sonatype Nexus Snapshots</air.snapshot.repository.name>
+        <air.snapshot.repository.url>https://oss.sonatype.org/content/repositories/snapshots</air.snapshot.repository.url>
+        <air.release.repository.id>ossrh</air.release.repository.id>
+        <air.release.repository.name>Sonatype Release Snapshots</air.release.repository.name>
+        <air.release.repository.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</air.release.repository.url>
     </properties>
 
     <build>
