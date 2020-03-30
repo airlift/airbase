@@ -1,3 +1,8 @@
+Airbase 99
+
+* Dependency updates:
+  - Slf4j 1.7.30 (from 1.7.29)
+
 Airbase 98
 
 * Parameterize distributionManagement
