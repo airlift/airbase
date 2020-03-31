@@ -3,6 +3,7 @@ Airbase 99
 * Dependency updates:
   - Slf4j 1.7.30 (from 1.7.29)
   - Jackson 2.10.3 (from 2.10.0)
+  - Guice 4.2.3 (from 4.2.2)
 
 Airbase 98
 
