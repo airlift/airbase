@@ -169,10 +169,10 @@
         <module name="ParameterName" />
         <module name="StaticVariableName" />
         <module name="ClassTypeParameterName">
-            <property name="format" value="^[A-Z][A-Z0-9]*$" />
+            <property name="format" value="^[A-Z][A-Za-z0-9]*$" />
         </module>
         <module name="MethodTypeParameterName">
-            <property name="format" value="^[A-Z][A-Z0-9]*$" />
+            <property name="format" value="^[A-Z][A-Za-z0-9]*$" />
         </module>
 
         <module name="AnnotationUseStyle">
