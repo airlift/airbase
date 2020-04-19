@@ -91,6 +91,11 @@
         <!-- whether a release:perform automatically pushes the created files and tags to -->
         <!-- the upstream repository. Default is no. -->
         <air.release.push-changes>false</air.release.push-changes>
+        <air.release.auto-version-submodules>true</air.release.auto-version-submodules>
+        <air.release.release-profiles>oss-release</air.release.release-profiles>
+        <air.release.preparation-goals>clean install</air.release.preparation-goals>
+        <air.release.tag-name-format>@{project.version}</air.release.tag-name-format>
+
 
         <!-- define the thread count for parallel tests. -->
         <air.test.thread-count>1</air.test.thread-count>
@@ -447,13 +452,13 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5</version>
                     <configuration>
-                        <releaseProfiles>oss-release</releaseProfiles>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <releaseProfiles>${air.release.release-profiles}</releaseProfiles>
+                        <autoVersionSubmodules>${air.release.auto-version-submodules}</autoVersionSubmodules>
                         <mavenExecutorId>forked-path</mavenExecutorId>
                         <pushChanges>${air.release.push-changes}</pushChanges>
                         <localCheckout>true</localCheckout>
-                        <preparationGoals>clean install</preparationGoals>
-                        <tagNameFormat>@{project.version}</tagNameFormat>
+                        <preparationGoals>${air.release.preparation-goals}</preparationGoals>
+                        <tagNameFormat>${air.release.tag-name-format}</tagNameFormat>
                         <useReleaseProfile>false</useReleaseProfile>
                         <goals>deploy</goals>
                     </configuration>
