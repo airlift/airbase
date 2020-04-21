@@ -115,6 +115,9 @@
         <!-- define the JVM size for forked tests. Defaults to build JVM size. -->
         <air.test.jvmsize>${air.build.jvmsize}</air.test.jvmsize>
 
+        <!-- provide additional options for test JVM -->
+        <air.test.jvm.additional-arguments></air.test.jvm.additional-arguments>
+
         <!-- Lint mode for Javadoc. Defaults to 'all'. -->
         <air.javadoc.lint>all</air.javadoc.lint>
 
@@ -443,6 +446,7 @@
                             -XX:+ExitOnOutOfMemoryError
                             -XX:+HeapDumpOnOutOfMemoryError
                             -XX:-OmitStackTraceInFastThrow
+                            ${air.test.jvm.additional-arguments}
                         </argLine>
                     </configuration>
                 </plugin>
