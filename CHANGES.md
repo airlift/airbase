@@ -1,3 +1,7 @@
+Airbase 100
+
+* Add hook for altering surefire JVM argLine
+
 Airbase 99
 
 * Dependency updates:
