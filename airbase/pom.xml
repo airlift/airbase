@@ -430,6 +430,7 @@
                         <runOrder>random</runOrder>
                         <parallel>${air.test.parallel}</parallel>
                         <threadCount>${air.test.thread-count}</threadCount>
+                        <!-- ${argLine} is for Jacoco: https://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html -->
                         <argLine>
                             ${argLine}
                             -Dfile.encoding=${project.build.sourceEncoding}
