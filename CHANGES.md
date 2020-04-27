@@ -1,6 +1,9 @@
 Airbase 100
 
 * Add hook for altering surefire JVM argLine
+* Add additional properties for release plugin
+* Checkstyle updates:
+  - Allow camel case type parameter names
 
 Airbase 99
 
