@@ -1,3 +1,8 @@
+Airbase 100
+
+* Plugin updates:
+  - Eclipse compiler 2.8.6 (from 2.8.3)
+
 Airbase 99
 
 * Dependency updates:
