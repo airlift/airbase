@@ -4,7 +4,7 @@
 
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <version>100-SNAPSHOT</version>
+    <version>100</version>
     <packaging>pom</packaging>
 
     <name>airbase</name>
@@ -25,7 +25,7 @@
         <connection>scm:git:git@github.com/airlift/airbase.git</connection>
         <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
         <url>https://github.com/airlift/airbase</url>
-        <tag>HEAD</tag>
+        <tag>100</tag>
     </scm>
 
     <developers>
@@ -116,7 +116,7 @@
         <air.test.jvmsize>${air.build.jvmsize}</air.test.jvmsize>
 
         <!-- provide additional options for test JVM -->
-        <air.test.jvm.additional-arguments></air.test.jvm.additional-arguments>
+        <air.test.jvm.additional-arguments />
 
         <!-- Lint mode for Javadoc. Defaults to 'all'. -->
         <air.javadoc.lint>all</air.javadoc.lint>
@@ -727,7 +727,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>100-SNAPSHOT</version>
+                            <version>100</version>
                         </dependency>
                     </dependencies>
                     <configuration>
@@ -849,7 +849,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>100-SNAPSHOT</version>
+                            <version>100</version>
                         </dependency>
                     </dependencies>
                     <executions>
