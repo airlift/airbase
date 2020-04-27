@@ -2,6 +2,8 @@ Airbase 100
 
 * Add hook for altering surefire JVM argLine
 * Add additional properties for release plugin
+* Dependency updates:
+  - Guava 29.0 (from 26.0)
 * Checkstyle updates:
   - Allow camel case type parameter names
 

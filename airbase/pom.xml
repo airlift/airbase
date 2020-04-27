@@ -182,7 +182,7 @@
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>4.2.3</dep.guice.version>
-        <dep.guava.version>26.0-jre</dep.guava.version>
+        <dep.guava.version>29.0-jre</dep.guava.version>
         <dep.slf4j.version>1.7.30</dep.slf4j.version>
         <dep.logback.version>1.2.3</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
@@ -308,6 +308,8 @@
                                     <exclude>com.google.collections:google-collections</exclude>
                                     <!-- but not the badly numbered ones... -->
                                     <exclude>com.google.guava:guava</exclude>
+                                    <!-- the non-empty verison overlaps with classes in guava -->
+                                    <exclude>com.google.guava:listenablefuture</exclude>
                                     <!-- Contains FindBugs annotations, JSR-305 and JCIP annotations -->
                                     <exclude>com.google.code.findbugs:annotations</exclude>
                                     <!-- Use the official version at javax.servlet:javax.servlet-api -->
@@ -1036,6 +1038,13 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${dep.guava.version}</version>
+                <exclusions>
+                    <!-- this empty dependency is a hack and not needed -->
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- Java APIs -->
