@@ -1,5 +1,7 @@
 Airbase 102
 
+* Dependency updates:
+  - Jackson 2.10.4 (from 2.10.3)
 * Plugin updates:
   - dependency 3.1.2 (from 3.1.1)
 
