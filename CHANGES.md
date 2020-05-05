@@ -1,5 +1,8 @@
 Airbase 102
 
+* Add dependencies:
+  - jackson-dataformat-cbor
+  - jackson-dataformat-ion
 * Dependency updates:
   - Jackson 2.10.4 (from 2.10.3)
 * Plugin updates:

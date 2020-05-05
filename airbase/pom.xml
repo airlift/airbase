@@ -1185,6 +1185,18 @@
                 <version>${dep.jackson.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-cbor</artifactId>
+                <version>${dep.jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-ion</artifactId>
+                <version>${dep.jackson.version}</version>
+            </dependency>
+
             <!-- misc stuff -->
             <dependency>
                 <groupId>org.apache.bval</groupId>
