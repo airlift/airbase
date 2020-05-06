@@ -1,3 +1,7 @@
+Airbase 101
+
+* Add `air.compiler.fail-warnings` property
+
 Airbase 100
 
 * Add hook for altering surefire JVM argLine

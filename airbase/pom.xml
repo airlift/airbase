@@ -124,6 +124,9 @@
         <!-- Target Java version for Modernizer -->
         <air.modernizer.java-version>${project.build.targetJdk}</air.modernizer.java-version>
 
+        <!-- compiler warnings treated as errors -->
+        <air.compiler.fail-warnings>false</air.compiler.fail-warnings>
+
         <!-- Controls all the checkers run when building the project.            -->
         <!-- Can be activated with -Dair.check.skip-all=true on the command line. -->
         <air.check.skip-all>false</air.check.skip-all>
@@ -392,6 +395,7 @@
                         <target>${project.build.targetJdk}</target>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmem>${air.build.jvmsize}</maxmem>
+                        <failOnWarning>${air.compiler.fail-warnings}</failOnWarning>
                         <showWarnings>true</showWarnings>
                         <fork>true</fork>
                         <parameters>true</parameters>
