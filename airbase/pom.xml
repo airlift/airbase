@@ -394,10 +394,7 @@
                         <maxmem>${air.build.jvmsize}</maxmem>
                         <showWarnings>true</showWarnings>
                         <fork>true</fork>
-                        <compilerArgs>
-                            <!-- Revert to <parameters>true</parameters> once IntelliJ 183.888 is widespread -->
-                            <arg>-parameters</arg>
-                        </compilerArgs>
+                        <parameters>true</parameters>
                     </configuration>
                 </plugin>
 
