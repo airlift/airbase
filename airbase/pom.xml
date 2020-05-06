@@ -358,16 +358,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.1.1</version>
-                    <dependencies>
-                        <!-- TODO: remove after updating to 3.1.2 -->
-                        <!-- see https://issues.apache.org/jira/browse/MDEP-613 -->
-                        <dependency>
-                            <groupId>org.apache.maven.shared</groupId>
-                            <artifactId>maven-dependency-analyzer</artifactId>
-                            <version>1.11.1</version>
-                        </dependency>
-                    </dependencies>
+                    <version>3.1.2</version>
                     <configuration>
                         <skip>${air.check.skip-dependency}</skip>
                         <failOnWarning>${air.check.fail-dependency}</failOnWarning>

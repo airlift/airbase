@@ -1,3 +1,8 @@
+Airbase 102
+
+* Plugin updates:
+  - dependency 3.1.2 (from 3.1.1)
+
 Airbase 101
 
 * Set minimum Java version to 11
