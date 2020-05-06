@@ -1,18 +1,15 @@
 language: bash
 
 env:
-  - MAVEN=3.3.9 JDK=8
-  - MAVEN=3.5.4 JDK=8
-  - MAVEN=3.5.4 JDK=11
-  - MAVEN=3.6.2 JDK=8
-  - MAVEN=3.6.2 JDK=11
-  - MAVEN=3.6.2 JDK=13
+  - MAVEN=3.6.3 JDK=8 ARGS=-Dair.java.version=1.8
+  - MAVEN=3.6.3 JDK=11 ARGS=
+  - MAVEN=3.6.3 JDK=14 ARGS=
 
 install:
   - IMAGE=maven:$MAVEN-jdk-$JDK
   - RUN="run -v $PWD:/build -w /build $IMAGE"
   - docker pull $IMAGE
-  - docker $RUN mvn -V -B -q dependency:go-offline
+  - docker $RUN mvn -V -B -q dependency:go-offline $ARGS
 
 script:
-  - docker $RUN mvn -V -B clean install
+  - docker $RUN mvn -V -B clean install $ARGS

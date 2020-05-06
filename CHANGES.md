@@ -1,5 +1,8 @@
 Airbase 101
 
+* Set minimum Java version to 11
+* Set minimum Maven version to 3.6.3
+* Use `--release` option for compiler
 * Add `air.compiler.fail-warnings` property
 
 Airbase 100
