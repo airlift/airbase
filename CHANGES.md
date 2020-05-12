@@ -2,6 +2,9 @@ Airbase 102
 
 * Plugin updates:
   - dependency 3.1.2 (from 3.1.1)
+  - Checkstyle 3.1.1 (from 3.1.0)
+* Checkstyle updates:
+  - Version 8.32 (from 8.25)
 
 Airbase 101
 
