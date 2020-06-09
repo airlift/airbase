@@ -4,6 +4,7 @@ Airbase 102
   - jackson-dataformat-cbor
   - jackson-dataformat-ion
 * Dependency updates:
+  - Slice 0.39 (from 0.38)
   - Jackson 2.10.4 (from 2.10.3)
 * Plugin updates:
   - dependency 3.1.2 (from 3.1.1)
