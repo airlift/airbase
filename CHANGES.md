@@ -1,3 +1,8 @@
+Airbase 103
+
+* Dependency updates:
+  - Joda-Time 2.10.6 (from 2.10.5)
+
 Airbase 102
 
 * Add dependencies:
