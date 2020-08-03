@@ -627,6 +627,7 @@
                             <ignoredResourcePattern>plugin\.properties</ignoredResourcePattern>
                             <ignoredResourcePattern>.*\.java</ignoredResourcePattern>
                             <ignoredResourcePattern>THIRD-PARTY</ignoredResourcePattern>
+                            <ignoredResourcePattern>mozilla/public-suffix-list.txt</ignoredResourcePattern>
                         </ignoredResourcePatterns>
                         <ignoredClassPatterns>
                             <ignoredClassPattern>module-info</ignoredClassPattern>
