@@ -2,6 +2,8 @@ Airbase 103
 
 * Dependency updates:
   - Joda-Time 2.10.6 (from 2.10.5)
+* Checkstyle updates:
+  - Require static imports for methods from Preconditions and Verify
 
 Airbase 102
 
