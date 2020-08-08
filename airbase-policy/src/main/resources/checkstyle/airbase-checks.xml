@@ -233,6 +233,10 @@
 
         <module name="IllegalImport">
             <property name="illegalPkgs" value=".*\.\$internal" />
+            <!-- Shaded Guava -->
+            <property name="illegalPkgs" value=".*\.com\.google\.common" />
+            <!-- Shaded okhttp3; match "shaded", since "com.example.okhttp3" could be OkHttp-specific code within com.example -->
+            <property name="illegalPkgs" value=".*\.shaded\.okhttp3" />
             <property name="regexp" value="true" />
         </module>
     </module>
