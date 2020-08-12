@@ -1,6 +1,7 @@
 Airbase 103
 
 * Dependency updates:
+  - Jackson 2.10.5 (from 2.10.4)
   - Joda-Time 2.10.6 (from 2.10.5)
 
 Airbase 102
