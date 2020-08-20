@@ -2,6 +2,8 @@ Airbase 103
 
 * Dependency updates:
   - Joda-Time 2.10.6 (from 2.10.5)
+* Plugin updates:
+  - git-commit-id-plugin 4.0.2 (from 4.0.0)  
 * Checkstyle updates:
   - Forbid imports of shaded Guava and OkHttp classes
   - Require static imports for methods from Preconditions and Verify
