@@ -7,6 +7,9 @@ Airbase 103
 * Checkstyle updates:
   - Forbid imports of shaded Guava and OkHttp classes
   - Require static imports for methods from Preconditions and Verify
+  - Require static imports for ImmutableList.toImmutableList method
+  - Require static imports for ImmutableMap.toImmutableMap method
+  - Require static imports for ImmutableSet.toImmutableSet method
 
 Airbase 102
 
