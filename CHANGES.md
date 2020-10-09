@@ -6,6 +6,7 @@ Airbase 103
 * Plugin updates:
   - git-commit-id-plugin 4.0.2 (from 4.0.0)  
   - Javadoc 3.2.0 (from 3.0.1)
+  - Extra Enforcer Rules 1.3 (from 1.2)
 * Checkstyle updates:
   - Forbid imports of shaded Guava and OkHttp classes
   - Require static imports for methods from Preconditions and Verify
