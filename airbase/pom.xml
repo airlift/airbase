@@ -809,7 +809,7 @@
                 <plugin>
                     <groupId>org.gaul</groupId>
                     <artifactId>modernizer-maven-plugin</artifactId>
-                    <version>1.7.1</version>
+                    <version>2.1.0</version>
                     <configuration>
                         <skip>${air.check.skip-modernizer}</skip>
                         <failOnViolations>${air.check.fail-modernizer}</failOnViolations>
