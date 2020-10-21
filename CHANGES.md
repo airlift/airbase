@@ -1,3 +1,8 @@
+Airbase 104
+
+* Plugin updates:
+  - git-commit-id-plugin 4.0.0 (from 4.0.2)
+
 Airbase 103
 
 * Dependency updates:

@@ -522,7 +522,8 @@
                 <plugin>
                     <groupId>pl.project13.maven</groupId>
                     <artifactId>git-commit-id-plugin</artifactId>
-                    <version>4.0.2</version>
+                    <!-- Version 4.0.2 is broken in PrestoSQL, probably related to: https://bugs.eclipse.org/bugs/show_bug.cgi?id=564202 -->
+                    <version>4.0.0</version>
                     <configuration>
                         <dateFormat>yyyy-MM-dd'T'HH:mm:ssZZ</dateFormat>
                         <gitDescribe>
