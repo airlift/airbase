@@ -1,5 +1,7 @@
 Airbase 104
 
+* Speed up build by including only relevant properties in git-commit-id-plugin configuration
+
 * Plugin updates:
   - git-commit-id-plugin 4.0.3 (from 4.0.2)
 
