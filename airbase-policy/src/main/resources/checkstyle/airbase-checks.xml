@@ -71,6 +71,10 @@
         <property name="message" value="Math.toIntExact should only be used with static imports" />
     </module>
     <module name="RegexpSingleline">
+        <property name="format" value="^(?!import ).*String\.format" />
+        <property name="message" value="String.format should only be used with static imports" />
+    </module>
+    <module name="RegexpSingleline">
         <property name="format" value="^(?!import ).*ImmutableMap\.toImmutableMap" />
         <property name="message" value="ImmutableMap.toImmutableMap should only be used with static imports" />
     </module>

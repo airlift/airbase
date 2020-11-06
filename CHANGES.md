@@ -5,6 +5,9 @@ Airbase 104
 * Plugin updates:
   - git-commit-id-plugin 4.0.3 (from 4.0.2)
 
+* Checkstyle updates:
+  - Require static imports for String.format method
+
 Airbase 103
 
 * Dependency updates:
