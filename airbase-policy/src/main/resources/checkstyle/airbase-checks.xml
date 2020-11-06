@@ -63,23 +63,23 @@
     </module>
 
     <module name="RegexpSingleline">
-        <property name="format" value="^([^i]|i[^m]|im[^p]|imp[^o]|impo[^r]|impor[^t]|import[^ ]).*Objects\.requireNonNull" />
+        <property name="format" value="^(?!import ).*Objects\.requireNonNull" />
         <property name="message" value="Objects.requireNonNull should only be used with static imports" />
     </module>
     <module name="RegexpSingleline">
-        <property name="format" value="^([^i]|i[^m]|im[^p]|imp[^o]|impo[^r]|impor[^t]|import[^ ]).*Math\.toIntExact" />
+        <property name="format" value="^(?!import ).*Math\.toIntExact" />
         <property name="message" value="Math.toIntExact should only be used with static imports" />
     </module>
     <module name="RegexpSingleline">
-        <property name="format" value="^([^i]|i[^m]|im[^p]|imp[^o]|impo[^r]|impor[^t]|import[^ ]).*ImmutableMap\.toImmutableMap" />
+        <property name="format" value="^(?!import ).*ImmutableMap\.toImmutableMap" />
         <property name="message" value="ImmutableMap.toImmutableMap should only be used with static imports" />
     </module>
     <module name="RegexpSingleline">
-        <property name="format" value="^([^i]|i[^m]|im[^p]|imp[^o]|impo[^r]|impor[^t]|import[^ ]).*ImmutableList\.toImmutableList" />
+        <property name="format" value="^(?!import ).*ImmutableList\.toImmutableList" />
         <property name="message" value="ImmutableList.toImmutableList should only be used with static imports" />
     </module>
     <module name="RegexpSingleline">
-        <property name="format" value="^([^i]|i[^m]|im[^p]|imp[^o]|impo[^r]|impor[^t]|import[^ ]).*ImmutableSet\.toImmutableSet" />
+        <property name="format" value="^(?!import ).*ImmutableSet\.toImmutableSet" />
         <property name="message" value="ImmutableSet.toImmutableSet should only be used with static imports" />
     </module>
     <module name="RegexpMultiline">
