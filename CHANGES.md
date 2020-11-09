@@ -1,3 +1,5 @@
+Airbase 105
+
 Airbase 104
 
 * Speed up build by including only relevant properties in git-commit-id-plugin configuration
