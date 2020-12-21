@@ -1,5 +1,8 @@
 Airbase 105
 
+ * Dependency updates
+  - Jackson 2.11.1 (from 2.10.5)
+
 Airbase 104
 
 * Speed up build by including only relevant properties in git-commit-id-plugin configuration
