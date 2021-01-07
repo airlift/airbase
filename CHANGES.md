@@ -3,6 +3,7 @@ Airbase 106
 * Dependency updates:
   - Apache BVal 2.0.5 (from 2.0.0)
   - Guava 30.1-jre (from 29.0-jre)
+  - AssertJ core 3.18.1 (from 3.14.0)
 
 Airbase 105
 

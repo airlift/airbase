@@ -198,7 +198,7 @@
         <dep.joda.version>2.10.6</dep.joda.version>
         <dep.spotbugs-annotations.version>3.1.12</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
-        <dep.assertj-core.version>3.14.0</dep.assertj-core.version>
+        <dep.assertj-core.version>3.18.1</dep.assertj-core.version>
         <dep.slice.version>0.39</dep.slice.version>
         <dep.jmh.version>1.20</dep.jmh.version>
 
