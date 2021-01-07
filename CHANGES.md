@@ -4,6 +4,7 @@ Airbase 106
   - Apache BVal 2.0.5 (from 2.0.0)
   - Guava 30.1-jre (from 29.0-jre)
   - AssertJ core 3.18.1 (from 3.14.0)
+  - Joda time 2.10.9 (from 2.10.6)
 * Plugin updates
   - maven-compiler-plugin 3.8.1 (from 3.8.0)  
   
