@@ -185,7 +185,7 @@
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.guice.version>4.2.3</dep.guice.version>
-        <dep.guava.version>29.0-jre</dep.guava.version>
+        <dep.guava.version>30.1-jre</dep.guava.version>
         <dep.slf4j.version>1.7.30</dep.slf4j.version>
         <dep.logback.version>1.2.3</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
