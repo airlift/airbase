@@ -191,7 +191,7 @@
         <dep.javax-inject.version>1</dep.javax-inject.version>
         <dep.javax-validation.version>2.0.1.Final</dep.javax-validation.version>
         <dep.javax-servlet.version>4.0.1</dep.javax-servlet.version>
-        <dep.bval.version>2.0.0</dep.bval.version>
+        <dep.bval.version>2.0.5</dep.bval.version>
         <dep.jackson.version>2.11.4</dep.jackson.version>
         <dep.jmxutils.version>1.21</dep.jmxutils.version>
         <dep.cglib.version>3.3.0</dep.cglib.version>

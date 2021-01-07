@@ -1,3 +1,8 @@
+Airbase 106
+
+* Dependency updates:
+  - Apache BVal 2.0.5 (from 2.0.0)
+
 Airbase 105
 
 * Dependency updates:
