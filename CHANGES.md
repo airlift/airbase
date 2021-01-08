@@ -2,6 +2,8 @@ Airbase 105
 
 * Dependency updates:
   - Jackson 2.11.4 (from 2.10.5)
+* Checkstyle updates:
+  - Allow numbers in first part of package name
 
 Airbase 104
 
@@ -133,12 +135,13 @@ Airbase 92
 
 Airbase 91
 
-* Require package names not to contain uppercase letters nor underscores.
 * Dependency updates:
   - Jackson 2.9.8 (from 2.9.7)
   - Add jackson-dataformat-yaml 2.9.8
 * Plugin updates:
   - Sources 3.0.1 (from 2.2.1)
+* Checkstyle updates:
+  - Only allow numbers or lowercase letters in package names
 
 Airbase 90
 
