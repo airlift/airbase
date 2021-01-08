@@ -1,7 +1,7 @@
 Airbase 105
 
- * Dependency updates
-  - Jackson 2.11.1 (from 2.10.5)
+* Dependency updates:
+  - Jackson 2.11.4 (from 2.10.5)
 
 Airbase 104
 
