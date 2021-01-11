@@ -7,6 +7,11 @@ Airbase 106
   - Joda time 2.10.9 (from 2.10.6)
 * Plugin updates
   - maven-compiler-plugin 3.8.1 (from 3.8.0)  
+  - maven-resources-plugin 3.2.0 (from 2.6)
+  - maven-assembly-plugin 3.3.0 (from 2.4)
+  - maven-jar-plugin 3.2.0 (from 2.4)
+  - license-maven-plugin 3.0 (from 2.3)
+  - duplicate-finder-maven-plugin 1.5.0 (from 1.4.0)
   
 Airbase 105
 
