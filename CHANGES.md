@@ -1,5 +1,6 @@
 Airbase 106
 
+* Remove `errorprone-compiler` profile.
 * Dependency updates:
   - Apache BVal 2.0.5 (from 2.0.0)
   - Guava 30.1-jre (from 29.0-jre)
