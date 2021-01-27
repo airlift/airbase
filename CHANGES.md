@@ -1,5 +1,8 @@
 Airbase 107
 
+* Plugin updates:
+  - Checkstyle 8.40 (from 8.32)
+
 Airbase 106
 
 * Remove `errorprone-compiler` profile.
