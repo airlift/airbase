@@ -1,5 +1,7 @@
 Airbase 107
 
+* Configure maven-assembly-plugin to use posix tar mode
+
 Airbase 106
 
 * Remove `errorprone-compiler` profile.
