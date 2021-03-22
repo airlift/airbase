@@ -329,7 +329,7 @@ Airbase provides versions for the following well-known dependencies:
   <tr><th>Dependency name</th><th>Group/Artifact Ids</th></tr>
   <tr>
    <td>Google Guice</td>
-   <td><tt>com.google.inject:guice</tt><p/><tt>com.google.inject.extensions:guice-servlet</tt><p/><tt>com.google.inject.extensions:guice-assistedinject</tt><p/><tt>com.google.inject.extensions:guice-multibindings</tt><p/><tt>com.google.inject.extensions:guice-throwingproviders</tt></td>
+   <td><tt>com.google.inject:guice</tt><p/><tt>com.google.inject.extensions:guice-servlet</tt><p/><tt>com.google.inject.extensions:guice-assistedinject</tt><p/><tt>com.google.inject.extensions:guice-throwingproviders</tt></td>
   </tr>
   <tr>
    <td>Google Guava</td>
