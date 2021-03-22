@@ -184,7 +184,7 @@
         <dep.packaging.version>0.163</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
-        <dep.guice.version>4.2.3</dep.guice.version>
+        <dep.guice.version>5.0.1</dep.guice.version>
         <dep.guava.version>30.1-jre</dep.guava.version>
         <dep.slf4j.version>1.7.30</dep.slf4j.version>
         <dep.logback.version>1.2.3</dep.logback.version>
@@ -1019,11 +1019,6 @@
             <dependency>
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-assistedinject</artifactId>
-                <version>${dep.guice.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-multibindings</artifactId>
                 <version>${dep.guice.version}</version>
             </dependency>
             <dependency>
