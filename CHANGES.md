@@ -1,3 +1,8 @@
+Airbase 108
+
+* Plugin updates:
+  - JaCoCo 0.8.6 (from 0.8.5)
+
 Airbase 107
 
 * Configure maven-assembly-plugin to use posix tar mode
