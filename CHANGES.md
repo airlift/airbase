@@ -1,3 +1,8 @@
+Airbase 109
+
+* Plugin updates:
+  - Modernizer 2.2.0 (from 2.1.0)
+
 Airbase 108
 
 * Dependency updates:
