@@ -1,3 +1,10 @@
+Airbase 110
+
+* Plugin updates:
+  - Checkstyle 3.1.2 (from 3.1.1)
+* Checkstyle updates:
+  - Version 8.41.1 (from 8.32)
+
 Airbase 109
 
 * Plugin updates:
