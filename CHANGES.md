@@ -1,5 +1,7 @@
 Airbase 110
 
+* Dependency updates:
+  - Jackson 2.12.2 (from 2.11.4)
 * Plugin updates:
   - Checkstyle 3.1.2 (from 3.1.1)
 * Checkstyle updates:
