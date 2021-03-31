@@ -366,6 +366,17 @@
                             <artifactId>asm</artifactId>
                             <version>9.1</version>
                         </dependency>
+                        <dependency>
+                            <groupId>org.apache.maven.shared</groupId>
+                            <artifactId>maven-dependency-analyzer</artifactId>
+                            <version>1.11.3</version>
+                            <exclusions>
+                                <exclusion>
+                                    <artifactId>maven-project</artifactId>
+                                    <groupId>org.apache.maven</groupId>
+                                </exclusion>
+                            </exclusions>
+                        </dependency>
                     </dependencies>
                     <configuration>
                         <skip>${air.check.skip-dependency}</skip>
