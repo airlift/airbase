@@ -2,6 +2,7 @@ Airbase 110
 
 * Dependency updates:
   - Jackson 2.12.2 (from 2.11.4)
+  - SpotBugs annotations 4.2.2 (from 3.1.12)
 * Plugin updates:
   - Checkstyle 3.1.2 (from 3.1.1)
 * Checkstyle updates:
@@ -14,8 +15,6 @@ Airbase 109
 
 Airbase 108
 
-* Dependency updates:
-  - SpotBugs annotations 4.2.2 (from 3.1.12)
 * Plugin updates:
   - Guava 30.1.1-jre (from 30.1-jre)
   - Guice 5.0.1 (from 4.2.3)
