@@ -1,3 +1,8 @@
+Airbase 111
+
+* Plugin updates:
+  - Surefire 3.0.0-M5 (from 2.22.0)
+
 Airbase 110
 
 * Dependency updates:
