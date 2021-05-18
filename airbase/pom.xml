@@ -450,6 +450,7 @@
                         </systemPropertyVariables>
                         <trimStackTrace>false</trimStackTrace>
                         <runOrder>random</runOrder>
+                        <failIfNoTests>true</failIfNoTests>
                         <parallel>${air.test.parallel}</parallel>
                         <threadCount>${air.test.thread-count}</threadCount>
                         <!-- ${argLine} is for Jacoco: https://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html -->
