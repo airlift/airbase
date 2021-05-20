@@ -1,3 +1,7 @@
+Airbase 112
+
+* Allow using commas in air.javadoc.lint
+
 Airbase 111
 
 * Plugin updates:
