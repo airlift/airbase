@@ -505,7 +505,7 @@
                         <source>${project.build.targetJdk}</source>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmemory>${air.build.jvmsize}</maxmemory>
-                        <additionalOptions>-Xdoclint:${air.javadoc.lint}</additionalOptions>
+                        <doclint>${air.javadoc.lint}</doclint>
                     </configuration>
                     <executions>
                         <execution>
