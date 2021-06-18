@@ -2,6 +2,8 @@ Airbase 112
 
 * Remove cglib
 * Allow using commas in air.javadoc.lint
+* Add JUnit 5.8.0-M1
+* Fix build failure when module does not contain JUnit tests
 
 Airbase 111
 
