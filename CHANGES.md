@@ -2,11 +2,18 @@ Airbase 112
 
 * Remove cglib
 * Allow using commas in air.javadoc.lint
+* Fail build if no tests are executed
+* Dependency updates:
+  - SpotBugs annotations 4.2.3 (from 4.2.2)
+* Plugin updates:
+  - SpotBugs 4.2.3 (from 4.2.2)
 
 Airbase 111
 
 * Plugin updates:
   - Surefire 3.0.0-M5 (from 2.22.0)
+* Checkstyle updates:
+  - Enforce method naming
 
 Airbase 110
 
