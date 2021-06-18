@@ -195,7 +195,6 @@
         <dep.bval.version>2.0.5</dep.bval.version>
         <dep.jackson.version>2.12.2</dep.jackson.version>
         <dep.jmxutils.version>1.21</dep.jmxutils.version>
-        <dep.cglib.version>3.3.0</dep.cglib.version>
         <dep.joda.version>2.10.9</dep.joda.version>
         <dep.spotbugs-annotations.version>4.2.3</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
@@ -304,8 +303,6 @@
                                 <excludes>
                                     <!-- clashes with commons-logging:commons-logging -->
                                     <exclude>commons-logging:commons-logging-api</exclude>
-                                    <!-- clashes with cglib:cglib-nodep -->
-                                    <exclude>cglib:cglib</exclude>
                                     <!-- old versions of junit repackage hamcrest -->
                                     <exclude>junit:junit</exclude>
                                     <!-- use guava -->
@@ -1247,11 +1244,6 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${dep.joda.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>cglib</groupId>
-                <artifactId>cglib-nodep</artifactId>
-                <version>${dep.cglib.version}</version>
             </dependency>
 
             <!-- FindBugs / SpotBugs -->

@@ -292,11 +292,6 @@ The Enforcer plugin outlaws a number of dependencies that project might use for 
     <td><tt>commons-logging:commons-logging</tt></td>
   </tr>
   <tr>
-    <td><tt>cglib:cglib</tt></td>
-    <td>Has all its dependencies packed inside, therefore leads to duplicate classes.</td>
-    <td><tt>cglib:cglib-nodep</tt></td>
-  </tr>
-  <tr>
     <td><tt>junit:junit</tt></td>
     <td>Has all its dependencies packed inside, therefore leads to duplicate classes.</td>
     <td><tt>junit:junit-dep</tt></td>
@@ -374,10 +369,6 @@ Airbase provides versions for the following well-known dependencies:
   <tr>
     <td>Joda Time</td>
     <td><tt>joda-time:joda-time</tt></td>
-  </tr>
-  <tr>
-    <td>CGLib</td>
-    <td><tt>cglib:cglib-nodep</tt></td>
   </tr>
   <tr>
     <td>FindBugs / SpotBugs Annotations</td>
