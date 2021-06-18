@@ -201,6 +201,7 @@
         <dep.assertj-core.version>3.18.1</dep.assertj-core.version>
         <dep.slice.version>0.39</dep.slice.version>
         <dep.jmh.version>1.20</dep.jmh.version>
+        <dep.junit.version>5.8.0-M1</dep.junit.version>
 
         <!-- license headers -->
         <air.license.owner>${project.organization.name}</air.license.owner>
@@ -463,6 +464,11 @@
                         </argLine>
                     </configuration>
                     <dependencies>
+                        <dependency>
+                            <groupId>org.junit.jupiter</groupId>
+                            <artifactId>junit-jupiter-engine</artifactId>
+                            <version>${dep.junit.version}</version>
+                        </dependency>
                         <dependency>
                             <groupId>org.apache.maven.surefire</groupId>
                             <artifactId>surefire-junit-platform</artifactId>
@@ -1290,6 +1296,14 @@
                 </exclusions>
             </dependency>
 
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <type>pom</type>
+                <version>${dep.junit.version}</version>
+                <scope>import</scope>
+            </dependency>
+            
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
