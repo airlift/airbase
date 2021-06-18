@@ -4,11 +4,18 @@ Airbase 112
 * Allow using commas in air.javadoc.lint
 * Add JUnit 5.8.0-M1
 * Fix build failure when module does not contain JUnit tests
+* Fail build if no tests are executed
+* Dependency updates:
+  - SpotBugs annotations 4.2.3 (from 4.2.2)
+* Plugin updates:
+  - SpotBugs 4.2.3 (from 4.2.2)
 
 Airbase 111
 
 * Plugin updates:
   - Surefire 3.0.0-M5 (from 2.22.0)
+* Checkstyle updates:
+  - Enforce method naming
 
 Airbase 110
 
