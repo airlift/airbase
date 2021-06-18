@@ -1,5 +1,6 @@
 Airbase 112
 
+* Remove cglib
 * Allow using commas in air.javadoc.lint
 
 Airbase 111
