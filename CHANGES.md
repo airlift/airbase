@@ -4,6 +4,7 @@ Airbase 112
 * Allow using commas in air.javadoc.lint
 * Fail build if no tests are executed
 * Dependency updates:
+  - Jackson 2.12.3 (from 2.12.2)
   - SpotBugs annotations 4.2.3 (from 4.2.2)
 * Plugin updates:
   - SpotBugs 4.2.3 (from 4.2.2)
