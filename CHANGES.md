@@ -7,6 +7,7 @@ Airbase 112
 * Fail build if no tests are executed
 * Dependency updates:
   - Jackson 2.12.3 (from 2.12.2)
+  - Joda-Time 2.10.10 (from 2.10.9)
   - SpotBugs annotations 4.2.3 (from 4.2.2)
 * Plugin updates:
   - SpotBugs 4.2.3 (from 4.2.2)
@@ -52,7 +53,7 @@ Airbase 106
   - Apache BVal 2.0.5 (from 2.0.0)
   - Guava 30.1-jre (from 29.0-jre)
   - AssertJ core 3.18.1 (from 3.14.0)
-  - Joda time 2.10.9 (from 2.10.6)
+  - Joda-Time 2.10.9 (from 2.10.6)
 * Plugin updates
   - maven-compiler-plugin 3.8.1 (from 3.8.0)  
   - maven-resources-plugin 3.2.0 (from 2.6)
