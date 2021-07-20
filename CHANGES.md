@@ -1,3 +1,8 @@
+Airbase 113
+
+* Dependency updates:
+  - JMH 1.32 (from 1.20)
+
 Airbase 112
 
 * Remove cglib
