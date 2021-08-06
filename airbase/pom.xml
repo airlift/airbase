@@ -1483,5 +1483,134 @@
                 </plugins>
             </build>
         </profile>
+
+        <!-- ======================================================================== -->
+        <!-- =                                                                      = -->
+        <!-- = Build a docker image with the airlift launcher from a module if      = -->
+        <!-- = .build-airlift-docker is present                                     = -->
+        <!-- =                                                                      = -->
+        <!-- ======================================================================== -->
+
+        <profile>
+            <id>build-airlift-docker</id>
+
+            <activation>
+                <file>
+                    <exists>.build-airlift-docker</exists>
+                </file>
+            </activation>
+
+            <properties>
+                <air.docker.skip>false</air.docker.skip>
+                <air.docker.skip-build>${air.docker.skip}</air.docker.skip-build>
+                <air.docker.skip-deploy>${air.docker.skip}</air.docker.skip-deploy>
+                <air.docker.skip-tag>${air.docker.skip}</air.docker.skip-tag>
+                <air.docker.maintainer>${project.groupId}</air.docker.maintainer>
+                <air.docker.user>airlift</air.docker.user>
+                <air.docker.jdk>openjdk:${project.build.targetJdk}-jdk-buster</air.docker.jdk>
+                <air.docker.port>8080</air.docker.port>
+                <air.docker.repository>${project.groupId}/${project.artifactId}</air.docker.repository>
+                <air.docker.verbose>false</air.docker.verbose>
+                <air.docker.tag>latest</air.docker.tag>
+                <air.docker.directory>airlift</air.docker.directory>
+            </properties>
+
+            <dependencies>
+                <dependency>
+                    <groupId>io.airlift</groupId>
+                    <artifactId>airbase-docker</artifactId>
+                    <version>113-SNAPSHOT</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                                <configuration>
+                                    <rules combine.children="append">
+                                        <requireFilesExist>
+                                            <files>
+                                                <file>.build-airlift</file>
+                                            </files>
+                                            <message>A .build-airlift file is required to build the launcher tarball.</message>
+                                        </requireFilesExist>
+                                        <requireFilesExist>
+                                            <files>
+                                                <file>${project.build.directory}/${project.artifactId}-${project.version}.tar.gz</file>
+                                            </files>
+                                            <message>Airlift launcher tarball wasn't built</message>
+                                        </requireFilesExist>
+                                    </rules>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>airlift-docker</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>unpack-dependencies</goal>
+                                </goals>
+                                <configuration>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
+                                    <includeGroupIds>io.airlift</includeGroupIds>
+                                    <includeArtifactIds>airbase-docker</includeArtifactIds>
+                                    <excludes>META-INF/**</excludes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>com.spotify</groupId>
+                        <artifactId>dockerfile-maven-plugin</artifactId>    <!-- this plugin is stable but no longer maintained - consider something else for the future -->
+                        <version>1.4.13</version>
+                        <executions>
+                            <execution>
+                                <id>docker</id>
+                                <goals>
+                                    <goal>build</goal>
+                                    <goal>push</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <skipBuild>${air.docker.skip-build}</skipBuild>
+                            <skipPush>${air.docker.skip-deploy}</skipPush>
+                            <skipTag>${air.docker.skip-tag}</skipTag>
+                            <repository>${air.docker.repository}</repository>
+                            <tag>${air.docker.tag}</tag>
+                            <contextDirectory>${project.build.directory}</contextDirectory>
+                            <dockerfile>${project.build.directory}/AirliftDockerfile</dockerfile>
+                            <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
+                            <verbose>${air.docker.verbose}</verbose>
+                            <buildArgs>
+                                <ARTIFACT_ID>${project.artifactId}</ARTIFACT_ID>
+                                <ARTIFACT_VERSION>${project.version}</ARTIFACT_VERSION>
+                                <MAINTAINER>${air.docker.maintainer}</MAINTAINER>
+                                <USER>${air.docker.user}</USER>
+                                <JAVA_VERSION>${air.docker.jdk}</JAVA_VERSION>
+                                <APPLICATION_PORT>${air.docker.port}</APPLICATION_PORT>
+                                <AIRLIFT_DIRECTORY>${air.docker.directory}</AIRLIFT_DIRECTORY>
+                            </buildArgs>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>

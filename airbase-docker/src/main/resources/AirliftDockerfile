@@ -1,0 +1,51 @@
+ARG AIRLIFT_DIRECTORY
+ARG ARTIFACT_ID
+ARG ARTIFACT_VERSION
+ARG JAVA_VERSION
+ARG MAINTAINER
+ARG USER
+ARG APPLICATION_PORT
+
+FROM alpine:3 as extractor
+
+ARG AIRLIFT_DIRECTORY
+ARG ARTIFACT_ID
+ARG ARTIFACT_VERSION
+ARG JAVA_VERSION
+
+COPY ${ARTIFACT_ID}-${ARTIFACT_VERSION}.tar.gz .
+RUN mkdir -p /opt/${AIRLIFT_DIRECTORY}
+RUN tar -xf ${ARTIFACT_ID}-${ARTIFACT_VERSION}.tar.gz --directory /opt/${AIRLIFT_DIRECTORY} --strip-components=1
+RUN rm ${ARTIFACT_ID}-${ARTIFACT_VERSION}.tar.gz
+
+FROM ${JAVA_VERSION}
+
+ARG AIRLIFT_DIRECTORY
+ARG ARTIFACT_ID
+ARG ARTIFACT_VERSION
+ARG MAINTAINER
+ARG USER
+ARG APPLICATION_PORT
+
+LABEL maintainer=${MAINTAINER}
+LABEL service=${ARTIFACT_ID} version=${ARTIFACT_VERSION}
+
+RUN apt-get update && \
+    apt-get install -y \
+        jq \
+        python \
+        tmux && \
+    rm -rf /var/lib/apt/lists/* && \
+    adduser --home /opt/${AIRLIFT_DIRECTORY} --no-create-home --disabled-login --gecos "" ${USER} && \
+    mkdir /var/log/${AIRLIFT_DIRECTORY} && \
+    chown -R ${USER}:${USER} /var/log/${AIRLIFT_DIRECTORY}
+
+COPY --chown=${USER}:${USER} --from=extractor /opt/${AIRLIFT_DIRECTORY} /opt/${AIRLIFT_DIRECTORY}
+
+EXPOSE ${APPLICATION_PORT}
+
+ENV AIRLIFT_DIRECTORY=${AIRLIFT_DIRECTORY}
+
+CMD /opt/${AIRLIFT_DIRECTORY}/bin/launcher run \
+    --etc-dir=/etc/${AIRLIFT_DIRECTORY} \
+    --verbose
