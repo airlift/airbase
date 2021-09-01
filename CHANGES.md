@@ -2,6 +2,8 @@ Airbase 113
 
 * Dependency updates:
   - JMH 1.32 (from 1.20)
+* Plugin updates:
+  - Enforcer 3.0.0 (from 3.0.0-M3)
 
 Airbase 112
 
