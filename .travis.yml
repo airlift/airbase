@@ -1,10 +1,10 @@
 language: bash
 
 env:
-  - IMAGE=3.6.3-jdk-8 ARGS=-Dair.java.version=1.8
-  - IMAGE=3.6.3-jdk-11 ARGS=
-  - IMAGE=3.6.3-openjdk-15 ARGS=
-  - IMAGE=3.6.3-openjdk-16 ARGS=
+  - IMAGE=3.8.2-openjdk-8 ARGS=-Dair.java.version=1.8
+  - IMAGE=3.8.2-openjdk-11 ARGS=
+  - IMAGE=3.8.2-openjdk-16 ARGS=
+  - IMAGE=3.8.2-openjdk-17 ARGS=
 
 install:
   - IMAGE=maven:$IMAGE
