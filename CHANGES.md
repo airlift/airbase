@@ -1,5 +1,8 @@
 Airbase 114
 
+* Dependency updates
+  - Guava 31.0.1-jre (from 30.1.1-jre)
+
 * Plugin updates:
   - Modernizer 2.3.0 (from 2.2.0)
 
