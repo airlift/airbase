@@ -558,7 +558,7 @@
                 <plugin>
                     <groupId>pl.project13.maven</groupId>
                     <artifactId>git-commit-id-plugin</artifactId>
-                    <version>4.0.3</version>
+                    <version>4.0.5</version>
                     <configuration>
                         <!-- Include only properties used above to speed up build (https://github.com/git-commit-id/git-commit-id-maven-plugin/issues/462) -->
                         <includeOnlyProperties>

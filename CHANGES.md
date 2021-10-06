@@ -8,6 +8,7 @@ Airbase 114
 
 * Plugin updates:
   - Modernizer 2.3.0 (from 2.2.0)
+  - git-commit-id-plugin 4.0.5 (from 4.0.3)
 
 Airbase 113
 
