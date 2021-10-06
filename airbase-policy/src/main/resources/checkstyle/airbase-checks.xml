@@ -255,5 +255,10 @@
         <module name="MethodName">
             <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>
         </module>
+
+        <module name="AbstractClassName">
+            <!-- Only applicable to tests; enforced by suppressing this check on src/main/java in Maven config -->
+            <property name="format" value="^Base.+Test$"/>
+        </module>
     </module>
 </module>

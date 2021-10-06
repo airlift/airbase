@@ -211,6 +211,7 @@
 
         <!-- Checkstyle -->
         <air.checkstyle.config-file>checkstyle/airbase-checks.xml</air.checkstyle.config-file>
+        <air.checkstyle.suppression-file>checkstyle/airbase-suppressions.xml</air.checkstyle.suppression-file>
 
         <!-- Readme for launcher -->
         <air.readme.file>README.txt</air.readme.file>
@@ -898,6 +899,7 @@
                                 <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
                                 <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                 <configLocation>${air.checkstyle.config-file}</configLocation>
+                                <suppressionsLocation>${air.checkstyle.suppression-file}</suppressionsLocation>
                             </configuration>
                         </execution>
                     </executions>
