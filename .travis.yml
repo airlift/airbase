@@ -10,6 +10,8 @@ install:
   - IMAGE=maven:$IMAGE
   - RUN="run -v $PWD:/build -w /build $IMAGE"
   - docker pull $IMAGE
+  - docker run $IMAGE whoami
+  - docker run $IMAGE ls -l /usr/bin/mvn /usr/share/maven/bin
   - docker $RUN mvn -V -B -q dependency:go-offline $ARGS
 
 script:
