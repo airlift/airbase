@@ -5,6 +5,7 @@ Airbase 114
   - Jackson 2.13.0 (from 2.12.3)
   - SpotBugs annotations 4.3.0 (from 4.2.3)
   - javax.ws.rs-api 2.1.1 (from 2.1)
+  - slf4j 1.7.32 (from 1.7.30)
 
 * Plugin updates:
   - Modernizer 2.3.0 (from 2.2.0)
