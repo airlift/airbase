@@ -597,21 +597,6 @@
                         <skip>${air.check.skip-duplicate-finder}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-duplicate-finder}</failBuildInCaseOfConflict>
                         <exceptions>
-                            <exception>
-                                <conflictingDependencies>
-                                    <dependency>
-                                        <groupId>io.airlift</groupId>
-                                        <artifactId>http-server</artifactId>
-                                    </dependency>
-                                    <dependency>
-                                        <groupId>io.airlift</groupId>
-                                        <artifactId>http-client</artifactId>
-                                    </dependency>
-                                </conflictingDependencies>
-                                <resources>
-                                    <resource>jetty-logging.properties</resource>
-                                </resources>
-                            </exception>
                             <!-- Well done, Apache... -->
                             <exception>
                                 <conflictingDependencies>
