@@ -326,6 +326,8 @@
                                     <exclude>io.airlift:rack-launcher-experimental</exclude>
                                     <exclude>io.airlift:rack-packaging-experimental</exclude>
                                     <exclude>io.airlift:rack-server-base-experimental</exclude>
+                                    <!-- log4j2 versions < 2.15.0 are vulnerable to the Log4Shell RCE (CVE-2021-44228) -->
+                                    <exclude>org.apache.logging.log4j:log4j-core:(,2.15.0)</exclude>
                                 </excludes>
                                 <includes>
                                     <!-- whitelist the well numbered guava releases -->
