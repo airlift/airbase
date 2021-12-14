@@ -100,7 +100,9 @@
         <!-- define the thread count for parallel tests. -->
         <air.test.thread-count>1</air.test.thread-count>
 
-        <!-- define the parallel mode for tests. Must be 'methods' for TestNG. -->
+        <!-- define the parallel mode for tests.  -->
+        <!-- Check https://testng.org/doc/documentation-main.html#parallel-running for the possible values of this setting. -->
+        <!-- At the time of this writing, the supported values for parallelism in testng for maven-surefire-plugin are: classes, methods. -->
         <air.test.parallel />
 
         <!-- define the JVM timezone to use when running tests. Default is 'UTC. -->
