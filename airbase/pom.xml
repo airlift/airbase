@@ -1241,6 +1241,16 @@
                 <groupId>org.apache.bval</groupId>
                 <artifactId>bval-jsr</artifactId>
                 <version>${dep.bval.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.osgi</groupId>
+                        <artifactId>org.osgi.core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.glassfish.jaxb</groupId>
+                        <artifactId>jaxb-runtime</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
