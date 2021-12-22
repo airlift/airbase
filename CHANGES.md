@@ -1,3 +1,8 @@
+Airbase 116
+
+* Plugin updates:
+  - Checkstyle 9.2 (from 9.1)
+
 Airbase 114
 
 * Dependency updates
