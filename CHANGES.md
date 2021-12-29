@@ -1,5 +1,6 @@
 Airbase 117
 
+* Add `air.test.skip` property for modules without tests
 * Dependency updates
   - Jackson 2.13.1 (from 2.13.0)
 
