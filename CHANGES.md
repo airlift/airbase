@@ -1,3 +1,8 @@
+Airbase 117
+
+* Dependency updates
+  - Jackson 2.13.1 (from 2.13.0)
+
 Airbase 116
 
 * Plugin updates:
