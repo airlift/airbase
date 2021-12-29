@@ -1,6 +1,9 @@
 Airbase 117
 
 * Add `air.test.skip` property for modules without tests
+* Remove test providers from Surefire plugin. If a module needs both
+  JUnit 5 and TestNG, it will need to add both providers to Surefire.
+  Otherwise, the TestNG tests will be silently skipped.
 * Dependency updates
   - Jackson 2.13.1 (from 2.13.0)
 
