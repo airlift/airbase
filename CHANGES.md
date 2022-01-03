@@ -1,3 +1,8 @@
+Airbase 117
+
+* Plugin updates:
+  - dependency 3.2.0 (from 3.1.2)
+
 Airbase 116
 
 * Plugin updates:
@@ -12,7 +17,6 @@ Airbase 114
   - javax.ws.rs-api 2.1.1 (from 2.1)
   - slf4j 1.7.32 (from 1.7.30)
   - Slice 0.41 (from 0.39)
-
 * Plugin updates:
   - Modernizer 2.3.0 (from 2.2.0)
   - git-commit-id-plugin 4.0.5 (from 4.0.3)
