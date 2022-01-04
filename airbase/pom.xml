@@ -96,9 +96,6 @@
         <air.release.preparation-goals>clean install</air.release.preparation-goals>
         <air.release.tag-name-format>@{project.version}</air.release.tag-name-format>
 
-        <!-- Skip running tests. Use this for modules that do not have tests. -->
-        <air.test.skip>false</air.test.skip>
-
         <!-- define the thread count for parallel tests. -->
         <air.test.thread-count>1</air.test.thread-count>
 
@@ -452,7 +449,6 @@
                             <java.awt.headless>true</java.awt.headless>
                             <java.util.logging.SimpleFormatter.format>%1$tY-%1$tm-%1$tdT%1$tH:%1$tM:%1$tS.%1$tL%1$tz %4$s %5$s%6$s%n</java.util.logging.SimpleFormatter.format>
                         </systemPropertyVariables>
-                        <skipTests>${air.test.skip}</skipTests>
                         <trimStackTrace>false</trimStackTrace>
                         <runOrder>random</runOrder>
                         <failIfNoTests>true</failIfNoTests>

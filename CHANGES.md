@@ -1,3 +1,7 @@
+Airbase 118
+
+* Remove `air.test.skip` property. Use `skipTests` instead.
+
 Airbase 117
 
 * Add `air.test.skip` property for modules without tests
