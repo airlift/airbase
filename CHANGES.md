@@ -4,7 +4,7 @@ Airbase 117
 * Remove test providers from Surefire plugin. If a module needs both
   JUnit 5 and TestNG, it will need to add both providers to Surefire.
   Otherwise, the TestNG tests will be silently skipped.
-* Dependency updates
+* Dependency updates:
   - Jackson 2.13.1 (from 2.13.0)
 
 Airbase 116
@@ -14,14 +14,13 @@ Airbase 116
 
 Airbase 114
 
-* Dependency updates
+* Dependency updates:
   - Guava 31.0.1-jre (from 30.1.1-jre)
   - Jackson 2.13.0 (from 2.12.3)
   - SpotBugs annotations 4.3.0 (from 4.2.3)
   - javax.ws.rs-api 2.1.1 (from 2.1)
   - slf4j 1.7.32 (from 1.7.30)
   - Slice 0.41 (from 0.39)
-
 * Plugin updates:
   - Modernizer 2.3.0 (from 2.2.0)
   - git-commit-id-plugin 4.0.5 (from 4.0.3)
@@ -32,7 +31,6 @@ Airbase 113
 
 * Dependency updates:
   - JMH 1.32 (from 1.20)
-  
 * Plugin updates:
   - maven-enforcer-plugin 3.0.0 (from 3.0.0.M3)
 
@@ -92,7 +90,7 @@ Airbase 106
   - Guava 30.1-jre (from 29.0-jre)
   - AssertJ core 3.18.1 (from 3.14.0)
   - Joda-Time 2.10.9 (from 2.10.6)
-* Plugin updates
+* Plugin updates:
   - maven-compiler-plugin 3.8.1 (from 3.8.0)  
   - maven-resources-plugin 3.2.0 (from 2.6)
   - maven-assembly-plugin 3.3.0 (from 2.4)
