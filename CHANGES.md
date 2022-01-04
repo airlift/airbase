@@ -6,6 +6,8 @@ Airbase 117
   Otherwise, the TestNG tests will be silently skipped.
 * Dependency updates:
   - Jackson 2.13.1 (from 2.13.0)
+* Plugin updates:
+  - JaCoCo 0.8.7 (from 0.8.6)
 
 Airbase 116
 
