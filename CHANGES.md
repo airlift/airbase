@@ -33,6 +33,9 @@ Airbase 114
   - JUnit 5.8.1 (from 5.8.0-M1)
   - Checkstyle 9.1 (from 8.41.1)
 
+* Checkstyle updates:
+  - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
+
 Airbase 113
 
 * Dependency updates:

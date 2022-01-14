@@ -213,11 +213,12 @@
             <property name="allowEmptyConstructors" value="true" />
             <property name="allowEmptyMethods" value="true" />
             <property name="allowEmptyLambdas" value="true" />
+            <property name="allowEmptyTypes" value="true" />
             <property name="ignoreEnhancedForColon" value="false" />
             <property name="tokens" value="
                 ASSIGN, BAND, BAND_ASSIGN, BOR, BOR_ASSIGN, BSR, BSR_ASSIGN,
                 BXOR, BXOR_ASSIGN, COLON, DIV, DIV_ASSIGN, DO_WHILE, EQUAL, GE, GT,
-                LAMBDA, LAND, LE, LITERAL_ASSERT, LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE,
+                LAMBDA, LAND, LCURLY, LE, LITERAL_ASSERT, LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE,
                 LITERAL_FINALLY, LITERAL_FOR, LITERAL_IF, LITERAL_RETURN, LITERAL_SWITCH,
                 LITERAL_SYNCHRONIZED, LITERAL_TRY, LITERAL_WHILE,
                 LOR, LT, MINUS, MINUS_ASSIGN, MOD, MOD_ASSIGN, NOT_EQUAL,
