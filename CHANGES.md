@@ -9,6 +9,9 @@ Airbase 114
 * Plugin updates:
   - Modernizer 2.3.0 (from 2.2.0)
 
+* Checkstyle updates:
+  - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
+
 Airbase 113
 
 * Dependency updates:
