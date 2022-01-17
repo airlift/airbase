@@ -1,3 +1,8 @@
+Airbase 120
+
+* Checkstyle updates:
+  - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
+
 Airbase 118
 
 * Remove `air.test.skip` property. Use `skipTests` instead.
@@ -32,9 +37,6 @@ Airbase 114
   - git-commit-id-plugin 4.0.5 (from 4.0.3)
   - JUnit 5.8.1 (from 5.8.0-M1)
   - Checkstyle 9.1 (from 8.41.1)
-
-* Checkstyle updates:
-  - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
 
 Airbase 113
 
