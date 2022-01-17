@@ -3,7 +3,7 @@ Airbase 120
 * Checkstyle updates:
   - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
 
-Airbase 118
+Airbase 119
 
 * Remove `air.test.skip` property. Use `skipTests` instead.
 
