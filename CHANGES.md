@@ -1,5 +1,7 @@
 Airbase 120
 
+* Dependency updates:
+  - Joda-Time 2.10.13 (from 2.10.10)
 * Checkstyle updates:
   - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
 
