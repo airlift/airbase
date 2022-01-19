@@ -6,6 +6,7 @@ Airbase 120
   - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
 * Dependency updates:
   - Guice 5.1.0 (from 5.0.1)
+  - Joda-Time 2.10.13 (from 2.10.10)
 * Plugin updates:
   - update maven-compiler-plugin 3.9.0 (from 3.8.1)
   
