@@ -1,5 +1,7 @@
 Airbase 120
 
+* Add dependencies:
+  - Modernizer annotations 2.3.0
 * Checkstyle updates:
   - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
 
