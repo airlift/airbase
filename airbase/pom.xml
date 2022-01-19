@@ -201,6 +201,7 @@
         <dep.testng.version>6.10</dep.testng.version>
         <dep.assertj-core.version>3.18.1</dep.assertj-core.version>
         <dep.slice.version>0.41</dep.slice.version>
+        <dep.modernizer.version>2.3.0</dep.modernizer.version>
         <dep.jmh.version>1.32</dep.jmh.version>
         <dep.junit.version>5.8.1</dep.junit.version>
 
@@ -822,7 +823,7 @@
                 <plugin>
                     <groupId>org.gaul</groupId>
                     <artifactId>modernizer-maven-plugin</artifactId>
-                    <version>2.3.0</version>
+                    <version>${dep.modernizer.version}</version>
                     <configuration>
                         <skip>${air.check.skip-modernizer}</skip>
                         <failOnViolations>${air.check.fail-modernizer}</failOnViolations>
@@ -1194,6 +1195,13 @@
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-annotations</artifactId>
                 <version>${dep.spotbugs-annotations.version}</version>
+            </dependency>
+
+            <!-- Modernizer -->
+            <dependency>
+                <groupId>org.gaul</groupId>
+                <artifactId>modernizer-maven-annotations</artifactId>
+                <version>${dep.modernizer.version}</version>
             </dependency>
 
             <!-- JSR-305 -->
