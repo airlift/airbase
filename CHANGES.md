@@ -2,6 +2,8 @@ Airbase 120
 
 * Checkstyle updates:
   - Add `LCURLY` to `WhitespaceAround` to catch more whitespace issues
+* Dependency updates:
+  - Guice 5.1.0 (from 5.0.1)
 
 Airbase 119
 
