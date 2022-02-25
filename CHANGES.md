@@ -1,3 +1,7 @@
+Airbase 121
+
+* Fix Surefire setup when JaCoCo is disabled
+
 Airbase 120
 
 * Add dependencies:
@@ -9,7 +13,7 @@ Airbase 120
   - Joda-Time 2.10.13 (from 2.10.10)
 * Plugin updates:
   - update maven-compiler-plugin 3.9.0 (from 3.8.1)
-  
+
 Airbase 119
 
 * Remove `air.test.skip` property. Use `skipTests` instead.
