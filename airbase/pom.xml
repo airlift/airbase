@@ -1384,6 +1384,19 @@
             </build>
         </profile>
         <profile>
+            <id>jacoco-defaults</id>
+            <activation>
+                <property>
+                    <name>air.check.skip-jacoco</name>
+                    <value>!false</value>
+                </property>
+            </activation>
+            <properties>
+                <!-- ${argLine} is defined by Jacoco, but required by Surefire, so define an empty default when Jacoco is disabled -->
+                <argLine />
+            </properties>
+        </profile>
+        <profile>
             <id>modernizer-check</id>
             <activation>
                 <property>
