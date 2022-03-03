@@ -1264,12 +1264,16 @@
     </dependencyManagement>
 
     <profiles>
+        <!-- All the check plugins below are enabled unless air.check.skip-all is set.
+        If other properties are set, like air.check.skip-extended, or air.check.skip-<name>,
+        these plugins will be skipped in their configuration.
+        Multiple properties cannot be used in activation, and properties are evaluated after activating profiles. -->
         <profile>
             <id>enforcer-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-enforcer</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1285,8 +1289,8 @@
             <id>duplicate-finder-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-duplicate-finder</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1302,8 +1306,8 @@
             <id>dependency-scope-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-dependency-scope</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1319,8 +1323,8 @@
             <id>spotbugs-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-spotbugs</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1336,8 +1340,8 @@
             <id>pmd-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-pmd</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1353,8 +1357,8 @@
             <id>license-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-license</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1370,8 +1374,8 @@
             <id>jacoco-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-jacoco</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1387,12 +1391,13 @@
             <id>jacoco-defaults</id>
             <activation>
                 <property>
-                    <name>air.check.skip-jacoco</name>
-                    <value>!false</value>
+                    <name>air.check.skip-all</name>
+                    <value>true</value>
                 </property>
             </activation>
             <properties>
-                <!-- ${argLine} is defined by Jacoco, but required by Surefire, so define an empty default when Jacoco is disabled -->
+                <!-- ${argLine} is defined by Jacoco, but required by Surefire, so define an empty default
+                when Jacoco is disabled with all checks -->
                 <argLine />
             </properties>
         </profile>
@@ -1400,8 +1405,8 @@
             <id>modernizer-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-modernizer</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
@@ -1417,8 +1422,8 @@
             <id>checkstyle-check</id>
             <activation>
                 <property>
-                    <name>air.check.skip-checkstyle</name>
-                    <value>false</value>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
                 </property>
             </activation>
             <build>
