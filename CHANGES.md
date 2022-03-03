@@ -1,3 +1,7 @@
+Airbase 122
+
+* Fix enabling check plugins unless `air.check.skip-all` is set.
+
 Airbase 121
 
 * Fix Surefire setup when JaCoCo is disabled
