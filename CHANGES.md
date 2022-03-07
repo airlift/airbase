@@ -1,3 +1,8 @@
+Airbase 123
+
+* Dependency update:
+  - Guava 31.1-jre (from 31.0.1-jre)
+
 Airbase 122
 
 * Fix enabling check plugins unless `air.check.skip-all` is set.
