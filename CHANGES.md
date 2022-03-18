@@ -1,3 +1,8 @@
+Airbase 124
+
+* When checking license headers do not skip the files which already contain a
+  detected license header. Can be configured via `air.license.skip-existing-headers`.
+
 Airbase 123
 
 * Dependency update:
