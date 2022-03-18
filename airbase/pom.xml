@@ -362,26 +362,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.1.2</version>
-                    <dependencies>
-                        <!-- TODO: remove when plugin is updated -->
-                        <dependency>
-                            <groupId>org.ow2.asm</groupId>
-                            <artifactId>asm</artifactId>
-                            <version>9.1</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.apache.maven.shared</groupId>
-                            <artifactId>maven-dependency-analyzer</artifactId>
-                            <version>1.11.3</version>
-                            <exclusions>
-                                <exclusion>
-                                    <artifactId>maven-project</artifactId>
-                                    <groupId>org.apache.maven</groupId>
-                                </exclusion>
-                            </exclusions>
-                        </dependency>
-                    </dependencies>
+                    <version>3.3.0</version>
                     <configuration>
                         <skip>${air.check.skip-dependency}</skip>
                         <failOnWarning>${air.check.fail-dependency}</failOnWarning>

@@ -7,6 +7,8 @@ Airbase 123
 
 * Dependency update:
   - Guava 31.1-jre (from 31.0.1-jre)
+* Plugin updates:
+  - maven-dependency-plugin 3.3.0 (from 3.1.2)
 
 Airbase 122
 
