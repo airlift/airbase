@@ -4,7 +4,7 @@
 
     <groupId>com.facebook.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <version>103-SNAPSHOT</version>
+    <version>103</version>
     <packaging>pom</packaging>
 
     <name>airbase</name>
@@ -25,7 +25,7 @@
         <connection>scm:git:git@github.com/prestodb/airbase.git</connection>
         <developerConnection>scm:git:git@github.com:prestodb/airbase.git</developerConnection>
         <url>https://github.com/prestodb/airbase</url>
-        <tag>HEAD</tag>
+        <tag>103</tag>
     </scm>
 
     <developers>
@@ -725,7 +725,7 @@
                         <dependency>
                             <groupId>com.facebook.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>103-SNAPSHOT</version>
+                            <version>103</version>
                         </dependency>
                     </dependencies>
                     <configuration>
@@ -847,7 +847,7 @@
                         <dependency>
                             <groupId>com.facebook.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>103-SNAPSHOT</version>
+                            <version>103</version>
                         </dependency>
                     </dependencies>
                     <executions>
