@@ -1,10 +1,6 @@
-Airbase 124
-
-* When checking license headers do not skip the files which already contain a
-  detected license header. Can be configured via `air.license.skip-existing-headers`.
-
 Airbase 123
 
+* Add `air.license.skip-existing-headers` property
 * Dependency update:
   - Guava 31.1-jre (from 31.0.1-jre)
 * Plugin updates:
