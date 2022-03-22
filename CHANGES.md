@@ -1,6 +1,8 @@
 Airbase 126
 
 * Fix the way locale information is passed to maven-surefire-plugin
+* Dependency updates:
+  - Logback 1.2.11 (from 1.2.3)
 * Plugin downgrades:
   - Surefire 3.0.0-M5 (from 3.0.0-M6)
 
