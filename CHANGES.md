@@ -1,3 +1,8 @@
+Airbase 124
+
+* Dependency updates:
+  - Slice 0.42 (from 0.41)
+
 Airbase 123
 
 * Add `air.license.skip-existing-headers` property
