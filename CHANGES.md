@@ -2,6 +2,8 @@ Airbase 124
 
 * Dependency updates:
   - Slice 0.42 (from 0.41)
+* Plugin updates:
+  - Surefire 3.0.0-M6 (from 3.0.0-M5)
 
 Airbase 123
 
