@@ -247,6 +247,8 @@
             <!-- Shaded okhttp3; match "shaded", since "com.example.okhttp3" could be OkHttp-specific code within com.example -->
             <property name="illegalPkgs" value=".*\.shaded\.okhttp3" />
             <property name="regexp" value="true" />
+            <!-- Shaded org.apache code -->
+            <property name="illegalPkgs" value=".*\.shaded\.org\.apache" />
         </module>
 
         <module name="MethodName">
