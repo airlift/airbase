@@ -1,6 +1,8 @@
 Airbase 126
 
 * Fix the way locale information is passed to maven-surefire-plugin
+* Checkstyle updates:
+  - Forbid imports of shaded Apache code
 * Dependency updates:
   - Logback 1.2.11 (from 1.2.3)
 * Plugin downgrades:
