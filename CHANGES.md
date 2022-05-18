@@ -1,3 +1,8 @@
+Airbase 125
+
+* Checkstyle updates:
+  - Allow using "extends" and "implements" in a Java comment.
+
 Airbase 124
 
 * Dependency updates:
