@@ -44,10 +44,6 @@
         <property name="format" value="->(\s*+(//.*+)?\n)++\s*+\{" />
         <property name="message" value="Lambda opening brace should be on the same line as ->" />
     </module>
-    <module name="RegexpSingleline">
-        <property name="format" value="(class|interface) ([a-zA-Z0-9_])+(&lt;.*&gt;)? (extends|implements)" />
-        <property name="message" value="No new line before extends/implements" />
-    </module>
 
     <module name="RegexpSingleline">
         <property name="format" value="^import static .*\.(of|copyOf|valueOf);$" />
@@ -255,6 +251,12 @@
 
         <module name="MethodName">
             <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>
+        </module>
+
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="(class|interface) ([a-zA-Z0-9_])+(&lt;.*&gt;)? (extends|implements)" />
+            <property name="message" value="No new line before extends/implements" />
+            <property name="ignoreComments" value="true" />
         </module>
     </module>
 </module>
