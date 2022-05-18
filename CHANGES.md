@@ -1,6 +1,8 @@
 Airbase 126
 
 * Fix the way locale information is passed to maven-surefire-plugin
+* Plugin downgrades:
+  - Surefire 3.0.0-M5 (from 3.0.0-M6)
 
 Airbase 125
 
