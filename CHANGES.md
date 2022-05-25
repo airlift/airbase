@@ -1,3 +1,7 @@
+Airbase 126
+
+* Fix the way locale information is passed to maven-surefire-plugin
+
 Airbase 125
 
 * Checkstyle updates:
