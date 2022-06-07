@@ -1,3 +1,8 @@
+Airbase 128
+
+* Plugin updates:
+  - Surefire 3.0.0-M7 (from 3.0.0-M5)
+
 Airbase 127
 
 * Checkstyle updates:
