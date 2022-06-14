@@ -1,3 +1,8 @@
+Airbase 128
+
+* Plugin updates:
+  - JaCoCo 0.8.8 (from 0.8.7)
+
 Airbase 127
 
 * Checkstyle updates:
