@@ -178,6 +178,10 @@
         <!-- See http://stackoverflow.com/questions/1012402/maven2-property-that-indicates-the-parent-directory    -->
         <air.main.basedir>${project.basedir}</air.main.basedir>
 
+        <!-- ${argLine} is used by Jacoco to store commands to enable its agent, and then used in Surefire configuration.
+             When Jacoco is not enabled, it will stay empty, otherwise it will be overwritten. -->
+        <argLine />
+
         <!-- Plugin versions used in multiple places -->
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
         <dep.plugin.surefire.version>3.0.0-M5</dep.plugin.surefire.version>
@@ -434,9 +438,9 @@
                         <failIfNoTests>true</failIfNoTests>
                         <parallel>${air.test.parallel}</parallel>
                         <threadCount>${air.test.thread-count}</threadCount>
-                        <!-- ${argLine} is for Jacoco: https://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html -->
+                        <!-- @{argLine} is for Jacoco: https://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html -->
                         <argLine>
-                            ${argLine}
+                            @{argLine}
 
                             <!-- Pass the following three directly to the JVM,
                                  because systemPropertyVariables are not passed correctly by Maven -->
@@ -1372,20 +1376,6 @@
                     </plugin>
                 </plugins>
             </build>
-        </profile>
-        <profile>
-            <id>jacoco-defaults</id>
-            <activation>
-                <property>
-                    <name>air.check.skip-all</name>
-                    <value>true</value>
-                </property>
-            </activation>
-            <properties>
-                <!-- ${argLine} is defined by Jacoco, but required by Surefire, so define an empty default
-                when Jacoco is disabled with all checks -->
-                <argLine />
-            </properties>
         </profile>
         <profile>
             <id>modernizer-check</id>
