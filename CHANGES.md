@@ -2,6 +2,8 @@ Airbase 128
 
 * Plugin updates:
   - JaCoCo 0.8.8 (from 0.8.7)
+* Always define ``argLine`` property even if Jacoco is disabled, to ensure
+  that Surefire configuration does not confuse IntelliJ IDEA
 
 Airbase 127
 
