@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.airlift</groupId>
         <artifactId>airbase-root</artifactId>
-        <version>128-SNAPSHOT</version>
+        <version>128</version>
     </parent>
 
     <artifactId>airbase-policy</artifactId>
