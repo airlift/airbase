@@ -182,6 +182,7 @@
         <module name="PackageName">
             <property name="format" value="^[a-z][a-z0-9]*(\.[a-z][a-z0-9]*)*$" />
         </module>
+        <module name="PackageDeclaration" />
         <module name="ParameterName" />
         <module name="StaticVariableName" />
         <module name="ClassTypeParameterName">
