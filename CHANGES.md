@@ -5,6 +5,7 @@ Airbase 129
 * Dependency updates:
   - joda-time 2.10.14 (from 2.10.13)
   - slf4j 1.7.36 (from 1.7.32)
+  - checkstyle 10.3.2 (from 9.2)
 
 Airbase 128
 
