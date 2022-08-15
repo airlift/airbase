@@ -2,6 +2,7 @@ Airbase 129
 
 * Checkstyle updates:
   - Require package name to match the source directory
+  - Suppress Checkstyle within text-blocks
 * Dependency updates:
   - joda-time 2.10.14 (from 2.10.13)
   - slf4j 1.7.36 (from 1.7.32)
