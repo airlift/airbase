@@ -5,7 +5,7 @@ Airbase 129
 * Dependency updates:
   - spotbugs-annotations 4.7.2 (from 4.3.0)
   - modernizer 2.4.0 (from 2.3.0)
-  - joda-time 2.10.14 (from 2.10.13)
+  - joda-time 2.11.1 (from 2.10.13)
   - slf4j 1.7.36 (from 1.7.32)
   - checkstyle 10.3.3 (from 9.2)
   - Jackson 2.13.4 (from 2.13.3)
