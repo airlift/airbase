@@ -7,7 +7,11 @@ Airbase 129
   - modernizer 2.4.0 (from 2.3.0)
   - joda-time 2.10.14 (from 2.10.13)
   - slf4j 1.7.36 (from 1.7.32)
-  - checkstyle 10.3.2 (from 9.2)
+  - checkstyle 10.3.3 (from 9.2)
+  - Jackson 2.13.4 (from 2.13.3)
+  - JMH 1.35 (from 1.32)
+* Plugin updates:
+  - checkstyle 3.2.0 (from 3.1.2)
 
 Airbase 128
 
