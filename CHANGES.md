@@ -1,3 +1,7 @@
+Airbase 130
+* Dependency updates:
+  - Slice 0.44 (from 0.42)
+
 Airbase 129
 
 * Checkstyle updates:

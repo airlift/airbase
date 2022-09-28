@@ -204,7 +204,7 @@
         <dep.spotbugs-annotations.version>4.7.2</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
         <dep.assertj-core.version>3.18.1</dep.assertj-core.version>
-        <dep.slice.version>0.42</dep.slice.version>
+        <dep.slice.version>0.44</dep.slice.version>
         <dep.modernizer.version>2.4.0</dep.modernizer.version>
         <dep.jmh.version>1.35</dep.jmh.version>
         <dep.junit.version>5.8.1</dep.junit.version>
