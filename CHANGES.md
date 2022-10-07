@@ -1,5 +1,7 @@
 Airbase 131
 
+* Checkstyle updates:
+  - Disallow redundant modifiers on interface elements
 * Plugin updates:
   - PMD 3.19.0 (from 3.12.0)
 
