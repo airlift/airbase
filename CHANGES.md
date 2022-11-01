@@ -1,3 +1,7 @@
+Airbase 131
+* Plugin updates:
+  - duplicate-finder-maven-plugin 1.5.1 (from 1.5.0)
+
 Airbase 130
 * Dependency updates:
   - Slice 0.44 (from 0.42)
