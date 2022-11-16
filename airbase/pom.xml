@@ -470,12 +470,14 @@
                     </configuration>
                 </plugin>
 
-                <!-- Resource plugins should always use UTF-8 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.3.1</version>
                     <configuration>
+                        <!-- Properties files are ISO-8859-1 by default -->
+                        <propertiesEncoding>ISO-8859-1</propertiesEncoding>
+                        <!-- Use project encoding (e.g. UTF-8) for all other resources -->
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
                 </plugin>

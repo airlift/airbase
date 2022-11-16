@@ -1,3 +1,7 @@
+Airbase 144
+
+* Use standard properties encoding, ISO-8859-1, when filtering properties file.
+
 Airbase 143
 
 * Relax restricted imports for Jersey
