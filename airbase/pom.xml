@@ -681,12 +681,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.12.0</version>
+                    <version>3.19.0</version>
                     <configuration>
                         <skip>${air.check.skip-pmd}</skip>
                         <failOnViolation>${air.check.fail-pmd}</failOnViolation>
                         <targetJdk>${project.build.targetJdk}</targetJdk>
-                        <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+                        <inputEncoding>${project.build.sourceEncoding}</inputEncoding>
                         <minimumTokens>100</minimumTokens>
                         <excludes>
                             <exclude>**/*Bean.java</exclude>

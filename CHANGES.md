@@ -1,8 +1,13 @@
 Airbase 131
+
+* Checkstyle updates:
+  - Disallow redundant modifiers on interface elements
 * Plugin updates:
   - duplicate-finder-maven-plugin 1.5.1 (from 1.5.0)
+  - PMD 3.19.0 (from 3.12.0)
 
 Airbase 130
+
 * Dependency updates:
   - Slice 0.44 (from 0.42)
 
