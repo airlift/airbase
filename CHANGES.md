@@ -2,6 +2,8 @@ Airbase 131
 
 * Checkstyle updates:
   - Disallow redundant modifiers on interface elements
+* Dependency updates:
+  - Jackson 2.14.1 (from 2.13.4)
 * Plugin updates:
   - duplicate-finder-maven-plugin 1.5.1 (from 1.5.0)
   - PMD 3.19.0 (from 3.12.0)
