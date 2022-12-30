@@ -96,6 +96,10 @@
         <air.release.preparation-goals>clean install</air.release.preparation-goals>
         <air.release.tag-name-format>@{project.version}</air.release.tag-name-format>
 
+        <!-- Properties related to staging for OSSRH -->
+        <air.staging.nexus-url>https://oss.sonatype.org/</air.staging.nexus-url>
+        <air.staging.profile-id></air.staging.profile-id>
+
         <!-- define the thread count for parallel tests. -->
         <air.test.thread-count>1</air.test.thread-count>
 
@@ -473,6 +477,19 @@
                         <tagNameFormat>${air.release.tag-name-format}</tagNameFormat>
                         <useReleaseProfile>false</useReleaseProfile>
                         <goals>deploy</goals>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>1.6.13</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <serverId>${air.repository.release.id}</serverId>
+                        <nexusUrl>${air.staging.nexus-url}</nexusUrl>
+                        <stagingProfileId>${air.staging.profile-id}</stagingProfileId>
+                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
                     </configuration>
                 </plugin>
 
@@ -1429,6 +1446,10 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                     </plugin>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                      </plugin>
                 </plugins>
             </build>
         </profile>
