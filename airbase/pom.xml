@@ -1238,7 +1238,7 @@
                 <version>${dep.junit.version}</version>
                 <scope>import</scope>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
