@@ -1,5 +1,6 @@
 Airbase 131
 
+* Replace `javax.servlet-api` with `jetty-servlet-api`
 * Dependency updates:
   - slf4j 2.0.6 (from 1.7.36)
 * Checkstyle updates:
