@@ -196,7 +196,6 @@
         <dep.logback.version>1.2.11</dep.logback.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
         <dep.javax-validation.version>2.0.1.Final</dep.javax-validation.version>
-        <dep.javax-servlet.version>4.0.1</dep.javax-servlet.version>
         <dep.bval.version>2.0.5</dep.bval.version>
         <dep.jackson.version>2.14.1</dep.jackson.version>
         <dep.jmxutils.version>1.21</dep.jmxutils.version>
@@ -321,7 +320,8 @@
                                     <exclude>com.google.guava:listenablefuture</exclude>
                                     <!-- Contains FindBugs annotations, JSR-305 and JCIP annotations -->
                                     <exclude>com.google.code.findbugs:annotations</exclude>
-                                    <!-- Use the official version at javax.servlet:javax.servlet-api -->
+                                    <!-- use the newer Jetty version of the servlet API -->
+                                    <exclude>javax.servlet:javax.servlet-api</exclude>
                                     <exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
                                     <!-- Renamed airlift modules -->
                                     <exclude>io.airlift:discovery-experimental</exclude>
@@ -1002,14 +1002,16 @@
                 <version>${dep.javax-inject.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${dep.javax-servlet.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
                 <version>${dep.javax-validation.version}</version>
+            </dependency>
+
+            <!-- servlet -->
+            <dependency>
+                <groupId>org.eclipse.jetty.toolchain</groupId>
+                <artifactId>jetty-servlet-api</artifactId>
+                <version>4.0.6</version>
             </dependency>
 
             <!-- logging -->
