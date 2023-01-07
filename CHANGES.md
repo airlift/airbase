@@ -1,5 +1,7 @@
 Airbase 131
 
+* Dependency updates:
+  - slf4j 2.0.6 (from 1.7.36)
 * Checkstyle updates:
   - Disallow redundant modifiers on interface elements
 * Dependency updates:
