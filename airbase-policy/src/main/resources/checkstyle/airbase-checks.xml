@@ -115,7 +115,7 @@
 
         <module name="SuppressionXpathSingleFilter">
             <property name="checks" value="RedundantModifier"/>
-            <property name="query" value="//CLASS_DEF/OBJBLOCK/*/MODIFIERS/*"/>
+            <property name="query" value="//(CLASS_DEF|RECORD_DEF)/OBJBLOCK/*/MODIFIERS/*"/>
         </module>
         <module name="RedundantModifier" />
 
