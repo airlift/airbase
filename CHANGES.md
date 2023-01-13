@@ -2,6 +2,7 @@ Airbase 132
 
 * Checkstyle updates:
   - Allow redundant modifiers within records
+  - Require newline after opening brace for records
 * Plugin updates:
   - Enforcer 3.1.0 (from 3.0.0)
   - Extra Enforcer Rules 1.6.1 (from 1.4)

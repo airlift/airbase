@@ -139,7 +139,7 @@
         <module name="NeedBraces" />
         <module name="LeftCurly">
             <property name="option" value="nl" />
-            <property name="tokens" value="CLASS_DEF, CTOR_DEF, INTERFACE_DEF, METHOD_DEF" />
+            <property name="tokens" value="CLASS_DEF, CTOR_DEF, INTERFACE_DEF, METHOD_DEF, RECORD_DEF" />
         </module>
         <module name="LeftCurly">
             <property name="option" value="eol" />
