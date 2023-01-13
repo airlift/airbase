@@ -1,3 +1,8 @@
+Airbase 132
+
+* Plugin updates:
+  - Enforcer 3.1.0 (from 3.0.0)
+
 Airbase 131
 
 * Replace `javax.servlet-api` with `jetty-servlet-api`
@@ -134,7 +139,7 @@ Airbase 113
 * Dependency updates:
   - JMH 1.32 (from 1.20)
 * Plugin updates:
-  - maven-enforcer-plugin 3.0.0 (from 3.0.0.M3)
+  - Enforcer 3.0.0 (from 3.0.0.M3)
 
 Airbase 112
 
