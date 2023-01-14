@@ -3,6 +3,8 @@ Airbase 133
 * Checkstyle updates:
   - Disallow empty javadoc tags
   - Require empty line before javadoc tags
+* Dependency updates:
+  - jmxutils 1.22 (from 1.21)
 
 Airbase 132
 
