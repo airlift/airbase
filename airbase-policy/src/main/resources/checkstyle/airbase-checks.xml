@@ -270,5 +270,6 @@
 
         <!-- javadoc -->
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
+        <module name="NonEmptyAtclauseDescription" />
     </module>
 </module>

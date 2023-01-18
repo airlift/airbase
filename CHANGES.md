@@ -1,6 +1,7 @@
 Airbase 133
 
 * Checkstyle updates:
+  - Disallow empty javadoc tags
   - Require empty line before javadoc tags
 
 Airbase 132
