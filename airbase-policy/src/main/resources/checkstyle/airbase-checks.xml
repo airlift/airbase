@@ -267,5 +267,8 @@
             <property name="message" value="No new line before extends/implements" />
             <property name="ignoreComments" value="true" />
         </module>
+
+        <!-- javadoc -->
+        <module name="RequireEmptyLineBeforeBlockTagGroup" />
     </module>
 </module>
