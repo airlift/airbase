@@ -1,3 +1,7 @@
+Airbase 134
+
+* Always show where deprecated APIs are used
+
 Airbase 133
 
 * Checkstyle updates:
