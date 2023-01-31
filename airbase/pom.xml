@@ -398,6 +398,7 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmem>${air.build.jvmsize}</maxmem>
                         <failOnWarning>${air.compiler.fail-warnings}</failOnWarning>
+                        <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
                         <fork>true</fork>
                         <parameters>true</parameters>

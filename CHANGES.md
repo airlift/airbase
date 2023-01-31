@@ -1,5 +1,6 @@
 Airbase 134
 
+* Always show where deprecated APIs are used
 * Enforcer updates:
   - Enable `requirePluginVersions` check
 * Plugin updates:
