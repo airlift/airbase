@@ -2,6 +2,8 @@ Airbase 134
 
 * Enforcer updates:
   - Enable `requirePluginVersions` check
+* Plugin updates:
+  - Enforcer 3.2.1 (from 3.1.0)
 
 Airbase 133
 
