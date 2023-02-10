@@ -1,3 +1,8 @@
+Airbase 134
+
+* Enforcer updates:
+  - Enable `requirePluginVersions` check
+
 Airbase 133
 
 * Checkstyle updates:

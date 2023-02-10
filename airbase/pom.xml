@@ -359,6 +359,9 @@
                                     <exclude>org.eclipse.jetty:jetty-alpn-java-server</exclude>
                                 </excludes>
                             </enforceBytecodeVersion>
+                            <requirePluginVersions>
+                                <message>Providing the plugin version explicitly makes the builds reproducible</message>
+                            </requirePluginVersions>
                         </rules>
                     </configuration>
                 </plugin>
