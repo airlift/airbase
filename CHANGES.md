@@ -2,6 +2,7 @@ Airbase 134
 
 * Enforcer updates:
   - Enable `requirePluginVersions` check
+  - Deny static import for builder
 * Plugin updates:
   - Enforcer 3.2.1 (from 3.1.0)
 

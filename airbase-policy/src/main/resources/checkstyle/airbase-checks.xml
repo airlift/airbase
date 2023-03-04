@@ -46,8 +46,8 @@
     </module>
 
     <module name="RegexpSingleline">
-        <property name="format" value="^import static .*\.(of|copyOf|valueOf);$" />
-        <property name="message" value="The following methods may not be statically imported: of, copyOf, valueOf" />
+        <property name="format" value="^import static .*\.(of|copyOf|valueOf|builder);$" />
+        <property name="message" value="The following methods may not be statically imported: of, copyOf, valueOf, builder" />
     </module>
     <module name="RegexpSingleline">
         <property name="format" value="^import static (?!java\.lang\.String\.format;).*\.format;" />
