@@ -3,6 +3,8 @@ Airbase 134
 * Always show where deprecated APIs are used
 * Enforcer updates:
   - Enable `requirePluginVersions` check
+* Checkstyle updates:
+  - Deny static import for `builder`
 * Plugin updates:
   - Enforcer 3.2.1 (from 3.1.0)
 
