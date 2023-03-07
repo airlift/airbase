@@ -4,9 +4,26 @@ Airbase 134
 * Enforcer updates:
   - Enable `requirePluginVersions` check
 * Checkstyle updates:
+  - Version 10.8.0 (from 10.3.3)
   - Deny static import for `builder`
+* Dependency updates:
+  - Apache BVal 2.0.6 (from 2.0.5)
+  - AssertJ Core 3.24.2 (from 3.18.1)
+  - JMH 1.36 (from 1.35)
+  - JUnit 5.8.2 (from 5.8.1)
+  - Jackson 2.14.2 (from 2.14.1)
+  - Logback 1.4.5 (from 1.2.11)
+  - Slice 0.45 (from 0.44)
+  - SpotBugs annotations 4.7.3 (from 4.7.2)
+  - joda-time 2.12.2 (from 2.11.1)
 * Plugin updates:
+  - Checkstyle 3.2.1 (from 3.2.0)
+  - Compiler 3.11.0 (from 3.9.0)
+  - Dependency 3.5.0 (from 3.3.0)
   - Enforcer 3.2.1 (from 3.1.0)
+  - PMD 3.20.0 (from 3.19.0)
+  - Shade 3.4.1 (from 3.2.1)
+  - SpotBugs 4.7.3.2 (from 4.2.3)
 
 Airbase 133
 
