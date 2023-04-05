@@ -1,3 +1,8 @@
+Airbase 135
+
+* Plugin updates:
+  - Modernizer 2.6.0 (from 2.5.0)
+
 Airbase 134
 
 * Always show where deprecated APIs are used
