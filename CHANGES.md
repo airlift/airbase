@@ -1,3 +1,8 @@
+Airbase 135
+
+* Dependency updates:
+  - Pinned versions some more Jackson modules
+
 Airbase 134
 
 * Always show where deprecated APIs are used
