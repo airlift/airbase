@@ -2,6 +2,8 @@ Airbase 135
 
 * Dependency updates:
   - Pinned versions some more Jackson modules
+* Plugin updates:
+  - Modernizer 2.6.0 (from 2.5.0)
 
 Airbase 134
 
