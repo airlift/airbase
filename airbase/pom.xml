@@ -703,7 +703,6 @@
                         <skip>${air.check.skip-pmd}</skip>
                         <failOnViolation>${air.check.fail-pmd}</failOnViolation>
                         <targetJdk>${project.build.targetJdk}</targetJdk>
-                        <inputEncoding>${project.build.sourceEncoding}</inputEncoding>
                         <minimumTokens>100</minimumTokens>
                         <excludes>
                             <exclude>**/*Bean.java</exclude>
