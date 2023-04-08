@@ -125,6 +125,9 @@
         <!-- Target Java version for Modernizer -->
         <air.modernizer.java-version>${project.build.targetJdk}</air.modernizer.java-version>
 
+        <!-- Run compiler in a separate process -->
+        <air.compiler.fork>false</air.compiler.fork>
+
         <!-- compiler warnings treated as errors -->
         <air.compiler.fail-warnings>false</air.compiler.fail-warnings>
 
@@ -396,11 +399,11 @@
                         <source>${project.build.targetJdk}</source>
                         <release>${project.build.targetJdk}</release>
                         <encoding>${project.build.sourceEncoding}</encoding>
+                        <fork>${air.compiler.fork}</fork>
                         <maxmem>${air.build.jvmsize}</maxmem>
                         <failOnWarning>${air.compiler.fail-warnings}</failOnWarning>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
-                        <fork>true</fork>
                         <parameters>true</parameters>
                     </configuration>
                 </plugin>

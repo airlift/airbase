@@ -1,5 +1,6 @@
 Airbase 135
 
+* Run compiler in same process by default
 * Dependency updates:
   - Pinned versions some more Jackson modules
   - SLF4J 2.0.7 (from 2.0.6)
