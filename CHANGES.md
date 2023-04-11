@@ -5,6 +5,7 @@ Airbase 135
 * Dependency updates:
   - Pinned versions some more Jackson modules
   - SLF4J 2.0.7 (from 2.0.6)
+  - Logback 1.4.6 (from 1.4.5)
   - joda-time 2.12.5 (from 2.11.2)
 * Plugin updates:
   - Modernizer 2.6.0 (from 2.5.0)
