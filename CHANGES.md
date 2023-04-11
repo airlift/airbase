@@ -2,6 +2,8 @@ Airbase 135
 
 * Run compiler in same process by default
 * Allow dependency plugin to work with Java 21 bytecode
+* Checkstyle updates:
+  - Version 10.9.3 (from 10.8.0)
 * Dependency updates:
   - Pinned versions some more Jackson modules
   - SLF4J 2.0.7 (from 2.0.6)
