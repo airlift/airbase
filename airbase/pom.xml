@@ -204,7 +204,7 @@
         <dep.jmxutils.version>1.22</dep.jmxutils.version>
         <dep.joda.version>2.12.5</dep.joda.version>
         <dep.junit.version>5.9.2</dep.junit.version>
-        <dep.logback.version>1.4.5</dep.logback.version>
+        <dep.logback.version>1.4.6</dep.logback.version>
         <dep.modernizer.version>2.6.0</dep.modernizer.version>
         <dep.slf4j.version>2.0.7</dep.slf4j.version>
         <dep.slice.version>0.45</dep.slice.version>
