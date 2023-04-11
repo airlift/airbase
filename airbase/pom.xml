@@ -204,8 +204,11 @@
         <dep.jmxutils.version>1.22</dep.jmxutils.version>
         <dep.joda.version>2.12.5</dep.joda.version>
         <dep.junit.version>5.9.2</dep.junit.version>
+        <dep.kotlin.version>1.8.20</dep.kotlin.version>
         <dep.logback.version>1.4.6</dep.logback.version>
         <dep.modernizer.version>2.6.0</dep.modernizer.version>
+        <dep.opentelemetry.version>1.25.0</dep.opentelemetry.version>
+        <dep.opentelemetry-instrumentation.version>1.24.0</dep.opentelemetry-instrumentation.version>
         <dep.slf4j.version>2.0.7</dep.slf4j.version>
         <dep.slice.version>0.45</dep.slice.version>
         <dep.spotbugs-annotations.version>4.7.3</dep.spotbugs-annotations.version>
@@ -1101,6 +1104,48 @@
                 <artifactId>jackson-bom</artifactId>
                 <type>pom</type>
                 <version>${dep.jackson.version}</version>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Kotlin -->
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-bom</artifactId>
+                <type>pom</type>
+                <version>${dep.kotlin.version}</version>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- OpenTelemetry -->
+            <dependency>
+                <groupId>io.opentelemetry</groupId>
+                <artifactId>opentelemetry-bom</artifactId>
+                <type>pom</type>
+                <version>${dep.opentelemetry.version}</version>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry</groupId>
+                <artifactId>opentelemetry-bom-alpha</artifactId>
+                <type>pom</type>
+                <version>${dep.opentelemetry.version}-alpha</version>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry.instrumentation</groupId>
+                <artifactId>opentelemetry-instrumentation-bom</artifactId>
+                <type>pom</type>
+                <version>${dep.opentelemetry-instrumentation.version}</version>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry.instrumentation</groupId>
+                <artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
+                <type>pom</type>
+                <version>${dep.opentelemetry-instrumentation.version}-alpha</version>
                 <scope>import</scope>
             </dependency>
 
