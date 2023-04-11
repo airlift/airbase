@@ -4,6 +4,9 @@ Airbase 135
 * Allow dependency plugin to work with Java 21 bytecode
 * Checkstyle updates:
   - Version 10.9.3 (from 10.8.0)
+* Add dependencies:
+  - OpenTelemetry
+  - Kotlin
 * Dependency updates:
   - Pinned versions some more Jackson modules
   - SLF4J 2.0.7 (from 2.0.6)
