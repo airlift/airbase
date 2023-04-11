@@ -202,7 +202,7 @@
         <dep.javax-validation.version>2.0.1.Final</dep.javax-validation.version>
         <dep.jmh.version>1.36</dep.jmh.version>
         <dep.jmxutils.version>1.22</dep.jmxutils.version>
-        <dep.joda.version>2.12.2</dep.joda.version>
+        <dep.joda.version>2.12.5</dep.joda.version>
         <dep.junit.version>5.9.2</dep.junit.version>
         <dep.logback.version>1.4.5</dep.logback.version>
         <dep.modernizer.version>2.6.0</dep.modernizer.version>
