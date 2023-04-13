@@ -187,7 +187,7 @@
 
         <!-- Plugin versions used in multiple places -->
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
-        <dep.plugin.surefire.version>3.0.0-M5</dep.plugin.surefire.version>
+        <dep.plugin.surefire.version>3.0.0</dep.plugin.surefire.version>
 
         <!-- Packaging for the tarball deployment -->
         <dep.packaging.version>0.163</dep.packaging.version>
