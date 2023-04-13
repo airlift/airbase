@@ -1,5 +1,6 @@
 Airbase 136
 
+* Add `air.compiler.enable-preview` property
 * Plugin updates:
   - JaCoCo 0.8.9 (from 0.8.8)
   - Surefire 3.0.0 (from 3.0.0-M5)

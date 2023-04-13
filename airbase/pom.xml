@@ -131,6 +131,9 @@
         <!-- compiler warnings treated as errors -->
         <air.compiler.fail-warnings>false</air.compiler.fail-warnings>
 
+        <!-- enable compiler preview language features -->
+        <air.compiler.enable-preview>false</air.compiler.enable-preview>
+
         <!-- Controls all the checkers run when building the project.            -->
         <!-- Can be activated with -Dair.check.skip-all=true on the command line. -->
         <air.check.skip-all>false</air.check.skip-all>
@@ -416,6 +419,7 @@
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
                         <parameters>true</parameters>
+                        <enablePreview>${air.compiler.enable-preview}</enablePreview>
                     </configuration>
                 </plugin>
 
@@ -472,6 +476,7 @@
                             -XX:+ExitOnOutOfMemoryError
                             -XX:+HeapDumpOnOutOfMemoryError
                             -XX:-OmitStackTraceInFastThrow
+                            ${surefireEnablePreview}
                             ${air.test.jvm.additional-arguments}
                         </argLine>
                     </configuration>
@@ -989,6 +994,29 @@
                         <goals>
                             <goal>revision</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>surefire-enable-preview</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>bsh-property</goal>
+                        </goals>
+                        <configuration>
+                            <properties>
+                                <property>surefireEnablePreview</property>
+                            </properties>
+                            <source>
+                                value = project.getProperties().getProperty("air.compiler.enable-preview");
+                                surefireEnablePreview = Boolean.parseBoolean(value) ? "--enable-preview" : "";
+                            </source>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
