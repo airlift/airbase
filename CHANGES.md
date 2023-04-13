@@ -4,6 +4,7 @@ Airbase 136
   - JaCoCo 0.8.9 (from 0.8.8)
   - Surefire 3.0.0 (from 3.0.0-M5)
   - PMD runtime 6.55.0 (from 6.53.0)
+  - SpotBugs 4.7.3.4 (from 4.7.3.2)
 
 Airbase 135
 
