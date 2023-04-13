@@ -2,6 +2,7 @@ Airbase 136
 
 * Plugin updates:
   - JaCoCo 0.8.9 (from 0.8.8)
+  - Surefire 3.0.0 (from 3.0.0-M5)
 
 Airbase 135
 
