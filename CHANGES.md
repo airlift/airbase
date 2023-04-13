@@ -1,3 +1,8 @@
+Airbase 136
+
+* Plugin updates:
+  - JaCoCo 0.8.9 (from 0.8.8)
+
 Airbase 135
 
 * Run compiler in same process by default
