@@ -188,6 +188,7 @@
         <!-- Plugin versions used in multiple places -->
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
         <dep.plugin.surefire.version>3.0.0</dep.plugin.surefire.version>
+        <dep.plugin.pmd-runtime.version>6.55.0</dep.plugin.pmd-runtime.version>
 
         <!-- Packaging for the tarball deployment -->
         <dep.packaging.version>0.163</dep.packaging.version>
@@ -699,6 +700,28 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
                     <version>3.20.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>net.sourceforge.pmd</groupId>
+                            <artifactId>pmd-core</artifactId>
+                            <version>${dep.plugin.pmd-runtime.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>net.sourceforge.pmd</groupId>
+                            <artifactId>pmd-java</artifactId>
+                            <version>${dep.plugin.pmd-runtime.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>net.sourceforge.pmd</groupId>
+                            <artifactId>pmd-javascript</artifactId>
+                            <version>${dep.plugin.pmd-runtime.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>net.sourceforge.pmd</groupId>
+                            <artifactId>pmd-jsp</artifactId>
+                            <version>${dep.plugin.pmd-runtime.version}</version>
+                        </dependency>
+                    </dependencies>
                     <configuration>
                         <skip>${air.check.skip-pmd}</skip>
                         <failOnViolation>${air.check.fail-pmd}</failOnViolation>
