@@ -5,6 +5,7 @@ Airbase 136
   - Surefire 3.0.0 (from 3.0.0-M5)
   - PMD runtime 6.55.0 (from 6.53.0)
   - SpotBugs 4.7.3.4 (from 4.7.3.2)
+  - Build Helper 3.3.0 (from 1.7)
 
 Airbase 135
 
