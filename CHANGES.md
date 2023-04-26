@@ -1,3 +1,8 @@
+Airbase 137
+
+* Dependency updates:
+  - jmxutils 1.23 (from 1.22)
+
 Airbase 136
 
 * Add `air.compiler.enable-preview` property
