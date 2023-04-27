@@ -1,3 +1,8 @@
+Airbase 138
+
+* Dependency updates:
+  - jackson 2.15.0 (from 2.14.2)
+
 Airbase 137
 
 * Dependency updates:

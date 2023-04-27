@@ -201,7 +201,7 @@
         <dep.bval.version>2.0.6</dep.bval.version>
         <dep.guava.version>31.1-jre</dep.guava.version>
         <dep.guice.version>5.1.0</dep.guice.version>
-        <dep.jackson.version>2.14.2</dep.jackson.version>
+        <dep.jackson.version>2.15.0</dep.jackson.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
         <dep.javax-validation.version>2.0.1.Final</dep.javax-validation.version>
         <dep.jmh.version>1.36</dep.jmh.version>
