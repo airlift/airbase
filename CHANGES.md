@@ -22,6 +22,7 @@ Airbase 139
   - maven-source-plugin 3.2.1 (from 3.2.0)
   - license-maven-plugin 4.2 (from 3.0)
   - jacoco-maven-plugin 0.8.10 (from 0.8.9)
+  - maven-checkstyle-plugin 3.2.2 (from 3.2.1)
 
 Airbase 138
 
