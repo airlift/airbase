@@ -1,3 +1,8 @@
+Airbase 139
+
+* Checkstyle updates:
+  - Require throws keyword to be on a new line.
+
 Airbase 138
 
 * Dependency updates:
