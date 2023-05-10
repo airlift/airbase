@@ -5,6 +5,7 @@ Airbase 139
   - Require throws keyword to be on a new line.
 * Dependency updates:
   - JUnit 5.9.3 (from 5.9.2)
+  - Kotlin 1.8.21 (from 1.8.20)
 * Plugin updates:
   - Surefire 3.1.0 (from 3.0.0)
 
