@@ -14,6 +14,7 @@ Airbase 139
   - maven-clean-plugin 3.2.0 (from 3.0.0)
   - maven-install-plugin 3.1.1 (from 2.5.2)
   - maven-enforcer-plugin 3.3.0 (from 3.2.1)
+  - maven-resources-plugin 3.3.1 (from 3.2.0)
 
 Airbase 138
 
