@@ -7,6 +7,7 @@ Airbase 139
   - JUnit 5.9.3 (from 5.9.2)
   - Kotlin 1.8.21 (from 1.8.20)
   - Opentelemetry 1.26.0 (from 1.25.0)
+  - Opentelemetry Instrumentation 1.25.1 (from 1.24.0)
 * Plugin updates:
   - Surefire 3.1.0 (from 3.0.0)
 
