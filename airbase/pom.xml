@@ -805,7 +805,7 @@
                 <plugin>
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>3.0</version>
+                    <version>4.2</version>
                     <dependencies>
                         <!-- This version must match the Airbase version. It will be updated by -->
                         <!-- the Maven Release plugin. The "project.version" property cannot be -->
@@ -820,7 +820,43 @@
                         <skip>${air.check.skip-license}</skip>
                         <skipExistingHeaders>${air.license.skip-existing-headers}</skipExistingHeaders>
                         <failIfMissing>${air.check.fail-license}</failIfMissing>
-                        <header>${air.license.header-file}</header>
+                        <licenseSets>
+                            <licenseSet>
+                                <header>${air.license.header-file}</header>
+                                <headerSections>
+                                    <headerSection>
+                                        <key>COPYRIGHT_SECTION</key>
+                                        <defaultValue>${air.license.default-value}</defaultValue>
+                                        <ensureMatch>${air.license.ensure-match}</ensureMatch>
+                                        <multiLineMatch>false</multiLineMatch>
+                                    </headerSection>
+                                </headerSections>
+                                <excludes>
+                                    <exclude>.*/**</exclude>
+                                    <exclude>**/*.md</exclude>
+                                    <exclude>**/*.sh</exclude>
+                                    <exclude>**/*.txt</exclude>
+                                    <exclude>**/*.thrift</exclude>
+                                    <exclude>**/*.sql</exclude>
+                                    <exclude>**/*.releaseBackup</exclude>
+                                    <exclude>**/*.st</exclude>
+                                    <exclude>**/*.raw</exclude>
+                                    <exclude>**/*.ser</exclude>
+                                    <exclude>**/*.html</exclude>
+                                    <exclude>**/*.rst</exclude>
+                                    <exclude>**/*.xml</exclude>
+                                    <exclude>**/*.csv</exclude>
+                                    <exclude>**/*.tsv</exclude>
+                                    <exclude>**/*.properties</exclude>
+                                    <exclude>**/src/license/**</exclude>
+                                    <exclude>**/src/*/resources/**</exclude>
+                                </excludes>
+                                <includes>
+                                    <include>src/**</include>
+                                </includes>
+                            </licenseSet>
+                        </licenseSets>
+
                         <mapping>
                             <java>SLASHSTAR_STYLE</java>
                             <g>SLASHSTAR_STYLE</g>
@@ -829,41 +865,11 @@
                         <properties>
                             <inceptionYear>${project.inceptionYear}</inceptionYear>
                         </properties>
-                        <headerSections>
-                            <headerSection>
-                                <key>COPYRIGHT_SECTION</key>
-                                <defaultValue>${air.license.default-value}</defaultValue>
-                                <ensureMatch>${air.license.ensure-match}</ensureMatch>
-                                <multiLineMatch>false</multiLineMatch>
-                            </headerSection>
-                        </headerSections>
+
                         <strictCheck>true</strictCheck>
                         <aggregate>true</aggregate>
                         <useDefaultExcludes>true</useDefaultExcludes>
                         <encoding>${project.build.sourceEncoding}</encoding>
-                        <excludes>
-                            <exclude>.*/**</exclude>
-                            <exclude>**/*.md</exclude>
-                            <exclude>**/*.sh</exclude>
-                            <exclude>**/*.txt</exclude>
-                            <exclude>**/*.thrift</exclude>
-                            <exclude>**/*.sql</exclude>
-                            <exclude>**/*.releaseBackup</exclude>
-                            <exclude>**/*.st</exclude>
-                            <exclude>**/*.raw</exclude>
-                            <exclude>**/*.ser</exclude>
-                            <exclude>**/*.html</exclude>
-                            <exclude>**/*.rst</exclude>
-                            <exclude>**/*.xml</exclude>
-                            <exclude>**/*.csv</exclude>
-                            <exclude>**/*.tsv</exclude>
-                            <exclude>**/*.properties</exclude>
-                            <exclude>**/src/license/**</exclude>
-                            <exclude>**/src/*/resources/**</exclude>
-                        </excludes>
-                        <includes>
-                            <include>src/**</include>
-                        </includes>
                     </configuration>
                     <executions>
                         <execution>
