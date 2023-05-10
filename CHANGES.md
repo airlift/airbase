@@ -17,6 +17,7 @@ Airbase 139
   - maven-resources-plugin 3.3.1 (from 3.2.0)
   - maven-assembly-plugin 3.5.0 (from 3.3.0)
   - maven-javadoc-plugin 3.5.0 (from 3.2.0)
+  - maven-jar-plugin 3.3.0 (from 3.2.0)
 
 Airbase 138
 
