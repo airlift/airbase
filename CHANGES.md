@@ -9,6 +9,7 @@ Airbase 139
   - Opentelemetry 1.26.0 (from 1.25.0)
   - Opentelemetry Instrumentation 1.25.1 (from 1.24.0)
   - Logback 1.4.7 (from 1.4.6)
+  - Checkstyle 10.11.0 (from 10.9.3)
 * Plugin updates:
   - Surefire 3.1.0 (from 3.0.0)
   - maven-clean-plugin 3.2.0 (from 3.0.0)
