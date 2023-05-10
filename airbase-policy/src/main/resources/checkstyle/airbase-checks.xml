@@ -245,6 +245,7 @@
             <property name="illegalPkgs" value="jersey.repackaged" />
             <property name="illegalPkgs" value="jdk.nashorn.internal" />
             <property name="illegalPkgs" value="jdk.internal" />
+            <property name="illegalPkgs" value="org.testcontainers.shaded" />
         </module>
 
         <module name="IllegalImport">
