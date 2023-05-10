@@ -212,7 +212,7 @@
         <dep.logback.version>1.4.6</dep.logback.version>
         <dep.modernizer.version>2.6.0</dep.modernizer.version>
         <dep.opentelemetry.version>1.26.0</dep.opentelemetry.version>
-        <dep.opentelemetry-instrumentation.version>1.24.0</dep.opentelemetry-instrumentation.version>
+        <dep.opentelemetry-instrumentation.version>1.25.1</dep.opentelemetry-instrumentation.version>
         <dep.slf4j.version>2.0.7</dep.slf4j.version>
         <dep.slice.version>0.45</dep.slice.version>
         <dep.spotbugs-annotations.version>4.7.3</dep.spotbugs-annotations.version>
