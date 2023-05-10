@@ -18,6 +18,7 @@ Airbase 139
   - maven-assembly-plugin 3.5.0 (from 3.3.0)
   - maven-javadoc-plugin 3.5.0 (from 3.2.0)
   - maven-jar-plugin 3.3.0 (from 3.2.0)
+  - migrate to git-commit-id-maven-plugin 5.0.0 (from git-commit-id-plugin 4.0.5)
 
 Airbase 138
 
