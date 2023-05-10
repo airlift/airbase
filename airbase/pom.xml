@@ -190,7 +190,7 @@
 
         <!-- Plugin versions used in multiple places -->
         <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
-        <dep.plugin.surefire.version>3.0.0</dep.plugin.surefire.version>
+        <dep.plugin.surefire.version>3.1.0</dep.plugin.surefire.version>
         <dep.plugin.pmd-runtime.version>6.55.0</dep.plugin.pmd-runtime.version>
 
         <!-- Packaging for the tarball deployment -->
