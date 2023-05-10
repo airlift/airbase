@@ -11,6 +11,7 @@ Airbase 139
   - Logback 1.4.7 (from 1.4.6)
 * Plugin updates:
   - Surefire 3.1.0 (from 3.0.0)
+  - maven-clean-plugin 3.2.0 (from 3.0.0)
 
 Airbase 138
 
