@@ -95,19 +95,6 @@
         <property name="message" value="com.google.common.base.Verify should only be used with static imports" />
     </module>
 
-    <module name="RegexpMultiline">
-        <property name="format" value="^[ \t]*import org\.jetbrains\.annotations\.NotNull;$" />
-        <property name="message" value="Not null is the default for the codebase and should not be annotated" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="^[ \t]*import org\.jetbrains\.annotations\.Nullable;$" />
-        <property name="message" value="Use javax.annotation.Nullable instead of org.jetbrains.annotations.Nullable" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="^[ \t]*import static org\.testng\.AssertJUnit\." />
-        <property name="message" value="Use org.testng.Assert instead of org.testng.AssertJUnit" />
-    </module>
-
     <module name="SuppressWarningsFilter" />
 
     <module name="TreeWalker">
@@ -238,24 +225,6 @@
 
         <module name="IllegalToken">
             <property name="tokens" value="LITERAL_ASSERT" />
-        </module>
-
-        <module name="IllegalImport">
-            <property name="illegalPkgs" value="org.weakref.jmx.internal" />
-            <property name="illegalPkgs" value="jersey.repackaged" />
-            <property name="illegalPkgs" value="jdk.nashorn.internal" />
-            <property name="illegalPkgs" value="jdk.internal" />
-        </module>
-
-        <module name="IllegalImport">
-            <property name="illegalPkgs" value=".*\.\$internal" />
-            <!-- Shaded Guava -->
-            <property name="illegalPkgs" value=".*\.com\.google\.common" />
-            <!-- Shaded okhttp3; match "shaded", since "com.example.okhttp3" could be OkHttp-specific code within com.example -->
-            <property name="illegalPkgs" value=".*\.shaded\.okhttp3" />
-            <property name="regexp" value="true" />
-            <!-- Shaded org.apache code -->
-            <property name="illegalPkgs" value=".*\.shaded\.org\.apache" />
         </module>
 
         <module name="MethodName">

@@ -1,3 +1,7 @@
+Airbase 139
+
+* Replace checkstyle illegal imports with `RestrictImports` enforcer rules
+
 Airbase 138
 
 * Dependency updates:
