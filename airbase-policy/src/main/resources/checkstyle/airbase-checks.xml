@@ -237,6 +237,12 @@
             <property name="ignoreComments" value="true" />
         </module>
 
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="\)\s*throws\b" />
+            <property name="message" value="No new line before throws" />
+            <property name="ignoreComments" value="true" />
+        </module>
+
         <!-- javadoc -->
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="NonEmptyAtclauseDescription" />

@@ -1,6 +1,8 @@
 Airbase 139
 
 * Replace checkstyle illegal imports with `RestrictImports` enforcer rules
+* Checkstyle updates:
+  - Require throws keyword to be on a new line.
 
 Airbase 138
 
