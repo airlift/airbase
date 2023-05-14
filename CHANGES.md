@@ -132,6 +132,7 @@ Airbase 129
 
 * Checkstyle updates:
   - Require package name to match the source directory
+  - Suppress Checkstyle within text-blocks
 * Dependency updates:
   - spotbugs-annotations 4.7.2 (from 4.3.0)
   - modernizer 2.4.0 (from 2.3.0)
