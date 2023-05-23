@@ -1,3 +1,9 @@
+Airbase 140
+
+* Pass `user.timezone` in tests as a system property, not as a JVM argument
+  - It restores the ability to run some timezone-sensitive tests
+    from within IntelliJ IDEA
+
 Airbase 139
 
 * Replace checkstyle illegal imports with `RestrictImports` enforcer rules
