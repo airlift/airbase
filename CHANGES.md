@@ -3,6 +3,8 @@ Airbase 140
 * Pass `user.timezone` in tests as a system property, not as a JVM argument
   - It restores the ability to run some timezone-sensitive tests
     from within IntelliJ IDEA
+* Dependency updates:
+  - Guava 32.0.0-jre (from 31.1-jre)
 
 Airbase 139
 
