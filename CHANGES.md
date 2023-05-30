@@ -8,6 +8,7 @@ Airbase 140
   - Checkstyle 10.12.0 (from 10.11.0)
 * Plugin updates:
   - maven-checkstyle-plugin 3.3.0 (from 3.2.2)
+  - maven-source-plugin 3.3.0 (from 3.2.1)
 
 Airbase 139
 
