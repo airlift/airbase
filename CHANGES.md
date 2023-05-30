@@ -3,6 +3,7 @@ Airbase 140
 * Pass `user.timezone` in tests as a system property, not as a JVM argument
   - It restores the ability to run some timezone-sensitive tests
     from within IntelliJ IDEA
+* Update ASM to 9.5 in maven plugins
 * Dependency updates:
   - Guava 32.0.0-jre (from 31.1-jre)
   - Checkstyle 10.12.0 (from 10.11.0)
