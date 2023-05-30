@@ -11,6 +11,7 @@ Airbase 140
   - maven-checkstyle-plugin 3.3.0 (from 3.2.2)
   - maven-source-plugin 3.3.0 (from 3.2.1)
   - extra-enforcer-rules 1.6.2 (from 1.6.1)
+  - duplicate-finder-maven-plugin 2.0.1 (from 1.5.1)
 
 Airbase 139
 
