@@ -217,6 +217,7 @@
         <dep.slice.version>0.45</dep.slice.version>
         <dep.spotbugs-annotations.version>4.7.3</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
+        <dep.asm.version>9.5</dep.asm.version>
 
         <!-- license headers -->
         <air.license.owner>${project.organization.name}</air.license.owner>
@@ -430,7 +431,7 @@
                         <dependency>
                             <groupId>org.ow2.asm</groupId>
                             <artifactId>asm</artifactId>
-                            <version>9.5</version>
+                            <version>${dep.asm.version}</version>
                         </dependency>
                     </dependencies>
                     <configuration>
@@ -922,6 +923,13 @@
                             </goals>
                         </execution>
                     </executions>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.ow2.asm</groupId>
+                            <artifactId>asm</artifactId>
+                            <version>${dep.asm.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
 
                 <plugin>
@@ -988,6 +996,13 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
                     <version>3.4.1</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.ow2.asm</groupId>
+                            <artifactId>asm</artifactId>
+                            <version>${dep.asm.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
