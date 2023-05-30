@@ -5,6 +5,9 @@ Airbase 140
     from within IntelliJ IDEA
 * Dependency updates:
   - Guava 32.0.0-jre (from 31.1-jre)
+  - Checkstyle 10.12.0 (from 10.11.0)
+* Plugin updates:
+  - maven-checkstyle-plugin 3.3.0 (from 3.2.2)
 
 Airbase 139
 
