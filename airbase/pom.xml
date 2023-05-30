@@ -604,7 +604,7 @@
                 <plugin>
                     <groupId>io.github.git-commit-id</groupId>
                     <artifactId>git-commit-id-maven-plugin</artifactId>
-                    <version>5.0.0</version>
+                    <version>6.0.0</version>
                     <configuration>
                         <!-- Include only properties used above to speed up build (https://github.com/git-commit-id/git-commit-id-maven-plugin/issues/462) -->
                         <includeOnlyProperties>
