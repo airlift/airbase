@@ -9,6 +9,7 @@ Airbase 140
 * Plugin updates:
   - maven-checkstyle-plugin 3.3.0 (from 3.2.2)
   - maven-source-plugin 3.3.0 (from 3.2.1)
+  - extra-enforcer-rules 1.6.2 (from 1.6.1)
 
 Airbase 139
 
