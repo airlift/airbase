@@ -1,3 +1,7 @@
+Airbase 141
+
+* Add jakarta dependencies
+
 Airbase 140
 
 * Pass `user.timezone` in tests as a system property, not as a JVM argument
