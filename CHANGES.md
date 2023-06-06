@@ -1,6 +1,8 @@
 Airbase 141
 
 * Add jakarta dependencies
+* Dependency updates:
+  - Guice 7.0.0 (from 6.0.0)
 
 Airbase 140
 
