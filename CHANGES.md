@@ -1,6 +1,7 @@
 Airbase 142
 
 * Add jakarta validation dependencies
+* Add Error Prone annotations dependency
 
 Airbase 141
 
