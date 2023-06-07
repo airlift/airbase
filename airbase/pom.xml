@@ -216,6 +216,7 @@
         <dep.spotbugs-annotations.version>4.7.3</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
         <dep.asm.version>9.5</dep.asm.version>
+        <dep.errorprone.version>2.19.1</dep.errorprone.version>
 
         <!-- license headers -->
         <air.license.owner>${project.organization.name}</air.license.owner>
@@ -1337,6 +1338,13 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${dep.joda.version}</version>
+            </dependency>
+
+            <!-- Error Prone -->
+            <dependency>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_annotations</artifactId>
+                <version>${dep.errorprone.version}</version>
             </dependency>
 
             <!-- FindBugs / SpotBugs -->
