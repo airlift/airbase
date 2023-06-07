@@ -1,3 +1,7 @@
+Airbase 142
+
+* Add jakarta validation dependencies
+
 Airbase 141
 
 * Add jakarta dependencies
