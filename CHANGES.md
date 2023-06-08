@@ -1,3 +1,7 @@
+Airbase 143
+
+* Relax restricted imports for Jersey
+
 Airbase 142
 
 * Add jakarta validation dependencies

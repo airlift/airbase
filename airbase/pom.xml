@@ -383,7 +383,8 @@
                                     <bannedImport>jdk.internal.**</bannedImport>
                                     <bannedImport>jdk.nashorn.internal.**</bannedImport>
 
-                                    <bannedImport>org.glassfish.jersey.internal.**</bannedImport>
+                                    <bannedImport>org.glassfish.jersey.internal.guava.**</bannedImport>
+                                    <bannedImport>org.glassfish.jersey.internal.util.**</bannedImport>
                                     <bannedImport>jersey.repackaged.**</bannedImport>
 
                                     <bannedImport>org.weakref.jmx.internal.**</bannedImport>
