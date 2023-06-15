@@ -1,6 +1,8 @@
 Airbase 143
 
 * Relax restricted imports for Jersey
+* Dependency updates:
+  - jackson 2.15.2 (from 2.15.0)
 
 Airbase 142
 
