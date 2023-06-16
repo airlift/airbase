@@ -8,6 +8,7 @@ Airbase 143
   - maven-shade-plugin 3.5.0 (from 3.4.1)
   - maven-dependency-plugin 3.6.0 (from 3.5.0)
   - maven-dependency-scope-plugin 1.0.1 (from 0.10)
+  - maven-deploy-plugin 3.1.1 (from 2.8.2)
 
 Airbase 142
 
