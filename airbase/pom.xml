@@ -711,9 +711,9 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>com.hubspot.maven.plugins</groupId>
+                    <groupId>org.basepom.maven</groupId>
                     <artifactId>dependency-scope-maven-plugin</artifactId>
-                    <version>0.10</version>
+                    <version>1.0.1</version>
                     <executions>
                         <execution>
                             <goals>
@@ -1471,7 +1471,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>com.hubspot.maven.plugins</groupId>
+                        <groupId>org.basepom.maven</groupId>
                         <artifactId>dependency-scope-maven-plugin</artifactId>
                     </plugin>
                 </plugins>
