@@ -1,6 +1,8 @@
 Airbase 143
 
 * Relax restricted imports for Jersey
+* Plugin updates:
+  - maven-gpg-plugin 3.1.0 (from 1.4.0)
 
 Airbase 142
 
