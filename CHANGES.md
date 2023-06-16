@@ -6,6 +6,7 @@ Airbase 143
 * Plugin updates:
   - maven-gpg-plugin 3.1.0 (from 1.4.0)
   - maven-shade-plugin 3.5.0 (from 3.4.1)
+  - maven-dependency-plugin 3.6.0 (from 3.5.0)
 
 Airbase 142
 
