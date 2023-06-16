@@ -307,9 +307,9 @@ The Enforcer plugin outlaws a number of dependencies that project might use for 
     <td><tt>com.github.spotbugs:spotbugs-annotations</tt><p/><tt>com.google.code.findbugs:jsr305</tt></td>
   </tr>
   <tr>
-    <td><tt>org.eclipse.jetty.orbit:javax.servlet</tt></td>
-    <td>Jetty variant of the 3.x servlet API jar.</td>
-    <td><tt>javax.servlet:javax.servlet-api</tt></td>
+    <td><tt>org.eclipse.jetty.orbit:javax.servlet</tt><br /><tt>javax.servlet:javax.servlet-api</tt></td>
+    <td>Unsupported variants of Servlet API jar.</td>
+    <td><tt>org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api</tt></td>
   </tr>
 </table>
 
@@ -335,12 +335,12 @@ Airbase provides versions for the following well-known dependencies:
     <td><tt>joda-time:joda-time</tt></td>
   </tr>
   <tr>
-    <td>Java Inject API</td>
-    <td><tt>javax.inject:javax.inject</tt></td>
+    <td>Jakarta EE Inject API</td>
+    <td><tt>jakarta.inject:jakarta.inject-api</tt></td>
   </tr>
   <tr>
-    <td>Java Servlet API</td>
-    <td><tt>javax.servlet:javax.servlet-api</tt></td>
+    <td>Jakarta EE Servlet API</td>
+    <td><tt>org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api</tt></td>
   </tr>
   <tr>
     <td>Java Validation API</td>
