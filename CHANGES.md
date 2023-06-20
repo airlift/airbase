@@ -5,6 +5,7 @@ Airbase 143
   - jackson 2.15.2 (from 2.15.0)
 * Plugin updates:
   - maven-gpg-plugin 3.1.0 (from 1.4.0)
+  - maven-shade-plugin 3.5.0 (from 3.4.1)
 
 Airbase 142
 
