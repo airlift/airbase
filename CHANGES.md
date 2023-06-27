@@ -1,3 +1,7 @@
+Airbase 147
+
+* Automatically sort and verify POM files
+
 Airbase 146
 
 * Plugin updates:
