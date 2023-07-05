@@ -1,3 +1,8 @@
+Airbase 144
+
+* Plugin updates:
+  - maven-surefire-plugin 3.1.2 (from 3.1.0)
+
 Airbase 143
 
 * Relax restricted imports for Jersey
