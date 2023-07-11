@@ -3,6 +3,7 @@ Airbase 144
 * Plugin updates:
   - maven-surefire-plugin 3.1.2 (from 3.1.0)
   - restrict-imports-enforcer-rule 2.3.1 (from 2.2.0)
+  - errorprone 2.20.0 (from 2.19.1)
 
 * Dependency updates:
   - Checkstyle 10.12.1 (from 10.12.0)
