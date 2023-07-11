@@ -6,6 +6,7 @@ Airbase 144
 
 * Dependency updates:
   - Checkstyle 10.12.1 (from 10.12.0)
+  - Guava 32.1.1-jre (from 32.0.0-jre)
 
 Airbase 143
 
