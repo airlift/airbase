@@ -5,6 +5,7 @@ Airbase 144
   - restrict-imports-enforcer-rule 2.3.1 (from 2.2.0)
   - errorprone 2.20.0 (from 2.19.1)
   - kotlin 1.9.0 (from 1.8.21)
+  - logback 1.4.8 (from 1.4.7)
 
 * Dependency updates:
   - Checkstyle 10.12.1 (from 10.12.0)

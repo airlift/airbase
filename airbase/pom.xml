@@ -207,7 +207,7 @@
         <dep.joda.version>2.12.5</dep.joda.version>
         <dep.junit.version>5.9.3</dep.junit.version>
         <dep.kotlin.version>1.9.0</dep.kotlin.version>
-        <dep.logback.version>1.4.7</dep.logback.version>
+        <dep.logback.version>1.4.8</dep.logback.version>
         <dep.modernizer.version>2.6.0</dep.modernizer.version>
         <dep.opentelemetry.version>1.26.0</dep.opentelemetry.version>
         <dep.opentelemetry-instrumentation.version>1.25.1</dep.opentelemetry-instrumentation.version>
