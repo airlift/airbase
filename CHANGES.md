@@ -4,12 +4,12 @@ Airbase 144
   - maven-surefire-plugin 3.1.2 (from 3.1.0)
   - restrict-imports-enforcer-rule 2.3.1 (from 2.2.0)
   - errorprone 2.20.0 (from 2.19.1)
-  - kotlin 1.9.0 (from 1.8.21)
-  - logback 1.4.8 (from 1.4.7)
 
 * Dependency updates:
   - Checkstyle 10.12.1 (from 10.12.0)
   - Guava 32.1.1-jre (from 32.0.0-jre)
+  - kotlin 1.9.0 (from 1.8.21)
+  - logback 1.4.8 (from 1.4.7)
 
 Airbase 143
 
