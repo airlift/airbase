@@ -199,6 +199,14 @@
             <property name="sortStaticImportsAlphabetically" value="true" />
         </module>
 
+        <module name="SuppressionXpathSingleFilter">
+            <property name="checks" value="WhitespaceAround"/>
+            <property name="query" value="//LITERAL_SWITCH//SLIST"/>
+        </module>
+        <module name="SuppressionXpathSingleFilter">
+            <property name="checks" value="WhitespaceAround"/>
+            <property name="query" value="//LITERAL_SWITCH//RCURLY"/>
+        </module>
         <module name="WhitespaceAround">
             <property name="allowEmptyConstructors" value="true" />
             <property name="allowEmptyMethods" value="true" />
