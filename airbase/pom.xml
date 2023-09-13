@@ -419,6 +419,15 @@
                                     <bannedImport>org.testng.AssertJUnit.*</bannedImport>
                                 </bannedImports>
                             </RestrictImports>
+                            <RestrictImports>
+                                <reason>These classes were introduced to overcome type inference issues in Java 8, but the regular org.assertj.core.api.Assertions works just fine and has a richer API</reason>
+                                <bannedImports>
+                                    <bannedImport>org.assertj.core.api.AssertionsForClassTypes</bannedImport>
+                                    <bannedImport>org.assertj.core.api.AssertionsForClassTypes.*</bannedImport>
+                                    <bannedImport>org.assertj.core.api.AssertionsForInterfaceTypes</bannedImport>
+                                    <bannedImport>org.assertj.core.api.AssertionsForInterfaceTypes.*</bannedImport>
+                                </bannedImports>
+                            </RestrictImports>
                         </rules>
                     </configuration>
                 </plugin>
