@@ -1,3 +1,8 @@
+Airbase 145
+
+* Dependecy updates:
+  - jmxutils 1.24 (from 1.23)
+
 Airbase 144
 
 * Plugin updates:
