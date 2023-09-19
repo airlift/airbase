@@ -3,6 +3,9 @@ Airbase 146
 * Plugin updates:
   - errorprone 2.21.1 (from 2.20.0)
 
+* Dependency updates:
+  - Guava 32.1.2-jre (from 32.1.1-jre)
+
 Airbase 145
 
 * Dependecy updates:
