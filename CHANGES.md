@@ -8,6 +8,7 @@ Airbase 146
   - jmh 1.37 (from 1.36)
   - slf4j 2.0.9 (from 2.0.7)
   - slice 2.2 (from 0.45)
+  - logback 1.4.11 (from 1.4.8)
 
 Airbase 145
 
