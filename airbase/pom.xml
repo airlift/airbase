@@ -202,7 +202,7 @@
         <dep.guava.version>32.1.2-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
         <dep.jackson.version>2.15.2</dep.jackson.version>
-        <dep.jmh.version>1.36</dep.jmh.version>
+        <dep.jmh.version>1.37</dep.jmh.version>
         <dep.jmxutils.version>1.24</dep.jmxutils.version>
         <dep.joda.version>2.12.5</dep.joda.version>
         <dep.junit.version>5.9.3</dep.junit.version>
