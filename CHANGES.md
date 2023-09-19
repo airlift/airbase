@@ -7,6 +7,7 @@ Airbase 146
   - maven-assembly-plugin 3.6.0 (from 3.5.0)
   - maven-clean-plugin 3.3.1 (from 3.2.0)
   - maven-javadoc-plugin 3.6.0 (from 3.5.0)
+  - spotbugs-maven-plugin 4.7.3.5 (from 4.7.3.4)
 
 * Dependency updates:
   - Guava 32.1.2-jre (from 32.1.1-jre)
