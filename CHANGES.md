@@ -2,6 +2,7 @@ Airbase 146
 
 * Plugin updates:
   - errorprone 2.21.1 (from 2.20.0)
+  - maven-enforcer-plugin 3.4.1 (from 3.3.0)
 
 * Dependency updates:
   - Guava 32.1.2-jre (from 32.1.1-jre)
