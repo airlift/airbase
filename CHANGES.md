@@ -5,6 +5,7 @@ Airbase 146
 
 * Dependency updates:
   - Guava 32.1.2-jre (from 32.1.1-jre)
+  - jmh 1.37 (from 1.36)
 
 Airbase 145
 
