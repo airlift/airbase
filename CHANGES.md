@@ -1,3 +1,8 @@
+Airbase 146
+
+* Plugin updates:
+  - errorprone 2.21.1 (from 2.20.0)
+
 Airbase 145
 
 * Dependecy updates:
