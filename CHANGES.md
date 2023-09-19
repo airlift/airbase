@@ -22,6 +22,7 @@ Airbase 146
   - opentelemetry-instrumentation to 1.30.0 (from 1.25.1)
   - checkstyle 10.12.3 (from 10.12.1)
   - hibernate-validator 8.0.1 (from 8.0.0)
+  - jakarta.xml.bind-api 4.0.1 (from 4.0.0)
 
 Airbase 145
 
