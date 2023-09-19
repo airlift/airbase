@@ -12,6 +12,8 @@ Airbase 146
   - slice 2.2 (from 0.45)
   - logback 1.4.11 (from 1.4.8)
   - junit 5.10.0 (from 5.9.3)
+  - opentelemetry to 1.30.1 (from 1.26.0)
+  - opentelemetry-instrumentation to 1.30.0 (from 1.25.1)
 
 Airbase 145
 
