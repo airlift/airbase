@@ -7,6 +7,7 @@ Airbase 146
   - Guava 32.1.2-jre (from 32.1.1-jre)
   - jmh 1.37 (from 1.36)
   - slf4j 2.0.9 (from 2.0.7)
+  - slice 2.2 (from 0.45)
 
 Airbase 145
 
