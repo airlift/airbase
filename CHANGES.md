@@ -20,6 +20,7 @@ Airbase 146
   - junit 5.10.0 (from 5.9.3)
   - opentelemetry to 1.30.1 (from 1.26.0)
   - opentelemetry-instrumentation to 1.30.0 (from 1.25.1)
+  - checkstyle 10.12.3 (from 10.12.1)
 
 Airbase 145
 
