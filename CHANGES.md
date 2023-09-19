@@ -6,6 +6,7 @@ Airbase 146
   - restrict-imports-enforcer-rule 2.4.0 (from 2.3.1)
   - maven-assembly-plugin 3.6.0 (from 3.5.0)
   - maven-clean-plugin 3.3.1 (from 3.2.0)
+  - maven-javadoc-plugin 3.6.0 (from 3.5.0)
 
 * Dependency updates:
   - Guava 32.1.2-jre (from 32.1.1-jre)
