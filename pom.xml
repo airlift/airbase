@@ -30,7 +30,8 @@
     <developers>
         <!-- see git log -->
         <developer>
-            <name>Airlift</name>
+            <name>Numerous contributors, see scm log</name>
+            <url>${project.scm.url}</url>
         </developer>
     </developers>
 
