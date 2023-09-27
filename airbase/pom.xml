@@ -21,13 +21,6 @@
         </license>
     </licenses>
 
-    <scm>
-        <connection>scm:git:git@github.com/airlift/airbase.git</connection>
-        <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
-        <url>https://github.com/airlift/airbase</url>
-        <tag>HEAD</tag>
-    </scm>
-
     <developers>
         <!-- see git log -->
         <developer>
@@ -35,45 +28,24 @@
         </developer>
     </developers>
 
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
+    <scm>
+        <connection>scm:git:git@github.com/airlift/airbase.git</connection>
+        <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/airlift/airbase</url>
+    </scm>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>${air.repository.snapshot.id}</id>
-            <name>${air.repository.snapshot.name}</name>
-            <url>${air.repository.snapshot.url}</url>
-        </snapshotRepository>
         <repository>
             <id>${air.repository.release.id}</id>
             <name>${air.repository.release.name}</name>
             <url>${air.repository.release.url}</url>
         </repository>
+        <snapshotRepository>
+            <id>${air.repository.snapshot.id}</id>
+            <name>${air.repository.snapshot.name}</name>
+            <url>${air.repository.snapshot.url}</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <properties>
@@ -241,19 +213,367 @@
         <air.repository.release.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</air.repository.release.url>
     </properties>
 
+    <!-- The following dependency should be the same everywhere. -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${dep.jackson.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- OpenTelemetry -->
+            <dependency>
+                <groupId>io.opentelemetry</groupId>
+                <artifactId>opentelemetry-bom</artifactId>
+                <version>${dep.opentelemetry.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry</groupId>
+                <artifactId>opentelemetry-bom-alpha</artifactId>
+                <version>${dep.opentelemetry.version}-alpha</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry.instrumentation</groupId>
+                <artifactId>opentelemetry-instrumentation-bom</artifactId>
+                <version>${dep.opentelemetry-instrumentation.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry.instrumentation</groupId>
+                <artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
+                <version>${dep.opentelemetry-instrumentation.version}-alpha</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Kotlin -->
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-bom</artifactId>
+                <version>${dep.kotlin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${dep.junit.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${dep.logback.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${dep.logback.version}</version>
+            </dependency>
+
+            <!-- FindBugs / SpotBugs -->
+            <dependency>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-annotations</artifactId>
+                <version>${dep.spotbugs-annotations.version}</version>
+            </dependency>
+
+            <!-- JSR-305 -->
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+
+            <!-- Error Prone -->
+            <dependency>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_annotations</artifactId>
+                <version>${dep.errorprone.version}</version>
+            </dependency>
+
+            <!-- guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${dep.guava.version}</version>
+                <exclusions>
+                    <!-- this empty dependency is a hack and not needed -->
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- Google Guice -->
+            <dependency>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice</artifactId>
+                <version>${dep.guice.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.inject.extensions</groupId>
+                <artifactId>guice-assistedinject</artifactId>
+                <version>${dep.guice.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.inject.extensions</groupId>
+                <artifactId>guice-servlet</artifactId>
+                <version>${dep.guice.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.inject.extensions</groupId>
+                <artifactId>guice-throwingproviders</artifactId>
+                <version>${dep.guice.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>slice</artifactId>
+                <version>${dep.slice.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>2.1.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.inject</groupId>
+                <artifactId>jakarta.inject-api</artifactId>
+                <version>2.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.ws.rs</groupId>
+                <artifactId>jakarta.ws.rs-api</artifactId>
+                <version>3.1.0</version>
+            </dependency>
+
+            <!-- xml bind -->
+            <dependency>
+                <groupId>jakarta.xml.bind</groupId>
+                <artifactId>jakarta.xml.bind-api</artifactId>
+                <version>4.0.1</version>
+            </dependency>
+
+            <!-- jsr 250 -->
+            <dependency>
+                <!-- keep it for the migration phase, remove once it's completed -->
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>1.3.2</version>
+            </dependency>
+
+            <!-- Java APIs -->
+            <dependency>
+                <!-- keep it for the migration phase, remove once it's completed -->
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>2.0.1.Final</version>
+            </dependency>
+
+            <!-- jaxrs -->
+            <dependency>
+                <!-- keep it for the migration phase, remove once it's completed -->
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>2.1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${dep.joda.version}</version>
+            </dependency>
+
+            <!-- misc stuff -->
+            <dependency>
+                <groupId>org.apache.bval</groupId>
+                <artifactId>bval-jsr</artifactId>
+                <version>${dep.bval.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.glassfish.jaxb</groupId>
+                        <artifactId>jaxb-runtime</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.osgi</groupId>
+                        <artifactId>org.osgi.core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${dep.assertj-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.eclipse.jetty.toolchain</groupId>
+                <artifactId>jetty-jakarta-servlet-api</artifactId>
+                <version>5.0.2</version>
+            </dependency>
+
+            <!-- servlet -->
+            <dependency>
+                <!-- keep it for the migration phase, remove once it's completed -->
+                <groupId>org.eclipse.jetty.toolchain</groupId>
+                <artifactId>jetty-servlet-api</artifactId>
+                <version>4.0.6</version>
+            </dependency>
+
+            <!-- Modernizer -->
+            <dependency>
+                <groupId>org.gaul</groupId>
+                <artifactId>modernizer-maven-annotations</artifactId>
+                <version>${dep.modernizer.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>8.0.1.Final</version>
+            </dependency>
+
+            <!-- jmh -->
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${dep.jmh.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${dep.jmh.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>log4j-over-slf4j</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+
+            <!-- logging -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-ext</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-jdk14</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-nop</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${dep.slf4j.version}</version>
+            </dependency>
+
+            <!-- Testing -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${dep.testng.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.inject</groupId>
+                        <artifactId>guice</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.weakref</groupId>
+                <artifactId>jmxutils</artifactId>
+                <version>${dep.jmxutils.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.scm</groupId>
-                <artifactId>maven-scm-provider-gitexe</artifactId>
-                <version>${dep.plugin.scm.version}</version>
-            </extension>
-            <extension>
-                <groupId>org.apache.maven.scm</groupId>
-                <artifactId>maven-scm-manager-plexus</artifactId>
-                <version>${dep.plugin.scm.version}</version>
-            </extension>
-        </extensions>
 
         <pluginManagement>
             <plugins>
@@ -294,27 +614,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
                     <version>3.4.1</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>extra-enforcer-rules</artifactId>
-                            <version>1.7.0</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>de.skuzzle.enforcer</groupId>
-                            <artifactId>restrict-imports-enforcer-rule</artifactId>
-                            <version>2.4.0</version>
-                        </dependency>
-                    </dependencies>
-                    <executions>
-                        <execution>
-                            <id>default</id>
-                            <phase>validate</phase>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                     <configuration>
                         <skip>${air.check.skip-enforcer}</skip>
                         <fail>${air.check.fail-enforcer}</fail>
@@ -430,12 +729,38 @@
                             </RestrictImports>
                         </rules>
                     </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>de.skuzzle.enforcer</groupId>
+                            <artifactId>restrict-imports-enforcer-rule</artifactId>
+                            <version>2.4.0</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>extra-enforcer-rules</artifactId>
+                            <version>1.7.0</version>
+                        </dependency>
+                    </dependencies>
+                    <executions>
+                        <execution>
+                            <id>default</id>
+                            <goals>
+                                <goal>enforce</goal>
+                            </goals>
+                            <phase>validate</phase>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>3.6.0</version>
+                    <configuration>
+                        <skip>${air.check.skip-dependency}</skip>
+                        <failOnWarning>${air.check.fail-dependency}</failOnWarning>
+                        <ignoreNonCompile>true</ignoreNonCompile>
+                    </configuration>
                     <dependencies>
                         <dependency>
                             <groupId>org.ow2.asm</groupId>
@@ -443,19 +768,14 @@
                             <version>${dep.asm.version}</version>
                         </dependency>
                     </dependencies>
-                    <configuration>
-                        <skip>${air.check.skip-dependency}</skip>
-                        <failOnWarning>${air.check.fail-dependency}</failOnWarning>
-                        <ignoreNonCompile>true</ignoreNonCompile>
-                    </configuration>
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>process-test-classes</phase>
                             <goals>
                                 <goal>analyze-only</goal>
                                 <goal>analyze-duplicate</goal>
                             </goals>
+                            <phase>process-test-classes</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -520,7 +840,6 @@
                         <!-- @{argLine} is for Jacoco: https://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html -->
                         <argLine>
                             @{argLine}
-
                             <!-- Pass the following properties directly to the JVM, because they are not passed correctly by Surefire: -->
                             -Duser.language=${air.test.language}
                             -Duser.region=${air.test.region}
@@ -568,10 +887,10 @@
                     <executions>
                         <execution>
                             <id>attach-javadocs</id>
-                            <phase>verify</phase>
                             <goals>
                                 <goal>jar</goal>
                             </goals>
+                            <phase>verify</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -581,15 +900,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.3.0</version>
-                    <executions>
-                        <execution>
-                            <id>attach-tests</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>test-jar</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                     <configuration>
                         <!-- do not build an empty jar if the project is
                              e.g. a pom project -->
@@ -608,6 +918,15 @@
                             </manifestEntries>
                         </archive>
                     </configuration>
+                    <executions>
+                        <execution>
+                            <id>attach-tests</id>
+                            <goals>
+                                <goal>test-jar</goal>
+                            </goals>
+                            <phase>package</phase>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <plugin>
@@ -636,11 +955,11 @@
                     <executions>
                         <execution>
                             <id>attach-sources</id>
-                            <phase>package</phase>
                             <goals>
                                 <goal>jar-no-fork</goal>
                                 <goal>test-jar-no-fork</goal>
                             </goals>
+                            <phase>package</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -649,15 +968,6 @@
                     <groupId>org.basepom.maven</groupId>
                     <artifactId>duplicate-finder-maven-plugin</artifactId>
                     <version>2.0.1</version>
-                    <executions>
-                        <execution>
-                            <id>default</id>
-                            <phase>process-test-classes</phase>
-                            <goals>
-                                <goal>check</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                     <configuration>
                         <skip>${air.check.skip-duplicate-finder}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-duplicate-finder}</failBuildInCaseOfConflict>
@@ -717,6 +1027,15 @@
                             <ignoredResourcePattern>THIRD-PARTY</ignoredResourcePattern>
                         </ignoredResourcePatterns>
                     </configuration>
+                    <executions>
+                        <execution>
+                            <id>default</id>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <phase>process-test-classes</phase>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <plugin>
@@ -748,10 +1067,10 @@
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>verify</phase>
                             <goals>
                                 <goal>check</goal>
                             </goals>
+                            <phase>verify</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -760,6 +1079,24 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
                     <version>3.21.0</version>
+                    <configuration>
+                        <skip>${air.check.skip-pmd}</skip>
+                        <failOnViolation>${air.check.fail-pmd}</failOnViolation>
+                        <targetJdk>${project.build.targetJdk}</targetJdk>
+                        <minimumTokens>100</minimumTokens>
+                        <excludes>
+                            <exclude>**/*Bean.java</exclude>
+                            <exclude>**/generated/*.java</exclude>
+                        </excludes>
+                        <excludeRoots>
+                            <excludeRoot>target/generated-sources/stubs</excludeRoot>
+                        </excludeRoots>
+                        <rulesets>
+                            <ruleset>/rulesets/java/basic.xml</ruleset>
+                            <ruleset>/rulesets/java/clone.xml</ruleset>
+                            <ruleset>/rulesets/java/finalizers.xml</ruleset>
+                        </rulesets>
+                    </configuration>
                     <dependencies>
                         <dependency>
                             <groupId>net.sourceforge.pmd</groupId>
@@ -782,31 +1119,13 @@
                             <version>${dep.plugin.pmd-runtime.version}</version>
                         </dependency>
                     </dependencies>
-                    <configuration>
-                        <skip>${air.check.skip-pmd}</skip>
-                        <failOnViolation>${air.check.fail-pmd}</failOnViolation>
-                        <targetJdk>${project.build.targetJdk}</targetJdk>
-                        <minimumTokens>100</minimumTokens>
-                        <excludes>
-                            <exclude>**/*Bean.java</exclude>
-                            <exclude>**/generated/*.java</exclude>
-                        </excludes>
-                        <excludeRoots>
-                            <excludeRoot>target/generated-sources/stubs</excludeRoot>
-                        </excludeRoots>
-                        <rulesets>
-                            <ruleset>/rulesets/java/basic.xml</ruleset>
-                            <ruleset>/rulesets/java/clone.xml</ruleset>
-                            <ruleset>/rulesets/java/finalizers.xml</ruleset>
-                        </rulesets>
-                    </configuration>
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>verify</phase>
                             <goals>
                                 <goal>check</goal>
                             </goals>
+                            <phase>verify</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -815,16 +1134,6 @@
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
                     <version>4.2</version>
-                    <dependencies>
-                        <!-- This version must match the Airbase version. It will be updated by -->
-                        <!-- the Maven Release plugin. The "project.version" property cannot be -->
-                        <!-- used here as it will resolve to the version of the child project.  -->
-                        <dependency>
-                            <groupId>io.airlift</groupId>
-                            <artifactId>airbase-policy</artifactId>
-                            <version>147-SNAPSHOT</version>
-                        </dependency>
-                    </dependencies>
                     <configuration>
                         <skip>${air.check.skip-license}</skip>
                         <skipExistingHeaders>${air.license.skip-existing-headers}</skipExistingHeaders>
@@ -880,13 +1189,23 @@
                         <useDefaultExcludes>true</useDefaultExcludes>
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
+                    <dependencies>
+                        <!-- This version must match the Airbase version. It will be updated by -->
+                        <!-- the Maven Release plugin. The "project.version" property cannot be -->
+                        <!-- used here as it will resolve to the version of the child project.  -->
+                        <dependency>
+                            <groupId>io.airlift</groupId>
+                            <artifactId>airbase-policy</artifactId>
+                            <version>147-SNAPSHOT</version>
+                        </dependency>
+                    </dependencies>
                     <executions>
                         <execution>
                             <id>default</id>
-                            <phase>validate</phase>
                             <goals>
                                 <goal>check</goal>
                             </goals>
+                            <phase>validate</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -895,6 +1214,9 @@
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>0.8.10</version>
+                    <configuration>
+                        <skip>${air.check.skip-jacoco}</skip>
+                    </configuration>
                     <executions>
                         <execution>
                             <id>default</id>
@@ -904,15 +1226,12 @@
                         </execution>
                         <execution>
                             <id>report</id>
-                            <phase>prepare-package</phase>
                             <goals>
                                 <goal>report</goal>
                             </goals>
+                            <phase>prepare-package</phase>
                         </execution>
                     </executions>
-                    <configuration>
-                        <skip>${air.check.skip-jacoco}</skip>
-                    </configuration>
                 </plugin>
 
                 <plugin>
@@ -956,10 +1275,10 @@
                     <executions>
                         <execution>
                             <id>checkstyle</id>
-                            <phase>validate</phase>
                             <goals>
                                 <goal>check</goal>
                             </goals>
+                            <phase>validate</phase>
                             <configuration>
                                 <skip>${air.check.skip-checkstyle}</skip>
                                 <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
@@ -980,10 +1299,10 @@
                     <executions>
                         <execution>
                             <id>sign-artifacts</id>
-                            <phase>verify</phase>
                             <goals>
                                 <goal>sign</goal>
                             </goals>
+                            <phase>verify</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -1058,10 +1377,10 @@
                 <executions>
                     <execution>
                         <id>default</id>
-                        <phase>initialize</phase>
                         <goals>
                             <goal>revision</goal>
                         </goals>
+                        <phase>initialize</phase>
                     </execution>
                 </executions>
             </plugin>
@@ -1072,356 +1391,34 @@
                 <executions>
                     <execution>
                         <id>surefire-enable-preview</id>
-                        <phase>initialize</phase>
                         <goals>
                             <goal>bsh-property</goal>
                         </goals>
+                        <phase>initialize</phase>
                         <configuration>
                             <properties>
                                 <property>surefireEnablePreview</property>
                             </properties>
-                            <source>
-                                value = project.getProperties().getProperty("air.compiler.enable-preview");
-                                surefireEnablePreview = Boolean.parseBoolean(value) ? "--enable-preview" : "";
-                            </source>
+                            <source>value = project.getProperties().getProperty("air.compiler.enable-preview");
+                                surefireEnablePreview = Boolean.parseBoolean(value) ? "--enable-preview" : "";</source>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.scm</groupId>
+                <artifactId>maven-scm-provider-gitexe</artifactId>
+                <version>${dep.plugin.scm.version}</version>
+            </extension>
+            <extension>
+                <groupId>org.apache.maven.scm</groupId>
+                <artifactId>maven-scm-manager-plexus</artifactId>
+                <version>${dep.plugin.scm.version}</version>
+            </extension>
+        </extensions>
     </build>
-
-    <!-- The following dependency should be the same everywhere. -->
-    <dependencyManagement>
-        <dependencies>
-            <!-- Google Guice -->
-            <dependency>
-                <groupId>com.google.inject</groupId>
-                <artifactId>guice</artifactId>
-                <version>${dep.guice.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-servlet</artifactId>
-                <version>${dep.guice.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-assistedinject</artifactId>
-                <version>${dep.guice.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-throwingproviders</artifactId>
-                <version>${dep.guice.version}</version>
-            </dependency>
-
-            <!-- guava -->
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${dep.guava.version}</version>
-                <exclusions>
-                    <!-- this empty dependency is a hack and not needed -->
-                    <exclusion>
-                        <groupId>com.google.guava</groupId>
-                        <artifactId>listenablefuture</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <!-- Java APIs -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>javax.inject</groupId>
-                <artifactId>javax.inject</artifactId>
-                <version>1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>2.0.1.Final</version>
-            </dependency>
-
-            <dependency>
-                <groupId>jakarta.validation</groupId>
-                <artifactId>jakarta.validation-api</artifactId>
-                <version>3.0.2</version>
-            </dependency>
-
-            <dependency>
-                <groupId>jakarta.inject</groupId>
-                <artifactId>jakarta.inject-api</artifactId>
-                <version>2.0.1</version>
-            </dependency>
-
-            <!-- servlet -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>org.eclipse.jetty.toolchain</groupId>
-                <artifactId>jetty-servlet-api</artifactId>
-                <version>4.0.6</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.eclipse.jetty.toolchain</groupId>
-                <artifactId>jetty-jakarta-servlet-api</artifactId>
-                <version>5.0.2</version>
-            </dependency>
-
-            <!-- xml bind -->
-            <dependency>
-                <groupId>jakarta.xml.bind</groupId>
-                <artifactId>jakarta.xml.bind-api</artifactId>
-                <version>4.0.1</version>
-            </dependency>
-
-            <!-- logging -->
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-nop</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-ext</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>jcl-over-slf4j</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>jul-to-slf4j</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>log4j-over-slf4j</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-jdk14</artifactId>
-                <version>${dep.slf4j.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-core</artifactId>
-                <version>${dep.logback.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-classic</artifactId>
-                <version>${dep.logback.version}</version>
-            </dependency>
-
-            <!-- jaxrs -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>javax.ws.rs</groupId>
-                <artifactId>javax.ws.rs-api</artifactId>
-                <version>2.1.1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>jakarta.ws.rs</groupId>
-                <artifactId>jakarta.ws.rs-api</artifactId>
-                <version>3.1.0</version>
-            </dependency>
-
-            <!-- jsr 250 -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>javax.annotation</groupId>
-                <artifactId>javax.annotation-api</artifactId>
-                <version>1.3.2</version>
-            </dependency>
-
-            <dependency>
-                <groupId>jakarta.annotation</groupId>
-                <artifactId>jakarta.annotation-api</artifactId>
-                <version>2.1.1</version>
-            </dependency>
-
-            <!-- jackson -->
-            <dependency>
-                <groupId>com.fasterxml.jackson</groupId>
-                <artifactId>jackson-bom</artifactId>
-                <type>pom</type>
-                <version>${dep.jackson.version}</version>
-                <scope>import</scope>
-            </dependency>
-
-            <!-- Kotlin -->
-            <dependency>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-bom</artifactId>
-                <type>pom</type>
-                <version>${dep.kotlin.version}</version>
-                <scope>import</scope>
-            </dependency>
-
-            <!-- OpenTelemetry -->
-            <dependency>
-                <groupId>io.opentelemetry</groupId>
-                <artifactId>opentelemetry-bom</artifactId>
-                <type>pom</type>
-                <version>${dep.opentelemetry.version}</version>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>io.opentelemetry</groupId>
-                <artifactId>opentelemetry-bom-alpha</artifactId>
-                <type>pom</type>
-                <version>${dep.opentelemetry.version}-alpha</version>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>io.opentelemetry.instrumentation</groupId>
-                <artifactId>opentelemetry-instrumentation-bom</artifactId>
-                <type>pom</type>
-                <version>${dep.opentelemetry-instrumentation.version}</version>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>io.opentelemetry.instrumentation</groupId>
-                <artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
-                <type>pom</type>
-                <version>${dep.opentelemetry-instrumentation.version}-alpha</version>
-                <scope>import</scope>
-            </dependency>
-
-            <!-- misc stuff -->
-            <dependency>
-                <groupId>org.apache.bval</groupId>
-                <artifactId>bval-jsr</artifactId>
-                <version>${dep.bval.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.osgi</groupId>
-                        <artifactId>org.osgi.core</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.glassfish.jaxb</groupId>
-                        <artifactId>jaxb-runtime</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>org.hibernate.validator</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>8.0.1.Final</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.weakref</groupId>
-                <artifactId>jmxutils</artifactId>
-                <version>${dep.jmxutils.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>joda-time</groupId>
-                <artifactId>joda-time</artifactId>
-                <version>${dep.joda.version}</version>
-            </dependency>
-
-            <!-- Error Prone -->
-            <dependency>
-                <groupId>com.google.errorprone</groupId>
-                <artifactId>error_prone_annotations</artifactId>
-                <version>${dep.errorprone.version}</version>
-            </dependency>
-
-            <!-- FindBugs / SpotBugs -->
-            <dependency>
-                <groupId>com.github.spotbugs</groupId>
-                <artifactId>spotbugs-annotations</artifactId>
-                <version>${dep.spotbugs-annotations.version}</version>
-            </dependency>
-
-            <!-- Modernizer -->
-            <dependency>
-                <groupId>org.gaul</groupId>
-                <artifactId>modernizer-maven-annotations</artifactId>
-                <version>${dep.modernizer.version}</version>
-            </dependency>
-
-            <!-- JSR-305 -->
-            <dependency>
-                <groupId>com.google.code.findbugs</groupId>
-                <artifactId>jsr305</artifactId>
-                <version>3.0.2</version>
-            </dependency>
-
-            <!-- jmh -->
-            <dependency>
-                <groupId>org.openjdk.jmh</groupId>
-                <artifactId>jmh-core</artifactId>
-                <version>${dep.jmh.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.openjdk.jmh</groupId>
-                <artifactId>jmh-generator-annprocess</artifactId>
-                <version>${dep.jmh.version}</version>
-            </dependency>
-
-            <!-- Testing -->
-            <dependency>
-                <groupId>org.testng</groupId>
-                <artifactId>testng</artifactId>
-                <version>${dep.testng.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>junit</groupId>
-                        <artifactId>junit</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.google.inject</groupId>
-                        <artifactId>guice</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>org.junit</groupId>
-                <artifactId>junit-bom</artifactId>
-                <type>pom</type>
-                <version>${dep.junit.version}</version>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.assertj</groupId>
-                <artifactId>assertj-core</artifactId>
-                <version>${dep.assertj-core.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.airlift</groupId>
-                <artifactId>slice</artifactId>
-                <version>${dep.slice.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <profiles>
         <!-- All the check plugins below are enabled unless air.check.skip-all is set.
@@ -1712,10 +1709,10 @@
                         <executions>
                             <execution>
                                 <id>package</id>
-                                <phase>package</phase>
                                 <goals>
                                     <goal>single</goal>
                                 </goals>
+                                <phase>package</phase>
                             </execution>
                         </executions>
                     </plugin>
@@ -1726,10 +1723,10 @@
                         <executions>
                             <execution>
                                 <id>attach-readme</id>
-                                <phase>package</phase>
                                 <goals>
                                     <goal>attach-artifact</goal>
                                 </goals>
+                                <phase>package</phase>
                                 <configuration>
                                     <artifacts>
                                         <artifact>
