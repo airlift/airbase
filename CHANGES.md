@@ -11,6 +11,7 @@ Airbase 146
   - build-helper-maven-plugin 3.4.0 (from 3.3.0)
   - maven-pmd-plugin 3.21.0 (from 3.20.0)
   - maven-shade-plugin 3.5.1 (from 3.5.0)
+  - maven-modernizer-plugin 2.7.0 (from 2.6.0)
 
 * Dependency updates:
   - Guava 32.1.2-jre (from 32.1.1-jre)
