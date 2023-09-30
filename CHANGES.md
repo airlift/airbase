@@ -2,6 +2,9 @@ Airbase 147
 
 * Automatically sort and verify POM files
 
+* Dependency downgrades:
+  - logback 1.4.8 (from 1.4.11)
+
 Airbase 146
 
 * Plugin updates:
