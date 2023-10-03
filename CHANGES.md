@@ -1,3 +1,7 @@
+Airbase 148
+
+* Import AssertJ bom
+
 Airbase 147
 
 * Automatically sort and verify POM files
