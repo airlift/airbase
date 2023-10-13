@@ -4,6 +4,7 @@ Airbase 148
 
 * Dependency updates:
   - Jackson 2.15.3 (from 2.15.2)
+  - errorprone 2.22.0 (from 2.21.1)
 
 Airbase 147
 

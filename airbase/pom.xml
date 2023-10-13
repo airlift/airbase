@@ -188,7 +188,7 @@
         <dep.spotbugs-annotations.version>4.7.3</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
         <dep.asm.version>9.5</dep.asm.version>
-        <dep.errorprone.version>2.21.1</dep.errorprone.version>
+        <dep.errorprone.version>2.22.0</dep.errorprone.version>
 
         <!-- license headers -->
         <air.license.owner>${project.organization.name}</air.license.owner>
