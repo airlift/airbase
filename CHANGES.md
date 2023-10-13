@@ -2,6 +2,9 @@ Airbase 148
 
 * Import AssertJ bom
 
+* Dependency updates:
+  - Jackson 2.15.3 (from 2.15.2)
+
 Airbase 147
 
 * Automatically sort and verify POM files
