@@ -8,6 +8,7 @@ Airbase 148
   - Guava 32.1.3-jre (from 32.1.2-jre)
   - spotbugs-annotations 4.8.0 (from 4.7.3)
   - OpenTelemetry 1.31.0 (from 1.30.1)
+  - OpenTelemetry instrumentation 1.31.0 (from 1.30.0)
 
 Airbase 147
 
