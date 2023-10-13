@@ -10,6 +10,9 @@ Airbase 148
   - OpenTelemetry 1.31.0 (from 1.30.1)
   - OpenTelemetry instrumentation 1.31.0 (from 1.30.0)
 
+* Plugin updates:
+  - spotbugs-maven-plugin 4.7.3.6 (from 4.7.3.5)
+
 Airbase 147
 
 * Automatically sort and verify POM files
