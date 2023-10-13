@@ -5,6 +5,7 @@ Airbase 148
 * Dependency updates:
   - Jackson 2.15.3 (from 2.15.2)
   - errorprone 2.22.0 (from 2.21.1)
+  - Guava 32.1.3-jre (from 32.1.2-jre)
 
 Airbase 147
 
