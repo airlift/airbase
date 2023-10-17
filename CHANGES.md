@@ -13,6 +13,7 @@ Airbase 148
 * Plugin updates:
   - spotbugs-maven-plugin 4.7.3.6 (from 4.7.3.5)
   - license-maven-plugin 4.3 (from 4.2)
+  - jacoco-maven-plugin 0.8.11 (from 0.8.10)
 
 Airbase 147
 
