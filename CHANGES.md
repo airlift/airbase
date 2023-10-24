@@ -16,6 +16,7 @@ Airbase 148
   - jacoco-maven-plugin 0.8.11 (from 0.8.10)
   - surefire-maven-plugin 3.2.1 (from 3.1.2)
   - maven-checkstyle-plugin 3.3.1 (from 3.3.0)
+  - maven-dependency-plugin 3.6.1 (from 3.6.0)
 
 Airbase 147
 
