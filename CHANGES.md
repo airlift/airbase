@@ -14,6 +14,7 @@ Airbase 148
   - spotbugs-maven-plugin 4.7.3.6 (from 4.7.3.5)
   - license-maven-plugin 4.3 (from 4.2)
   - jacoco-maven-plugin 0.8.11 (from 0.8.10)
+  - surefire-maven-plugin 3.2.1 (from 3.1.2)
 
 Airbase 147
 
