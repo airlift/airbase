@@ -1,3 +1,8 @@
+Airbase 149
+
+* Plugin updates:
+  - git-commit-id-maven-plugin 7.0.0 (from 6.0.0)
+
 Airbase 148
 
 * Import AssertJ bom
