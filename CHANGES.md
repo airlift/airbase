@@ -8,7 +8,11 @@ Airbase 149
   - maven-pmd-plugin 3.21.2 (from 3.21.0)
   - maven-release-plugin 3.0.1 (from 2.5)
   - maven-source-plugin to 3.3.0 (from 3.0.1)
-  - maven-surefire-plugin to 3.2.2 (from 3.2.1)
+  - maven-surefire-plugin to 3.2.2 (from 3.2.1)  
+
+* Dependency updates:
+  - opentelemetry to 1.34.0 (from 1.31.0)
+  - opentelemetry-instrumentation to 1.32.0 (from 1.31.0)
 
 Airbase 148
 

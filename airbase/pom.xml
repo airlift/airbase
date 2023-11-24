@@ -181,8 +181,8 @@
         <dep.kotlin.version>1.9.0</dep.kotlin.version>
         <dep.logback.version>1.4.8</dep.logback.version>
         <dep.modernizer.version>2.7.0</dep.modernizer.version>
-        <dep.opentelemetry.version>1.31.0</dep.opentelemetry.version>
-        <dep.opentelemetry-instrumentation.version>1.31.0</dep.opentelemetry-instrumentation.version>
+        <dep.opentelemetry.version>1.34.0</dep.opentelemetry.version>
+        <dep.opentelemetry-instrumentation.version>1.32.0</dep.opentelemetry-instrumentation.version>
         <dep.slf4j.version>2.0.9</dep.slf4j.version>
         <dep.slice.version>2.2</dep.slice.version>
         <dep.spotbugs-annotations.version>4.8.0</dep.spotbugs-annotations.version>
