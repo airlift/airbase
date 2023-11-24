@@ -5,6 +5,7 @@ Airbase 149
   - spotbugs-maven-plugins 4.8.1.0 (from 4.7.3.6)
   - maven-clean-plugin 3.3.2 (from 3.3.1)
   - maven-javadoc-plugin 3.6.2 (from 3.6.0) 
+  - maven-pmd-plugin 3.21.2 (from 3.21.0)
 
 Airbase 148
 
