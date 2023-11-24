@@ -14,6 +14,7 @@ Airbase 149
   - opentelemetry to 1.34.0 (from 1.31.0)
   - opentelemetry-instrumentation to 1.32.0 (from 1.31.0)
   - kotlin 1.9.22 (from 1.9.0)
+  - junit 5.10.1 (from 5.10.0)
 
 Airbase 148
 
