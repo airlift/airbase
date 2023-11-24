@@ -170,7 +170,6 @@
 
         <!-- Dependency versions that should be the same everywhere. -->
         <dep.assertj-core.version>3.24.2</dep.assertj-core.version>
-        <dep.bval.version>2.0.6</dep.bval.version>
         <dep.guava.version>32.1.3-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
         <dep.jackson.version>2.15.3</dep.jackson.version>
@@ -424,22 +423,6 @@
             </dependency>
 
             <!-- misc stuff -->
-            <dependency>
-                <groupId>org.apache.bval</groupId>
-                <artifactId>bval-jsr</artifactId>
-                <version>${dep.bval.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.glassfish.jaxb</groupId>
-                        <artifactId>jaxb-runtime</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.osgi</groupId>
-                        <artifactId>org.osgi.core</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
             <dependency>
                 <groupId>org.eclipse.jetty.toolchain</groupId>
                 <artifactId>jetty-jakarta-servlet-api</artifactId>
