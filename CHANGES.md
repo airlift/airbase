@@ -4,6 +4,7 @@ Airbase 149
   - git-commit-id-maven-plugin 7.0.0 (from 6.0.0)
   - spotbugs-maven-plugins 4.8.1.0 (from 4.7.3.6)
   - maven-clean-plugin 3.3.2 (from 3.3.1)
+  - maven-javadoc-plugin 3.6.2 (from 3.6.0) 
 
 Airbase 148
 
