@@ -1,5 +1,5 @@
 Airbase 149
-
+* Remove bval dependency
 * Plugin updates:
   - git-commit-id-maven-plugin 7.0.0 (from 6.0.0)
   - spotbugs-maven-plugins 4.8.1.0 (from 4.7.3.6)
