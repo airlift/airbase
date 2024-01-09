@@ -24,6 +24,7 @@ Airbase 149
   - joda time 2.12.6 (from 2.12.5)
   - AssertJ 3.25.1 (from 3.24.2)
   - slf4j 2.0.11 (from 2.0.9)
+  - jmxutils 1.25 (from 1.24)
 
 Airbase 148
 
