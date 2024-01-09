@@ -22,6 +22,7 @@ Airbase 149
   - spotbugs-annotations 4.8.3 (from 4.8.0)
   - error_prone_annotations 2.24.1 (from 2.22.0)
   - joda time 2.12.6 (from 2.12.5)
+  - AssertJ 3.25.1 (from 3.24.2)
 
 Airbase 148
 
