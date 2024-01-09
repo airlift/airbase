@@ -19,6 +19,7 @@ Airbase 149
   - guava 33.0.0 (from 32.1.3)
   - logback 1.4.14 (from 1.4.8)
   - jackson 2.16.1 (from 2.15.3)
+  - spotbugs-annotations 4.8.3 (from 4.8.0)
 
 Airbase 148
 
