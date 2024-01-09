@@ -20,6 +20,7 @@ Airbase 149
   - logback 1.4.14 (from 1.4.8)
   - jackson 2.16.1 (from 2.15.3)
   - spotbugs-annotations 4.8.3 (from 4.8.0)
+  - error_prone_annotations 2.24.1 (from 2.22.0)
 
 Airbase 148
 
