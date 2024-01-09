@@ -18,6 +18,7 @@ Airbase 149
   - junit 5.10.1 (from 5.10.0)
   - guava 33.0.0 (from 32.1.3)
   - logback 1.4.14 (from 1.4.8)
+  - jackson 2.16.1 (from 2.15.3)
 
 Airbase 148
 
