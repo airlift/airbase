@@ -8,7 +8,7 @@ Airbase 149
   - maven-pmd-plugin 3.21.2 (from 3.21.0)
   - maven-release-plugin 3.0.1 (from 2.5)
   - maven-source-plugin to 3.3.0 (from 3.0.1)
-  - maven-surefire-plugin to 3.2.2 (from 3.2.1)
+  - maven-surefire-plugin to 3.2.5 (from 3.2.1)
   - build-helper-plugin to 3.5.0 (from 3.4.0)
 
 * Dependency updates:
