@@ -1,3 +1,7 @@
+Airbase 155
+* Checkstyle updates:
+  - Require exactly one space between array type and array initializer.
+
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
 
