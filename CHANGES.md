@@ -10,6 +10,7 @@ Airbase 149
   - maven-source-plugin to 3.3.0 (from 3.0.1)
   - maven-surefire-plugin to 3.2.5 (from 3.2.1)
   - build-helper-plugin to 3.5.0 (from 3.4.0)
+  - maven-compiler-plugin 3.12.1 (from 3.11.0)
 
 * Dependency updates:
   - opentelemetry to 1.34.0 (from 1.31.0)
