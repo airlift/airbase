@@ -256,6 +256,22 @@
             <property name="ignoreComments" value="true" />
         </module>
 
+        <module name="RegexpSinglelineJava">
+            <!-- when "{" denotes conditional/loop statement body, IntelliJ would reformat adding line break -->
+            <!-- when "{" denotes method/lambda body, and closing brace is on the same line, IntelliJ would remove whitespace before throw, violating "{" whitespace expectations-->
+            <property name="format" value="\{\s*+throw\b" />
+            <property name="message" value="No new line before throw" />
+            <property name="ignoreComments" value="true" />
+        </module>
+
+        <module name="RegexpSinglelineJava">
+            <!-- when "}" denotes end of conditional/loop statement body, IntelliJ would reformat adding line break -->
+            <!-- when "}" denotes end of method/lambda body and opening brace is on the same line, IntelliJ would remove whitespace before the brace, violating "}" whitespace expectations-->
+            <property name="format" value=";\s*+\}(?!&quot;)" />
+            <property name="message" value="No new line before closing brace" />
+            <property name="ignoreComments" value="true" />
+        </module>
+
         <!-- javadoc -->
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="NonEmptyAtclauseDescription" />
