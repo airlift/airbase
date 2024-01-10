@@ -256,6 +256,14 @@
             <property name="ignoreComments" value="true" />
         </module>
 
+        <module name="RegexpSinglelineJava">
+            <!-- Forbid "new Type[]{",  IntelliJ would reformat adding a space -->
+            <!-- Forbid "new Type[]  {",  IntelliJ would reformat removing a space -->
+            <property name="format" value="new\s++\w++(&lt;\?&gt;)?(\[\])++(\s{2,})?\{" />
+            <property name="message" value="Incorrect whitespace before array initializer" />
+            <property name="ignoreComments" value="true" />
+        </module>
+
         <!-- javadoc -->
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="NonEmptyAtclauseDescription" />
