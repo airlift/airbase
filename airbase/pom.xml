@@ -4,7 +4,7 @@
 
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <version>149</version>
+    <version>150-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>airbase</name>
@@ -31,7 +31,7 @@
     <scm>
         <connection>scm:git:git@github.com/airlift/airbase.git</connection>
         <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
-        <tag>149</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/airlift/airbase</url>
     </scm>
 
@@ -1205,7 +1205,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>149</version>
+                            <version>150-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -1278,7 +1278,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>149</version>
+                            <version>150-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
