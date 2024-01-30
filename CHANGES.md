@@ -1,3 +1,7 @@
+Airbase 150
+* Dependency updates:
+  - jmxutils to 1.26 (from 1.25)
+
 Airbase 149
 * Remove bval dependency
 * Plugin updates:
