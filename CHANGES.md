@@ -7,6 +7,7 @@ Airbase 150
   - AssertJ to 3.25.3 (from 3.25.1)
 * Plugin updates:
   - spotbugs-maven-plugin to 4.8.3.0 (from 4.8.1.0)
+  - dependency-scope-maven-plugin 1.0.2 (from 1.0.1)
 
 Airbase 149
 * Remove bval dependency
