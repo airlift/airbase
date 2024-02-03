@@ -169,7 +169,7 @@
         <dep.packaging.version>0.163</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
-        <dep.assertj-core.version>3.25.1</dep.assertj-core.version>
+        <dep.assertj-core.version>3.25.3</dep.assertj-core.version>
         <dep.guava.version>33.0.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
         <dep.jackson.version>2.16.1</dep.jackson.version>
