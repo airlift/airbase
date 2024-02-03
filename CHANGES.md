@@ -3,6 +3,7 @@ Airbase 150
   - jmxutils to 1.26 (from 1.25)
   - OpenTelemetry to 1.34.1 (from 1.34.0)
   - OpenTelemetry instrumentation to 2.0.0 (from 1.32.0)
+  - jmxutils to 1.26 (from 1.25)
 
 Airbase 149
 * Remove bval dependency
