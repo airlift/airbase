@@ -5,6 +5,7 @@ Airbase 150
   - OpenTelemetry instrumentation to 2.0.0 (from 1.32.0)
   - jmxutils to 1.26 (from 1.25)
   - AssertJ to 3.25.3 (from 3.25.1)
+  - junit 5.10.2 (from 5.10.1)
 * Plugin updates:
   - spotbugs-maven-plugin to 4.8.3.0 (from 4.8.1.0)
   - dependency-scope-maven-plugin 1.0.2 (from 1.0.1)
