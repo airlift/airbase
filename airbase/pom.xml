@@ -840,6 +840,7 @@
                             <user.timezone>${air.test.timezone}</user.timezone>
                             <java.awt.headless>true</java.awt.headless>
                             <java.util.logging.SimpleFormatter.format>%1$tY-%1$tm-%1$tdT%1$tH:%1$tM:%1$tS.%1$tL%1$tz %4$s %5$s%6$s%n</java.util.logging.SimpleFormatter.format>
+                            <junit.jupiter.extensions.autodetection.enabled>true</junit.jupiter.extensions.autodetection.enabled>
                         </systemPropertyVariables>
                         <trimStackTrace>false</trimStackTrace>
                         <runOrder>random</runOrder>
@@ -862,6 +863,20 @@
                             ${surefireEnablePreview}
                             ${air.test.jvm.additional-arguments}
                         </argLine>
+                        <additionalClasspathDependencies>
+                            <additionalClasspathDependency>
+                                <groupId>io.airlift</groupId>
+                                <artifactId>junit-extensions</artifactId>
+                                <version>3</version>
+                                <exclusions>
+                                    <!-- additionalClasspathDependencies does not support dependency resolution, so dependencies result in duplicate/conflicting classpath elements -->
+                                    <exclusion>
+                                        <groupId>*</groupId>
+                                        <artifactId>*</artifactId>
+                                    </exclusion>
+                                </exclusions>
+                            </additionalClasspathDependency>
+                        </additionalClasspathDependencies>
                     </configuration>
                 </plugin>
 

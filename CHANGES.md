@@ -1,3 +1,7 @@
+Airbase 150
+
+* Verify JUnit tests with Airlift `junit-extensions` verifier.
+
 Airbase 149
 * Remove bval dependency
 * Plugin updates:
