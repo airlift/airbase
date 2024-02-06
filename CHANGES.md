@@ -1,3 +1,9 @@
+Airbase 150
+
+* Verify JUnit tests with Airlift `junit-extensions` verifier.
+* Dependency updates:
+  - junit 5.10.2 (from 5.10.1)
+
 Airbase 149
 * Remove bval dependency
 * Plugin updates:
