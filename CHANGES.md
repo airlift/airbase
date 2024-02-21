@@ -10,6 +10,7 @@ Airbase 151
   - OpenTelemetry 1.35.0 (from 1.34.1)
   - error-prone annotations 2.25.0 (from 2.24.1)
   - joda-time 2.12.7 (from 2.12.6)
+  - OpenTelemetry instrumentation 2.1.0 (from 2.0.0)
 
 Airbase 150
 * Dependency updates:
