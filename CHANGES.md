@@ -4,6 +4,7 @@ Airbase 151
   - sortpom-maven-plugin 3.4.0 (from 3.3.0)
   - dependency-scope-maven-plugin 1.0.3 (from 1.0.2)
   - maven-javadoc-plugin 3.6.3 (from 3.6.2)
+  - spotbugs-maven-plugin 4.8.3.1 (from 4.8.3.0)
 
 Airbase 150
 * Dependency updates:
