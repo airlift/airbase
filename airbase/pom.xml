@@ -175,7 +175,7 @@
         <dep.jackson.version>2.16.1</dep.jackson.version>
         <dep.jmh.version>1.37</dep.jmh.version>
         <dep.jmxutils.version>1.26</dep.jmxutils.version>
-        <dep.joda.version>2.12.6</dep.joda.version>
+        <dep.joda.version>2.12.7</dep.joda.version>
         <dep.junit.version>5.10.2</dep.junit.version>
         <dep.kotlin.version>1.9.22</dep.kotlin.version>
         <dep.logback.version>1.5.1</dep.logback.version>
