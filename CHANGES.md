@@ -7,6 +7,7 @@ Airbase 151
   - spotbugs-maven-plugin 4.8.3.1 (from 4.8.3.0)
 * Dependency updates:
   - Logback 1.5.1 (from 1.4.14)
+  - OpenTelemetry 1.35.0 (from 1.34.1)
 
 Airbase 150
 * Dependency updates:
