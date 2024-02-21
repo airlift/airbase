@@ -1,6 +1,7 @@
 Airbase 151
 * Plugin updates:
   - maven-shade-plugin 3.5.2 (from 3.5.1)
+  - sortpom-maven-plugin 3.4.0 (from 3.3.0)
 
 Airbase 150
 * Dependency updates:
