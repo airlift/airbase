@@ -3,6 +3,7 @@ Airbase 151
   - maven-shade-plugin 3.5.2 (from 3.5.1)
   - sortpom-maven-plugin 3.4.0 (from 3.3.0)
   - dependency-scope-maven-plugin 1.0.3 (from 1.0.2)
+  - maven-javadoc-plugin 3.6.3 (from 3.6.2)
 
 Airbase 150
 * Dependency updates:
