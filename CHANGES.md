@@ -1,3 +1,7 @@
+Airbase 151
+* Plugin updates:
+  - maven-shade-plugin 3.5.2 (from 3.5.1)
+
 Airbase 150
 * Dependency updates:
   - jmxutils to 1.26 (from 1.25)
