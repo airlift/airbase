@@ -8,6 +8,7 @@ Airbase 151
 * Dependency updates:
   - Logback 1.5.1 (from 1.4.14)
   - OpenTelemetry 1.35.0 (from 1.34.1)
+  - error-prone annotations 2.25.0 (from 2.24.1)
 
 Airbase 150
 * Dependency updates:
