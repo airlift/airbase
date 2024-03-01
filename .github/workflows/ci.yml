@@ -16,6 +16,6 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - name: Maven Download
-        run: mvn -V -B dependency:go-offline
+        run: ./mvnw -V -B dependency:go-offline
       - name: Maven Install
-        run: mvn clean install -B -P ci
+        run: ./mvnw clean install -B -P ci
