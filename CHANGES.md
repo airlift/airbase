@@ -11,6 +11,7 @@ Airbase 151
   - error-prone annotations 2.25.0 (from 2.24.1)
   - joda-time 2.12.7 (from 2.12.6)
   - OpenTelemetry instrumentation 2.1.0 (from 2.0.0)
+  - modernizer-maven-annotations 2.8.0 (from 2.7.0)
 
 Airbase 150
 * Dependency updates:
