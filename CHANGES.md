@@ -1,3 +1,7 @@
+Airbase 152
+* Dependency downgrades:
+  - modernizer-maven-annotations 2.7.0 (from 2.8.0)
+
 Airbase 151
 * Plugin updates:
   - maven-shade-plugin 3.5.2 (from 3.5.1)
