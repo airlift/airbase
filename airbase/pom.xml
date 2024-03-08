@@ -187,7 +187,7 @@
         <dep.slice.version>2.2</dep.slice.version>
         <dep.spotbugs-annotations.version>4.8.3</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
-        <dep.asm.version>9.5</dep.asm.version>
+        <dep.asm.version>9.6</dep.asm.version>
         <dep.errorprone.version>2.25.0</dep.errorprone.version>
 
         <!-- license headers -->
