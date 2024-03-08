@@ -3,6 +3,7 @@ Airbase 152
   - modernizer-maven-annotations 2.7.0 (from 2.8.0)
 * Dependency updates:
   - jakarta.servlet-api 6.0.0 (from 5.0.2) 
+  - logback 1.5.3 (from 1.5.1)
 
 Airbase 151
 * Plugin updates:
