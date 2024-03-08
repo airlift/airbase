@@ -6,6 +6,7 @@ Airbase 152
   - logback 1.5.3 (from 1.5.1)
   - kotlin 1.9.23 (from 1.9.22)
   - jakarta.xml.bind-api 4.0.2 (from 4.0.1)
+  - ASM 9.6 (from 9.5)
 
 Airbase 151
 * Plugin updates:
