@@ -395,47 +395,10 @@
                 <version>4.0.2</version>
             </dependency>
 
-            <!-- jsr 250 -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>javax.annotation</groupId>
-                <artifactId>javax.annotation-api</artifactId>
-                <version>1.3.2</version>
-            </dependency>
-
-            <!-- Java APIs -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>javax.inject</groupId>
-                <artifactId>javax.inject</artifactId>
-                <version>1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>2.0.1.Final</version>
-            </dependency>
-
-            <!-- jaxrs -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>javax.ws.rs</groupId>
-                <artifactId>javax.ws.rs-api</artifactId>
-                <version>2.1.1</version>
-            </dependency>
             <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${dep.joda.version}</version>
-            </dependency>
-
-            <!-- servlet -->
-            <dependency>
-                <!-- keep it for the migration phase, remove once it's completed -->
-                <groupId>org.eclipse.jetty.toolchain</groupId>
-                <artifactId>jetty-servlet-api</artifactId>
-                <version>4.0.6</version>
             </dependency>
 
             <!-- Modernizer -->
