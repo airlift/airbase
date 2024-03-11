@@ -172,7 +172,7 @@
         <dep.assertj-core.version>3.25.3</dep.assertj-core.version>
         <dep.guava.version>33.0.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
-        <dep.jackson.version>2.16.1</dep.jackson.version>
+        <dep.jackson.version>2.16.2</dep.jackson.version>
         <dep.jmh.version>1.37</dep.jmh.version>
         <dep.jmxutils.version>1.26</dep.jmxutils.version>
         <dep.joda.version>2.12.7</dep.joda.version>

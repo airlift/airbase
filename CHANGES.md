@@ -7,6 +7,7 @@ Airbase 152
   - kotlin 1.9.23 (from 1.9.22)
   - jakarta.xml.bind-api 4.0.2 (from 4.0.1)
   - ASM 9.6 (from 9.5)
+  - jackson 2.16.2 (from 2.16.1)
 * Plugin updates:
   - git-commit-id-maven-plugin 8.0.0 (from 7.0.0) 
 
