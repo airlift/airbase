@@ -9,6 +9,7 @@ Airbase 152
   - ASM 9.6 (from 9.5)
 * Plugin updates:
   - git-commit-id-maven-plugin 8.0.0 (from 7.0.0) 
+  - extra-enforcer-rules 1.8.0 (from 1.7.0)
 
 Airbase 151
 * Plugin updates:
