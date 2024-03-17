@@ -2,6 +2,7 @@ Airbase 153
 * Dependency updates:
   - OpenTelemetry 1.36.0 (from 1.35.0)
   - Jackson 2.17.0 (from 2.16.1)
+  - error_prone_annotations 2.26.1 (2.25.0)
 
 Airbase 152
 * Dependency downgrades:
