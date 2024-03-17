@@ -4,6 +4,7 @@ Airbase 153
   - Jackson 2.17.0 (from 2.16.1)
   - error_prone_annotations 2.26.1 (2.25.0)
   - guava 33.1.0-jre (from 33.0.0-jre)
+  - OpenTelemetry instrumentation 2.2.0 (from 2.1.0)
 
 Airbase 152
 * Dependency downgrades:
