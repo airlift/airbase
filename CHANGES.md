@@ -8,6 +8,7 @@ Airbase 153
 * Plugin updates:
   - sortpom-maven-plugin 3.4.1 (from 3.4.0)
   - git-commit-id-maven-plugin 8.0.1 (from 8.0.0)
+  - maven-assembly-plugin 3.7.1 (from 3.6.0)
 
 Airbase 152
 * Dependency downgrades:
