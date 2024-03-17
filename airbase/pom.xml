@@ -1216,6 +1216,13 @@
                         <failOnViolations>${air.check.fail-modernizer}</failOnViolations>
                         <javaVersion>${air.modernizer.java-version}</javaVersion>
                     </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.ow2.asm</groupId>
+                            <artifactId>asm</artifactId>
+                            <version>${dep.asm.version}</version>
+                        </dependency>
+                    </dependencies>
                     <executions>
                         <execution>
                             <id>modernizer</id>
