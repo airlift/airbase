@@ -10,6 +10,7 @@ Airbase 153
   - git-commit-id-maven-plugin 8.0.1 (from 8.0.0)
   - maven-assembly-plugin 3.7.1 (from 3.6.0)
   - maven-gpg-plugin 3.2.1 (from 3.1.0)
+  - extra-enforcer-rules 1.8.0 (from 1.7.0)
 
 Airbase 152
 * Dependency downgrades:
