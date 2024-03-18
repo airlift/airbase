@@ -11,6 +11,7 @@ Airbase 153
   - maven-assembly-plugin 3.7.1 (from 3.6.0)
   - maven-gpg-plugin 3.2.1 (from 3.1.0)
   - extra-enforcer-rules 1.8.0 (from 1.7.0)
+  - maven-compiler-plugin 3.13.0 (3.12.1)
 
 Airbase 152
 * Dependency downgrades:
