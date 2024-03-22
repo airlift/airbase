@@ -1,6 +1,8 @@
 Airbase 155
 * Checkstyle updates:
   - Require exactly one space between array type and array initializer.
+* Plugin updates:
+  - pmd 7.0.0 (from 6.55.0)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
