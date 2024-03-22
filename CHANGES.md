@@ -1,3 +1,8 @@
+Airbase 154
+* Plugin updates:
+  - pmd to 7.0.0
+  - git-commit-id-maven-plugin to 8.0.2
+
 Airbase 153
 * Dependency updates:
   - OpenTelemetry 1.36.0 (from 1.35.0)
