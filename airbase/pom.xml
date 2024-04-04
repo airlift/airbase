@@ -856,6 +856,7 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmemory>${air.build.jvmsize}</maxmemory>
                         <doclint>${air.javadoc.lint}</doclint>
+                        <additionalOptions>${surefireEnablePreview}</additionalOptions>
                     </configuration>
                     <executions>
                         <execution>
