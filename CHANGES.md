@@ -6,6 +6,8 @@ Airbase 155
   - git-commit-id-maven-plugin 8.0.2 (from 8.0.0)
   - jacoco-maven-plugin 0.8.12 (from 0.8.11)
   - maven-gpg-plugin 3.2.4 (from 3.2.1)
+* Dependency updates:
+ - ASM 9.7 (from 9.6)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
