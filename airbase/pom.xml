@@ -769,6 +769,10 @@
                         <showWarnings>true</showWarnings>
                         <parameters>true</parameters>
                         <enablePreview>${air.compiler.enable-preview}</enablePreview>
+                        <compilerArgs combine.self="append">
+                            <!-- workaround for https://youtrack.jetbrains.com/issue/IDEA-296303/Support-for-Maven-Compiler-Plugin-enablePreview-parameter -->
+                            <arg>${surefireEnablePreview}</arg>
+                        </compilerArgs>
                     </configuration>
                 </plugin>
 
