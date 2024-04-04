@@ -1,3 +1,6 @@
+Airbase 154
+* Fix javadoc building when `air.compiler.enable-preview` is set
+
 Airbase 153
 * Dependency updates:
   - OpenTelemetry 1.36.0 (from 1.35.0)
