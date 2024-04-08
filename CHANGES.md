@@ -9,6 +9,7 @@ Airbase 155
   - maven-source-plugin 3.3.1 (from 3.3.0)
 * Dependency updates:
  - ASM 9.7 (from 9.6)
+ - spotbugs-annotations 4.8.4 (from 4.8.3)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
