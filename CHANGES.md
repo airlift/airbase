@@ -11,6 +11,7 @@ Airbase 155
  - ASM 9.7 (from 9.6)
  - spotbugs-annotations 4.8.4 (from 4.8.3)
  - jakarta.annotation-api 3.0.0 (from 2.1.1)
+ - opentelemetry 1.37.0 (from 1.36.0)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set

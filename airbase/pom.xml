@@ -181,7 +181,7 @@
         <dep.logback.version>1.5.3</dep.logback.version>
         <!-- do not update yet: 2.8.0 requires Maven 3.9.5 which breaks mvnd support -->
         <dep.modernizer.version>2.7.0</dep.modernizer.version>
-        <dep.opentelemetry.version>1.36.0</dep.opentelemetry.version>
+        <dep.opentelemetry.version>1.37.0</dep.opentelemetry.version>
         <dep.opentelemetry-instrumentation.version>2.2.0</dep.opentelemetry-instrumentation.version>
         <dep.slf4j.version>2.0.12</dep.slf4j.version>
         <dep.slice.version>2.2</dep.slice.version>
