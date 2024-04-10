@@ -1,3 +1,6 @@
+Airbase 155
+* Support maven reproducible builds
+
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
 
