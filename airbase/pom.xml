@@ -178,7 +178,7 @@
         <dep.joda.version>2.12.7</dep.joda.version>
         <dep.junit.version>5.10.2</dep.junit.version>
         <dep.kotlin.version>1.9.23</dep.kotlin.version>
-        <dep.logback.version>1.5.3</dep.logback.version>
+        <dep.logback.version>1.5.6</dep.logback.version>
         <!-- do not update yet: 2.8.0 requires Maven 3.9.5 which breaks mvnd support -->
         <dep.modernizer.version>2.7.0</dep.modernizer.version>
         <dep.opentelemetry.version>1.37.0</dep.opentelemetry.version>
