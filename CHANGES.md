@@ -14,7 +14,8 @@ Airbase 155
  - jakarta.annotation-api 3.0.0 (from 2.1.1)
  - opentelemetry 1.37.0 (from 1.36.0)
  - logback 1.5.6 (from 1.5.3)
- 
+ - slf4j 2.0.13 (from 2.0.12)
+
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
 
