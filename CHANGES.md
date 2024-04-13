@@ -8,6 +8,7 @@ Airbase 155
   - maven-gpg-plugin 3.2.4 (from 3.2.1)
   - maven-source-plugin 3.3.1 (from 3.3.0)
   - spotbugs-maven-plugin 4.8.4.0 (4.8.3.1)
+  - maven-jar-plugin 3.4.1 (from 3.3.0)
 * Dependency updates:
  - ASM 9.7 (from 9.6)
  - spotbugs-annotations 4.8.4 (from 4.8.3)
