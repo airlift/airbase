@@ -161,7 +161,7 @@
         <argLine />
 
         <!-- Plugin versions used in multiple places -->
-        <dep.plugin.scm.version>2.0.1</dep.plugin.scm.version>
+        <dep.plugin.scm.version>2.1.0</dep.plugin.scm.version>
         <dep.plugin.surefire.version>3.2.5</dep.plugin.surefire.version>
         <dep.plugin.pmd-runtime.version>7.0.0</dep.plugin.pmd-runtime.version>
 
