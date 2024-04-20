@@ -19,6 +19,7 @@ Airbase 155
  - slf4j 2.0.13 (from 2.0.12)
  - opentelemetry instrumentation 2.3.0 (from 2.2.0)
 * Support maven reproducible builds
+* Extract all plugins and dependencies versions to properties
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set

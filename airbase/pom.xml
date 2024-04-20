@@ -161,35 +161,71 @@
              When Jacoco is not enabled, it will stay empty, otherwise it will be overwritten. -->
         <argLine />
 
-        <!-- Plugin versions used in multiple places -->
-        <dep.plugin.scm.version>2.1.0</dep.plugin.scm.version>
-        <dep.plugin.surefire.version>3.2.5</dep.plugin.surefire.version>
+        <!-- Plugin versions, keep sorted -->
+        <dep.plugin.assembly.version>3.7.1</dep.plugin.assembly.version>
+        <dep.plugin.build-helper.version>3.5.0</dep.plugin.build-helper.version>
+        <dep.plugin.checkstyle.version>3.3.1</dep.plugin.checkstyle.version>
+        <dep.plugin.clean.version>3.3.2</dep.plugin.clean.version>
+        <dep.plugin.commit-id.version>8.0.2</dep.plugin.commit-id.version>
+        <dep.plugin.compiler.version>3.13.0</dep.plugin.compiler.version>
+        <dep.plugin.dependency.version>3.6.1</dep.plugin.dependency.version>
+        <dep.plugin.dependency-scope.version>1.0.3</dep.plugin.dependency-scope.version>
+        <dep.plugin.deploy.version>3.1.1</dep.plugin.deploy.version>
+        <dep.plugin.duplicate-finder.version>2.0.1</dep.plugin.duplicate-finder.version>
+        <dep.plugin.enforcer.version>3.4.1</dep.plugin.enforcer.version>
+        <dep.plugin.enforcer-extra.version>1.8.0</dep.plugin.enforcer-extra.version>
+        <dep.plugin.gpg.version>3.2.4</dep.plugin.gpg.version>
+        <dep.plugin.install.version>3.1.1</dep.plugin.install.version>
+        <dep.plugin.jacoco.version>0.8.12</dep.plugin.jacoco.version>
+        <dep.plugin.jar.version>3.4.1</dep.plugin.jar.version>
+        <dep.plugin.javadoc.version>3.6.3</dep.plugin.javadoc.version>
+        <dep.plugin.license.version>4.3</dep.plugin.license.version>
+        <!-- do not update yet: 2.8.0 requires Maven 3.9.5 which breaks mvnd support -->
+        <dep.plugin.modernizer.version>2.7.0</dep.plugin.modernizer.version>
         <dep.plugin.pmd-runtime.version>7.0.0</dep.plugin.pmd-runtime.version>
+        <dep.plugin.pmd.version>3.21.2</dep.plugin.pmd.version>
+        <dep.plugin.release.version>3.0.1</dep.plugin.release.version>
+        <dep.plugin.resources.version>3.3.1</dep.plugin.resources.version>
+        <dep.plugin.restrict-imports.version>2.4.0</dep.plugin.restrict-imports.version>
+        <dep.plugin.scm.version>2.1.0</dep.plugin.scm.version>
+        <dep.plugin.shade.version>3.5.2</dep.plugin.shade.version>
+        <dep.plugin.site.version>3.12.1</dep.plugin.site.version>
+        <dep.plugin.sortpom.version>3.4.1</dep.plugin.sortpom.version>
+        <dep.plugin.source.version>3.3.1</dep.plugin.source.version>
+        <dep.plugin.spotbugs.version>4.8.4.0</dep.plugin.spotbugs.version>
+        <dep.plugin.surefire.version>3.2.5</dep.plugin.surefire.version>
 
         <!-- Packaging for the tarball deployment -->
         <dep.packaging.version>0.163</dep.packaging.version>
 
-        <!-- Dependency versions that should be the same everywhere. -->
+        <!-- Dependency versions, keep sorted -->
+        <dep.asm.version>9.7</dep.asm.version>
         <dep.assertj-core.version>3.25.3</dep.assertj-core.version>
+        <dep.checkstyle.version>10.12.3</dep.checkstyle.version>
+        <dep.errorprone.version>2.26.1</dep.errorprone.version>
         <dep.guava.version>33.1.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
+        <dep.hibernate-validator.version>8.0.1.Final</dep.hibernate-validator.version>
         <dep.jackson.version>2.17.0</dep.jackson.version>
+        <dep.jakarta.annotation-api.version>3.0.0</dep.jakarta.annotation-api.version>
+        <dep.jakarta.inject-api.version>2.0.1</dep.jakarta.inject-api.version>
+        <dep.jakarta.rs-ws-api.version>3.1.0</dep.jakarta.rs-ws-api.version>
+        <dep.jakarta.servlet-api.version>6.0.0</dep.jakarta.servlet-api.version>
+        <dep.jakarta.validation-api.version>3.0.2</dep.jakarta.validation-api.version>
+        <dep.jakarta.xml-bind-api.version>4.0.2</dep.jakarta.xml-bind-api.version>
         <dep.jmh.version>1.37</dep.jmh.version>
         <dep.jmxutils.version>1.26</dep.jmxutils.version>
         <dep.joda.version>2.12.7</dep.joda.version>
+        <dep.jsr305.version>3.0.2</dep.jsr305.version>
         <dep.junit.version>5.10.2</dep.junit.version>
         <dep.kotlin.version>1.9.23</dep.kotlin.version>
         <dep.logback.version>1.5.6</dep.logback.version>
-        <!-- do not update yet: 2.8.0 requires Maven 3.9.5 which breaks mvnd support -->
-        <dep.modernizer.version>2.7.0</dep.modernizer.version>
-        <dep.opentelemetry.version>1.37.0</dep.opentelemetry.version>
         <dep.opentelemetry-instrumentation.version>2.3.0</dep.opentelemetry-instrumentation.version>
+        <dep.opentelemetry.version>1.37.0</dep.opentelemetry.version>
         <dep.slf4j.version>2.0.13</dep.slf4j.version>
         <dep.slice.version>2.2</dep.slice.version>
         <dep.spotbugs-annotations.version>4.8.4</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
-        <dep.asm.version>9.7</dep.asm.version>
-        <dep.errorprone.version>2.26.1</dep.errorprone.version>
 
         <!-- license headers -->
         <air.license.owner>${project.organization.name}</air.license.owner>
@@ -307,7 +343,7 @@
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
-                <version>3.0.2</version>
+                <version>${dep.jsr305.version}</version>
             </dependency>
 
             <!-- Error Prone -->
@@ -361,39 +397,39 @@
             <dependency>
                 <groupId>jakarta.annotation</groupId>
                 <artifactId>jakarta.annotation-api</artifactId>
-                <version>3.0.0</version>
+                <version>${dep.jakarta.annotation-api.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>jakarta.inject</groupId>
                 <artifactId>jakarta.inject-api</artifactId>
-                <version>2.0.1</version>
+                <version>${dep.jakarta.inject-api.version}</version>
             </dependency>
 
             <!-- misc stuff -->
             <dependency>
                 <groupId>jakarta.servlet</groupId>
                 <artifactId>jakarta.servlet-api</artifactId>
-                <version>6.0.0</version>
+                <version>${dep.jakarta.servlet-api.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>jakarta.validation</groupId>
                 <artifactId>jakarta.validation-api</artifactId>
-                <version>3.0.2</version>
+                <version>${dep.jakarta.validation-api.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>jakarta.ws.rs</groupId>
                 <artifactId>jakarta.ws.rs-api</artifactId>
-                <version>3.1.0</version>
+                <version>${dep.jakarta.rs-ws-api.version}</version>
             </dependency>
 
             <!-- xml bind -->
             <dependency>
                 <groupId>jakarta.xml.bind</groupId>
                 <artifactId>jakarta.xml.bind-api</artifactId>
-                <version>4.0.2</version>
+                <version>${dep.jakarta.xml-bind-api.version}</version>
             </dependency>
 
             <dependency>
@@ -406,13 +442,13 @@
             <dependency>
                 <groupId>org.gaul</groupId>
                 <artifactId>modernizer-maven-annotations</artifactId>
-                <version>${dep.modernizer.version}</version>
+                <version>${dep.plugin.modernizer.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>8.0.1.Final</version>
+                <version>${dep.hibernate-validator.version}</version>
             </dependency>
 
             <!-- jmh -->
@@ -524,13 +560,12 @@
     </pluginRepositories>
 
     <build>
-
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>com.github.ekryd.sortpom</groupId>
                     <artifactId>sortpom-maven-plugin</artifactId>
-                    <version>3.4.1</version>
+                    <version>${dep.plugin.sortpom.version}</version>
                     <configuration>
                         <createBackupFile>false</createBackupFile>
                         <nrOfIndentSpace>4</nrOfIndentSpace>
@@ -563,31 +598,31 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>${dep.plugin.deploy.version}</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
-                    <version>3.3.2</version>
+                    <version>${dep.plugin.clean.version}</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>${dep.plugin.install.version}</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>3.5.0</version>
+                    <version>${dep.plugin.build-helper.version}</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>3.4.1</version>
+                    <version>${dep.plugin.enforcer.version}</version>
                     <configuration>
                         <skip>${air.check.skip-enforcer}</skip>
                         <fail>${air.check.fail-enforcer}</fail>
@@ -707,12 +742,12 @@
                         <dependency>
                             <groupId>de.skuzzle.enforcer</groupId>
                             <artifactId>restrict-imports-enforcer-rule</artifactId>
-                            <version>2.4.0</version>
+                            <version>${dep.plugin.restrict-imports.version}</version>
                         </dependency>
                         <dependency>
                             <groupId>org.codehaus.mojo</groupId>
                             <artifactId>extra-enforcer-rules</artifactId>
-                            <version>1.8.0</version>
+                            <version>${dep.plugin.enforcer-extra.version}</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -729,7 +764,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.6.1</version>
+                    <version>${dep.plugin.dependency.version}</version>
                     <configuration>
                         <skip>${air.check.skip-dependency}</skip>
                         <failOnWarning>${air.check.fail-dependency}</failOnWarning>
@@ -758,7 +793,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.13.0</version>
+                    <version>${dep.plugin.compiler.version}</version>
                     <configuration>
                         <source>${project.build.targetJdk}</source>
                         <release>${project.build.targetJdk}</release>
@@ -777,7 +812,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>${dep.plugin.resources.version}</version>
                     <configuration>
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
@@ -786,7 +821,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.7.1</version>
+                    <version>${dep.plugin.assembly.version}</version>
                     <configuration>
                         <!-- must be true for jar-with-dependencies builds -->
                         <appendAssemblyId>true</appendAssemblyId>
@@ -817,7 +852,6 @@
                             <!-- Pass the following properties directly to the JVM, because they are not passed correctly by Surefire: -->
                             -Duser.language=${air.test.language}
                             -Duser.region=${air.test.region}
-
                             -Dfile.encoding=${project.build.sourceEncoding}
                             -Xmx${air.test.jvmsize}
                             -Xms${air.test.jvmsize}
@@ -833,7 +867,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>${dep.plugin.release.version}</version>
                     <configuration>
                         <releaseProfiles>${air.release.release-profiles}</releaseProfiles>
                         <autoVersionSubmodules>${air.release.auto-version-submodules}</autoVersionSubmodules>
@@ -850,7 +884,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.6.3</version>
+                    <version>${dep.plugin.javadoc.version}</version>
                     <configuration>
                         <quiet>true</quiet>
                         <source>${project.build.targetJdk}</source>
@@ -875,7 +909,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.4.1</version>
+                    <version>${dep.plugin.jar.version}</version>
                     <configuration>
                         <!-- do not build an empty jar if the project is
                              e.g. a pom project -->
@@ -908,7 +942,7 @@
                 <plugin>
                     <groupId>io.github.git-commit-id</groupId>
                     <artifactId>git-commit-id-maven-plugin</artifactId>
-                    <version>8.0.2</version>
+                    <version>${dep.plugin.commit-id.version}</version>
                     <configuration>
                         <!-- Include only properties used above to speed up build (https://github.com/git-commit-id/git-commit-id-maven-plugin/issues/462) -->
                         <includeOnlyProperties>
@@ -927,7 +961,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>${dep.plugin.source.version}</version>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
@@ -943,7 +977,7 @@
                 <plugin>
                     <groupId>org.basepom.maven</groupId>
                     <artifactId>duplicate-finder-maven-plugin</artifactId>
-                    <version>2.0.1</version>
+                    <version>${dep.plugin.duplicate-finder.version}</version>
                     <configuration>
                         <skip>${air.check.skip-duplicate-finder}</skip>
                         <failBuildInCaseOfConflict>${air.check.fail-duplicate-finder}</failBuildInCaseOfConflict>
@@ -1017,7 +1051,7 @@
                 <plugin>
                     <groupId>org.basepom.maven</groupId>
                     <artifactId>dependency-scope-maven-plugin</artifactId>
-                    <version>1.0.3</version>
+                    <version>${dep.plugin.dependency-scope.version}</version>
                     <executions>
                         <execution>
                             <goals>
@@ -1034,7 +1068,7 @@
                 <plugin>
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>4.8.4.0</version>
+                    <version>${dep.plugin.spotbugs.version}</version>
                     <configuration>
                         <skip>${air.check.skip-spotbugs}</skip>
                         <jvmArgs>-Xmx${air.build.jvmsize}</jvmArgs>
@@ -1054,7 +1088,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.21.2</version>
+                    <version>${dep.plugin.pmd.version}</version>
                     <configuration>
                         <skip>${air.check.skip-pmd}</skip>
                         <failOnViolation>${air.check.fail-pmd}</failOnViolation>
@@ -1109,7 +1143,7 @@
                 <plugin>
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>4.3</version>
+                    <version>${dep.plugin.license.version}</version>
                     <configuration>
                         <skip>${air.check.skip-license}</skip>
                         <skipExistingHeaders>${air.license.skip-existing-headers}</skipExistingHeaders>
@@ -1189,7 +1223,7 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.12</version>
+                    <version>${dep.plugin.jacoco.version}</version>
                     <configuration>
                         <skip>${air.check.skip-jacoco}</skip>
                     </configuration>
@@ -1213,7 +1247,7 @@
                 <plugin>
                     <groupId>org.gaul</groupId>
                     <artifactId>modernizer-maven-plugin</artifactId>
-                    <version>${dep.modernizer.version}</version>
+                    <version>${dep.plugin.modernizer.version}</version>
                     <configuration>
                         <skip>${air.check.skip-modernizer}</skip>
                         <failOnViolations>${air.check.fail-modernizer}</failOnViolations>
@@ -1239,12 +1273,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>${dep.plugin.checkstyle.version}</version>
                     <dependencies>
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>10.12.3</version>
+                            <version>${dep.checkstyle.version}</version>
                         </dependency>
                         <!-- This version must match the Airbase version. It will be updated by -->
                         <!-- the Maven Release plugin. The "project.version" property cannot be -->
@@ -1275,7 +1309,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
-                    <version>3.2.2</version>
+                    <version>${dep.plugin.gpg.version}</version>
                     <configuration>
                         <useAgent>true</useAgent>
                     </configuration>
@@ -1293,13 +1327,13 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.12.1</version>
+                    <version>${dep.plugin.site.version}</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
-                    <version>3.5.2</version>
+                    <version>${dep.plugin.shade.version}</version>
                     <dependencies>
                         <dependency>
                             <groupId>org.ow2.asm</groupId>
