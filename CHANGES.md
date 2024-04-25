@@ -62,6 +62,7 @@ Airbase 151
   - joda-time 2.12.7 (from 2.12.6)
   - OpenTelemetry instrumentation 2.1.0 (from 2.0.0)
   - modernizer-maven-annotations 2.8.0 (from 2.7.0)
+  - slf4j 2.0.13 (from 2.0.12)
 
 Airbase 150
 * Dependency updates:
