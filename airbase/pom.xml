@@ -54,6 +54,7 @@
         <project.build.targetJdk>8</project.build.targetJdk>
         <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
         <project.report.inputEncoding>UTF-8</project.report.inputEncoding>
+        <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
 
         <!-- airlift build specific options are prefixed air.build. -->
 
@@ -891,6 +892,7 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmemory>${air.build.jvmsize}</maxmemory>
                         <doclint>${air.javadoc.lint}</doclint>
+                        <notimestamp>true</notimestamp>
                         <additionalOptions>${surefireEnablePreview}</additionalOptions>
                     </configuration>
                     <executions>
@@ -920,8 +922,8 @@
                                 <addClasspath>false</addClasspath>
                             </manifest>
                             <manifestEntries>
-                                <!-- This is actually the time when the build was done -->
-                                <Build-Time>${git.build.time}</Build-Time>
+                                <!-- This is actually the time when the commit was done -->
+                                <Build-Time>${git.commit.time}</Build-Time>
                                 <Git-Commit-Id>${git.commit.id}</Git-Commit-Id>
                                 <Implementation-Version>${git.commit.id.describe}</Implementation-Version>
                             </manifestEntries>
@@ -945,11 +947,12 @@
                     <configuration>
                         <!-- Include only properties used above to speed up build (https://github.com/git-commit-id/git-commit-id-maven-plugin/issues/462) -->
                         <includeOnlyProperties>
-                            <includeOnlyProperty>\Qgit.build.time</includeOnlyProperty>
                             <includeOnlyProperty>\Qgit.commit.id</includeOnlyProperty>
                             <includeOnlyProperty>\Qgit.commit.id.describe</includeOnlyProperty>
+                            <includeOnlyProperty>\Qgit.commit.time</includeOnlyProperty>
                         </includeOnlyProperties>
-                        <dateFormat>yyyy-MM-dd'T'HH:mm:ssZZ</dateFormat>
+                        <dateFormat>yyyy-MM-dd'T'HH:mm:ssXXX</dateFormat>
+                        <dateFormatTimeZone>UTC</dateFormatTimeZone>
                         <gitDescribe>
                             <tags>true</tags>
                         </gitDescribe>
