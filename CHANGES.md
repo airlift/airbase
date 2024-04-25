@@ -2,6 +2,7 @@ Airbase 155
 * Checkstyle updates:
   - Require exactly one space between array type and array initializer.
 * Extract all plugins and dependencies versions to properties
+* Make build reproducible
 * Plugin updates:
   - spotbugs-maven-plugin 4.8.4.0 (from 4.8.3.1)
   - git-commit-id-maven-plugin 8.0.2 (from 8.0.1)
