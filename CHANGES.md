@@ -5,6 +5,7 @@ Airbase 155
 * Plugin updates:
   - spotbugs-maven-plugin 4.8.4.0 (from 4.8.3.1)
   - git-commit-id-maven-plugin 8.0.2 (from 8.0.1)
+  - maven-gpg-plugin 3.2.4 (from 3.2.1)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
