@@ -2,6 +2,8 @@ Airbase 155
 * Checkstyle updates:
   - Require exactly one space between array type and array initializer.
 * Extract all plugins and dependencies versions to properties
+* Plugin updates:
+  - spotbugs-maven-plugin 4.8.4.0 (from 4.8.3.1)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
