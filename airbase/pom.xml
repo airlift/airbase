@@ -171,7 +171,9 @@
         <dep.packaging.version>0.163</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
+        <dep.asm.version>9.6</dep.asm.version>
         <dep.assertj-core.version>3.25.3</dep.assertj-core.version>
+        <dep.errorprone.version>2.26.1</dep.errorprone.version>
         <dep.guava.version>33.1.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
         <dep.jackson.version>2.17.0</dep.jackson.version>
@@ -181,14 +183,12 @@
         <dep.junit.version>5.10.2</dep.junit.version>
         <dep.kotlin.version>1.9.23</dep.kotlin.version>
         <dep.logback.version>1.5.3</dep.logback.version>
-        <dep.opentelemetry.version>1.36.0</dep.opentelemetry.version>
         <dep.opentelemetry-instrumentation.version>2.2.0</dep.opentelemetry-instrumentation.version>
+        <dep.opentelemetry.version>1.36.0</dep.opentelemetry.version>
         <dep.slf4j.version>2.0.12</dep.slf4j.version>
         <dep.slice.version>2.2</dep.slice.version>
         <dep.spotbugs-annotations.version>4.8.3</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
-        <dep.asm.version>9.6</dep.asm.version>
-        <dep.errorprone.version>2.26.1</dep.errorprone.version>
 
         <!-- license headers -->
         <air.license.owner>${project.organization.name}</air.license.owner>
