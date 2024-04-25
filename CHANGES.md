@@ -11,6 +11,7 @@ Airbase 155
   - maven-scm-plugin 2.1.0 (from 2.0.1)
   - maven-shade-plugin 3.5.3 (from 3.5.2)
   - maven-source-plugin 3.3.1 (from 3.3.0)
+  - maven-jacoco-plugin 0.8.12 (from 0.8.11)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
