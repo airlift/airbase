@@ -63,6 +63,7 @@ Airbase 151
   - OpenTelemetry instrumentation 2.1.0 (from 2.0.0)
   - modernizer-maven-annotations 2.8.0 (from 2.7.0)
   - slf4j 2.0.13 (from 2.0.12)
+  - pmd-runtime 7.0.0 (from 6.55.0)
 
 Airbase 150
 * Dependency updates:
