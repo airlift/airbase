@@ -14,6 +14,7 @@ Airbase 155
   - maven-jacoco-plugin 0.8.12 (from 0.8.11)
 * Dependency updates:
   - logback 1.5.6 (from 1.5.3)
+  - spotbugs-annotations 4.8.4 (from 4.8.3)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
