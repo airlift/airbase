@@ -187,7 +187,7 @@
         <dep.plugin.resources.version>3.3.1</dep.plugin.resources.version>
         <dep.plugin.restrict-imports.version>2.4.0</dep.plugin.restrict-imports.version>
         <dep.plugin.scm.version>2.1.0</dep.plugin.scm.version>
-        <dep.plugin.shade.version>3.5.2</dep.plugin.shade.version>
+        <dep.plugin.shade.version>3.5.3</dep.plugin.shade.version>
         <dep.plugin.site.version>3.12.1</dep.plugin.site.version>
         <dep.plugin.sortpom.version>3.4.1</dep.plugin.sortpom.version>
         <dep.plugin.source.version>3.3.0</dep.plugin.source.version>
