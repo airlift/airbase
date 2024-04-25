@@ -16,6 +16,7 @@ Airbase 155
   - logback 1.5.6 (from 1.5.3)
   - spotbugs-annotations 4.8.4 (from 4.8.3)
   - asm 9.7 (from 9.6)
+  - jakarta.annotation-api 3.0.0 (from 3.2.1)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
