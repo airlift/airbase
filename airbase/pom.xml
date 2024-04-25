@@ -176,7 +176,7 @@
         <dep.plugin.gpg.version>3.2.4</dep.plugin.gpg.version>
         <dep.plugin.install.version>3.1.1</dep.plugin.install.version>
         <dep.plugin.jacoco.version>0.8.11</dep.plugin.jacoco.version>
-        <dep.plugin.jar.version>3.3.0</dep.plugin.jar.version>
+        <dep.plugin.jar.version>3.4.1</dep.plugin.jar.version>
         <dep.plugin.javadoc.version>3.6.3</dep.plugin.javadoc.version>
         <dep.plugin.license.version>4.3</dep.plugin.license.version>
         <!-- do not update yet: 2.8.0 requires Maven 3.9.5 which breaks mvnd support -->
