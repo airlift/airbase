@@ -7,6 +7,7 @@ Airbase 155
   - git-commit-id-maven-plugin 8.0.2 (from 8.0.1)
   - maven-gpg-plugin 3.2.4 (from 3.2.1)
   - maven-jar-plugin 3.4.1 (from 3.3.0)
+  - maven-pmd-plugin 3.22.0 (from 3.21.2)
 
 Airbase 154
 * Fix javadoc building when `air.compiler.enable-preview` is set
