@@ -174,8 +174,12 @@
         <module name="OneTopLevelClass" />
 
         <module name="MemberName" />
-        <module name="LocalVariableName" />
-        <module name="LocalFinalVariableName" />
+        <module name="LocalVariableName">
+            <property name="format" value="^([a-z][a-zA-Z0-9]*|_)$" />
+        </module>
+        <module name="LocalFinalVariableName">
+            <property name="format" value="^([a-z][a-zA-Z0-9]*|_)$" />
+        </module>
         <module name="TypeName" />
         <module name="PackageName">
             <property name="format" value="^[a-z][a-z0-9]*(\.[a-z][a-z0-9]*)*$" />

@@ -1,6 +1,7 @@
 Airbase 155
 * Checkstyle updates:
   - Require exactly one space between array type and array initializer.
+  - Allow unnamed variable names
 * Extract all plugins and dependencies versions to properties
 * Make build reproducible
 * Plugin updates:
