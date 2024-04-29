@@ -221,6 +221,7 @@
         <dep.kotlin.version>1.9.23</dep.kotlin.version>
         <dep.logback.version>1.5.6</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.2.0</dep.opentelemetry-instrumentation.version>
+        <dep.opentelemetry-semconv-incubating.version>1.25.0-alpha</dep.opentelemetry-semconv-incubating.version>
         <dep.opentelemetry.version>1.36.0</dep.opentelemetry.version>
         <dep.slf4j.version>2.0.13</dep.slf4j.version>
         <dep.slice.version>2.2</dep.slice.version>
@@ -392,6 +393,12 @@
                 <groupId>io.airlift</groupId>
                 <artifactId>slice</artifactId>
                 <version>${dep.slice.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry.semconv</groupId>
+                <artifactId>opentelemetry-semconv-incubating</artifactId>
+                <version>${dep.opentelemetry-semconv-incubating.version}</version>
             </dependency>
 
             <dependency>
