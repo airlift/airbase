@@ -1,3 +1,8 @@
+Airbase 156
+* Dependency updates:
+  - checkstyle 10.16.0 (from 10.12.3)
+  - error_prone_annotations 2.27.0 (from 2.25.0)
+
 Airbase 155
 * Checkstyle updates:
   - Require exactly one space between array type and array initializer.
