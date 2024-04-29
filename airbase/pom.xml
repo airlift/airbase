@@ -201,6 +201,7 @@
         <!-- Dependency versions, keep sorted -->
         <dep.asm.version>9.7</dep.asm.version>
         <dep.assertj-core.version>3.25.3</dep.assertj-core.version>
+        <dep.byte-buddy.version>1.14.14</dep.byte-buddy.version>
         <dep.checkstyle.version>10.16.0</dep.checkstyle.version>
         <dep.errorprone.version>2.27.0</dep.errorprone.version>
         <dep.guava.version>33.1.0-jre</dep.guava.version>
@@ -443,6 +444,12 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${dep.joda.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy</artifactId>
+                <version>${dep.byte-buddy.version}</version>
             </dependency>
 
             <!-- Modernizer -->
