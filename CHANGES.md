@@ -9,6 +9,7 @@ Airbase 156
   - maven-deploy-plugin 3.1.2 (from 3.1.1)
 * New dependencies:
   - opentelemetry-semconv-incubating
+  - byte-buddy
 
 Airbase 155
 * Checkstyle updates:
