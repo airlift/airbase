@@ -201,7 +201,7 @@
         <!-- Dependency versions, keep sorted -->
         <dep.asm.version>9.7</dep.asm.version>
         <dep.assertj-core.version>3.25.3</dep.assertj-core.version>
-        <dep.checkstyle.version>10.12.3</dep.checkstyle.version>
+        <dep.checkstyle.version>10.16.0</dep.checkstyle.version>
         <dep.errorprone.version>2.26.1</dep.errorprone.version>
         <dep.guava.version>33.1.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
