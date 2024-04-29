@@ -5,6 +5,7 @@ Airbase 156
   - PMD runtime 7.1.0 (from 7.0.0)
 * Plugin updates:
   - restrict-imports-enforcer-rule 2.5.0 (from 2.4.0)
+  - maven-install-plugin 3.1.2 (from 3.1.1)
 
 Airbase 155
 * Checkstyle updates:
