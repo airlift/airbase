@@ -4,6 +4,7 @@ Airbase 156
   - error_prone_annotations 2.27.0 (from 2.25.0)
   - PMD runtime 7.1.0 (from 7.0.0)
   - opentelemetry 1.37.0 (from 1.36.0)
+  - opentelemetry-instrumentation 2.3.0 (from 2.2.0)
 * Plugin updates:
   - restrict-imports-enforcer-rule 2.5.0 (from 2.4.0)
   - maven-install-plugin 3.1.2 (from 3.1.1)
