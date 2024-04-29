@@ -182,7 +182,7 @@
         <dep.plugin.license.version>4.3</dep.plugin.license.version>
         <!-- do not update yet: 2.8.0 requires Maven 3.9.5 which breaks mvnd support -->
         <dep.plugin.modernizer.version>2.7.0</dep.plugin.modernizer.version>
-        <dep.plugin.pmd-runtime.version>7.0.0</dep.plugin.pmd-runtime.version>
+        <dep.plugin.pmd-runtime.version>7.1.0</dep.plugin.pmd-runtime.version>
         <dep.plugin.pmd.version>3.22.0</dep.plugin.pmd.version>
         <dep.plugin.release.version>3.0.1</dep.plugin.release.version>
         <dep.plugin.resources.version>3.3.1</dep.plugin.resources.version>
