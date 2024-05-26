@@ -191,7 +191,7 @@
         <dep.plugin.site.version>3.12.1</dep.plugin.site.version>
         <dep.plugin.sortpom.version>4.0.0</dep.plugin.sortpom.version>
         <dep.plugin.source.version>3.3.1</dep.plugin.source.version>
-        <dep.plugin.spotbugs.version>4.8.4.0</dep.plugin.spotbugs.version>
+        <dep.plugin.spotbugs.version>4.8.5.0</dep.plugin.spotbugs.version>
         <dep.plugin.surefire.version>3.2.5</dep.plugin.surefire.version>
 
         <!-- Packaging for the tarball deployment -->
@@ -225,7 +225,7 @@
         <dep.opentelemetry.version>1.37.0</dep.opentelemetry.version>
         <dep.slf4j.version>2.0.13</dep.slf4j.version>
         <dep.slice.version>2.2</dep.slice.version>
-        <dep.spotbugs-annotations.version>4.8.4</dep.spotbugs-annotations.version>
+        <dep.spotbugs-annotations.version>4.8.5</dep.spotbugs-annotations.version>
         <dep.testng.version>6.10</dep.testng.version>
 
         <!-- license headers -->

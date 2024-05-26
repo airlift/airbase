@@ -11,11 +11,13 @@ Airbase 157
   - guava 33.2.1-jre (from 33.1.0-jre)
   - jackson 2.17.1 (from 2.17.0)
   - kotlin 2.0.0 (from 1.9.23)
+  - spotbugs-annotations to 4.8.5 (from 4.8.4)
 * Plugin updates:
   - maven-build-helper 3.6.0 (from 3.5.0)
   - maven-license-plugin 4.5 (from 4.3)
   - maven-modernizer-plugin 2.9.0 (from 2.7.0)
   - maven-sortpom-plugin 4.0.0 (from 3.4.1)
+  - spotbugs-maven-plugin to 4.8.5.0 (from 4.8.4.0)
 
 Airbase 156
 * Dependency updates:
