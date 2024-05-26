@@ -5,6 +5,7 @@ Airbase 157
  - Inject git commit info into reactor projects once
 * Dependency updates:
   - AssertJ 3.26.0 (from 3.25.3)
+  - byte-buddy 1.14.17 (from 1.14.14)
 
 Airbase 156
 * Dependency updates:
