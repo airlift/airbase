@@ -189,7 +189,7 @@
         <dep.plugin.scm.version>2.1.0</dep.plugin.scm.version>
         <dep.plugin.shade.version>3.5.3</dep.plugin.shade.version>
         <dep.plugin.site.version>3.12.1</dep.plugin.site.version>
-        <dep.plugin.sortpom.version>3.4.1</dep.plugin.sortpom.version>
+        <dep.plugin.sortpom.version>4.0.0</dep.plugin.sortpom.version>
         <dep.plugin.source.version>3.3.1</dep.plugin.source.version>
         <dep.plugin.spotbugs.version>4.8.4.0</dep.plugin.spotbugs.version>
         <dep.plugin.surefire.version>3.2.5</dep.plugin.surefire.version>
