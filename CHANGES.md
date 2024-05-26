@@ -14,6 +14,7 @@ Airbase 157
 * Plugin updates:
   - maven-build-helper 3.6.0 (from 3.5.0)
   - maven-license-plugin 4.5 (from 4.3)
+  - maven-modernizer-plugin 2.9.0 (from 2.7.0)
 
 Airbase 156
 * Dependency updates:
