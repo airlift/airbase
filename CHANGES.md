@@ -8,6 +8,7 @@ Airbase 157
   - byte-buddy 1.14.17 (from 1.14.14)
   - checkstyle 10.17.0 (from 10.16.0)
   - error_prone_annotations 2.27.1 (from 2.27.0)
+  - guava 33.2.1-jre (from 33.1.0-jre)
 
 Airbase 156
 * Dependency updates:
