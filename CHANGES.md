@@ -3,6 +3,8 @@ Airbase 157
  - Require empty line before record definition
 * Plugin configuration:
  - Inject git commit info into reactor projects once
+* Dependency updates:
+  - AssertJ 3.26.0 (from 3.25.3)
 
 Airbase 156
 * Dependency updates:
