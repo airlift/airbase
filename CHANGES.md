@@ -10,6 +10,7 @@ Airbase 157
   - error_prone_annotations 2.27.1 (from 2.27.0)
   - guava 33.2.1-jre (from 33.1.0-jre)
   - jackson 2.17.1 (from 2.17.0)
+  - kotlin 2.0.0 (from 1.9.23)
 
 Airbase 156
 * Dependency updates:
