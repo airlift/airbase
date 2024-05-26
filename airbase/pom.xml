@@ -163,7 +163,7 @@
 
         <!-- Plugin versions, keep sorted -->
         <dep.plugin.assembly.version>3.7.1</dep.plugin.assembly.version>
-        <dep.plugin.build-helper.version>3.5.0</dep.plugin.build-helper.version>
+        <dep.plugin.build-helper.version>3.6.0</dep.plugin.build-helper.version>
         <dep.plugin.checkstyle.version>3.3.1</dep.plugin.checkstyle.version>
         <dep.plugin.clean.version>3.3.2</dep.plugin.clean.version>
         <dep.plugin.commit-id.version>8.0.2</dep.plugin.commit-id.version>
