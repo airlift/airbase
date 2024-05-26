@@ -179,7 +179,7 @@
         <dep.plugin.jacoco.version>0.8.12</dep.plugin.jacoco.version>
         <dep.plugin.jar.version>3.4.1</dep.plugin.jar.version>
         <dep.plugin.javadoc.version>3.6.3</dep.plugin.javadoc.version>
-        <dep.plugin.license.version>4.3</dep.plugin.license.version>
+        <dep.plugin.license.version>4.5</dep.plugin.license.version>
         <!-- do not update yet: 2.8.0 requires Maven 3.9.5 which breaks mvnd support -->
         <dep.plugin.modernizer.version>2.7.0</dep.plugin.modernizer.version>
         <dep.plugin.pmd-runtime.version>7.1.0</dep.plugin.pmd-runtime.version>

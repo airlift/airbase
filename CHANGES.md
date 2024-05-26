@@ -13,6 +13,7 @@ Airbase 157
   - kotlin 2.0.0 (from 1.9.23)
 * Plugin updates:
   - maven-build-helper 3.6.0 (from 3.5.0)
+  - maven-license-plugin 4.5 (from 4.3)
 
 Airbase 156
 * Dependency updates:
