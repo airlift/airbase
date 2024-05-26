@@ -7,6 +7,7 @@ Airbase 157
   - AssertJ 3.26.0 (from 3.25.3)
   - byte-buddy 1.14.17 (from 1.14.14)
   - checkstyle 10.17.0 (from 10.16.0)
+  - error_prone_annotations 2.27.1 (from 2.27.0)
 
 Airbase 156
 * Dependency updates:
