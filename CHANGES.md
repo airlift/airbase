@@ -1,3 +1,7 @@
+Airbase 157
+* Checkstyle updates:
+ - Require empty line before record definition
+
 Airbase 156
 * Dependency updates:
   - checkstyle 10.16.0 (from 10.12.3)
