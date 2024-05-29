@@ -1,5 +1,6 @@
 Airbase 157
 * Checkstyle updates:
+ - Disallow class-level warning suppression
  - Require empty line before record definition
 
 Airbase 156
