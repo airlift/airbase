@@ -18,6 +18,7 @@ Airbase 157
   - maven-modernizer-plugin 2.9.0 (from 2.7.0)
   - maven-sortpom-plugin 4.0.0 (from 3.4.1)
   - spotbugs-maven-plugin to 4.8.5.0 (from 4.8.4.0)
+  - maven-enforcer-plugin 3.5.0 (from 3.4.1)
 
 Airbase 156
 * Dependency updates:
