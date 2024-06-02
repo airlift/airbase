@@ -21,6 +21,7 @@ Airbase 157
   - maven-enforcer-plugin 3.5.0 (from 3.4.1)
   - maven-javadoc-plugin 3.7.0 (from 3.6.3)
   - maven-shade-plugin 3.6.0 (from 3.5.3)
+  - errorprone 2.28.0 (from 2.27.1)
 
 Airbase 156
 * Dependency updates:
