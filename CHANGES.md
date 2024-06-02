@@ -1,6 +1,8 @@
 Airbase 157
 * Checkstyle updates:
  - Require empty line before record definition
+* Plugin configuration:
+ - Inject git commit info into reactor projects once
 
 Airbase 156
 * Dependency updates:
