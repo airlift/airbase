@@ -12,6 +12,7 @@ Airbase 157
   - jackson 2.17.1 (from 2.17.0)
   - kotlin 2.0.0 (from 1.9.23)
   - spotbugs-annotations to 4.8.5 (from 4.8.4)
+  - PMD runtime 7.2.0 (from 7.1.0)
 * Plugin updates:
   - maven-build-helper 3.6.0 (from 3.5.0)
   - maven-license-plugin 4.5 (from 4.3)
