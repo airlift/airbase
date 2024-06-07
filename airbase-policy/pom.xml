@@ -14,5 +14,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.outputTimestamp>2024-06-05T18:08:46Z</project.build.outputTimestamp>
     </properties>
 </project>
