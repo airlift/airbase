@@ -1,3 +1,6 @@
+Airbase 159
+* Require Maven 3.9.8
+
 Airbase 158
 * Plugin updates:
  - maven-jar-plugin to 3.4.2 (from 3.4.1)
