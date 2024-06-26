@@ -1,3 +1,7 @@
+Airbase 158
+* Plugin updates:
+ - maven-jar-plugin to 3.4.2 (from 3.4.1)
+
 Airbase 157
 * Checkstyle updates:
  - Require empty line before record definition
