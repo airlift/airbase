@@ -4,6 +4,7 @@ Airbase 158
  - maven-release-plugin to 3.1.0 (from 3.0.1)
  - maven-surefire-plugin to 3.3.0 (from 3.2.5)
  - maven-dependency-plugin to 3.7.1 (from 3.6.1)
+ - maven-clean-plugin to 3.4.0 (from 3.3.2)
 
 Airbase 157
 * Checkstyle updates:
