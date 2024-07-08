@@ -9,6 +9,7 @@ Airbase 158
  - git-commit-id plugin to 9.0.0 (from 8.0.1)
 * Dependency updates:
  - junit 5.10.3 (from 5.10.2)
+ - jackson 2.17.2 (from 2.17.1)
 
 Airbase 157
 * Checkstyle updates:
