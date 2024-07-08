@@ -6,7 +6,7 @@ Airbase 158
  - maven-dependency-plugin to 3.7.1 (from 3.6.1)
  - maven-clean-plugin to 3.4.0 (from 3.3.2)
  - maven-checkstyle-plugin to 3.4.0 (from 3.3.1)
- - git-commit-id plugin to 9.0.0 (from 8.0.1)
+ - git-commit-id plugin to 9.0.1 (from 8.0.1)
 * Dependency updates:
  - junit 5.10.3 (from 5.10.2)
  - jackson 2.17.2 (from 2.17.1)
