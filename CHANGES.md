@@ -1,4 +1,9 @@
 Airbase 159
+* Dependency updates:
+ - AssertJ 3.26.3 (from 3.26.0)
+ - Byte Buddy 1.14.18 (from 1.14.17)
+
+Airbase 159
 * Require Maven 3.9.8
 
 Airbase 158
