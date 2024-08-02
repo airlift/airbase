@@ -199,8 +199,8 @@
 
         <!-- Dependency versions, keep sorted -->
         <dep.asm.version>9.7</dep.asm.version>
-        <dep.assertj-core.version>3.26.0</dep.assertj-core.version>
-        <dep.byte-buddy.version>1.14.17</dep.byte-buddy.version>
+        <dep.assertj-core.version>3.26.3</dep.assertj-core.version>
+        <dep.byte-buddy.version>1.14.18</dep.byte-buddy.version>
         <dep.checkstyle.version>10.17.0</dep.checkstyle.version>
         <dep.errorprone.version>2.28.0</dep.errorprone.version>
         <dep.guava.version>33.2.1-jre</dep.guava.version>
