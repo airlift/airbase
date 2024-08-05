@@ -1,3 +1,7 @@
+Airbase 160 and above
+
+Moved to https://github.com/airlift/airbase/releases
+
 Airbase 159
 * Dependency updates:
  - AssertJ 3.26.3 (from 3.26.0)
