@@ -59,6 +59,11 @@ deploy:
         releaseRepository: true
         stagingRepositories:
           - target/checkout/target/staging-deploy
+        artifactOverrides:
+          - groupId: io.airlift
+            artifactId: airbase-policy
+            sourceJar: false
+            javadocJar: false
 
 # Release to Github
 release:
