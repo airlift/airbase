@@ -222,7 +222,7 @@
         <dep.logback.version>1.5.6</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.3.0</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-semconv-incubating.version>1.26.0-alpha</dep.opentelemetry-semconv-incubating.version>
-        <dep.opentelemetry.version>1.37.0</dep.opentelemetry.version>
+        <dep.opentelemetry.version>1.40.0-alpha</dep.opentelemetry.version>
         <dep.slf4j.version>2.0.14</dep.slf4j.version>
         <dep.slice.version>2.2</dep.slice.version>
         <dep.spotbugs-annotations.version>4.8.5</dep.spotbugs-annotations.version>
@@ -276,7 +276,7 @@
             <dependency>
                 <groupId>io.opentelemetry</groupId>
                 <artifactId>opentelemetry-bom-alpha</artifactId>
-                <version>${dep.opentelemetry.version}-alpha</version>
+                <version>${dep.opentelemetry.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
