@@ -220,7 +220,7 @@
         <dep.junit.version>5.10.3</dep.junit.version>
         <dep.kotlin.version>2.0.0</dep.kotlin.version>
         <dep.logback.version>1.5.6</dep.logback.version>
-        <dep.opentelemetry-instrumentation.version>2.3.0</dep.opentelemetry-instrumentation.version>
+        <dep.opentelemetry-instrumentation.version>2.6.0-alpha</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-semconv-incubating.version>1.26.0-alpha</dep.opentelemetry-semconv-incubating.version>
         <dep.opentelemetry.version>1.37.0</dep.opentelemetry.version>
         <dep.slf4j.version>2.0.15</dep.slf4j.version>
@@ -292,7 +292,7 @@
             <dependency>
                 <groupId>io.opentelemetry.instrumentation</groupId>
                 <artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
-                <version>${dep.opentelemetry-instrumentation.version}-alpha</version>
+                <version>${dep.opentelemetry-instrumentation.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
