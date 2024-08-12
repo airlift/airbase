@@ -174,7 +174,7 @@
         <dep.plugin.duplicate-finder.version>2.0.1</dep.plugin.duplicate-finder.version>
         <dep.plugin.enforcer.version>3.5.0</dep.plugin.enforcer.version>
         <dep.plugin.enforcer-extra.version>1.8.0</dep.plugin.enforcer-extra.version>
-        <dep.plugin.gpg.version>3.2.4</dep.plugin.gpg.version>
+        <dep.plugin.gpg.version>3.2.5</dep.plugin.gpg.version>
         <dep.plugin.install.version>3.1.2</dep.plugin.install.version>
         <dep.plugin.jacoco.version>0.8.12</dep.plugin.jacoco.version>
         <dep.plugin.jar.version>3.4.2</dep.plugin.jar.version>
