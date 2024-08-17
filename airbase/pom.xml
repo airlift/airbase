@@ -203,7 +203,7 @@
         <dep.byte-buddy.version>1.14.19</dep.byte-buddy.version>
         <dep.checkstyle.version>10.17.0</dep.checkstyle.version>
         <dep.errorprone.version>2.30.0</dep.errorprone.version>
-        <dep.guava.version>33.2.1-jre</dep.guava.version>
+        <dep.guava.version>33.3.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
         <dep.hibernate-validator.version>8.0.1.Final</dep.hibernate-validator.version>
         <dep.jackson.version>2.17.2</dep.jackson.version>
