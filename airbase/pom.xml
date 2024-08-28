@@ -222,6 +222,7 @@
         <dep.logback.version>1.5.7</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.3.0</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-instrumentation-alpha.version>2.3.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
+        <dep.opentelemetry-semconv.version>1.27.0-alpha</dep.opentelemetry-semconv.version>
         <dep.opentelemetry-semconv-incubating.version>1.27.0-alpha</dep.opentelemetry-semconv-incubating.version>
         <dep.opentelemetry.version>1.41.0</dep.opentelemetry.version>
         <dep.opentelemetry-alpha.version>1.40.0-alpha</dep.opentelemetry-alpha.version>
@@ -395,6 +396,12 @@
                 <groupId>io.airlift</groupId>
                 <artifactId>slice</artifactId>
                 <version>${dep.slice.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentelemetry.semconv</groupId>
+                <artifactId>opentelemetry-semconv</artifactId>
+                <version>${dep.opentelemetry-semconv.version}</version>
             </dependency>
 
             <dependency>
