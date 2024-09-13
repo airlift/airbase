@@ -151,7 +151,7 @@
         <air.maven.version>3.9.8</air.maven.version>
 
         <!-- minimum Java version to build -->
-        <air.java.version>11</air.java.version>
+        <air.java.version>17</air.java.version>
 
         <!-- In Multimodule builds, override this to point at the parent directory for e.g. the license resources. -->
         <!-- See http://stackoverflow.com/questions/1012402/maven2-property-that-indicates-the-parent-directory    -->
