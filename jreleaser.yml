@@ -58,7 +58,7 @@ deploy:
         closeRepository: true
         releaseRepository: true
         stagingRepositories:
-          - target/checkout/target/staging-deploy
+          - target/staging-deploy
         artifactOverrides:
           - groupId: io.airlift
             artifactId: airbase-policy
