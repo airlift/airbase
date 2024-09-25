@@ -92,6 +92,7 @@ jobs:
           JRELEASER_SKIP_RELEASE: ${{ inputs.push && 'false' || 'true' }}
         with:
           setup-java: false
+          working-directory: 'target/checkout'
 
       - name: Push git changes
         if: ${{ inputs.push }}
