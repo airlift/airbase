@@ -69,10 +69,12 @@ jobs:
         run: |
           ./mvnw -B release:perform -Poss-release,oss-stage
 
-      - name: Display git status and history
+      - name: Display git status and history, checkout release tag
         run: |
           git status
           git log --oneline -n 2
+          # Checkout version so that JReleaser runs from a tagged commit
+          git checkout "${VERSION}"
 
       - name: List locally staged artifacts
         run: |
@@ -97,6 +99,7 @@ jobs:
         if: ${{ inputs.push }}
         run: |
           git status
+          git describe
           git push origin master
 
       - name: Unlock branch after a release
