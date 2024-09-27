@@ -1344,6 +1344,7 @@
                                 <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
                                 <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                 <configLocation>${air.checkstyle.config-file}</configLocation>
+                                <excludes>**/module-info.java</excludes>
                             </configuration>
                         </execution>
                     </executions>
