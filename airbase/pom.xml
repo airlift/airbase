@@ -178,7 +178,7 @@
         <dep.plugin.install.version>3.1.3</dep.plugin.install.version>
         <dep.plugin.jacoco.version>0.8.12</dep.plugin.jacoco.version>
         <dep.plugin.jar.version>3.4.2</dep.plugin.jar.version>
-        <dep.plugin.javadoc.version>3.10.0</dep.plugin.javadoc.version>
+        <dep.plugin.javadoc.version>3.10.1</dep.plugin.javadoc.version>
         <dep.plugin.license.version>4.6</dep.plugin.license.version>
         <dep.plugin.modernizer.version>2.9.0</dep.plugin.modernizer.version>
         <dep.plugin.pmd-runtime.version>7.6.0</dep.plugin.pmd-runtime.version>
