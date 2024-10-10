@@ -176,7 +176,7 @@
         <dep.packaging.version>0.163</dep.packaging.version>
 
         <!-- Dependency versions that should be the same everywhere. -->
-        <dep.guice.version>4.2.2</dep.guice.version>
+        <dep.guice.version>5.0.1</dep.guice.version>
         <dep.guava.version>26.0-jre</dep.guava.version>
         <dep.slf4j.version>1.7.25</dep.slf4j.version>
         <dep.logback.version>1.2.3</dep.logback.version>
@@ -188,7 +188,7 @@
         <dep.jmxutils.version>1.19</dep.jmxutils.version>
         <dep.cglib.version>3.2.5</dep.cglib.version>
         <dep.joda.version>2.9.9</dep.joda.version>
-        <dep.spotbugs-annotations.version>3.1.10</dep.spotbugs-annotations.version>
+        <dep.spotbugs-annotations.version>4.2.2</dep.spotbugs-annotations.version>
         <dep.testng.version>6.9.6</dep.testng.version>
         <dep.assertj-core.version>3.5.2</dep.assertj-core.version>
         <dep.assertj-guava.version>3.1.0</dep.assertj-guava.version>
@@ -242,6 +242,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>3.1.1</version>
+                    <configuration>
+                        <allowIncompleteProjects>true</allowIncompleteProjects>
+                    </configuration>
                 </plugin>
 
                 <plugin>
@@ -254,6 +257,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
                     <version>3.1.1</version>
+                    <configuration>
+                        <allowIncompleteProjects>true</allowIncompleteProjects>
+                    </configuration>
                 </plugin>
 
                 <plugin>
@@ -667,7 +673,7 @@
                 <plugin>
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>3.1.10</version>
+                    <version>4.2.2</version>
                     <configuration>
                         <skip>${air.check.skip-spotbugs}</skip>
                         <jvmArgs>-Xmx${air.build.jvmsize}</jvmArgs>
@@ -1018,11 +1024,6 @@
             <dependency>
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-assistedinject</artifactId>
-                <version>${dep.guice.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-multibindings</artifactId>
                 <version>${dep.guice.version}</version>
             </dependency>
             <dependency>
