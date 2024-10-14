@@ -1317,6 +1317,13 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${dep.plugin.checkstyle.version}</version>
+                    <configuration>
+                        <skip>${air.check.skip-checkstyle}</skip>
+                        <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
+                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                        <configLocation>${air.checkstyle.config-file}</configLocation>
+                        <excludes>**/module-info.java</excludes>
+                    </configuration>
                     <dependencies>
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
@@ -1339,13 +1346,6 @@
                                 <goal>check</goal>
                             </goals>
                             <phase>validate</phase>
-                            <configuration>
-                                <skip>${air.check.skip-checkstyle}</skip>
-                                <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
-                                <includeTestSourceDirectory>true</includeTestSourceDirectory>
-                                <configLocation>${air.checkstyle.config-file}</configLocation>
-                                <excludes>**/module-info.java</excludes>
-                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
