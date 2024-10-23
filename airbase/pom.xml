@@ -777,6 +777,7 @@
                                     <bannedImport>org.assertj.core.api.AssertionsForInterfaceTypes.*</bannedImport>
                                 </bannedImports>
                             </RestrictImports>
+                            <requireProfileIdsExist />
                         </rules>
                     </configuration>
                     <dependencies>
