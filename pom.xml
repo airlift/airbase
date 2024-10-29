@@ -62,7 +62,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.3</version>
+                    <version>3.1.1</version>
                     <configuration>
                         <releaseProfiles>oss-release</releaseProfiles>
                         <mavenExecutorId>forked-path</mavenExecutorId>
@@ -78,7 +78,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.10.1</version>
                     <executions>
                         <execution>
                             <id>attach-javadocs</id>
@@ -92,7 +92,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.3.1</version>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
@@ -106,7 +106,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
-                    <version>1.6</version>
+                    <version>3.2.7</version>
                     <configuration>
                         <useAgent>true</useAgent>
                     </configuration>
@@ -148,7 +148,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.2.4</version>
+                        <version>3.2.7</version>
                         <configuration>
                             <gpgArguments>
                                 <arg>--pinentry-mode</arg>
