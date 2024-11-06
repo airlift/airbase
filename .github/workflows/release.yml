@@ -94,7 +94,6 @@ jobs:
           JRELEASER_SKIP_RELEASE: ${{ inputs.push && 'false' || 'true' }}
         with:
           setup-java: false
-          version: 'early-access'
 
       - name: Push git changes
         if: ${{ inputs.push }}
