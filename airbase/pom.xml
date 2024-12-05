@@ -220,7 +220,7 @@
         <dep.jsr305.version>3.0.2</dep.jsr305.version>
         <dep.junit.version>5.11.3</dep.junit.version>
         <dep.kotlin.version>2.1.0</dep.kotlin.version>
-        <dep.launcher.version>300</dep.launcher.version>
+        <dep.launcher.version>301</dep.launcher.version>
         <dep.logback.version>1.5.12</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.10.0</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-instrumentation-alpha.version>2.10.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
