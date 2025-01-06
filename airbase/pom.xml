@@ -199,7 +199,7 @@
 
         <!-- Dependency versions, keep sorted -->
         <dep.asm.version>9.7.1</dep.asm.version>
-        <dep.assertj-core.version>3.27.1</dep.assertj-core.version>
+        <dep.assertj-core.version>3.27.2</dep.assertj-core.version>
         <dep.byte-buddy.version>1.15.11</dep.byte-buddy.version>
         <dep.checkstyle.version>10.21.1</dep.checkstyle.version>
         <dep.errorprone.version>2.36.0</dep.errorprone.version>
