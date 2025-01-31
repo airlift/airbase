@@ -181,7 +181,7 @@
         <dep.plugin.javadoc.version>3.11.2</dep.plugin.javadoc.version>
         <dep.plugin.license.version>4.6</dep.plugin.license.version>
         <dep.plugin.modernizer.version>3.1.0</dep.plugin.modernizer.version>
-        <dep.plugin.pmd-runtime.version>7.9.0</dep.plugin.pmd-runtime.version>
+        <dep.plugin.pmd-runtime.version>7.10.0</dep.plugin.pmd-runtime.version>
         <dep.plugin.pmd.version>3.26.0</dep.plugin.pmd.version>
         <dep.plugin.release.version>3.1.1</dep.plugin.release.version>
         <dep.plugin.resources.version>3.3.1</dep.plugin.resources.version>
