@@ -222,7 +222,7 @@
         <dep.junit.version>5.12.0</dep.junit.version>
         <dep.junit-platform.version>1.12.0</dep.junit-platform.version>
         <dep.kotlin.version>2.1.10</dep.kotlin.version>
-        <dep.launcher.version>302</dep.launcher.version>
+        <dep.launcher.version>303</dep.launcher.version>
         <dep.logback.version>1.5.17</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.13.2</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-instrumentation-alpha.version>2.13.2-alpha</dep.opentelemetry-instrumentation-alpha.version>
