@@ -170,7 +170,7 @@
         <dep.plugin.compiler.version>3.14.0</dep.plugin.compiler.version>
         <dep.plugin.dependency.version>3.8.1</dep.plugin.dependency.version>
         <dep.plugin.dependency-scope.version>1.0.3</dep.plugin.dependency-scope.version>
-        <dep.plugin.deploy.version>3.1.3</dep.plugin.deploy.version>
+        <dep.plugin.deploy.version>3.1.4</dep.plugin.deploy.version>
         <dep.plugin.duplicate-finder.version>2.0.1</dep.plugin.duplicate-finder.version>
         <dep.plugin.enforcer.version>3.5.0</dep.plugin.enforcer.version>
         <dep.plugin.enforcer-extra.version>1.9.0</dep.plugin.enforcer-extra.version>
