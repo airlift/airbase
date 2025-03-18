@@ -223,7 +223,7 @@
         <dep.junit-platform.version>1.12.1</dep.junit-platform.version>
         <dep.kotlin.version>2.1.10</dep.kotlin.version>
         <dep.launcher.version>303</dep.launcher.version>
-        <dep.logback.version>1.5.17</dep.logback.version>
+        <dep.logback.version>1.5.18</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.14.0</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-instrumentation-alpha.version>2.14.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
         <dep.opentelemetry-semconv.version>1.30.0</dep.opentelemetry-semconv.version>
