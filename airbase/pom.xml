@@ -185,7 +185,7 @@
         <dep.plugin.pmd.version>3.26.0</dep.plugin.pmd.version>
         <dep.plugin.release.version>3.1.1</dep.plugin.release.version>
         <dep.plugin.resources.version>3.3.1</dep.plugin.resources.version>
-        <dep.plugin.restrict-imports.version>2.6.0</dep.plugin.restrict-imports.version>
+        <dep.plugin.restrict-imports.version>2.6.1</dep.plugin.restrict-imports.version>
         <dep.plugin.scm.version>2.1.0</dep.plugin.scm.version>
         <dep.plugin.shade.version>3.6.0</dep.plugin.shade.version>
         <dep.plugin.site.version>3.21.0</dep.plugin.site.version>
