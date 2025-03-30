@@ -198,7 +198,7 @@
         <dep.packaging.version>325</dep.packaging.version>
 
         <!-- Dependency versions, keep sorted -->
-        <dep.asm.version>9.7.1</dep.asm.version>
+        <dep.asm.version>9.8</dep.asm.version>
         <dep.assertj-core.version>3.27.3</dep.assertj-core.version>
         <dep.byte-buddy.version>1.17.4</dep.byte-buddy.version>
         <dep.checkstyle.version>10.21.4</dep.checkstyle.version>
