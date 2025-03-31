@@ -173,7 +173,7 @@
         <dep.plugin.deploy.version>3.1.4</dep.plugin.deploy.version>
         <dep.plugin.duplicate-finder.version>2.0.1</dep.plugin.duplicate-finder.version>
         <dep.plugin.enforcer.version>3.5.0</dep.plugin.enforcer.version>
-        <dep.plugin.enforcer-extra.version>1.9.0</dep.plugin.enforcer-extra.version>
+        <dep.plugin.enforcer-extra.version>1.10.0</dep.plugin.enforcer-extra.version>
         <dep.plugin.gpg.version>3.2.7</dep.plugin.gpg.version>
         <dep.plugin.install.version>3.1.4</dep.plugin.install.version>
         <dep.plugin.jacoco.version>0.8.12</dep.plugin.jacoco.version>
