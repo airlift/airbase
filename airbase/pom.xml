@@ -220,7 +220,7 @@
         <dep.jsr305.version>3.0.2</dep.jsr305.version>
         <!-- junit and junit-platform should have the same minor and patch versions -->
         <dep.junit.version>5.12.1</dep.junit.version>
-        <dep.junit-platform.version>1.12.1</dep.junit-platform.version>
+        <dep.junit-platform.version>1.12.2</dep.junit-platform.version>
         <dep.kotlin.version>2.1.20</dep.kotlin.version>
         <dep.launcher.version>303</dep.launcher.version>
         <dep.logback.version>1.5.18</dep.logback.version>
