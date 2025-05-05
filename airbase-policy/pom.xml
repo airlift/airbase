@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.airlift</groupId>
         <artifactId>airbase-root</artifactId>
-        <version>257-SNAPSHOT</version>
+        <version>257</version>
     </parent>
 
     <artifactId>airbase-policy</artifactId>
@@ -14,6 +14,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.outputTimestamp>2025-04-29T19:27:22Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2025-05-05T11:07:03Z</project.build.outputTimestamp>
     </properties>
 </project>
