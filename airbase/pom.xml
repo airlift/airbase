@@ -54,7 +54,7 @@
         <project.build.targetJdk>8</project.build.targetJdk>
         <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
         <project.report.inputEncoding>UTF-8</project.report.inputEncoding>
-        <project.build.outputTimestamp>2025-05-05T11:07:03Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2025-05-05T11:07:24Z</project.build.outputTimestamp>
 
         <!-- airlift build specific options are prefixed air.build. -->
 
@@ -1275,7 +1275,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>257</version>
+                            <version>258-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -1362,7 +1362,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>257</version>
+                            <version>258-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                     <executions>
