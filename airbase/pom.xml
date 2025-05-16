@@ -225,7 +225,7 @@
         <dep.launcher.version>304</dep.launcher.version>
         <dep.logback.version>1.5.18</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.15.0</dep.opentelemetry-instrumentation.version>
-        <dep.opentelemetry-instrumentation-alpha.version>2.15.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
+        <dep.opentelemetry-instrumentation-alpha.version>2.16.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
         <dep.opentelemetry-semconv.version>1.32.0</dep.opentelemetry-semconv.version>
         <dep.opentelemetry-semconv-incubating.version>1.32.0-alpha</dep.opentelemetry-semconv-incubating.version>
         <dep.opentelemetry.version>1.50.0</dep.opentelemetry.version>
