@@ -783,6 +783,7 @@
                             <requireProfileIdsExist />
                             <requirePropertyDiverges>
                                 <property>project.description</property>
+                                <reference>PARENT</reference>
                             </requirePropertyDiverges>
                         </rules>
                     </configuration>
