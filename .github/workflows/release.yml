@@ -88,7 +88,6 @@ jobs:
           setup-java: false
 
       - name: Push git changes
-        if: ${{ inputs.push }}
         run: |
           git status
           git describe
