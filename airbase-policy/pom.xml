@@ -10,6 +10,7 @@
 
     <artifactId>airbase-policy</artifactId>
 
+    <name>airbase-policy</name>
     <description>Policy files for Airbase</description>
 
     <properties>
