@@ -49,14 +49,11 @@ deploy:
     pomchecker:
       failOnWarning: false # We don't want to fail the build on warnings
       failOnError: false # We don't want to fail the build on errors
-    nexus2:
-      maven-central:
+    mavenCentral:
+      central:
         active: ALWAYS
-        url: https://ossrh-staging-api.central.sonatype.com/service/local/
-        snapshotUrl: https://central.sonatype.com/repository/maven-snapshots/
+        url: https://central.sonatype.com/api/v1/publisher
         javadocJar: false # Not every module has javadoc (packaging)
-        closeRepository: true
-        releaseRepository: true
         stagingRepositories:
           - target/checkout/target/staging-deploy
         artifactOverrides:
