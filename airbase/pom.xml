@@ -1698,6 +1698,9 @@
             <properties>
                 <!-- tests run in the preparation step of the release -->
                 <skipTests>true</skipTests>
+                <njord.autoPublish>true</njord.autoPublish>
+                <njord.publishingType>automatic</njord.publishingType>
+                <njord.waitForStates>true</njord.waitForStates>
             </properties>
             <build>
                 <plugins>

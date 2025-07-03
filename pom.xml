@@ -150,6 +150,11 @@
     <profiles>
         <profile>
             <id>oss-release</id>
+            <properties>
+                <njord.autoPublish>true</njord.autoPublish>
+                <njord.publishingType>automatic</njord.publishingType>
+                <njord.waitForStates>true</njord.waitForStates>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
