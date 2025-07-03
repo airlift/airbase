@@ -68,7 +68,7 @@ jobs:
           git status
           git log --oneline -n 2
 
-      - name: Validate njord status
+      - name: Run njord:validate
         env:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
           MAVENCENTRAL_USERNAME: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_USERNAME }}
@@ -84,27 +84,17 @@ jobs:
           MAVENCENTRAL_USERNAME: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_USERNAME }}
           MAVENCENTRAL_PASSWORD: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_TOKEN }}
         run:
-          echo "Publishing to Maven Central"
-          #./mvnw njord:publish -s settings.xml
+          ./mvnw njord:publish -s settings.xml
 
       - name: Push git changes
         run: |
           git status
           git describe
-          #git push origin master
-          echo "Pushing changes to remote repository"
+          git push origin master
+          git push origin --tags
 
       - name: Unlock branch after a release
         uses: github/lock@v2
         id: release-unlock
         with:
           mode: 'unlock'
-
-      - name: Upload JReleaser logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: jreleaser-logs
-          path: |
-            out/jreleaser/trace.log
-            out/jreleaser/output.properties
