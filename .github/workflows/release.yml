@@ -67,31 +67,32 @@ jobs:
         run: |
           git status
           git log --oneline -n 2
-          # Checkout version so that JReleaser runs from a tagged commit
-          git checkout "${VERSION}"
 
-      - name: List locally staged artifacts
-        run: |
-          find ${{ env.STAGED_REPOSITORY }} -type f
-
-      - name: Run JReleaser
-        uses: jreleaser/release-action@v2
+      - name: Validate njord status
         env:
-          JRELEASER_PROJECT_VERSION: ${{ env.VERSION }}
-          JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JRELEASER_GPG_PUBLIC_KEY: ${{ vars.JRELEASER_GPG_PUBLIC_KEY }}
-          JRELEASER_GPG_SECRET_KEY: ${{ secrets.JRELEASER_GPG_SECRET_KEY }}
-          JRELEASER_GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
-          JRELEASER_MAVENCENTRAL_USERNAME: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_USERNAME }}
-          JRELEASER_MAVENCENTRAL_TOKEN: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_TOKEN }}
-        with:
-          setup-java: false
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
+          MAVENCENTRAL_USERNAME: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_USERNAME }}
+          MAVENCENTRAL_PASSWORD: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_TOKEN }}
+        run: |
+          ./mvnw njord:list -s settings.xml
+          ./mvnw njord:status -s settings.xml
+          ./mvnw njord:validate -s settings.xml
+
+      - name: Run njord:publish
+        env:
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
+          MAVENCENTRAL_USERNAME: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_USERNAME }}
+          MAVENCENTRAL_PASSWORD: ${{ secrets.JRELEASER_NEXUS2_MAVEN_CENTRAL_TOKEN }}
+        run:
+          echo "Publishing to Maven Central"
+          #./mvnw njord:publish -s settings.xml
 
       - name: Push git changes
         run: |
           git status
           git describe
-          git push origin master
+          #git push origin master
+          echo "Pushing changes to remote repository"
 
       - name: Unlock branch after a release
         uses: github/lock@v2
