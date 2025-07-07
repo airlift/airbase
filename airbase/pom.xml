@@ -1739,6 +1739,26 @@
         </profile>
 
         <profile>
+            <id>javadoc-ge-jdk-23</id>
+            <activation>
+                <jdk>[23,)</jdk>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-javadoc-plugin</artifactId>
+                            <configuration>
+                                <additionalOptions>${surefireEnablePreview} --no-fonts</additionalOptions>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+
+        <profile>
             <id>ci</id>
             <build>
                 <plugins>
