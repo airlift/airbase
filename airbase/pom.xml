@@ -397,6 +397,7 @@
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
                 <version>${dep.guice.version}</version>
+                <classifier>classes</classifier>
             </dependency>
             <dependency>
                 <groupId>com.google.inject.extensions</groupId>
