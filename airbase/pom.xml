@@ -724,12 +724,14 @@
                                     <exclude>io.airlift:rack-server-base-experimental</exclude>
                                     <!-- log4j2 versions < 2.15.0 are vulnerable to the Log4Shell RCE (CVE-2021-44228) -->
                                     <exclude>org.apache.logging.log4j:log4j-core:(,2.15.0)</exclude>
+                                    <exclude>com.google.inject:guice</exclude>
                                 </excludes>
                                 <includes>
                                     <!-- whitelist the well numbered guava releases -->
                                     <include>com.google.guava:guava:[10.0.1,)</include>
                                     <!-- newer versions of junit do not repackage hamcrest -->
                                     <include>junit:junit:[4.11,)</include>
+                                    <include>com.google.inject:guice:*:jar:*:classes</include>
                                 </includes>
                             </bannedDependencies>
                             <banDuplicatePomDependencyVersions />
