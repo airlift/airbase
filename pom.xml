@@ -170,8 +170,8 @@
         <profile>
             <id>oss-stage</id>
             <properties>
-                <!-- Stage files to the local directory, JReleaser will push them to OSSRH -->
-                <altDeploymentRepository>id::njord:</altDeploymentRepository>
+                <!-- Stage files to the local directory, njord will push them to OSSRH -->
+                <altDeploymentRepository>id::default::njord:</altDeploymentRepository>
             </properties>
             <build>
                 <plugins>

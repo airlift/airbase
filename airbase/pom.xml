@@ -1722,7 +1722,7 @@
             <id>oss-stage</id>
             <properties>
                 <!-- Stage files to the local directory, njord will push them to central -->
-                <altDeploymentRepository>id::njord:</altDeploymentRepository>
+                <altDeploymentRepository>id::default::njord:</altDeploymentRepository>
             </properties>
             <build>
                 <plugins>
