@@ -731,7 +731,7 @@
                                     <include>com.google.guava:guava:[10.0.1,)</include>
                                     <!-- newer versions of junit do not repackage hamcrest -->
                                     <include>junit:junit:[4.11,)</include>
-                                    <include>com.google.inject:guice:*:jar:*:classes</include>
+                                    <include>com.google.inject:guice:classes</include>
                                 </includes>
                             </bannedDependencies>
                             <banDuplicatePomDependencyVersions />
