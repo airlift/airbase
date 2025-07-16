@@ -172,7 +172,7 @@
         <dep.plugin.dependency-scope.version>1.0.3</dep.plugin.dependency-scope.version>
         <dep.plugin.deploy.version>3.1.4</dep.plugin.deploy.version>
         <dep.plugin.duplicate-finder.version>2.0.1</dep.plugin.duplicate-finder.version>
-        <dep.plugin.enforcer.version>3.6.0</dep.plugin.enforcer.version>
+        <dep.plugin.enforcer.version>3.6.1</dep.plugin.enforcer.version>
         <dep.plugin.enforcer-extra.version>1.10.0</dep.plugin.enforcer-extra.version>
         <dep.plugin.gpg.version>3.2.8</dep.plugin.gpg.version>
         <dep.plugin.install.version>3.1.4</dep.plugin.install.version>
