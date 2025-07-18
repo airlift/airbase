@@ -225,7 +225,7 @@
         <dep.kotlin.version>2.2.0</dep.kotlin.version>
         <dep.launcher.version>305</dep.launcher.version>
         <dep.logback.version>1.5.18</dep.logback.version>
-        <dep.opentelemetry-instrumentation.version>2.17.1</dep.opentelemetry-instrumentation.version>
+        <dep.opentelemetry-instrumentation.version>2.18.0</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-instrumentation-alpha.version>2.17.1-alpha</dep.opentelemetry-instrumentation-alpha.version>
         <dep.opentelemetry-semconv.version>1.34.0</dep.opentelemetry-semconv.version>
         <dep.opentelemetry-semconv-incubating.version>1.34.0-alpha</dep.opentelemetry-semconv-incubating.version>
