@@ -178,7 +178,7 @@
         <dep.plugin.install.version>3.1.4</dep.plugin.install.version>
         <dep.plugin.jacoco.version>0.8.13</dep.plugin.jacoco.version>
         <dep.plugin.jar.version>3.4.2</dep.plugin.jar.version>
-        <dep.plugin.javadoc.version>3.11.2</dep.plugin.javadoc.version>
+        <dep.plugin.javadoc.version>3.11.3</dep.plugin.javadoc.version>
         <dep.plugin.license.version>5.0.0</dep.plugin.license.version>
         <dep.plugin.modernizer.version>3.1.0</dep.plugin.modernizer.version>
         <dep.plugin.njord.version>0.8.3</dep.plugin.njord.version>
@@ -1754,26 +1754,6 @@
                         </configuration>
                     </plugin>
                 </plugins>
-            </build>
-        </profile>
-
-        <profile>
-            <id>javadoc-ge-jdk-23</id>
-            <activation>
-                <jdk>[23,)</jdk>
-            </activation>
-            <build>
-                <pluginManagement>
-                    <plugins>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-javadoc-plugin</artifactId>
-                            <configuration>
-                                <additionalOptions>${surefireEnablePreview} --no-fonts</additionalOptions>
-                            </configuration>
-                        </plugin>
-                    </plugins>
-                </pluginManagement>
             </build>
         </profile>
 
