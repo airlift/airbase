@@ -984,6 +984,7 @@
                         <maxmemory>${air.build.jvmsize}</maxmemory>
                         <doclint>${air.javadoc.lint}</doclint>
                         <notimestamp>true</notimestamp>
+                        <detectOfflineLinks>false</detectOfflineLinks>
                         <additionalOptions>${surefireEnablePreview}</additionalOptions>
                     </configuration>
                     <executions>
