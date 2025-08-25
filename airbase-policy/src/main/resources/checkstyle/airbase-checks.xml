@@ -153,6 +153,11 @@
         <module name="NoWhitespaceAfter" />
         <module name="NoWhitespaceBefore" />
         <module name="SingleSpaceSeparator" />
+
+        <module name="SuppressionXpathSingleFilter">
+            <property name="checks" value="Indentation" />
+            <property name="query" value="//LITERAL_SWITCH//*" />
+        </module>
         <module name="Indentation">
             <property name="throwsIndent" value="8" />
             <property name="lineWrappingIndentation" value="8" />
