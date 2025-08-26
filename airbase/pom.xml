@@ -196,7 +196,7 @@
         <dep.plugin.surefire.version>3.5.3</dep.plugin.surefire.version>
 
         <!-- Packaging for the tarball deployment -->
-        <dep.packaging.version>350</dep.packaging.version>
+        <dep.packaging.version>351</dep.packaging.version>
 
         <!-- Dependency versions, keep sorted -->
         <dep.asm.version>9.8</dep.asm.version>
