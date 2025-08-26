@@ -109,6 +109,7 @@
             <property name="checks" value="RedundantModifier"/>
             <property name="query" value="//(CLASS_DEF|RECORD_DEF)/OBJBLOCK/*/MODIFIERS/*"/>
         </module>
+
         <module name="RedundantModifier" />
 
         <module name="EmptyBlock">
@@ -158,6 +159,12 @@
             <property name="checks" value="Indentation" />
             <property name="query" value="//LITERAL_SWITCH//*" />
         </module>
+
+        <module name="SuppressionXpathSingleFilter">
+            <property name="checks" value="Indentation" />
+            <property name="query" value="//LITERAL_RETURN//*" />
+        </module>
+
         <module name="Indentation">
             <property name="throwsIndent" value="8" />
             <property name="lineWrappingIndentation" value="8" />
