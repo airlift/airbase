@@ -194,6 +194,7 @@
         <dep.plugin.source.version>3.3.1</dep.plugin.source.version>
         <dep.plugin.spotbugs.version>4.9.4.0</dep.plugin.spotbugs.version>
         <dep.plugin.surefire.version>3.5.3</dep.plugin.surefire.version>
+        <dep.plugin.wrapper.version>3.3.3</dep.plugin.wrapper.version>
 
         <!-- Packaging for the tarball deployment -->
         <dep.packaging.version>352</dep.packaging.version>
@@ -1049,6 +1050,16 @@
                             <tags>true</tags>
                         </gitDescribe>
                         <injectAllReactorProjects>true</injectAllReactorProjects>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-wrapper-plugin</artifactId>
+                    <version>${dep.plugin.wrapper.version}</version>
+                    <configuration>
+                        <mavenVersion>${air.maven.version}</mavenVersion>
+                        <distributionType>only-script</distributionType>
                     </configuration>
                 </plugin>
 
