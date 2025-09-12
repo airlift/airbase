@@ -194,7 +194,7 @@
         <dep.plugin.source.version>3.3.1</dep.plugin.source.version>
         <dep.plugin.spotbugs.version>4.9.4.2</dep.plugin.spotbugs.version>
         <dep.plugin.surefire.version>3.5.3</dep.plugin.surefire.version>
-        <dep.plugin.wrapper.version>3.3.3</dep.plugin.wrapper.version>
+        <dep.plugin.wrapper.version>3.3.4</dep.plugin.wrapper.version>
 
         <!-- Packaging for the tarball deployment -->
         <dep.packaging.version>354</dep.packaging.version>
