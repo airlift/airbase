@@ -214,7 +214,7 @@
         <dep.jakarta.rs-ws-api.version>3.1.0</dep.jakarta.rs-ws-api.version>
         <dep.jakarta.servlet-api.version>6.1.0</dep.jakarta.servlet-api.version>
         <dep.jakarta.validation-api.version>3.1.1</dep.jakarta.validation-api.version>
-        <dep.jakarta.xml-bind-api.version>4.0.2</dep.jakarta.xml-bind-api.version>
+        <dep.jakarta.xml-bind-api.version>4.0.4</dep.jakarta.xml-bind-api.version>
         <dep.jetty.version>12.1.1</dep.jetty.version>
         <dep.jmh.version>1.37</dep.jmh.version>
         <dep.jmxutils.version>1.26</dep.jmxutils.version>
