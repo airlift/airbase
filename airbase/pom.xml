@@ -393,6 +393,32 @@
                 </exclusions>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava-gwt</artifactId>
+                <version>${dep.guava.version}</version>
+                <exclusions>
+                    <!-- this empty dependency is a hack and not needed -->
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava-testlib</artifactId>
+                <version>${dep.guava.version}</version>
+                <exclusions>
+                    <!-- this empty dependency is a hack and not needed -->
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
             <!-- Google Guice -->
             <dependency>
                 <groupId>com.google.inject</groupId>
@@ -417,6 +443,13 @@
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-throwingproviders</artifactId>
                 <version>${dep.guice.version}</version>
+            </dependency>
+
+            <!-- settles upper bound for guava -->
+            <dependency>
+                <groupId>com.google.j2objc</groupId>
+                <artifactId>j2objc-annotations</artifactId>
+                <version>3.1</version>
             </dependency>
 
             <dependency>
