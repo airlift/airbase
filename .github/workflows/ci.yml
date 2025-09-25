@@ -8,8 +8,8 @@ jobs:
     strategy:
       matrix:
         java:
-          - 21
           - 24
+          - 25
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v3
