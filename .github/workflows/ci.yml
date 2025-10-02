@@ -16,7 +16,5 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
           distribution: temurin
-      - name: Maven Download
-        run: ./mvnw -V -B dependency:go-offline
-      - name: Maven Install
-        run: ./mvnw clean install -B -P ci
+      - name: Resolve all dependencies
+        run: ./mvnw -V -B clean install dependency:go-offline
