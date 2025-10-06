@@ -348,6 +348,14 @@
             </dependency>
 
             <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-bom</artifactId>
+                <version>${dep.asm.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
                 <groupId>tools.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
                 <version>${dep.jackson3.version}</version>
@@ -553,12 +561,6 @@
                 <groupId>org.openjdk.jmh</groupId>
                 <artifactId>jmh-generator-annprocess</artifactId>
                 <version>${dep.jmh.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm</artifactId>
-                <version>${dep.asm.version}</version>
             </dependency>
 
             <!-- logging -->
