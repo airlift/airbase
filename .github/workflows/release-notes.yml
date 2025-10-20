@@ -1,4 +1,4 @@
-name: Release new version
+name: Release notes
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
       contents: write
       packages: write
     steps:
-      - name: Create release
+      - name: Release notes
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           tag: "${{ github.ref_name }}"
