@@ -226,6 +226,7 @@
         <dep.junit-platform.version>6.0.0</dep.junit-platform.version>
         <dep.kotlin.version>2.2.20</dep.kotlin.version>
         <dep.launcher.version>310</dep.launcher.version>
+        <dep.log4j.version>2.25.2</dep.log4j.version>
         <dep.logback.version>1.5.20</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.21.0</dep.opentelemetry-instrumentation.version>
         <dep.opentelemetry-instrumentation-alpha.version>2.21.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
@@ -302,6 +303,14 @@
                 <groupId>io.opentelemetry.instrumentation</groupId>
                 <artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
                 <version>${dep.opentelemetry-instrumentation-alpha.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-bom</artifactId>
+                <version>${dep.log4j.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
