@@ -212,7 +212,7 @@
         <dep.jackson3.version>3.0.1</dep.jackson3.version>
         <dep.jakarta.annotation-api.version>3.0.0</dep.jakarta.annotation-api.version>
         <dep.jakarta.inject-api.version>2.0.1</dep.jakarta.inject-api.version>
-        <dep.jakarta.rs-ws-api.version>3.1.0</dep.jakarta.rs-ws-api.version>
+        <dep.jakarta.rs-ws-api.version>4.0.0</dep.jakarta.rs-ws-api.version>
         <dep.jakarta.servlet-api.version>6.1.0</dep.jakarta.servlet-api.version>
         <dep.jakarta.validation-api.version>3.1.1</dep.jakarta.validation-api.version>
         <dep.jakarta.xml-bind-api.version>4.0.4</dep.jakarta.xml-bind-api.version>
