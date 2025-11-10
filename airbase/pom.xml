@@ -184,7 +184,7 @@
         <dep.plugin.njord.version>0.8.5</dep.plugin.njord.version>
         <dep.plugin.pmd-runtime.version>7.18.0</dep.plugin.pmd-runtime.version>
         <dep.plugin.pmd.version>3.28.0</dep.plugin.pmd.version>
-        <dep.plugin.release.version>3.1.1</dep.plugin.release.version>
+        <dep.plugin.release.version>3.2.0</dep.plugin.release.version>
         <dep.plugin.resources.version>3.3.1</dep.plugin.resources.version>
         <dep.plugin.restrict-imports.version>3.0.0</dep.plugin.restrict-imports.version>
         <dep.plugin.scm.version>2.2.1</dep.plugin.scm.version>
