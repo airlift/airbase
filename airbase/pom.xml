@@ -233,7 +233,7 @@
         <dep.opentelemetry-semconv.version>1.37.0</dep.opentelemetry-semconv.version>
         <dep.opentelemetry-semconv-incubating.version>1.37.0-alpha</dep.opentelemetry-semconv-incubating.version>
         <dep.opentelemetry.version>1.55.0</dep.opentelemetry.version>
-        <dep.opentelemetry-alpha.version>1.55.0-alpha</dep.opentelemetry-alpha.version>
+        <dep.opentelemetry-alpha.version>1.56.0-alpha</dep.opentelemetry-alpha.version>
         <dep.slf4j.version>2.0.17</dep.slf4j.version>
         <dep.slice.version>2.4</dep.slice.version>
         <dep.spotbugs-annotations.version>4.9.8</dep.spotbugs-annotations.version>
