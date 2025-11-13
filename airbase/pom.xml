@@ -197,7 +197,7 @@
         <dep.plugin.wrapper.version>3.3.4</dep.plugin.wrapper.version>
 
         <!-- Packaging for the tarball deployment -->
-        <dep.packaging.version>376</dep.packaging.version>
+        <dep.packaging.version>377</dep.packaging.version>
 
         <!-- Dependency versions, keep sorted -->
         <dep.asm.version>9.9</dep.asm.version>
