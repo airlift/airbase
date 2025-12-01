@@ -162,7 +162,7 @@
         <argLine />
 
         <!-- Plugin versions, keep sorted -->
-        <dep.plugin.assembly.version>3.7.1</dep.plugin.assembly.version>
+        <dep.plugin.assembly.version>3.8.0</dep.plugin.assembly.version>
         <dep.plugin.build-helper.version>3.6.1</dep.plugin.build-helper.version>
         <dep.plugin.checkstyle.version>3.6.0</dep.plugin.checkstyle.version>
         <dep.plugin.clean.version>3.5.0</dep.plugin.clean.version>
