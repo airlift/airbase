@@ -4,7 +4,7 @@
 
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <version>333-SNAPSHOT</version>
+    <version>333</version>
     <packaging>pom</packaging>
 
     <name>airbase</name>
@@ -31,7 +31,7 @@
     <scm>
         <connection>scm:git:git@github.com/airlift/airbase.git</connection>
         <developerConnection>scm:git:git@github.com:airlift/airbase.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>333</tag>
         <url>https://github.com/airlift/airbase</url>
     </scm>
 
@@ -54,7 +54,7 @@
         <project.build.targetJdk>8</project.build.targetJdk>
         <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
         <project.report.inputEncoding>UTF-8</project.report.inputEncoding>
-        <project.build.outputTimestamp>2025-12-05T15:13:25Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2025-12-08T11:36:54Z</project.build.outputTimestamp>
 
         <!-- airlift build specific options are prefixed air.build. -->
 
@@ -1366,7 +1366,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>333-SNAPSHOT</version>
+                            <version>333</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -1453,7 +1453,7 @@
                         <dependency>
                             <groupId>io.airlift</groupId>
                             <artifactId>airbase-policy</artifactId>
-                            <version>333-SNAPSHOT</version>
+                            <version>333</version>
                         </dependency>
                     </dependencies>
                     <executions>
