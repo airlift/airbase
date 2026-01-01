@@ -203,7 +203,7 @@
         <dep.asm.version>9.9.1</dep.asm.version>
         <dep.assertj-core.version>3.27.6</dep.assertj-core.version>
         <dep.byte-buddy.version>1.18.3</dep.byte-buddy.version>
-        <dep.checkstyle.version>12.3.0</dep.checkstyle.version>
+        <dep.checkstyle.version>12.3.1</dep.checkstyle.version>
         <dep.errorprone.version>2.45.0</dep.errorprone.version>
         <dep.guava.version>33.5.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
