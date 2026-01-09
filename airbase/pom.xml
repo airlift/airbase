@@ -232,7 +232,7 @@
         <dep.opentelemetry-instrumentation-alpha.version>2.23.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
         <dep.opentelemetry-semconv.version>1.37.0</dep.opentelemetry-semconv.version>
         <dep.opentelemetry-semconv-incubating.version>1.37.0-alpha</dep.opentelemetry-semconv-incubating.version>
-        <dep.opentelemetry.version>1.57.0</dep.opentelemetry.version>
+        <dep.opentelemetry.version>1.58.0</dep.opentelemetry.version>
         <dep.opentelemetry-alpha.version>1.58.0-alpha</dep.opentelemetry-alpha.version>
         <dep.slf4j.version>2.0.17</dep.slf4j.version>
         <dep.slice.version>2.4</dep.slice.version>
