@@ -208,7 +208,7 @@
         <dep.guava.version>33.5.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
         <dep.hibernate-validator.version>9.1.0.Final</dep.hibernate-validator.version>
-        <dep.jackson.version>2.20.1</dep.jackson.version>
+        <dep.jackson.version>2.21.0</dep.jackson.version>
         <dep.jackson3.version>3.0.3</dep.jackson3.version>
         <dep.jakarta.annotation-api.version>3.0.0</dep.jakarta.annotation-api.version>
         <dep.jakarta.inject-api.version>2.0.1</dep.jakarta.inject-api.version>
