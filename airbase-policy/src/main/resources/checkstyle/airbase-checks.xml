@@ -105,6 +105,21 @@
     <module name="TreeWalker">
         <module name="SuppressWarningsHolder" />
 
+        <!-- Disallow class-level warning suppression -->
+        <module name="SuppressWarnings">
+            <property name="tokens" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, ANNOTATION_DEF, RECORD_DEF" />
+            <property name="format" value="(?sx)
+                (?! ^ (
+                    ClassMayBeInterface |
+                    EmptyClass |
+                    EnumeratedConstantNamingConvention |
+                    ExceptionClassNameDoesntEndWithException |
+                    FieldMayBeFinal |
+                    MarkerInterface |
+                    MethodMayBeStatic ) $ )
+                .*" />
+        </module>
+
         <module name="SuppressionXpathSingleFilter">
             <property name="checks" value="RedundantModifier"/>
             <property name="query" value="//(CLASS_DEF|RECORD_DEF)/OBJBLOCK/*/MODIFIERS/*"/>

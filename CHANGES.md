@@ -25,6 +25,7 @@ Airbase 158
 
 Airbase 157
 * Checkstyle updates:
+ - Disallow class-level warning suppression
  - Require empty line before record definition
 * Plugin configuration:
  - Inject git commit info into reactor projects once
