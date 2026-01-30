@@ -858,6 +858,14 @@
                                     <bannedImport>org.assertj.core.api.AssertionsForInterfaceTypes.*</bannedImport>
                                 </bannedImports>
                             </RestrictImports>
+                            <RestrictImports>
+                                <!-- See https://github.com/trinodb/trino/pull/28055 description for detailed problem analysis -->
+                                <reason>The awaitility library mutates JVM state and affects isolation between JUnit tests (https://github.com/awaitility/awaitility/issues/120#issuecomment-420977109). Its use is discouraged.</reason>
+                                <bannedImports>
+                                    <bannedImport>org.awaitility.**</bannedImport>
+                                    <bannedImport>**.org.awaitility.**</bannedImport>
+                                </bannedImports>
+                            </RestrictImports>
                             <requireProfileIdsExist />
                             <requirePropertyDiverges>
                                 <property>project.description</property>
