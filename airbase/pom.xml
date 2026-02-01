@@ -167,7 +167,7 @@
         <dep.plugin.checkstyle.version>3.6.0</dep.plugin.checkstyle.version>
         <dep.plugin.clean.version>3.5.0</dep.plugin.clean.version>
         <dep.plugin.commit-id.version>9.0.2</dep.plugin.commit-id.version>
-        <dep.plugin.compiler.version>3.14.1</dep.plugin.compiler.version>
+        <dep.plugin.compiler.version>3.15.0</dep.plugin.compiler.version>
         <dep.plugin.dependency.version>3.9.0</dep.plugin.dependency.version>
         <dep.plugin.dependency-scope.version>1.0.3</dep.plugin.dependency-scope.version>
         <dep.plugin.deploy.version>3.1.4</dep.plugin.deploy.version>
