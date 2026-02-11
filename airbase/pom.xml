@@ -61,6 +61,9 @@
         <!-- Default jvm size for compiler, tests etc. -->
         <air.build.jvmsize>1024m</air.build.jvmsize>
 
+        <!-- whether to skip publishing a module -->
+        <air.deploy.skip>false</air.deploy.skip>
+
         <!-- whether a release:perform automatically pushes the created files and tags to -->
         <!-- the upstream repository. Default is no. -->
         <air.release.push-changes>false</air.release.push-changes>
@@ -719,6 +722,10 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>${dep.plugin.deploy.version}</version>
+                    <configuration>
+                        <skip>${air.deploy.skip}</skip>
+                        <deployAtEnd>true</deployAtEnd>
+                    </configuration>
                 </plugin>
 
                 <plugin>
