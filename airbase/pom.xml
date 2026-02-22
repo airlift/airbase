@@ -193,7 +193,7 @@
         <dep.plugin.sortpom.version>4.0.0</dep.plugin.sortpom.version>
         <dep.plugin.source.version>3.4.0</dep.plugin.source.version>
         <dep.plugin.spotbugs.version>4.9.8.2</dep.plugin.spotbugs.version>
-        <dep.plugin.surefire.version>3.5.4</dep.plugin.surefire.version>
+        <dep.plugin.surefire.version>3.5.5</dep.plugin.surefire.version>
         <dep.plugin.wrapper.version>3.3.4</dep.plugin.wrapper.version>
 
         <!-- Packaging for the tarball deployment -->
