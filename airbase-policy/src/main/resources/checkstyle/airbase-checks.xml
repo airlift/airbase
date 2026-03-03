@@ -103,6 +103,18 @@
     <module name="SuppressWarningsFilter" />
 
     <module name="TreeWalker">
+        <!--
+          Suppress Checkstyle Java code parse errors.
+          TODO (https://github.com/checkstyle/checkstyle/issues/17052) remove suppression when checkstyle supports flexible constructor bodies (JEP 513)
+          -->
+        <property name="skipFileOnJavaParseException" value="true" />
+        <!--
+          When Checkstyle encounters a Java parse error that is suppressed with skipFileOnJavaParseException=true,
+          it logs it on ERROR by default, which leads to maven build failure.
+          Note however that 'warning' works same as 'ignore' — unfortunately no warning appears on console.
+          -->
+        <property name="javaParseExceptionSeverity" value="warning" />
+
         <module name="SuppressWarningsHolder" />
 
         <module name="SuppressionXpathSingleFilter">
