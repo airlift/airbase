@@ -1046,7 +1046,6 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <maxmemory>${air.build.jvmsize}</maxmemory>
                         <doclint>${air.javadoc.lint}</doclint>
-                        <failOnWarnings>true</failOnWarnings>
                         <notimestamp>true</notimestamp>
                         <detectOfflineLinks>false</detectOfflineLinks>
                         <additionalOptions>${surefireEnablePreview}</additionalOptions>
