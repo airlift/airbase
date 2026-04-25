@@ -152,6 +152,7 @@
         <module name="WhitespaceAfter" />
         <module name="NoWhitespaceAfter" />
         <module name="NoWhitespaceBefore" />
+        <module name="NoLineWrap" />
         <module name="SingleSpaceSeparator" />
 
         <module name="SuppressionXpathSingleFilter">
@@ -164,11 +165,18 @@
         </module>
 
         <module name="UpperEll" />
+        <module name="HexLiteralCase" />
+        <module name="NumericalPrefixesInfixesSuffixesCharacterCase" />
         <module name="DefaultComesLast" />
         <module name="ArrayTypeStyle" />
+        <module name="ArrayTrailingComma" />
         <module name="MultipleVariableDeclarations" />
         <module name="ModifierOrder" />
         <module name="OneStatementPerLine" />
+        <module name="UnnecessarySemicolonAfterOuterTypeDeclaration" />
+        <module name="UnnecessarySemicolonAfterTypeMemberDeclaration" />
+        <module name="UnnecessarySemicolonInEnumeration" />
+        <module name="UnnecessarySemicolonInTryWithResources" />
         <module name="StringLiteralEquality" />
         <module name="MutableException" />
         <module name="EqualsHashCode" />
@@ -176,6 +184,12 @@
         <module name="HideUtilityClassConstructor" />
         <module name="ExplicitInitialization" />
         <module name="OneTopLevelClass" />
+        <module name="OuterTypeFilename" />
+        <module name="NoCodeInFile" />
+        <module name="AvoidDoubleBraceInitialization" />
+        <module name="UnusedLambdaParameterShouldBeUnnamed" />
+        <module name="UnusedLocalVariable" />
+        <module name="UseEnhancedSwitch" />
 
         <module name="MemberName" />
         <module name="LocalVariableName">
@@ -273,6 +287,7 @@
         </module>
 
         <!-- javadoc -->
+        <module name="InvalidJavadocPosition" />
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="NonEmptyAtclauseDescription" />
     </module>
