@@ -134,6 +134,7 @@ Checkers are organized in two groups, basic and extended.
 * License check                   (http://code.mycila.com/license-maven-plugin/)
 * Code coverage                   (http://www.eclemma.org/jacoco/trunk/doc/maven.html)
 * Modernizer                      (https://github.com/andrewgaul/modernizer-maven-plugin)
+* Airstyle                        (https://github.com/airlift/airstyle)
 * Checkstyle                      (https://maven.apache.org/plugins/maven-checkstyle-plugin/)
 
 All checkers are enabled by default and will fail the build if a problem is encountered.
@@ -211,6 +212,12 @@ The following switches exist:
     <td>Modernizer</td>
     <td><tt>air.check.skip-modernizer</tt></td>
     <td><tt>air.check.fail-modernizer</tt></td>
+  </tr>
+  <tr>
+    <td>Extended</td>
+    <td>Airstyle</td>
+    <td><tt>air.check.skip-airstyle</tt></td>
+    <td><tt>air.check.fail-airstyle</tt></td>
   </tr>
   <tr>
     <td>Extended</td>
