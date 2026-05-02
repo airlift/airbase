@@ -127,6 +127,7 @@
         <air.check.skip-license>${air.check.skip-extended}</air.check.skip-license>
         <air.check.skip-jacoco>${air.check.skip-extended}</air.check.skip-jacoco>
         <air.check.skip-modernizer>${air.check.skip-extended}</air.check.skip-modernizer>
+        <air.check.skip-airstyle>${air.check.skip-extended}</air.check.skip-airstyle>
         <air.check.skip-checkstyle>${air.check.skip-extended}</air.check.skip-checkstyle>
 
         <!-- all checks -->
@@ -145,6 +146,7 @@
         <air.check.fail-pmd>${air.check.fail-extended}</air.check.fail-pmd>
         <air.check.fail-license>${air.check.fail-extended}</air.check.fail-license>
         <air.check.fail-modernizer>${air.check.fail-extended}</air.check.fail-modernizer>
+        <air.check.fail-airstyle>${air.check.fail-extended}</air.check.fail-airstyle>
         <air.check.fail-checkstyle>${air.check.fail-basic}</air.check.fail-checkstyle>
 
         <!-- minimum maven version to build -->
@@ -162,6 +164,7 @@
         <argLine />
 
         <!-- Plugin versions, keep sorted -->
+        <dep.plugin.airstyle.version>1</dep.plugin.airstyle.version>
         <dep.plugin.assembly.version>3.8.0</dep.plugin.assembly.version>
         <dep.plugin.build-helper.version>3.6.1</dep.plugin.build-helper.version>
         <dep.plugin.checkstyle.version>3.6.0</dep.plugin.checkstyle.version>
@@ -1440,6 +1443,25 @@
                 </plugin>
 
                 <plugin>
+                    <groupId>io.airlift</groupId>
+                    <artifactId>airstyle-maven-plugin</artifactId>
+                    <version>${dep.plugin.airstyle.version}</version>
+                    <configuration>
+                        <skip>${air.check.skip-airstyle}</skip>
+                        <failOnViolation>${air.check.fail-airstyle}</failOnViolation>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>airstyle</id>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <phase>validate</phase>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${dep.plugin.checkstyle.version}</version>
@@ -1766,6 +1788,23 @@
                     <plugin>
                         <groupId>org.gaul</groupId>
                         <artifactId>modernizer-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>airstyle-check</id>
+            <activation>
+                <property>
+                    <name>air.check.skip-all</name>
+                    <value>!true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.airlift</groupId>
+                        <artifactId>airstyle-maven-plugin</artifactId>
                     </plugin>
                 </plugins>
             </build>
