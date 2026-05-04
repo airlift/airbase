@@ -164,7 +164,7 @@
         <argLine />
 
         <!-- Plugin versions, keep sorted -->
-        <dep.plugin.airstyle.version>1</dep.plugin.airstyle.version>
+        <dep.plugin.airstyle.version>2</dep.plugin.airstyle.version>
         <dep.plugin.assembly.version>3.8.0</dep.plugin.assembly.version>
         <dep.plugin.build-helper.version>3.6.1</dep.plugin.build-helper.version>
         <dep.plugin.checkstyle.version>3.6.0</dep.plugin.checkstyle.version>
