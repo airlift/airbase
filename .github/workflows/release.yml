@@ -6,6 +6,9 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    concurrency:
+      group: release-${{ github.ref }}
+      cancel-in-progress: false
     permissions:
       contents: write
       packages: write
@@ -36,12 +39,6 @@ jobs:
         run: |
           git config user.name "Airlift Release"
           git config user.email "airlift-bot@airlift.io"
-
-      - name: Lock branch before release
-        uses: github/lock@v3
-        id: release-lock
-        with:
-          mode: 'lock'
 
       - name: Run mvn release:prepare
         env:
@@ -91,11 +88,6 @@ jobs:
           git push origin master
           git push origin --tags
 
-      - name: Unlock branch after a release
-        uses: github/lock@v3
-        id: release-unlock
-        with:
-          mode: 'unlock'
       - name: Create release notes
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
