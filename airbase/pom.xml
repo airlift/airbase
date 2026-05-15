@@ -207,6 +207,7 @@
         <dep.assertj-core.version>3.27.7</dep.assertj-core.version>
         <dep.byte-buddy.version>1.18.8</dep.byte-buddy.version>
         <dep.checkstyle.version>13.4.2</dep.checkstyle.version>
+        <dep.classmate.version>1.7.3</dep.classmate.version>
         <dep.errorprone.version>2.49.0</dep.errorprone.version>
         <dep.guava.version>33.6.0-jre</dep.guava.version>
         <dep.guice.version>7.0.0</dep.guice.version>
@@ -385,6 +386,12 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
                 <version>${dep.logback.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml</groupId>
+                <artifactId>classmate</artifactId>
+                <version>${dep.classmate.version}</version>
             </dependency>
 
             <!-- FindBugs / SpotBugs -->

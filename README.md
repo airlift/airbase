@@ -366,6 +366,10 @@ Airbase provides versions for the following well-known dependencies:
     <td><tt>com.fasterxml.jackson.core:jackson-annotations</tt><p/><tt>com.fasterxml.jackson.core:jackson-core</tt><p/><tt>com.fasterxml.jackson.core:jackson-databind</tt><p/><tt>com.fasterxml.jackson.datatype:jackson-datatype-guava</tt><p/><tt>com.fasterxml.jackson.datatype:jackson-datatype-joda</tt><p/><tt>com.fasterxml.jackson.dataformat:jackson-dataformat-smile</tt></td>
   </tr>
   <tr>
+    <td>ClassMate</td>
+    <td><tt>com.fasterxml:classmate</tt></td>
+  </tr>
+  <tr>
     <td>Bean Validation Framework</td>
     <td><tt>org.apache.bval:bval-jsr</tt></td>
   </tr>
@@ -453,5 +457,4 @@ A module or sub-module can produce a tarball using the airlift packaging. This p
 can be empty. The tarball is attached as an additional artifact.
 
 The necessary launchers from the airlift launcher package are included. The version of the launcher included is controlled by the `dep.packaging.version` property.
-
 
