@@ -8,108 +8,10 @@
         <property name="onCommentFormat" value='"""'/>
     </module>
 
-    <module name="FileTabCharacter" />
-    <module name="NewlineAtEndOfFile">
-        <property name="lineSeparator" value="lf" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="\r" />
-        <property name="message" value="Line contains carriage return" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value=" \n" />
-        <property name="message" value="Line has trailing whitespace" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="\n\n\n" />
-        <property name="message" value="Multiple consecutive blank lines" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="\n\n\Z" />
-        <property name="message" value="Blank line before end of file" />
-    </module>
-
-    <module name="RegexpMultiline">
-        <property name="format" value="\{\n\n" />
-        <property name="message" value="Blank line after opening brace" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="\n\n\s*\}" />
-        <property name="message" value="Blank line before closing brace" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="[^;]\s\)+\s*[\{;,]?\s*\n" />
-        <property name="message" value="Whitespace character before closing parenthesis" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="->\s*\{\s+\}" />
-        <property name="message" value="Whitespace inside empty lambda body" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="->(\s*+(//.*+)?\n)++\s*+\{" />
-        <property name="message" value="Lambda opening brace should be on the same line as ->" />
-    </module>
-
-    <module name="RegexpSingleline">
-        <property name="format" value="^import static .*\.(of|copyOf|valueOf|builder);$" />
-        <property name="message" value="The following methods may not be statically imported: of, copyOf, valueOf, builder" />
-    </module>
-    <module name="RegexpSingleline">
-        <property name="format" value="^import static (?!java\.lang\.String\.format;).*\.format;" />
-        <property name="message" value="Only 'format' from java.lang.String may be statically imported" />
-    </module>
-    <module name="RegexpSingleline">
-        <property name="format" value="^import static java\.util\.Optional\." />
-        <property name="message" value="Members of Optional may not be statically imported" />
-    </module>
-
-    <module name="RegexpSingleline">
-        <property name="format" value="^(?!import ).*Objects\.requireNonNull" />
-        <property name="message" value="Objects.requireNonNull should only be used with static imports" />
-    </module>
-    <module name="RegexpSingleline">
-        <property name="format" value="^(?!import ).*Math\.toIntExact" />
-        <property name="message" value="Math.toIntExact should only be used with static imports" />
-    </module>
-    <module name="RegexpSingleline">
-        <property name="format" value="^(?!import ).*ImmutableMap\.toImmutableMap" />
-        <property name="message" value="ImmutableMap.toImmutableMap should only be used with static imports" />
-    </module>
-    <module name="RegexpSingleline">
-        <property name="format" value="^(?!import ).*ImmutableList\.toImmutableList" />
-        <property name="message" value="ImmutableList.toImmutableList should only be used with static imports" />
-    </module>
-    <module name="RegexpSingleline">
-        <property name="format" value="^(?!import ).*ImmutableSet\.toImmutableSet" />
-        <property name="message" value="ImmutableSet.toImmutableSet should only be used with static imports" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="^[ \t]*import org\.testng\.Assert;$" />
-        <property name="message" value="org.testng.Assert should only be used with static imports" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="^[ \t]*import com\.google\.common\.base\.MoreObjects;$" />
-        <property name="message" value="com.google.common.base.MoreObjects should only be used with static imports" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="^[ \t]*import com\.google\.common\.base\.Preconditions;$" />
-        <property name="message" value="com.google.common.base.Preconditions should only be used with static imports" />
-    </module>
-    <module name="RegexpMultiline">
-        <property name="format" value="^[ \t]*import com\.google\.common\.base\.Verify;$" />
-        <property name="message" value="com.google.common.base.Verify should only be used with static imports" />
-    </module>
-
     <module name="SuppressWarningsFilter" />
 
     <module name="TreeWalker">
         <module name="SuppressWarningsHolder" />
-
-        <module name="SuppressionXpathSingleFilter">
-            <property name="checks" value="RedundantModifier"/>
-            <property name="query" value="//(CLASS_DEF|RECORD_DEF)/OBJBLOCK/*/MODIFIERS/*"/>
-        </module>
-        <module name="RedundantModifier" />
 
         <module name="EmptyBlock">
             <property name="option" value="text" />
@@ -117,77 +19,18 @@
                 LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_IF,
                 LITERAL_FOR, LITERAL_TRY, LITERAL_WHILE, INSTANCE_INIT, STATIC_INIT" />
         </module>
-        <module name="EmptyStatement" />
-        <module name="EmptyForInitializerPad" />
-        <module name="EmptyForIteratorPad">
-            <property name="option" value="space" />
-        </module>
-        <module name="MethodParamPad">
-            <property name="allowLineBreaks" value="true" />
-            <property name="option" value="nospace" />
-        </module>
-        <module name="ParenPad" />
-        <module name="TypecastParenPad" />
-        <module name="NeedBraces" />
-        <module name="LeftCurly">
-            <property name="option" value="nl" />
-            <property name="tokens" value="CLASS_DEF, CTOR_DEF, INTERFACE_DEF, METHOD_DEF, RECORD_DEF" />
-        </module>
-        <module name="LeftCurly">
-            <property name="option" value="eol" />
-            <property name="tokens" value="
-                 LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY, LITERAL_FOR,
-                 LITERAL_IF, LITERAL_SWITCH, LITERAL_SYNCHRONIZED, LITERAL_TRY, LITERAL_WHILE" />
-        </module>
-        <module name="RightCurly">
-            <property name="option" value="alone" />
-        </module>
-        <module name="EmptyLineSeparator">
-            <property name="allowNoEmptyLineBetweenFields" value="true" />
-            <property name="tokens" value="
-                IMPORT, STATIC_IMPORT, CLASS_DEF, INTERFACE_DEF, ENUM_DEF, RECORD_DEF,
-                STATIC_INIT, INSTANCE_INIT, METHOD_DEF, CTOR_DEF, VARIABLE_DEF" />
-        </module>
-        <module name="GenericWhitespace" />
-        <module name="WhitespaceAfter" />
-        <module name="NoWhitespaceAfter" />
-        <module name="NoWhitespaceBefore" />
-        <module name="NoLineWrap" />
-        <module name="SingleSpaceSeparator" />
 
-        <module name="SuppressionXpathSingleFilter">
-            <property name="checks" value="Indentation" />
-            <property name="query" value="//LITERAL_SWITCH//*" />
-        </module>
-        <module name="Indentation">
-            <property name="throwsIndent" value="8" />
-            <property name="lineWrappingIndentation" value="8" />
-        </module>
-
-        <module name="UpperEll" />
-        <module name="HexLiteralCase" />
-        <module name="NumericalPrefixesInfixesSuffixesCharacterCase" />
         <module name="DefaultComesLast" />
-        <module name="ArrayTypeStyle" />
-        <module name="ArrayTrailingComma" />
-        <module name="MultipleVariableDeclarations" />
-        <module name="ModifierOrder" />
         <module name="OneStatementPerLine" />
-        <module name="UnnecessarySemicolonAfterOuterTypeDeclaration" />
-        <module name="UnnecessarySemicolonAfterTypeMemberDeclaration" />
-        <module name="UnnecessarySemicolonInEnumeration" />
-        <module name="UnnecessarySemicolonInTryWithResources" />
         <module name="StringLiteralEquality" />
         <module name="MutableException" />
         <module name="EqualsHashCode" />
         <module name="InnerAssignment" />
         <module name="HideUtilityClassConstructor" />
-        <module name="ExplicitInitialization" />
         <module name="OneTopLevelClass" />
         <module name="OuterTypeFilename" />
         <module name="NoCodeInFile" />
         <module name="AvoidDoubleBraceInitialization" />
-        <module name="UnusedLambdaParameterShouldBeUnnamed" />
         <module name="UnusedLocalVariable" />
         <module name="UseEnhancedSwitch" />
 
@@ -216,48 +59,6 @@
             <property name="trailingArrayComma" value="ignore" />
         </module>
 
-        <module name="AvoidStarImport" />
-        <module name="RedundantImport" />
-        <module name="UnusedImports" />
-        <module name="ImportOrder">
-            <property name="groups" value="*,javax,java" />
-            <property name="separated" value="true" />
-            <property name="option" value="bottom" />
-            <property name="sortStaticImportsAlphabetically" value="true" />
-        </module>
-
-        <module name="SuppressionXpathSingleFilter">
-            <property name="checks" value="WhitespaceAround"/>
-            <property name="query" value="//LITERAL_SWITCH//SLIST"/>
-        </module>
-        <module name="SuppressionXpathSingleFilter">
-            <property name="checks" value="WhitespaceAround"/>
-            <property name="query" value="//LITERAL_SWITCH//RCURLY"/>
-        </module>
-        <module name="WhitespaceAround">
-            <property name="allowEmptyConstructors" value="true" />
-            <property name="allowEmptyMethods" value="true" />
-            <property name="allowEmptyLambdas" value="true" />
-            <property name="allowEmptyTypes" value="true" />
-            <property name="ignoreEnhancedForColon" value="false" />
-            <property name="tokens" value="
-                ASSIGN, BAND, BAND_ASSIGN, BOR, BOR_ASSIGN, BSR, BSR_ASSIGN,
-                BXOR, BXOR_ASSIGN, COLON, DIV, DIV_ASSIGN, DO_WHILE, EQUAL, GE, GT,
-                LAMBDA, LAND, LCURLY, LE, LITERAL_ASSERT, LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE,
-                LITERAL_FINALLY, LITERAL_FOR, LITERAL_IF, LITERAL_RETURN,
-                LITERAL_SYNCHRONIZED, LITERAL_TRY, LITERAL_WHILE,
-                LOR, LT, MINUS, MINUS_ASSIGN, MOD, MOD_ASSIGN, NOT_EQUAL,
-                PLUS, PLUS_ASSIGN, QUESTION, SL, SLIST, SL_ASSIGN, SR, SR_ASSIGN,
-                STAR, STAR_ASSIGN, TYPE_EXTENSION_AND" />
-        </module>
-
-        <module name="WhitespaceAfter" />
-
-        <module name="NoWhitespaceAfter">
-            <property name="tokens" value="DOT" />
-            <property name="allowLineBreaks" value="false" />
-        </module>
-
         <module name="IllegalToken">
             <property name="tokens" value="LITERAL_ASSERT" />
         </module>
@@ -266,29 +67,7 @@
             <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>
         </module>
 
-        <module name="RegexpSinglelineJava">
-            <property name="format" value="(class|interface) ([a-zA-Z0-9_])+(&lt;.*&gt;)? (extends|implements)" />
-            <property name="message" value="No new line before extends/implements" />
-            <property name="ignoreComments" value="true" />
-        </module>
-
-        <module name="RegexpSinglelineJava">
-            <property name="format" value="\)\s*throws\b" />
-            <property name="message" value="No new line before throws" />
-            <property name="ignoreComments" value="true" />
-        </module>
-
-        <module name="RegexpSinglelineJava">
-            <!-- Forbid "new Type[]{",  IntelliJ would reformat adding a space -->
-            <!-- Forbid "new Type[]  {",  IntelliJ would reformat removing a space -->
-            <property name="format" value="new\s++\w++(&lt;\?&gt;)?(\[\])++(\s{2,})?\{" />
-            <property name="message" value="Incorrect whitespace before array initializer" />
-            <property name="ignoreComments" value="true" />
-        </module>
-
-        <!-- javadoc -->
-        <module name="InvalidJavadocPosition" />
-        <module name="RequireEmptyLineBeforeBlockTagGroup" />
+        <!-- Javadoc -->
         <module name="NonEmptyAtclauseDescription" />
     </module>
 </module>
