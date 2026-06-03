@@ -228,7 +228,7 @@
         <!-- junit and junit-platform should have the same minor and patch versions -->
         <dep.junit.version>6.1.0</dep.junit.version>
         <dep.junit-platform.version>6.1.0</dep.junit-platform.version>
-        <dep.kotlin.version>2.3.21</dep.kotlin.version>
+        <dep.kotlin.version>2.4.0</dep.kotlin.version>
         <dep.launcher.version>316</dep.launcher.version>
         <dep.log4j.version>2.26.0</dep.log4j.version>
         <dep.logback.version>1.5.34</dep.logback.version>
