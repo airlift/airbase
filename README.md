@@ -178,12 +178,6 @@ The following switches exist:
     <td><tt>air.check.fail-duplicate-finder</tt></td>
   </tr>
   <tr>
-    <td>Basic</td>
-    <td>Maven Dependency scope</td>
-    <td><tt>air.check.skip-dependency-scope</tt></td>
-    <td><tt>air.check.fail-dependency-scope</tt></td>
-  </tr>
-  <tr>
     <td>Extended</td>
     <td>SpotBugs</td>
     <td><tt>air.check.skip-spotbugs</tt></td>
