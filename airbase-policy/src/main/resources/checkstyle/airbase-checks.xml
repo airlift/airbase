@@ -53,6 +53,7 @@
         <module name="AnnotationUseStyle">
             <property name="trailingArrayComma" value="ignore" />
         </module>
+        <module name="AvoidStarImport" />
 
         <module name="IllegalToken">
             <property name="tokens" value="LITERAL_ASSERT" />
