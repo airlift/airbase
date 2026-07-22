@@ -179,7 +179,7 @@
         <dep.plugin.jacoco.version>0.8.15</dep.plugin.jacoco.version>
         <dep.plugin.jar.version>3.5.0</dep.plugin.jar.version>
         <dep.plugin.javadoc.version>3.12.0</dep.plugin.javadoc.version>
-        <dep.plugin.license.version>5.0.0</dep.plugin.license.version>
+        <dep.plugin.license.version>5.1.1</dep.plugin.license.version>
         <dep.plugin.modernizer.version>3.4.0</dep.plugin.modernizer.version>
         <dep.plugin.njord.version>0.9.9</dep.plugin.njord.version>
         <dep.plugin.pmd-runtime.version>7.26.0</dep.plugin.pmd-runtime.version>
