@@ -230,7 +230,7 @@
         <dep.log4j.version>2.26.1</dep.log4j.version>
         <dep.logback.version>1.6.3</dep.logback.version>
         <dep.opentelemetry-instrumentation.version>2.31.1</dep.opentelemetry-instrumentation.version>
-        <dep.opentelemetry-instrumentation-alpha.version>2.31.0-alpha</dep.opentelemetry-instrumentation-alpha.version>
+        <dep.opentelemetry-instrumentation-alpha.version>2.31.1-alpha</dep.opentelemetry-instrumentation-alpha.version>
         <dep.opentelemetry-semconv.version>1.43.0</dep.opentelemetry-semconv.version>
         <dep.opentelemetry-semconv-incubating.version>1.43.0-alpha</dep.opentelemetry-semconv-incubating.version>
         <dep.opentelemetry.version>1.65.0</dep.opentelemetry.version>
