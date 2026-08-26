@@ -250,6 +250,11 @@
 
         <!-- Checkstyle -->
         <air.checkstyle.config-file>checkstyle/airbase-checks.xml</air.checkstyle.config-file>
+        <!-- Cache outside the build directory so it survives "mvn clean". The path is -->
+        <!-- checkout-specific so concurrent builds of separate checkouts never share  -->
+        <!-- a cache file (Checkstyle rewrites it without locking), and keyed by the   -->
+        <!-- Checkstyle version since the cache does not track the version on its own. -->
+        <air.checkstyle.cache-file>${maven.multiModuleProjectDirectory}/.checkstyle-cache/${project.groupId}/${project.artifactId}-${dep.checkstyle.version}.cache</air.checkstyle.cache-file>
 
         <!-- Readme for launcher -->
         <air.readme.file>README.txt</air.readme.file>
@@ -1464,6 +1469,7 @@
                         <failOnViolation>${air.check.fail-checkstyle}</failOnViolation>
                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                         <configLocation>${air.checkstyle.config-file}</configLocation>
+                        <cacheFile>${air.checkstyle.cache-file}</cacheFile>
                         <excludes>**/module-info.java</excludes>
                     </configuration>
                     <dependencies>
