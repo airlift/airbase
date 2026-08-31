@@ -200,6 +200,7 @@
         <dep.packaging.version>445</dep.packaging.version>
 
         <!-- Dependency versions, keep sorted -->
+        <dep.airlift.guice.version>10</dep.airlift.guice.version>
         <dep.asm.version>9.10.1</dep.asm.version>
         <dep.assertj-core.version>3.27.7</dep.assertj-core.version>
         <dep.byte-buddy.version>1.18.12</dep.byte-buddy.version>
@@ -484,6 +485,13 @@
                 <groupId>com.google.j2objc</groupId>
                 <artifactId>j2objc-annotations</artifactId>
                 <version>3.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>guice</artifactId>
+                <version>${dep.airlift.guice.version}</version>
+                <classifier>classes</classifier>
             </dependency>
 
             <dependency>
