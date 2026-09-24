@@ -648,16 +648,6 @@
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
                 <version>${dep.testng.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.google.inject</groupId>
-                        <artifactId>guice</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>junit</groupId>
-                        <artifactId>junit</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
@@ -925,6 +915,7 @@
                     <configuration>
                         <skip>${air.check.skip-dependency}</skip>
                         <failOnWarning>${air.check.fail-dependency}</failOnWarning>
+                        <exclusionFail>${air.check.fail-dependency}</exclusionFail>
                         <ignoreNonCompile>true</ignoreNonCompile>
                     </configuration>
                     <dependencies>
@@ -940,6 +931,7 @@
                             <goals>
                                 <goal>analyze-only</goal>
                                 <goal>analyze-duplicate</goal>
+                                <goal>analyze-exclusions</goal>
                             </goals>
                             <phase>process-test-classes</phase>
                         </execution>
