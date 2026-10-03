@@ -51,6 +51,7 @@
     <modules>
         <module>airbase</module>
         <module>airbase-policy</module>
+        <module>airbase-docker</module>
     </modules>
 
     <properties>
