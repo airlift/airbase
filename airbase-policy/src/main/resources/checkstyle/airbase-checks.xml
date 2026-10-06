@@ -65,5 +65,9 @@
 
         <!-- Javadoc -->
         <module name="NonEmptyAtclauseDescription" />
+        <module name="JavadocRegexp">
+            <property name="format" value="(?m)^[\s*]*@author\b" />
+            <message key="javadoc.regexp.match" value="Do not use @author tags; code authorship is tracked in git history" />
+        </module>
     </module>
 </module>
