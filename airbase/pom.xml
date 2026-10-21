@@ -117,6 +117,7 @@
 
         <!-- basic checks -->
         <air.check.skip-enforcer>${air.check.skip-basic}</air.check.skip-enforcer>
+        <air.check.skip-junit-extensions>${air.check.skip-enforcer}</air.check.skip-junit-extensions>
         <air.check.skip-dependency>${air.check.skip-basic}</air.check.skip-dependency>
         <air.check.skip-duplicate-finder>${air.check.skip-basic}</air.check.skip-duplicate-finder>
 
@@ -136,6 +137,7 @@
 
         <!-- basic checks -->
         <air.check.fail-enforcer>${air.check.fail-basic}</air.check.fail-enforcer>
+        <air.check.fail-junit-extensions>${air.check.fail-enforcer}</air.check.fail-junit-extensions>
         <air.check.fail-dependency>${air.check.fail-basic}</air.check.fail-dependency>
         <air.check.fail-duplicate-finder>${air.check.fail-basic}</air.check.fail-duplicate-finder>
 
@@ -891,6 +893,14 @@
                             <artifactId>restrict-imports-enforcer-rule</artifactId>
                             <version>${dep.plugin.restrict-imports.version}</version>
                         </dependency>
+                        <!-- This version must match the Airbase version. It will be updated by -->
+                        <!-- the Maven Release plugin. The "project.version" property cannot be -->
+                        <!-- used here as it will resolve to the version of the child project.  -->
+                        <dependency>
+                            <groupId>io.airlift</groupId>
+                            <artifactId>airbase-enforcer</artifactId>
+                            <version>420-SNAPSHOT</version>
+                        </dependency>
                         <dependency>
                             <groupId>org.codehaus.mojo</groupId>
                             <artifactId>extra-enforcer-rules</artifactId>
@@ -904,6 +914,20 @@
                                 <goal>enforce</goal>
                             </goals>
                             <phase>validate</phase>
+                        </execution>
+                        <execution>
+                            <id>junit-extensions</id>
+                            <goals>
+                                <goal>enforce</goal>
+                            </goals>
+                            <phase>validate</phase>
+                            <configuration>
+                                <skip>${air.check.skip-junit-extensions}</skip>
+                                <fail>${air.check.fail-junit-extensions}</fail>
+                                <rules combine.self="override">
+                                    <requireJunitExtensions />
+                                </rules>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>

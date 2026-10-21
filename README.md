@@ -167,6 +167,12 @@ The following switches exist:
   </tr>
   <tr>
     <td>Basic</td>
+    <td>JUnit extensions</td>
+    <td><tt>air.check.skip-junit-extensions</tt></td>
+    <td><tt>air.check.fail-junit-extensions</tt></td>
+  </tr>
+  <tr>
+    <td>Basic</td>
     <td>Maven Dependencies</td>
     <td><tt>air.check.skip-dependency</tt></td>
     <td><tt>air.check.fail-dependency</tt></td>
@@ -313,6 +319,11 @@ The Enforcer plugin outlaws a number of dependencies that project might use for 
     <td><tt>org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api</tt></td>
   </tr>
 </table>
+
+A separate Enforcer execution requires `io.airlift:junit-extensions` in every project that has `org.junit.jupiter` among its dependencies, including transitive ones.
+JUnit silently skips a method that overrides a `@Test` method without repeating the annotation. The extensions in it report such methods.
+JUnit loads them only when `junit.jupiter.extensions.autodetection.enabled` is `true`, so the execution also requires that property in the Surefire `systemPropertyVariables`.
+The `air.check.skip-junit-extensions` and `air.check.fail-junit-extensions` switches control this execution and default to the Enforcer switches.
 
 
 ## Well known dependencies
