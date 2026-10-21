@@ -50,6 +50,7 @@
 
     <modules>
         <module>airbase</module>
+        <module>airbase-enforcer</module>
         <module>airbase-policy</module>
     </modules>
 
