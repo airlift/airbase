@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.airlift</groupId>
         <artifactId>airbase-root</artifactId>
-        <version>421</version>
+        <version>422-SNAPSHOT</version>
     </parent>
 
     <artifactId>airbase-enforcer</artifactId>
@@ -15,7 +15,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.outputTimestamp>2026-10-26T11:00:03Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2026-10-26T11:00:35Z</project.build.outputTimestamp>
         <!-- Enforcer rules run in the Maven JVM so this matches air.java.version in airbase -->
         <maven.compiler.release>17</maven.compiler.release>
     </properties>
