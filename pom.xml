@@ -55,7 +55,7 @@
     </modules>
 
     <properties>
-        <dep.plugin.njord.version>0.9.10</dep.plugin.njord.version>
+        <dep.plugin.njord.version>0.10.0</dep.plugin.njord.version>
     </properties>
 
     <build>
