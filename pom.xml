@@ -52,6 +52,7 @@
         <module>airbase</module>
         <module>airbase-enforcer</module>
         <module>airbase-policy</module>
+        <module>airbase-docker</module>
     </modules>
 
     <properties>
