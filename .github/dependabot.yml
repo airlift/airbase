@@ -5,7 +5,11 @@ updates:
     schedule:
       interval: "daily"
     cooldown:
-      default-days: 0
+      # Apply 7 day cooldown to avoid updating dependencies right away. This reduces the opportunity window
+      # when supply chain is compromised.
+      default-days: 7
+      semver-minor-days: 21
+      semver-major-days: 42
     labels:
       - "dependency"
     open-pull-requests-limit: 5
