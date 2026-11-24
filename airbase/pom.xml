@@ -92,6 +92,9 @@
         <!-- provide additional options for test JVM -->
         <air.test.jvm.additional-arguments />
 
+        <!-- Lowest JUnit discovery issue severity that fails the build. Default is 'WARNING', e.g. a static @Test method, which JUnit does not run. -->
+        <air.test.discovery-issue.critical-severity>WARNING</air.test.discovery-issue.critical-severity>
+
         <!-- Lint mode for Javadoc. Defaults to 'all'. -->
         <air.javadoc.lint>all</air.javadoc.lint>
 
@@ -1021,6 +1024,8 @@
                             <user.timezone>${air.test.timezone}</user.timezone>
                             <java.awt.headless>true</java.awt.headless>
                             <java.util.logging.SimpleFormatter.format>%1$tY-%1$tm-%1$tdT%1$tH:%1$tM:%1$tS.%1$tL%1$tz %4$s %5$s%6$s%n</java.util.logging.SimpleFormatter.format>
+                            <!-- Set as a system property: Surefire scans for test classes without its configurationParameters -->
+                            <junit.platform.discovery.issue.severity.critical>${air.test.discovery-issue.critical-severity}</junit.platform.discovery.issue.severity.critical>
                         </systemPropertyVariables>
                         <trimStackTrace>false</trimStackTrace>
                         <runOrder>random</runOrder>
